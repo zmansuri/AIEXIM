@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "a50f0094-7013-474a-9342-27a3e46f6d6a",
+    "Name": "DMSEntryFromApplication",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "5930c87f-9ca4-ee11-a568-000d3ac9f67f"
+  }
+]

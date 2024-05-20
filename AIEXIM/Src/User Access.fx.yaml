@@ -1,0 +1,2345 @@
+"'User Access' As screen":
+    OnVisible: =Refresh('User Access Managers')
+
+    Navigation_6 As Navigation:
+        ApplicationHeader: ="AI EXIM OCR"
+        Height: =768
+        NavigationItems: |-
+            =Table(
+                {
+                    Title: "Home",
+                    Screen: Home
+                    //Icon: true
+                },
+                {
+                    Title: "Documents",
+                    Screen: Documents
+                    //Icon: true
+                },
+                {
+                    Title: "Extracted Data",
+                    Screen: 'Extracted Data'
+                },
+                {
+                    Title: "Reports",
+                    Screen: Reports
+                },
+                {
+                    Title: "Logs",
+                    Screen: Logs
+                },
+                {
+                    Title: "User Access",
+                    Screen: 'User Access'
+                }
+            )
+        ZIndex: =1
+
+    Reports_Nav As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Generate Report Rights'= true, DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =31
+        HoverFill: =
+        OnSelect: =Navigate(Reports,ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =4
+        Y: =185
+        ZIndex: =2
+
+    Logs_Nav As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage Logs'= true, DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =31
+        HoverFill: =
+        OnSelect: =Navigate(Logs,ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =4
+        Y: =220
+        ZIndex: =3
+
+    btnRemoveComponentLogo_5 As button:
+        BorderColor: =Color.Transparent
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =60
+        HoverBorderColor: =Color.Transparent
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =Color.Transparent
+        PressedBorderColor: =Color.Transparent
+        PressedFill: =Color.Transparent
+        Text: =""
+        Width: =170
+        X: =20
+        Y: =10
+        ZIndex: =4
+
+    Logo3 As image:
+        Height: =70
+        Image: ='MicrosoftTeams-image (1)'
+        Width: =190
+        ZIndex: =5
+
+    HideBTN2 As button:
+        BorderStyle: =BorderStyle.None
+        Color: |-
+            =RGBA(
+                255,
+                255,
+                255,
+                1
+            )
+        DisabledFill: =
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =55
+        Text: =""
+        Width: =296
+        X: =952
+        Y: =15
+        ZIndex: =6
+
+    LblEdit As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =10
+        Text: ="Edit"
+        Width: =91
+        X: =957
+        Y: =182
+        ZIndex: =9
+
+    GalleryAndHeader As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =9
+
+        btnHeader_1 As button:
+            BorderColor: =RGBA(186, 186, 186, 1)
+            BorderStyle: =BorderStyle.None
+            ContentLanguage: ="List of added user"
+            DisabledBorderColor: =
+            DisabledColor: =
+            Fill: =RGBA(12, 77, 162, 1)
+            Height: =44
+            HoverBorderColor: =
+            HoverColor: =
+            HoverFill: =
+            PressedBorderColor: =
+            PressedColor: =
+            PressedFill: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            Text: =""
+            Width: =1118
+            X: =234
+            Y: =180
+            ZIndex: =7
+
+        "gal_userAccess As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+            '#CopilotOverlayLabel': ="Filtered"
+            AccessibleLabel: ="List of users"
+            ContentLanguage: ="List of added user"
+            DelayItemLoading: =true
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =445
+            Items: |-
+                =//'User Access Manager'
+                Filter(
+                    'User Access Managers',
+                    StartsWith(
+                        'First Name',
+                        SearchUserAccessScreen.Text
+                    ) || StartsWith(
+                        'Last Name',
+                        SearchUserAccessScreen.Text
+                    ) || StartsWith(
+                        Email,
+                        SearchUserAccessScreen.Text
+                    ) || StartsWith(
+                        'Upload Extract Document Rights',
+                        SearchUserAccessScreen.Text
+                    ) || StartsWith(
+                        'Generate Report Rights',
+                        SearchUserAccessScreen.Text
+                    ) || StartsWith(
+                        'View Rights',
+                        SearchUserAccessScreen.Text
+                    )|| StartsWith(
+                        'Manage Logs',
+                        SearchUserAccessScreen.Text
+                    )
+                )
+            Layout: =Layout.Vertical
+            LoadingSpinner: =LoadingSpinner.Data
+            ShowScrollbar: =false
+            TabIndex: =0
+            TemplatePadding: =0
+            TemplateSize: =49
+            Width: =1118
+            X: =234
+            Y: =224
+            ZIndex: =8
+
+            gal_subtitle As label:
+                FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                Height: =Self.Size * 1.8
+                OnSelect: =Select(Parent)
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =ThisItem.ID
+                VerticalAlign: =VerticalAlign.Top
+                Width: =
+                X: =
+                Y: =
+                ZIndex: =3
+
+            gal_Name As label:
+                Height: =45
+                PaddingLeft: =15
+                Size: =9
+                Text: =ThisItem.'First Name' & " " & ThisItem.'Last Name'
+                Width: =126
+                Y: =2
+                ZIndex: =6
+
+            gal_Rectangle As rectangle:
+                Fill: =RGBA(204, 204, 205, 1)
+                Height: =1
+                Width: |-
+                    =//1055
+                    gal_userAccess.Width
+                Y: =45
+                ZIndex: =7
+
+            gal_Email As label:
+                Height: =45
+                Size: =9
+                Text: =ThisItem.Email
+                Width: =182
+                X: =126
+                Y: =2
+                ZIndex: =8
+
+            gal_ReportGenerate As label:
+                Height: =45
+                Size: =9
+                Text: =If( ThisItem.'Generate Report Rights' = true, "Yes","No")
+                Width: =94
+                X: =549
+                Y: =2
+                ZIndex: =9
+
+            gal_View As label:
+                Height: =45
+                Size: =9
+                Text: =If(ThisItem.'View Rights'= true,"Yes","No")
+                Width: =73
+                X: =648
+                Y: =2
+                ZIndex: =10
+
+            gal_AccessLogs As label:
+                Height: =45
+                Size: =9
+                Text: =If(ThisItem.'Manage Logs'=true,"Yes","No")
+                Width: =81
+                X: =913
+                Y: =2
+                ZIndex: =11
+
+            gal_ExtractedDOC As label:
+                Height: =45
+                Size: =9
+                Text: =If( ThisItem.'Upload Extract Document Rights' = true,"Yes","No")
+                Width: =114
+                X: =396
+                Y: =2
+                ZIndex: =14
+
+            grpBtnEditIcon As group:
+                Height: =5
+                Width: =5
+                X: =-1170
+                Y: =-99
+                ZIndex: =17
+
+                img_edit As image:
+                    AccessibleLabel: ="Edit rights for user"
+                    Height: =45
+                    Image: ='edit icon'
+                    OnSelect: |-
+                        =//Set(VarID,ThisItem.ID);
+                        ResetForm(UserAccessEditScreen);NewForm(UserAccessEditScreen);
+                        UpdateContext({VarEditDetailsScreen:true})
+                    TabIndex: =0
+                    Tooltip: ="Add rights for user"
+                    Width: =35
+                    X: =1033
+                    Y: =2
+                    ZIndex: =15
+
+                EditIcon As button:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =45
+                    HoverFill: =Color.Transparent
+                    OnSelect: |-
+                        =//Set(VarID,ThisItem.ID);
+                        ResetForm(UserAccessEditScreen);NewForm(UserAccessEditScreen);
+                        UpdateContext({VarEditDetailsScreen:true})
+                    Text: =""
+                    Tooltip: ="Add rights for user"
+                    Width: =35
+                    X: =1033
+                    Y: =2
+                    ZIndex: =16
+
+            gal_role As label:
+                Height: =45
+                PaddingLeft: =15
+                Size: =9
+                Text: =ThisItem.Role
+                Width: =88
+                X: =308
+                Y: =2
+                ZIndex: =19
+
+            grpBtnDeactivateUserAccess As group:
+                Height: =5
+                Width: =5
+                X: =-946
+                Y: =3
+                ZIndex: =19
+
+                Image_User As image:
+                    AccessibleLabel: ="Add"
+                    Height: =45
+                    Image: =DeactivateBtn
+                    OnSelect: |-
+                        =//Set(VarID,ThisItem.ID);
+                        UpdateContext({VarDeactivateUserPopup:true})
+                    TabIndex: =0
+                    Width: =19
+                    X: =1092
+                    Y: =2
+                    ZIndex: =17
+
+                btnUser As button:
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =45
+                    HoverFill: =Color.Transparent
+                    OnSelect: |-
+                        =//Set(VarID,ThisItem.ID);
+                        UpdateContext({VarDeactivateUserPopup:true})
+                    RadiusBottomLeft: =50
+                    RadiusBottomRight: =50
+                    RadiusTopLeft: =50
+                    RadiusTopRight: =50
+                    Text: =""
+                    Width: =32
+                    X: =1086
+                    Y: =2
+                    ZIndex: =18
+
+            gal_Edit As label:
+                Height: =45
+                Size: =9
+                Text: =If(ThisItem.'Edit Rights'=true,"Yes","No")
+                Width: =73
+                X: =727
+                Y: =2
+                ZIndex: =20
+
+            gal_ManageUserAccess As label:
+                Height: =45
+                Size: =9
+                Text: =If(ThisItem.'Manage User Access'= true,"Yes","No")
+                Width: =73
+                X: =801
+                Y: =2
+                ZIndex: =21
+
+    LblManageUserAccess As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =10
+        Text: ="Manage User Access"
+        Width: =112
+        X: =1034
+        Y: =184
+        ZIndex: =10
+
+    LblRole As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        Size: =10
+        Text: ="Role"
+        Width: =99
+        X: =521
+        Y: =183
+        ZIndex: =11
+
+    SearchUserAccessScreen As text:
+        AccessibleLabel: ="Search your document"
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Default: =""
+        Height: =35
+        HintText: ="Search Document"
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =10
+        X: =234
+        Y: =114
+        ZIndex: =12
+
+    LblName As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =42
+        Size: =10
+        Text: ="Name"
+        Width: =108
+        X: =246
+        Y: =182
+        ZIndex: =13
+
+    LblEmail As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =42
+        Size: =10
+        Text: ="Email"
+        Width: =142
+        X: =371
+        Y: =182
+        ZIndex: =14
+
+    LblUploadExtract As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =10
+        Text: ="Upload/Extract Document"
+        Width: =147
+        X: =629
+        Y: =184
+        ZIndex: =15
+
+    LblReportGenerate As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =41
+        Size: =10
+        Text: ="Report Generate"
+        Width: =96
+        X: =776
+        Y: =180
+        ZIndex: =16
+
+    LblView As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Size: =10
+        Text: ="View"
+        Width: =106
+        X: =878
+        Y: =183
+        ZIndex: =17
+
+    LblAccessLog As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =43
+        Size: =10
+        Text: ="Access Log"
+        Width: =97
+        X: =1146
+        Y: =181
+        ZIndex: =18
+
+    AddUserContainer As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(39, 113, 194, 1)
+        BorderThickness: =1
+        Height: =40
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =155
+        X: =1183
+        Y: =114
+        ZIndex: =19
+
+        AddUserGrp As group:
+            Height: =5
+            Width: =5
+            X: =40
+            Y: =40
+            ZIndex: =3
+
+            Button1 As button:
+                Color: =RGBA(0, 0, 0, 1)
+                Fill: =RGBA(255, 255, 255, 1)
+                HoverFill: |-
+                    =//ColorFade(Color.Transparent, -100%)
+                    Color.Transparent
+                OnSelect: |-
+                    =ResetForm(CreateUserAccessForm);
+                    NewForm(CreateUserAccessForm);
+                    UpdateContext({VarAddUSerAccessPopUp: true})
+                PressedFill: =Color.Transparent
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Text: ="Add User"
+                Width: =124
+                X: =32
+                ZIndex: =1
+
+            Icon4 As icon.Add:
+                AccessibleLabel: ="Add user"
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(0, 18, 107, 1)
+                Height: =40
+                Icon: =Icon.Add
+                OnSelect: |-
+                    =ResetForm(CreateUserAccessForm);
+                    NewForm(CreateUserAccessForm);
+                    UpdateContext({VarAddUSerAccessPopUp: true})
+                TabIndex: =0
+                Width: =32
+                ZIndex: =2
+
+    AddUserPopupGrp As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =19
+
+        RectangleCreateUser As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.13)
+            Height: =768
+            Visible: =VarAddUSerAccessPopUp
+            Width: =1366
+            ZIndex: =20
+
+        ContainerAddUser As groupContainer.manualLayoutContainer:
+            BorderColor: =RGBA(12, 77, 162, 1)
+            Height: =666
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Visible: =VarAddUSerAccessPopUp
+            Width: =1044
+            X: =139
+            Y: =51
+            ZIndex: =21
+
+            CreateUserBody As button:
+                BorderThickness: =1
+                DisplayMode: =DisplayMode.View
+                Fill: =RGBA(255, 255, 255, 1)
+                Height: =666
+                Text: =""
+                Width: =1044
+                ZIndex: =1
+
+            Label38 As label:
+                Align: =Align.Center
+                Color: =RGBA(255, 255, 255, 1)
+                Fill: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Semibold
+                Height: =41
+                Text: ="Create New User"
+                Width: =1044
+                ZIndex: =2
+
+            CreateUserAccessForm As form:
+                DataSource: ='User Access Managers'
+                Height: =562
+                NumberOfColumns: =1
+                OnFailure: =Notify("There has been some error please resubmit",NotificationType.Error)
+                OnSuccess: |
+                    =UpdateContext({VarAfterSubmissionlandPage:true});
+                    ResetForm(CreateUserAccessForm);
+                    NewForm(CreateUserAccessForm);
+                Width: =912
+                X: =66
+                Y: =45
+                ZIndex: =3
+
+                Role_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_role"
+                    Default: =ThisItem.Role
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_role)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =62
+                    MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_role)
+                    Required: =true
+                    Update: =Dropdown1.Selected.Value
+                    Width: =912
+                    X: =0
+                    Y: =3
+                    ZIndex: =1
+
+                    DataCardKey666 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (Container1.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    ErrorMessage666 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =Container1.Y + Container1.Height
+                        ZIndex: =3
+
+                    StarVisible666 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =DataCardKey666.Height
+                        Text: ="*"
+                        Visible: |-
+                            =//And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                            true
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey666.Y
+                        ZIndex: =4
+
+                    Container1 As groupContainer.manualLayoutContainer:
+                        BorderColor: =RGBA(12, 77, 162, 1)
+                        BorderThickness: =1
+                        Height: =DataCardValue665.Height
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Width: =DataCardValue665.Width
+                        X: =DataCardKey667.X + DataCardKey667.Width
+                        Y: =10
+                        ZIndex: =6
+
+                        Dropdown1 As dropdown:
+                            AccessibleLabel: ="Select role type"
+                            AllowEmptySelection: =true
+                            BorderColor: =RGBA(12, 77, 162, 1)
+                            BorderThickness: =1
+                            Items: =["Admin","User"]
+                            Width: =511.2
+                            ZIndex: =1
+
+                "'Upload Extract Document Rights_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_uploadextractdocumentrights"
+                    Default: =ThisItem.'Upload Extract Document Rights'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_uploadextractdocumentrights)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =86
+                    Required: =false
+                    Update: =DataCardValue1077.Selected.Value
+                    Width: =912
+                    X: =0
+                    Y: =4
+                    ZIndex: =1
+
+                    DataCardKey1077 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue1077.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue1077 As combobox:
+                        AccessibleLabel: ="test"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        DefaultSelectedItems: =[Parent.Default]
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        IsSearchable: =false
+                        Items: =Choices('Upload Extract Document Rights (User Access Managers)')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectMultiple: =false
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey1077.X + DataCardKey1077.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage1077 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1077.Y + DataCardValue1077.Height
+                        ZIndex: =3
+
+                    StarVisible1077 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey1077.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1077.Y
+                        ZIndex: =4
+
+                    Label3 As label:
+                        Color: =RGBA(0, 18, 107, 1)
+                        Height: =20
+                        Size: =10
+                        Text: ="User can upload document"
+                        Width: =248
+                        X: =40
+                        Y: =60
+                        ZIndex: =5
+
+                "'View Rights_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_viewrights"
+                    Default: =ThisItem.'View Rights'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_viewrights)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =95
+                    Required: =false
+                    Update: =DataCardValue1079.Selected.Value
+                    Width: =912
+                    X: =0
+                    Y: =5
+                    ZIndex: =1
+
+                    DataCardKey1079 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue1079.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue1079 As combobox:
+                        AccessibleLabel: ="test"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        DefaultSelectedItems: =[Parent.Default]
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        IsSearchable: =false
+                        Items: =Choices('View Rights (User Access Managers)')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectMultiple: =false
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey1079.X + DataCardKey1079.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage1079 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1079.Y + DataCardValue1079.Height
+                        ZIndex: =3
+
+                    StarVisible1079 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey1079.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1079.Y
+                        ZIndex: =4
+
+                    Label4 As label:
+                        Color: =RGBA(0, 18, 107, 1)
+                        Height: =20
+                        Size: =10
+                        Text: ="User Can only view document details"
+                        Width: =306
+                        X: =30
+                        Y: =60
+                        ZIndex: =5
+
+                "'Edit Rights_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_editrights"
+                    Default: =ThisItem.'Edit Rights'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_editrights)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =95
+                    Required: =false
+                    Update: =DataCardValue1082.Selected.Value
+                    Width: =912
+                    X: =0
+                    Y: =6
+                    ZIndex: =1
+
+                    DataCardKey1082 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue1082.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue1082 As combobox:
+                        AccessibleLabel: ="test"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        DefaultSelectedItems: =[Parent.Default]
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        IsSearchable: =false
+                        Items: =Choices('Edit Rights (User Access Managers)')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectMultiple: =false
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey1082.X + DataCardKey1082.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage1082 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1082.Y + DataCardValue1082.Height
+                        ZIndex: =3
+
+                    StarVisible1082 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey1082.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1082.Y
+                        ZIndex: =4
+
+                    Label5 As label:
+                        Color: =RGBA(0, 18, 107, 1)
+                        Height: =20
+                        Size: =10
+                        Text: ="User can edit document details"
+                        Width: =253
+                        X: =30
+                        Y: =75
+                        ZIndex: =5
+
+                "'Generate Report Rights_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_generatereportrights"
+                    Default: =ThisItem.'Generate Report Rights'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_generatereportrights)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =93
+                    Required: =false
+                    Update: =DataCardValue1237.Selected.Value
+                    Width: =912
+                    X: =0
+                    Y: =7
+                    ZIndex: =1
+
+                    DataCardKey1242 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue1237.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue1237 As combobox:
+                        AccessibleLabel: ="test"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        DefaultSelectedItems: =[Parent.Default]
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        IsSearchable: =false
+                        Items: =Choices('Generate Report Rights (User Access Managers)')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectMultiple: =false
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey1242.X + DataCardKey1242.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage1242 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1237.Y + DataCardValue1237.Height
+                        ZIndex: =3
+
+                    StarVisible1242 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey1242.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1242.Y
+                        ZIndex: =4
+
+                    Label6 As label:
+                        Color: =RGBA(0, 18, 107, 1)
+                        Height: =21
+                        Size: =10
+                        Text: ="User can generate report"
+                        Width: =231
+                        X: =30
+                        Y: =71
+                        ZIndex: =5
+
+                "'Manage User Access_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_manageuseraccess"
+                    Default: =ThisItem.'Manage User Access'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_manageuseraccess)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =90
+                    Required: =false
+                    Update: =DataCardValue1238.Selected.Value
+                    Width: =912
+                    X: =0
+                    Y: =8
+                    ZIndex: =1
+
+                    DataCardKey1243 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue1238.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue1238 As combobox:
+                        AccessibleLabel: ="test"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        DefaultSelectedItems: =[Parent.Default]
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        IsSearchable: =false
+                        Items: =Choices('Manage User Access (User Access Managers)')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectMultiple: =false
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey1243.X + DataCardKey1243.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage1243 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1238.Y + DataCardValue1238.Height
+                        ZIndex: =3
+
+                    StarVisible1243 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey1243.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1243.Y
+                        ZIndex: =4
+
+                    Label7 As label:
+                        Color: =RGBA(0, 18, 107, 1)
+                        Height: =30
+                        Size: =10
+                        Text: ="User can manager aceess"
+                        Width: =211
+                        X: =30
+                        Y: =60
+                        ZIndex: =5
+
+                "'Manage Logs_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_managelogs"
+                    Default: =ThisItem.'Manage Logs'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_managelogs)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =91
+                    Required: =false
+                    Update: =DataCardValue1239.Selected.Value
+                    Width: =912
+                    X: =0
+                    Y: =9
+                    ZIndex: =1
+
+                    DataCardKey1244 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue1239.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue1239 As combobox:
+                        AccessibleLabel: ="test"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        DefaultSelectedItems: =[Parent.Default]
+                        DisplayFields: =["Value"]
+                        DisplayMode: =Parent.DisplayMode
+                        IsSearchable: =false
+                        Items: =Choices('Manage Logs (User Access Managers)')
+                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                        SearchFields: =["Value"]
+                        SearchItems: =[]
+                        SelectMultiple: =false
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey1244.X + DataCardKey1244.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage1244 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1239.Y + DataCardValue1239.Height
+                        ZIndex: =3
+
+                    StarVisible1244 As label:
+                        Align: =Align.Center
+                        Height: =DataCardKey1244.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1244.Y
+                        ZIndex: =4
+
+                    Label8 As label:
+                        Color: =RGBA(0, 18, 107, 1)
+                        Height: =18
+                        Size: =10
+                        Text: ="User can manage logs"
+                        Width: =231
+                        X: =30
+                        Y: =72
+                        ZIndex: =5
+
+                FirstName_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_firstname"
+                    Default: =ThisItem.'First Name'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_firstname)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_firstname)
+                    Required: =true
+                    Update: =DataCardValue665.Text
+                    Width: =912
+                    X: =0
+                    Y: =0
+                    ZIndex: =17
+
+                    DataCardKey667 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue665.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue665 As text:
+                        AccessibleLabel: ="First name"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey667.X + DataCardKey667.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage667 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue665.Y + DataCardValue665.Height
+                        ZIndex: =3
+
+                    StarVisible667 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =DataCardKey667.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey667.Y
+                        ZIndex: =4
+
+                LastName_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_lastname"
+                    Default: =ThisItem.'Last Name'
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_lastname)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_lastname)
+                    Required: =true
+                    Update: =DataCardValue667.Text
+                    Width: =912
+                    X: =0
+                    Y: =1
+                    ZIndex: =17
+
+                    DataCardKey669 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue667.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue667 As text:
+                        AccessibleLabel: ="Last Name"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey669.X + DataCardKey669.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage669 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue667.Y + DataCardValue667.Height
+                        ZIndex: =3
+
+                    StarVisible669 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =DataCardKey669.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey669.Y
+                        ZIndex: =4
+
+                Email_DataCard1 As typedDataCard.textualEditCard:
+                    BorderStyle: =BorderStyle.Solid
+                    DataField: ="ispl_email"
+                    Default: =ThisItem.Email
+                    DisplayMode: =Parent.DisplayMode
+                    DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_email)
+                    Fill: =RGBA(0, 0, 0, 0)
+                    Height: =50
+                    MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_email)
+                    Required: =true
+                    Update: =DataCardValue895.Text
+                    Width: =912
+                    X: =0
+                    Y: =2
+                    ZIndex: =17
+
+                    DataCardKey895 As label:
+                        AutoHeight: =true
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.4
+                        Wrap: =false
+                        X: =30
+                        Y: =10 + (DataCardValue895.Height / 2) - (Self.Height / 2)
+                        ZIndex: =1
+
+                    DataCardValue895 As text:
+                        AccessibleLabel: ="Email"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        Default: =Parent.Default
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Tooltip: =Parent.DisplayName
+                        Width: =(Parent.Width - 60) * 0.6
+                        X: =DataCardKey895.X + DataCardKey895.Width
+                        Y: =10
+                        ZIndex: =2
+
+                    ErrorMessage895 As label:
+                        AutoHeight: =true
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue895.Y + DataCardValue895.Height
+                        ZIndex: =3
+
+                    StarVisible895 As label:
+                        Align: =Align.Center
+                        Color: =RGBA(255, 0, 0, 1)
+                        Height: =DataCardKey895.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey895.Y
+                        ZIndex: =4
+
+            Button18 As button:
+                DisabledColor: =RGBA(255, 255, 255, 1)
+                DisabledFill: =RGBA(166, 166, 166, 1)
+                DisplayMode: =If(CreateUserAccessForm.Valid,DisplayMode.Edit,DisplayMode.Disabled)
+                Fill: |
+                    =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Normal
+                Height: =38
+                OnSelect: |+
+                    =SubmitForm(CreateUserAccessForm);
+                    
+                Text: ="Create User"
+                Visible: |
+                    =true
+                Width: =180
+                X: =419
+                Y: =610
+                ZIndex: =4
+
+            Icon5 As icon.Cancel:
+                AccessibleLabel: ="Close the panel"
+                Color: =RGBA(255, 255, 255, 1)
+                Height: =29
+                Icon: =Icon.Cancel
+                OnSelect: |-
+                    =UpdateContext({VarAddUSerAccessPopUp:false})
+                TabIndex: =
+                Width: =35
+                X: =989
+                Y: =6
+                ZIndex: =5
+
+    DeactivateUserGrp As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =30
+
+        Rect_BakColor As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.18)
+            Height: =768
+            Visible: |
+                =VarDeactivateUserPopup
+            Width: =1366
+            ZIndex: =28
+
+        BackgroundSupport As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =263
+            Text: =""
+            Visible: |
+                =VarDeactivateUserPopup
+            Width: =518
+            X: =461
+            Y: =180
+            ZIndex: =29
+
+        LBL_MSG2 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =18
+            Text: ="Are you sure?"
+            Visible: |
+                =VarDeactivateUserPopup
+            Width: =381
+            X: =519
+            Y: =210
+            ZIndex: =30
+
+        LBL_MSG1 As label:
+            Align: =Align.Center
+            Color: =RGBA(77, 77, 77, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Do you really want to deactivate User " & gal_userAccess.Selected.'First Name' & " "&gal_userAccess.Selected.'Last Name' & " ."
+            Visible: |
+                =VarDeactivateUserPopup
+            Width: =447
+            X: =496
+            Y: =274
+            ZIndex: =31
+
+        LBL_MSG As label:
+            Align: =Align.Center
+            Color: =RGBA(77, 77, 77, 1)
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="You won't be able to revert this."
+            Visible: |
+                =VarDeactivateUserPopup
+            Width: =447
+            X: =496
+            Y: =299
+            ZIndex: =32
+
+        Cancelbtn As button:
+            Fill: =RGBA(143, 134, 134, 1)
+            OnSelect: |-
+                =UpdateContext({VarDeactivateUserPopup:false})
+            Size: =13
+            Text: ="CANCEL"
+            Visible: |
+                =VarDeactivateUserPopup
+            Width: =125
+            X: =572
+            Y: =364
+            ZIndex: =33
+
+        Deactivate As button:
+            Fill: =RGBA(255, 0, 0, 1)
+            OnSelect: |-
+                =Patch(
+                    'Deactivated Users Lists',
+                    Defaults('Deactivated Users Lists'),
+                    {
+                        Name: gal_userAccess.Selected.'First Name'& " " & gal_userAccess.Selected.'Last Name',
+                        'Email Address': gal_userAccess.Selected.Email
+                    }
+                );
+                RemoveIf(
+                    'User Access Managers',
+                    ID = gal_userAccess.Selected.ID
+                );
+                Notify(
+                    "User " & gal_userAccess.Selected.'First Name' & "" & gal_userAccess.Selected.'Last Name' & " Is Successfully deactivated.",
+                    NotificationType.Success
+                );
+                UpdateContext({VarDeactivateUserPopup: false});
+            Size: =13
+            Text: ="DEACTIVATE"
+            Visible: |
+                =VarDeactivateUserPopup
+            Width: =128
+            X: =744
+            Y: =364
+            ZIndex: =34
+
+    AfterSubmissionLandingPageGrp As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =31
+
+        LandingpageRectangle As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.2)
+            Height: =768
+            Visible: |
+                =VarAfterSubmissionlandPage
+            Width: =1366
+            ZIndex: =22
+
+        BTN_back As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =278
+            Text: =""
+            Visible: |
+                =VarAfterSubmissionlandPage
+            Width: =532
+            X: =435
+            Y: =165
+            ZIndex: =23
+
+        btn_OK As button:
+            Fill: =RGBA(12, 77, 162, 1)
+            Height: =33
+            OnSelect: |-
+                =UpdateContext({VarAfterSubmissionlandPage:false});
+                ResetForm(CreateUserAccessForm);
+                NewForm(CreateUserAccessForm);
+            Text: ="Ok"
+            Visible: |
+                =VarAfterSubmissionlandPage
+            Width: =61
+            X: =670
+            Y: =384
+            ZIndex: =24
+
+        Icon_Check As icon.CheckBadge:
+            Color: =RGBA(99, 139, 44, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.CheckBadge
+            Visible: |
+                =VarAfterSubmissionlandPage
+            X: =669
+            Y: =198
+            ZIndex: =25
+
+        MSG_LBL1 As label:
+            Align: =Align.Center
+            FontWeight: =FontWeight.Bold
+            Height: =26
+            Size: =15
+            Text: ="Thank You !"
+            Visible: |
+                =VarAfterSubmissionlandPage
+            Width: =207
+            X: =597
+            Y: =287
+            ZIndex: =26
+
+        MSG_LBL As label:
+            Align: =Align.Center
+            Height: =32
+            Size: =11
+            Text: ="Your submission has been saved"
+            Visible: |
+                =VarAfterSubmissionlandPage
+            Width: =300
+            X: =560
+            Y: =313
+            ZIndex: =27
+
+    GrpUserAccessEditScreen As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =36
+
+        Rectangle_forBack As rectangle:
+            AccessibleLabel: ="test"
+            Fill: =RGBA(0, 0, 0, 0.24)
+            FocusedBorderThickness: =1
+            Height: =768
+            TabIndex: =0
+            Visible: |-
+                =VarEditDetailsScreen
+                //true
+            Width: =1366
+            ZIndex: =35
+
+        Button_Back As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =1
+            Height: =768
+            Text: =""
+            Visible: |-
+                =VarEditDetailsScreen
+                //true
+            Width: =605
+            X: =761
+            ZIndex: =36
+
+        UserAccessEditScreen As form:
+            DataSource: ='User Access Managers'
+            FocusedBorderThickness: =1
+            Height: =717
+            NumberOfColumns: =1
+            TabIndex: =0
+            Visible: |-
+                =VarEditDetailsScreen
+                //true
+            Width: =578
+            X: =788
+            Y: =51
+            ZIndex: =37
+
+            Role_DataCard2 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Role"
+                Default: =ThisItem.Role
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_role)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_role)
+                Required: =false
+                Update: =DataCardValue1081.Text
+                Width: =578
+                X: =0
+                Y: =3
+                ZIndex: =1
+
+                DataCardKey1081 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1081 As text:
+                    AccessibleLabel: ="Role type"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =1
+                    Default: =gal_userAccess.Selected.Role
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1081.Y + DataCardKey1081.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1081 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1081.Y + DataCardValue1081.Height
+                    ZIndex: =3
+
+                StarVisible1081 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1081.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1081.Y
+                    ZIndex: =4
+
+            UploadExtractDocumentRights_DataCard2 As typedDataCard.toggleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="UploadExtractDocumentRights"
+                Default: =ThisItem.'Upload Extract Document Rights'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_uploadextractdocumentrights)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue1088.Value
+                Width: =578
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey1093 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: ="Document Upload"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1088 As toggleSwitch:
+                    AccessibleLabel: ="Rights to upload document"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =gal_userAccess.Selected.'Upload Extract Document Rights'
+                    DisplayMode: =Parent.DisplayMode
+                    FalseText: ="No"
+                    Tooltip: =Parent.DisplayName
+                    TrueText: ="Ye"
+                    X: =30
+                    Y: =DataCardKey1093.Y + DataCardKey1093.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1093 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1088.Y + DataCardValue1088.Height
+                    ZIndex: =3
+
+                StarVisible1093 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1093.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1093.Y
+                    ZIndex: =4
+
+            "'View Rights_DataCard2' As typedDataCard.toggleEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="View_x0020_Rights"
+                Default: =ThisItem.'View Rights'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_viewrights)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue1089.Value
+                Width: =578
+                X: =0
+                Y: =5
+                ZIndex: =1
+
+                DataCardKey1094 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1089 As toggleSwitch:
+                    AccessibleLabel: ="Rights to view document"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =gal_userAccess.Selected.'View Rights'
+                    DisplayMode: =Parent.DisplayMode
+                    FalseText: ="No"
+                    Tooltip: =Parent.DisplayName
+                    TrueText: ="Yes"
+                    X: =30
+                    Y: =DataCardKey1094.Y + DataCardKey1094.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1094 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1089.Y + DataCardValue1089.Height
+                    ZIndex: =3
+
+                StarVisible1094 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1094.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1094.Y
+                    ZIndex: =4
+
+            "'Edit Rights_DataCard3' As typedDataCard.toggleEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Edit_x0020_Rights"
+                Default: =ThisItem.'Edit Rights'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_editrights)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue1090.Value
+                Width: =578
+                X: =0
+                Y: =6
+                ZIndex: =1
+
+                DataCardKey1095 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1090 As toggleSwitch:
+                    AccessibleLabel: ="Edit rights"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =gal_userAccess.Selected.'Edit Rights'
+                    DisplayMode: =Parent.DisplayMode
+                    FalseText: ="No"
+                    Tooltip: =Parent.DisplayName
+                    TrueText: ="Ye"
+                    X: =30
+                    Y: =DataCardKey1095.Y + DataCardKey1095.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1095 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1090.Y + DataCardValue1090.Height
+                    ZIndex: =3
+
+                StarVisible1095 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1095.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1095.Y
+                    ZIndex: =4
+
+            "'Generate Report Rights_DataCard2' As typedDataCard.toggleEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Generate_x0020_Report_x0020_Righ"
+                Default: =ThisItem.'Generate Report Rights'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_generatereportrights)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue1091.Value
+                Width: =578
+                X: =0
+                Y: =7
+                ZIndex: =1
+
+                DataCardKey1096 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: ="Generate Report"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1091 As toggleSwitch:
+                    AccessibleLabel: ="Rights of generating report"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =gal_userAccess.Selected.'Generate Report Rights'
+                    DisplayMode: =Parent.DisplayMode
+                    FalseText: ="No"
+                    Tooltip: =Parent.DisplayName
+                    TrueText: ="Yes"
+                    X: =30
+                    Y: =DataCardKey1096.Y + DataCardKey1096.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1096 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1091.Y + DataCardValue1091.Height
+                    ZIndex: =3
+
+                StarVisible1096 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1096.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1096.Y
+                    ZIndex: =4
+
+            "'Manage Logs_DataCard2' As typedDataCard.toggleEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Manage_x0020_Logs"
+                Default: =ThisItem.'Manage Logs'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_managelogs)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue1092.Value
+                Width: =578
+                X: =0
+                Y: =8
+                ZIndex: =1
+
+                DataCardKey1097 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1092 As toggleSwitch:
+                    AccessibleLabel: ="Rights to manage"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =gal_userAccess.Selected.'Manage User Access'
+                    DisplayMode: =Parent.DisplayMode
+                    FalseText: ="No"
+                    Tooltip: =Parent.DisplayName
+                    TrueText: ="Ye"
+                    X: =30
+                    Y: =DataCardKey1097.Y + DataCardKey1097.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1097 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1092.Y + DataCardValue1092.Height
+                    ZIndex: =3
+
+                StarVisible1097 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1097.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1097.Y
+                    ZIndex: =4
+
+            "'Manage User Access_DataCard3' As typedDataCard.toggleEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Manage_x0020_User_x0020_Access"
+                Default: =ThisItem.'Manage User Access'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_manageuseraccess)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue1093.Value
+                Width: =578
+                X: =0
+                Y: =9
+                ZIndex: =1
+
+                DataCardKey1098 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1093 As toggleSwitch:
+                    AccessibleLabel: ="Rights to manage other user"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =gal_userAccess.Selected.'Manage User Access'
+                    DisplayMode: =Parent.DisplayMode
+                    FalseText: ="No"
+                    Tooltip: =Parent.DisplayName
+                    TrueText: ="Ye"
+                    X: =30
+                    Y: =DataCardKey1098.Y + DataCardKey1098.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1098 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1093.Y + DataCardValue1093.Height
+                    ZIndex: =3
+
+                StarVisible1098 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1098.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1098.Y
+                    ZIndex: =4
+
+            FirstName_DataCard2 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="FirstName"
+                Default: =ThisItem.'First Name'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_firstname)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_firstname)
+                Required: =false
+                Update: =DataCardValue1083.Text
+                Width: =578
+                X: =0
+                Y: =0
+                ZIndex: =33
+
+                DataCardKey1083 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: ="First Name"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1083 As text:
+                    AccessibleLabel: ="First name"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =1
+                    Default: =gal_userAccess.Selected.'First Name'
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1083.Y + DataCardKey1083.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1083 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1083.Y + DataCardValue1083.Height
+                    ZIndex: =3
+
+                StarVisible1083 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1083.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1083.Y
+                    ZIndex: =4
+
+            LastName_DataCard2 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="LastName"
+                Default: =ThisItem.'Last Name'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_lastname)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_lastname)
+                Required: =false
+                Update: =DataCardValue1084.Text
+                Width: =578
+                X: =0
+                Y: =1
+                ZIndex: =33
+
+                DataCardKey1084 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: ="Last Name"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1084 As text:
+                    AccessibleLabel: ="Last name"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =1
+                    Default: =gal_userAccess.Selected.'Last Name'
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1084.Y + DataCardKey1084.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1084 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1084.Y + DataCardValue1084.Height
+                    ZIndex: =3
+
+                StarVisible1084 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1084.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1084.Y
+                    ZIndex: =4
+
+            Email_DataCard2 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="Email"
+                Default: =ThisItem.Email
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_email)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_email)
+                Required: =false
+                Update: =DataCardValue1085.Text
+                Width: =578
+                X: =0
+                Y: =2
+                ZIndex: =33
+
+                DataCardKey1085 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1085 As text:
+                    AccessibleLabel: ="Email"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    BorderThickness: =1
+                    Default: =gal_userAccess.Selected.'Upload Extract Document Rights'
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1085.Y + DataCardKey1085.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1085 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1085.Y + DataCardValue1085.Height
+                    ZIndex: =3
+
+                StarVisible1085 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1085.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1085.Y
+                    ZIndex: =4
+
+        Button_HIde As button:
+            DisplayMode: =DisplayMode.View
+            FocusedBorderThickness: =1
+            Height: =38
+            Text: =""
+            Visible: =VarEditDetailsScreen
+            Width: =605
+            X: =761
+            ZIndex: =38
+
+        Icon_Left As icon.ChevronLeft:
+            AccessibleLabel: ="Go back to your screen"
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =1
+            Height: =38
+            Icon: =Icon.ChevronLeft
+            OnSelect: |-
+                =UpdateContext({VarEditDetailsScreen:false})
+            PaddingBottom: =7
+            PaddingTop: =7
+            TabIndex: =0
+            Visible: |-
+                =VarEditDetailsScreen
+                //true
+            Width: =27
+            X: =766
+            Y: =1
+            ZIndex: =39
+
+        Icon_Save As icon.Save:
+            AccessibleLabel: ="Save your changes"
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =1
+            Height: =35
+            Icon: =Icon.Save
+            OnSelect: |-
+                =Patch(
+                    'User Access Managers',
+                    LookUp(
+                        'User Access Managers',
+                        ID = gal_userAccess.Selected.ID
+                    ),
+                    {
+                        'First Name': DataCardValue1083.Text,
+                        'Last Name': DataCardValue1084.Text,
+                        Email: DataCardValue1085.Text,
+                        'Upload Extract Document Rights': DataCardValue1088.Value,
+                        'Generate Report Rights': DataCardValue1091.Value,
+                        'View Rights': DataCardValue1089.Value,
+                        'Manage Logs': DataCardValue1092.Value,
+                        'Edit Rights': DataCardValue1090.Value,
+                        'Manage User Access': DataCardValue1093.Value
+                    }
+                );
+                Refresh('User Access Managers');UpdateContext({VarEditDetailsScreen:false})
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            TabIndex: =0
+            Visible: =VarEditDetailsScreen
+            Width: =35
+            X: =1321
+            Y: =1
+            ZIndex: =40
+

@@ -1,0 +1,49 @@
+App As appinfo:
+    BackEnabled: =true
+    OnStart: |-
+        =ClearCollect(
+            colNavigation,
+            Table(
+                {
+                    Title: "Home",
+                    Screen: Home
+                //Icon: true
+                },
+                {
+                    Title: "Documents",
+                    Screen: Documents
+                },
+                {
+                    Title: "Extracted Data",
+                    Screen: 'Extracted Data'
+                },
+                {
+                    Title: "Reports",
+                    Screen: Reports
+                },
+                {
+                    Title: "Logs",
+                    Screen: Documents
+                },
+                {
+                    Title: "User Access",
+                    Screen: 'User Access'
+                }
+            )
+        );
+        ClearCollect(
+            ColCurrentLoggedInUserDetails,
+            Filter(
+                'User Access Managers',
+                Email = User().Email
+            )
+        )
+    Theme: =PowerAppsTheme
+
+    Host As hostControl.DefaultHostControlVariant:
+        OnCancel: =false
+        OnEdit: =false
+        OnNew: =false
+        OnSave: =false
+        OnView: =false
+

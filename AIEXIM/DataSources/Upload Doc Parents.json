@@ -1,0 +1,260 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ispl_uploaddocparents",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ispl_uploaddocparent",
+    "MaxGetRowsCount": 2000,
+    "Name": "Upload Doc Parents",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "ispl_attchmentfile": "AttchmentFile",
+      "ispl_company": "Company",
+      "ispl_emailofuploader": "Email Of Uploader",
+      "ispl_extracteddocumentlist_IDFromAttachmentTab": "Extracted Document Lists",
+      "ispl_id": "ID",
+      "ispl_name": "Name",
+      "ispl_source": "Source",
+      "ispl_typeofdocument": "Type Of Document",
+      "ispl_uploaddocparent_Annotations": "Notes",
+      "ispl_uploaddocparent_AsyncOperations": "System Jobs",
+      "ispl_uploaddocparent_BulkDeleteFailures": "Bulk Delete Failures",
+      "ispl_uploaddocparent_DuplicateBaseRecord": "Duplicate Records (ispl_uploaddocparent_DuplicateBaseRecord)",
+      "ispl_uploaddocparent_DuplicateMatchingRecord": "Duplicate Records (ispl_uploaddocparent_DuplicateMatchingRecord)",
+      "ispl_uploaddocparent_FileAttachments": "FileAttachments",
+      "ispl_uploaddocparent_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ispl_uploaddocparent_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ispl_uploaddocparent_ProcessSession": "Process Sessions",
+      "ispl_uploaddocparent_SyncErrors": "Sync Errors",
+      "ispl_uploaddocparentid": "Upload Doc Parent",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Upload Doc Parents",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Upload Doc Parents (Views)",
+    "Name": "_ispl_uploaddocparent_views",
+    "RelatedEntityName": "Upload Doc Parents",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "2da7652b-bdfe-4ca2-ad0d-052b1e15d779": "Inactive Upload Doc Parents",
+      "4b1e70c4-55ca-471d-bb0c-2cb1f6841630": "Upload Doc Parent Associated View",
+      "77b0ea8c-7b53-4dea-8bff-821c02cd1d1b": "Active Upload Doc Parents",
+      "7f7da420-121d-4887-8984-4f84144aaccf": "Upload Doc Parent Lookup View",
+      "93e1249d-0aed-47ed-afc8-21674b3747a4": "Upload Doc Parent Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "CompanyType",
+    "Name": "ispl_companytype",
+    "OptionSetInfoNameMapping": {
+      "170620000": "Company 1",
+      "170620001": "Company 2",
+      "170620002": "Company 3",
+      "170620003": "Company 4"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Upload Doc Parents"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Shipping Bill - Summary Reports"
+      },
+      "OptionSetReferenceItem10": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Shipping Bill Export - Detailed Reports"
+      },
+      "OptionSetReferenceItem2": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Import SEZ - Summary Reports"
+      },
+      "OptionSetReferenceItem3": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Import SEZ - Detailed Reports"
+      },
+      "OptionSetReferenceItem4": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Export SEZ - Shipping Summary Reports"
+      },
+      "OptionSetReferenceItem5": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Export SEZ - Shipping Bill Detailed Reports"
+      },
+      "OptionSetReferenceItem6": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Bill Of Export Reports"
+      },
+      "OptionSetReferenceItem7": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Bill Of Entry - ICEGate Summary Reports"
+      },
+      "OptionSetReferenceItem8": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Bill of Entry Detailed Report - ICEGates"
+      },
+      "OptionSetReferenceItem9": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_company",
+    "RelatedEntityName": "Upload Doc Parents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "DocType",
+    "Name": "ispl_doctype",
+    "OptionSetInfoNameMapping": {
+      "170620000": "Bill Of Entry Import",
+      "170620001": "Shipping Bill Export",
+      "170620002": "SEZ Bill of Entry",
+      "170620003": "SEZ Shipping Bill",
+      "170620004": "SEZ Bill of Export"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_typeofdocument",
+        "OptionSetReferenceEntityName": "Upload Doc Parents"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ispl_typeofdocument",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_typeofdocument",
+    "RelatedEntityName": "Upload Doc Parents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SourceType",
+    "Name": "ispl_sourcetype",
+    "OptionSetInfoNameMapping": {
+      "170620000": "Mail",
+      "170620001": "Upload"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_source",
+        "OptionSetReferenceEntityName": "Upload Doc Parents"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Shipping Bill - Summary Reports"
+      },
+      "OptionSetReferenceItem10": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      },
+      "OptionSetReferenceItem11": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Shipping Bill Export - Detailed Reports"
+      },
+      "OptionSetReferenceItem2": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Import SEZ - Summary Reports"
+      },
+      "OptionSetReferenceItem3": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Import SEZ - Detailed Reports"
+      },
+      "OptionSetReferenceItem4": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Export SEZ - Shipping Summary Reports"
+      },
+      "OptionSetReferenceItem5": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Export SEZ - Shipping Bill Detailed Reports"
+      },
+      "OptionSetReferenceItem6": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Bill Of Export Reports"
+      },
+      "OptionSetReferenceItem7": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Bill Of Entry - ICEGate Summary Reports"
+      },
+      "OptionSetReferenceItem8": {
+        "OptionSetReferenceColumnName": "cr1c5_source",
+        "OptionSetReferenceEntityName": "Bill of Entry Detailed Report - ICEGates"
+      },
+      "OptionSetReferenceItem9": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Bill of Entry Detailed Report - ICEGates"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_source",
+    "RelatedEntityName": "Upload Doc Parents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Upload Doc Parents)",
+    "Name": "ispl_uploaddocparent_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Upload Doc Parents"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Upload Doc Parents",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Upload Doc Parents)",
+    "Name": "ispl_uploaddocparent_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Upload Doc Parents"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Upload Doc Parents",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,42 @@
+[
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 16,
+    "LibraryId": "00b4d28f-2b3c-4b5f-a5c2-02b1e872693a",
+    "LibraryLogicalName": "mansi_library_fc4be",
+    "LibraryVersion": "2023-11-02T05:28:54Z",
+    "OriginalComponentDefinitionTemplateId": "0df7ecc140de4b0e8dab7607d9ba6b36",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-11-01T05:06:49.418+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 1,
+    "LibraryId": "00b4d28f-2b3c-4b5f-a5c2-02b1e872693a",
+    "LibraryLogicalName": "mansi_library_fc4be",
+    "LibraryVersion": "2023-11-02T05:28:54Z",
+    "OriginalComponentDefinitionTemplateId": "d1646c6fd24d4f43a603f9178ed5a671",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-11-01T05:06:49.418+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 2,
+    "LibraryId": "00b4d28f-2b3c-4b5f-a5c2-02b1e872693a",
+    "LibraryLogicalName": "mansi_library_fc4be",
+    "LibraryVersion": "2023-11-02T05:28:54Z",
+    "OriginalComponentDefinitionTemplateId": "1440625c018a4e9a98a2fd3da4125b20",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-11-01T05:06:49.418+00:00"
+  },
+  {
+    "HasLibraryLogicalName": true,
+    "InstanceCount": 2,
+    "LibraryId": "00b4d28f-2b3c-4b5f-a5c2-02b1e872693a",
+    "LibraryLogicalName": "mansi_library_fc4be",
+    "LibraryVersion": "2023-11-02T05:28:54Z",
+    "OriginalComponentDefinitionTemplateId": "1997b0f200a4444a80d0c021a3413d3e",
+    "RefusedSourceLastTimeSaved": "0001-01-01T00:00:00",
+    "SourceLastTimeSaved": "2023-11-01T05:06:49.418+00:00"
+  }
+]

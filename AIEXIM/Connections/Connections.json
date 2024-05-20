@@ -1,0 +1,375 @@
+{
+  "14c072cb-104c-4a36-873c-5a93101e1ca2": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "ca0e8246-9af6-4e87-a9c8-648916bd6f31": {
+          "value": "shared_sharepointonline_1"
+        },
+        "workflowDisplayName": {
+          "value": "DMS Entry From Application"
+        },
+        "workflowEntityId": {
+          "value": "5930c87f-9ca4-ee11-a568-000d3ac9f67f"
+        },
+        "workflowName": {
+          "value": "88582bc0-3ebd-8c6a-b71c-8cc18b7b2e21"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline_1": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_10": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_2": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_3": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_4": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_5": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_6": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_7": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_8": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "shared_sharepointonline_9": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "workflowDisplayName": {
+          "value": "DMS Entry From Application"
+        },
+        "workflowEntityId": {
+          "value": "5930c87f-9ca4-ee11-a568-000d3ac9f67f"
+        },
+        "workflowName": {
+          "value": "88582bc0-3ebd-8c6a-b71c-8cc18b7b2e21"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "DMSEntryFromApplication"
+    ],
+    "dependencies": {
+      "shared_sharepointonline_1": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_10": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_2": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_3": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_4": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_5": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_6": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_7": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_8": "ca0e8246-9af6-4e87-a9c8-648916bd6f31",
+      "shared_sharepointonline_9": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+    },
+    "dependents": [],
+    "id": "14c072cb-104c-4a36-873c-5a93101e1ca2"
+  },
+  "20ddbd1c-9f6f-4baa-906f-8da088b37662": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "workflowDisplayName": {
+          "value": "Manual Report Download- Dataverse"
+        },
+        "workflowEntityId": {
+          "value": "1760b221-b4f0-ee11-a1fd-002248d6581c"
+        },
+        "workflowName": {
+          "value": "b155b7ca-3205-6e6e-cec2-b19ca80daf79"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e"
+        },
+        "workflowDisplayName": {
+          "value": "Manual Report Download- Dataverse"
+        },
+        "workflowEntityId": {
+          "value": "1760b221-b4f0-ee11-a1fd-002248d6581c"
+        },
+        "workflowName": {
+          "value": "b155b7ca-3205-6e6e-cec2-b19ca80daf79"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ManualReportDownload-Dataverse"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e"
+    },
+    "dependents": [],
+    "id": "20ddbd1c-9f6f-4baa-906f-8da088b37662"
+  },
+  "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Premium",
+      "bypassConsent": true,
+      "displayName": "Microsoft Dataverse",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/dannylevy/fastTrack/Commondataserviceforapps/1.0.1694.3756/commondataserviceforapps/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_commondataserviceforapps",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "20ddbd1c-9f6f-4baa-906f-8da088b37662",
+      "7233fba7-1d5e-4901-aad2-6c011d7c17c0"
+    ],
+    "id": "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e"
+  },
+  "7233fba7-1d5e-4901-aad2-6c011d7c17c0": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "77943510-5d84-4473-ae42-c5cfd801dc63": {
+          "value": "shared_onedriveforbusiness"
+        },
+        "ad217538-eb2c-4107-99b2-066250f68aa5": {
+          "value": "shared_excelonlinebusiness"
+        },
+        "f4a9b2a2-f054-4d24-9c55-b00516cbe2bb": {
+          "value": "shared_office365"
+        },
+        "workflowDisplayName": {
+          "value": "Manual Report Email - Dataverse"
+        },
+        "workflowEntityId": {
+          "value": "7a3b970a-7b08-ef11-9f89-002248d642c4"
+        },
+        "workflowName": {
+          "value": "dfd09935-8476-13de-9e4b-48495922f3f0"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e"
+        },
+        "shared_excelonlinebusiness": {
+          "value": "ad217538-eb2c-4107-99b2-066250f68aa5"
+        },
+        "shared_office365": {
+          "value": "f4a9b2a2-f054-4d24-9c55-b00516cbe2bb"
+        },
+        "shared_onedriveforbusiness": {
+          "value": "77943510-5d84-4473-ae42-c5cfd801dc63"
+        },
+        "workflowDisplayName": {
+          "value": "Manual Report Email - Dataverse"
+        },
+        "workflowEntityId": {
+          "value": "7a3b970a-7b08-ef11-9f89-002248d642c4"
+        },
+        "workflowName": {
+          "value": "dfd09935-8476-13de-9e4b-48495922f3f0"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "ManualReportEmail-Dataverse"
+    ],
+    "dependencies": {
+      "shared_commondataserviceforapps": "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e",
+      "shared_excelonlinebusiness": "ad217538-eb2c-4107-99b2-066250f68aa5",
+      "shared_office365": "f4a9b2a2-f054-4d24-9c55-b00516cbe2bb",
+      "shared_onedriveforbusiness": "77943510-5d84-4473-ae42-c5cfd801dc63"
+    },
+    "dependents": [],
+    "id": "7233fba7-1d5e-4901-aad2-6c011d7c17c0"
+  },
+  "77943510-5d84-4473-ae42-c5cfd801dc63": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "OneDrive for Business",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1689/1.0.1689.3722/onedriveforbusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_onedriveforbusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "7233fba7-1d5e-4901-aad2-6c011d7c17c0"
+    ],
+    "id": "77943510-5d84-4473-ae42-c5cfd801dc63"
+  },
+  "86bd335d-4772-4c37-915a-0fa5a68c2ece": {
+    "appActions": [
+      "Run"
+    ],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Logic flows",
+      "iconUri": "https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
+      "parameterHints": {
+        "ca0e8246-9af6-4e87-a9c8-648916bd6f31": {
+          "value": "shared_sharepointonline"
+        },
+        "workflowDisplayName": {
+          "value": "GetFileContentFormAttachments"
+        },
+        "workflowEntityId": {
+          "value": "797be8af-b877-ee11-8179-002248d5df9a"
+        },
+        "workflowName": {
+          "value": "5829855e-f40a-cb86-2b41-ccc707737fc4"
+        }
+      },
+      "parameterHintsV2": {
+        "shared_sharepointonline": {
+          "value": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+        },
+        "workflowDisplayName": {
+          "value": "GetFileContentFormAttachments"
+        },
+        "workflowEntityId": {
+          "value": "797be8af-b877-ee11-8179-002248d5df9a"
+        },
+        "workflowName": {
+          "value": "5829855e-f40a-cb86-2b41-ccc707737fc4"
+        }
+      }
+    },
+    "datasets": {},
+    "dataSources": [
+      "GetFileContentFormAttachments"
+    ],
+    "dependencies": {
+      "shared_sharepointonline": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+    },
+    "dependents": [],
+    "id": "86bd335d-4772-4c37-915a-0fa5a68c2ece"
+  },
+  "ad217538-eb2c-4107-99b2-066250f68aa5": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Excel Online (Business)",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1686/1.0.1686.3706/excelonlinebusiness/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_excelonlinebusiness",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "7233fba7-1d5e-4901-aad2-6c011d7c17c0"
+    ],
+    "id": "ad217538-eb2c-4107-99b2-066250f68aa5"
+  },
+  "ca0e8246-9af6-4e87-a9c8-648916bd6f31": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "SharePoint",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1685/1.0.1685.3700/sharepointonline/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_sharepointonline",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {
+      "https://ispl13.sharepoint.com/sites/AIEXIM": {
+        "dataSources": {
+          "Bill of Entry-ICEGate Summary Report": {
+            "tableName": "e69c3431-6759-4285-9130-2b547fa6be8c"
+          },
+          "Shipping Bill Export - Summary Report": {
+            "tableName": "380391ee-b4c8-4a92-8ca7-271db23969dd"
+          },
+          "User Access Manager_1": {
+            "tableName": "40976ea2-0b13-4174-856b-0fba7b4767ab"
+          }
+        }
+      },
+      "https://zyduscadila.sharepoint.com/sites/AIEXIMUAT": {
+        "dataSources": {
+          "Bill of entry Detailed Report- Extended": {
+            "tableName": "65547286-e5d2-494f-b0b2-108580cbddfb"
+          },
+          "Import SEZ - Summary Report": {
+            "tableName": "b6a28199-8d96-4c26-b2c2-2e04b11ce6ce"
+          }
+        }
+      }
+    },
+    "dataSources": [
+      "Bill of entry Detailed Report- Extended",
+      "User Access Manager_1",
+      "Import SEZ - Summary Report",
+      "Import SEZ - Detailed Report",
+      "Export SEZ- Shipping Summary Report",
+      "Bill of Entry Detailed Report- ICEGate"
+    ],
+    "dependencies": {},
+    "dependents": [
+      "86bd335d-4772-4c37-915a-0fa5a68c2ece",
+      "14c072cb-104c-4a36-873c-5a93101e1ca2"
+    ],
+    "id": "ca0e8246-9af6-4e87-a9c8-648916bd6f31"
+  },
+  "f4a9b2a2-f054-4d24-9c55-b00516cbe2bb": {
+    "appActions": [],
+    "connectionRef": {
+      "apiTier": "Standard",
+      "displayName": "Office 365 Outlook",
+      "iconUri": "https://connectoricons-prod.azureedge.net/releases/v1.0.1677/1.0.1677.3637/office365/icon.png",
+      "id": "/providers/microsoft.powerapps/apis/shared_office365",
+      "parameterHints": {},
+      "parameterHintsV2": {}
+    },
+    "datasets": {},
+    "dataSources": [],
+    "dependencies": {},
+    "dependents": [
+      "7233fba7-1d5e-4901-aad2-6c011d7c17c0"
+    ],
+    "id": "f4a9b2a2-f054-4d24-9c55-b00516cbe2bb"
+  }
+}

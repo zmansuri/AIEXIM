@@ -1,0 +1,183 @@
+"'Side Bar and Title' As CanvasComponent":
+    Fill: =RGBA(0, 0, 0, 0)
+    Height: =768
+    Items: |-
+        =Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+    Width: =1366
+    X: =0
+    Y: =0
+    ZIndex: =1
+
+    HtmlText1_1 As htmlViewer:
+        Height: =690
+        HtmlText: |-
+            ="<div style='margin-left:-10px; width:215px;height:679px;background-color:#;box-shadow:0 2px 7px 3px  #ccc; border-radius:0px'></div>"
+        Width: =232
+        Y: =78
+        ZIndex: =1
+
+    HtmlText1 As htmlViewer:
+        Height: =102
+        HtmlText: |-
+            ="<div style='margin-left:-10px; width:1366px;height:76px;background-color:#;box-shadow:0 2px 7px 3px  #ccc; border-radius:0px'></div>"
+        Width: =1366
+        ZIndex: =2
+
+    Rectangle2 As rectangle:
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =78
+        Width: =1366
+        ZIndex: =3
+
+    Image1 As image:
+        Height: =79
+        Image: ='MicrosoftTeams-image (1)'
+        Width: =209
+        ZIndex: =4
+
+    Rectangle3 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =55
+        Width: =1
+        X: =209
+        Y: =15
+        ZIndex: =5
+
+    Label1 As label:
+        Color: =RGBA(12, 77, 162, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =79
+        Size: =16
+        Text: ="Export Import Automation App"
+        Width: =391
+        X: =232
+        ZIndex: =6
+
+    ListBox1 As listbox:
+        AccessibleLabel: ="Navigation bar"
+        BorderStyle: =BorderStyle.None
+        Default: ="Home"
+        Fill: =RGBA(245, 244, 244, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =684
+        HoverFill: =RGBA(0, 0, 0, 0)
+        ItemPaddingLeft: =18
+        Items: |-
+            =Table(
+                {MenuItem: "Home"},
+                {MenuItem: "Documents"},
+                {MenuItem: "Extracted Data"},
+                {MenuItem: "Reports"},
+                {MenuItem: "Logs"},
+                {MenuItem: "User Access"}
+            )
+        OnSelect: =
+        SelectMultiple: =false
+        Size: =12
+        Width: =210
+        Y: =84
+        ZIndex: =7
+
+    Rectangle3_1 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =1
+        Width: =211
+        Y: =120
+        ZIndex: =8
+
+    Rectangle3_2 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =1
+        Width: =211
+        Y: =159
+        ZIndex: =9
+
+    Rectangle3_3 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =1
+        Width: =211
+        Y: =198
+        ZIndex: =10
+
+    Rectangle3_4 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =1
+        Width: =211
+        Y: =237
+        ZIndex: =11
+
+    Rectangle3_5 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =1
+        Width: =211
+        Y: =277
+        ZIndex: =12
+
+    Rectangle3_6 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =1
+        Width: =211
+        Y: =316
+        ZIndex: =13
+
+    Rectangle3_7 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =40
+        Width: =1
+        X: =1298
+        Y: =21
+        ZIndex: =14
+
+    Icon1 As icon.Support:
+        Color: =RGBA(12, 77, 162, 1)
+        Height: =30
+        Icon: =Icon.Support
+        PaddingBottom: =2
+        PaddingLeft: =2
+        PaddingRight: =2
+        PaddingTop: =2
+        Width: =30
+        X: =1258
+        Y: =24
+        ZIndex: =15
+
+    Icon1_1 As icon.Support:
+        Color: =RGBA(12, 77, 162, 1)
+        Height: =30
+        Icon: =Icon.Person
+        Width: =30
+        X: =1309
+        Y: =24
+        ZIndex: =16
+
+    Rectangle3_8 As rectangle:
+        Fill: =RGBA(149, 149, 149, 1)
+        Height: =1
+        Width: =211
+        Y: =736
+        ZIndex: =17
+
+    Label1_1 As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Size: =10
+        Text: ="Log Out"
+        Width: =74
+        X: =51
+        Y: =737
+        ZIndex: =18
+
+    Icon1_2 As icon.Support:
+        Color: =RGBA(12, 77, 162, 1)
+        Height: =30
+        Icon: =Icon.Leave
+        PaddingBottom: =5
+        PaddingLeft: =5
+        PaddingRight: =5
+        PaddingTop: =5
+        Width: =30
+        X: =114
+        Y: =738
+        ZIndex: =19
+

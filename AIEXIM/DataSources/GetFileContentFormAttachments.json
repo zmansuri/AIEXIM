@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "ef1cfc5c-9500-4387-9291-b745fc6f7a7f",
+    "Name": "GetFileContentFormAttachments",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "797be8af-b877-ee11-8179-002248d5df9a"
+  }
+]

@@ -1,0 +1,804 @@
+BillOfExportExtractedData As screen:
+    OnVisible: |-
+        =UpdateContext({varShowSubmenu:false});
+        Refresh('Bill Of Export Reports');
+
+    Navigation_15 As Navigation:
+        ApplicationHeader: ="AI EXIM OCR"
+        Height: =768
+        NavigationItems: |-
+            =Table(
+                {
+                    Title: "Home",
+                    Screen: Home
+                    //Icon: true
+                },
+                {
+                    Title: "Documents",
+                    Screen: Documents
+                    //Icon: true
+                },
+                {
+                    Title: "Extracted Data"
+                },
+                {
+                    Title: "Reports",
+                    Screen: Reports
+                },
+                {
+                    Title: "Logs",
+                    Screen: Logs
+                },
+                {
+                    Title: "User Access",
+                    Screen: 'User Access'
+                }
+            )
+
+    LabelExtractedData_5 As label:
+        Height: =106
+        Size: =21
+        Text: ="Extracted Data Screen."
+        Width: =318
+        X: =588
+        Y: =285
+        ZIndex: =1
+
+    Report_extracted As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Generate Report Rights'= true, DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =37
+        HoverFill: =
+        OnSelect: =Navigate(Reports,ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =5
+        Y: =182
+        ZIndex: =3
+
+    Logs_extracted As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage Logs'= true, DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =31
+        HoverFill: =
+        OnSelect: =Navigate(Logs,ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =5
+        Y: =219
+        ZIndex: =4
+
+    UserAccess_Extracted As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage User Access'= true && First(ColCurrentLoggedInUserDetails).Role="Admin", DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =32
+        HoverFill: =
+        OnSelect: =Navigate('User Access',ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =4
+        Y: =254
+        ZIndex: =5
+
+    Button_BackIMAGE As button:
+        BorderColor: =RGBA(186, 186, 186, 1)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =
+        DisabledColor: =
+        Fill: =RGBA(12, 77, 162, 1)
+        Height: =38
+        HoverBorderColor: =
+        HoverColor: =
+        HoverFill: =
+        PressedBorderColor: =
+        PressedColor: =
+        PressedFill: =
+        Text: =""
+        Width: =1056
+        X: =269
+        Y: =174
+        ZIndex: =6
+
+    "galExtractedBillofExport As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtered"
+        AccessibleLabel: ="TEST"
+        BorderStyle: =BorderStyle.None
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =525
+        Items: |-
+            =Sort(
+                Filter(
+                    AddColumns(
+                        'Bill Of Export Reports',
+                        txtExporterAddress,
+                        'Exporter Address First line'
+                    ),
+                    StartsWith(
+                        'Bill Of Export No',
+                        txtSearchBillOfExport.Text
+                    ) || StartsWith(
+                        'Bill Of Export Date',
+                        txtSearchBillOfExport.Text
+                    ) || StartsWith(
+                        'GST - Invoice No',
+                        txtSearchBillOfExport.Text
+                    ) || StartsWith(
+                        'Originating From',
+                        txtSearchBillOfExport.Text
+                    ) || StartsWith(
+                        txtExporterAddress,
+                        txtSearchBillOfExport.Text
+                    ) || StartsWith(
+                        'Invoice value USD',
+                        txtSearchBillOfExport.Text
+                    ) || StartsWith(
+                        Currency,
+                        txtSearchBillOfExport.Text
+                    ),
+                    'Created On' >= dteFrom.SelectedDate || dteFrom.SelectedDate= Blank() && 'Created On' <= DateAdd(
+                        dteTo.SelectedDate,
+                        1,
+                        TimeUnit.Days
+                    ) || dteTo.SelectedDate = Blank()
+                ),
+                'Created On',
+                SortOrder.Descending
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TabIndex: =0
+        TemplatePadding: =0
+        TemplateSize: =50
+        Width: =1060
+        X: =265
+        Y: =212
+        ZIndex: =11
+
+        Subtitle_GLY_ As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'AD Code'
+            VerticalAlign: =VerticalAlign.Top
+            Width: =
+            X: =
+            Y: =
+            ZIndex: =3
+
+        GLY_Rect As rectangle:
+            Fill: =RGBA(204, 204, 205, 1)
+            Height: =1
+            Width: =1055
+            Y: =47
+            ZIndex: =7
+
+        LBL_GLY_InvoiceNo As label:
+            Height: =45
+            PaddingLeft: =15
+            Size: =9
+            Text: =ThisItem.'GST - Invoice No'
+            Width: =115
+            X: =544
+            Y: =2
+            ZIndex: =10
+
+        LBL_GLY_Currency As label:
+            Height: =45
+            PaddingLeft: =15
+            Size: =9
+            Text: =ThisItem.Currency
+            Width: =74
+            X: =670
+            Y: =2
+            ZIndex: =11
+
+        LBL_GLY_No As label:
+            Height: =45
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Bill Of Export No'
+            Width: =110
+            X: =6
+            Y: =2
+            ZIndex: =14
+
+        LBL_GLY_Date As label:
+            Height: =45
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Bill Of Export Date'
+            Width: =95
+            X: =130
+            Y: =2
+            ZIndex: =15
+
+        LBL_GLY_Address As label:
+            Height: =45
+            OnSelect: =Select(Parent)
+            Size: =9
+            Text: =ThisItem.'Exporter Address First line'
+            Width: =180
+            X: =240
+            Y: =2
+            ZIndex: =16
+
+        LBL_GLY_Form As label:
+            Height: =45
+            OnSelect: =Select(Parent)
+            PaddingLeft: =15
+            Size: =9
+            Text: =ThisItem.'Originating From'
+            Width: =130
+            X: =425
+            Y: =2
+            ZIndex: =17
+
+        LBL_GLY_amountFC As label:
+            Height: =45
+            Size: =9
+            Text: =ThisItem.'Invoice value USD'
+            Width: =120
+            X: =780
+            Y: =2
+            ZIndex: =18
+
+        LBL_GLY_Code As label:
+            Height: =45
+            PaddingLeft: =15
+            Size: =9
+            Text: =ThisItem.'AD Code'
+            Width: =88
+            X: =914
+            Y: =2
+            ZIndex: =19
+
+        View As icon.View:
+            AccessibleLabel: ="TEST"
+            BorderStyle: =BorderStyle.None
+            Color: =If(ThisItem.'Is Processed' = 'Is Processed Choice'.Yes,Color.DarkGreen,Color.DarkRed)
+            Height: =43
+            Icon: =Icon.View
+            OnSelect: |-
+                =Set(
+                    varExtractedBillOfExportItem,
+                    ThisItem.ID
+                );
+                Set(VarBillOfExportNo,ThisItem.'Bill Of Export No');
+                //Set(varPDFViewerExtractedData,GetFileContentFormAttachments.Run(ThisItem.UploadDocListRefID).result);
+                Set(
+                    varPDFViewerExtractedData,
+                    LookUp(
+                        'Extracted Document Lists',
+                        Int(ID) = galExtractedBillofExport.Selected.'Upload Doc List Ref ID'
+                    ).'Attachment File'.Value
+                );
+                Navigate(SEZBillOfExport);
+            PaddingBottom: =4
+            PaddingLeft: =4
+            PaddingRight: =4
+            PaddingTop: =4
+            TabIndex: =0
+            Visible: =If(First(ColCurrentLoggedInUserDetails).'View Rights'= true &&ThisItem.'Is Processed'='Is Processed Choice'.Yes, true , false )
+            Width: =27
+            X: =1015
+            Y: =3
+            ZIndex: =20
+
+    txtSearchBillOfExport As text:
+        AccessibleLabel: ="TEST"
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Default: =""
+        Height: =35
+        HintText: ="Search Document"
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =10
+        Width: =255
+        X: =269
+        Y: =121
+        ZIndex: =12
+
+    MiniHeader_Extracted As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =12
+
+        Header_LBL_Date As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Bill of Export Date"
+            Width: =115
+            X: =385
+            Y: =175
+            ZIndex: =7
+
+        Header_LBL_Address As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =38
+            PaddingLeft: =0
+            Size: =10
+            Text: ="Exporter Address"
+            Width: =170
+            X: =506
+            Y: =174
+            ZIndex: =8
+
+        Header_LBL_No As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Invoice No"
+            Width: =95
+            X: =815
+            Y: =174
+            ZIndex: =9
+
+        Header_LBL_Currency As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Currency"
+            Width: =84
+            X: =925
+            Y: =175
+            ZIndex: =10
+
+    LBL_No As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        Size: =10
+        Text: ="Bill of Export No"
+        Width: =118
+        X: =271
+        Y: =174
+        ZIndex: =13
+
+    LBL_OriginatingForm As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        Size: =10
+        Text: ="Originating From"
+        Width: =137
+        X: =678
+        Y: =174
+        ZIndex: =14
+
+    btnRemoveComponentLogo_13 As button:
+        BorderColor: =Color.Transparent
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =60
+        HoverBorderColor: =Color.Transparent
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =Color.Transparent
+        PressedBorderColor: =Color.Transparent
+        PressedFill: =Color.Transparent
+        Text: =""
+        Width: =170
+        X: =20
+        Y: =10
+        ZIndex: =15
+
+    Logo_ExtractedData As image:
+        Height: =70
+        Image: ='MicrosoftTeams-image (1)'
+        Width: =190
+        Y: =7
+        ZIndex: =16
+
+    btnShowSubmenu_Extracted As button:
+        Color: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =29
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =UpdateContext({varShowSubmenu:true})
+        Text: ="Button"
+        Width: =201
+        Y: =156
+        ZIndex: =17
+
+    btnShowSubmenu_ExtractedData As button:
+        Color: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =29
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =UpdateContext({varShowSubmenu:false});UpdateContext({varShowSubmenu:true})
+        Text: ="Button"
+        Width: =201
+        X: =4
+        Y: =154
+        ZIndex: =18
+
+    ContainerBillofExportFromDate As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Height: =35
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =184
+        X: =894
+        Y: =122
+        ZIndex: =29
+
+        dteFrom As datepicker:
+            AccessibleLabel: ="TEST"
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            DefaultDate: =Blank()
+            Height: =35
+            InputTextPlaceholder: =
+            PaddingLeft: =5
+            PaddingTop: =5
+            Size: =12
+            Width: =184
+            ZIndex: =1
+
+    ContainerBillofExportToDate As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Height: =35
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =184
+        X: =1131
+        Y: =123
+        ZIndex: =30
+
+        dteTo As datepicker:
+            AccessibleLabel: ="TEST"
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            DefaultDate: |-
+                =//Today()
+                Blank()
+            Height: =35
+            InputTextPlaceholder: =
+            PaddingLeft: =5
+            PaddingTop: =5
+            Size: =12
+            Width: =184
+            ZIndex: =1
+
+    grpSubmenuBillofExportExtData As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =32
+
+        btnSubmenuCurve_extractedDATA As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =230
+            Text: =""
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =156
+            ZIndex: =19
+
+        Rect_menu_6 As rectangle:
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =224
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =156
+            ZIndex: =20
+
+        BTN_bill As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(12, 77, 162, 1)
+            OnSelect: |-
+                =Navigate(
+                    ICEGATESBExtractedData,
+                    ScreenTransition.None
+                );
+                UpdateContext({varShowSubmenu: false})
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =164
+            ZIndex: =21
+
+        BTN_Entry As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(12, 77, 162, 1)
+            OnSelect: |-
+                =Navigate(
+                    ICEGATEBOEExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =207
+            ZIndex: =22
+
+        BTN_SEZbill As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(12, 77, 162, 1)
+            OnSelect: |-
+                =Navigate(
+                    SEZSBExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =249
+            ZIndex: =23
+
+        BTN_SEZentry As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(12, 77, 162, 1)
+            OnSelect: |-
+                =Navigate(
+                    SEZBOEExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =292
+            ZIndex: =24
+
+        BTN_SEZexport As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(12, 77, 162, 1)
+            OnSelect: |-
+                =Navigate(
+                    BillOfExportExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Export"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =227
+            Y: =333
+            ZIndex: =25
+
+        Rect_menu_5 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =196
+            ZIndex: =26
+
+        Rect_menu_4 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =242
+            ZIndex: =27
+
+        Rect_menu_3 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =284
+            ZIndex: =28
+
+        Rect_menu_2 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =326
+            ZIndex: =31
+
+        Rect_menu_1 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =367
+            ZIndex: =32
+
+        IconNav_BillOfExtracted As icon.ChevronRight:
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =28
+            Icon: =Icon.ChevronRight
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =varShowSubmenu
+            Width: =28
+            X: =176
+            Y: =153
+            ZIndex: =33
+
+    LBL_Screens As label:
+        Color: =RGBA(12, 77, 162, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =33
+        Text: ="Extracted Data > SEZ Bill of Export"
+        Underline: =true
+        Width: =372
+        X: =269
+        Y: =86
+        ZIndex: =34
+
+    LBL_amount As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =36
+        PaddingLeft: =15
+        Size: =10
+        Text: |-
+            ="Invoice Amount in FC
+            "
+        Width: =160
+        X: =1014
+        Y: =176
+        ZIndex: =36
+
+    HideBTN As button:
+        BorderStyle: =BorderStyle.None
+        Color: |-
+            =RGBA(
+                255,
+                255,
+                255,
+                1
+            )
+        DisabledFill: =
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =55
+        Text: =""
+        Width: =296
+        X: =952
+        Y: =15
+        ZIndex: =37
+
+    LBL_from As label:
+        Align: =Align.Right
+        Color: =RGBA(12, 77, 162, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Text: ="From"
+        Width: =56
+        X: =838
+        Y: =124
+        ZIndex: =38
+
+    LBL_to As label:
+        Align: =Align.Right
+        Color: =RGBA(12, 77, 162, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        Text: ="To"
+        Width: =42
+        X: =1089
+        Y: =126
+        ZIndex: =39
+
+    LBL_ADcode As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        PaddingLeft: =15
+        Size: =10
+        Text: ="AD Code"
+        Width: =84
+        X: =1174
+        Y: =174
+        ZIndex: =40
+

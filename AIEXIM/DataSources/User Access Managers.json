@@ -1,0 +1,228 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ispl_useraccessmanagers",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ispl_useraccessmanager",
+    "MaxGetRowsCount": 2000,
+    "Name": "User Access Managers",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "ispl_editrights": "Edit Rights",
+      "ispl_email": "Email",
+      "ispl_firstname": "First Name",
+      "ispl_generatereportrights": "Generate Report Rights",
+      "ispl_id": "ID",
+      "ispl_lastname": "Last Name",
+      "ispl_managelogs": "Manage Logs",
+      "ispl_manageuseraccess": "Manage User Access",
+      "ispl_name": "Name",
+      "ispl_role": "Role",
+      "ispl_uploadextractdocumentrights": "Upload Extract Document Rights",
+      "ispl_useraccessmanager_AsyncOperations": "System Jobs",
+      "ispl_useraccessmanager_BulkDeleteFailures": "Bulk Delete Failures",
+      "ispl_useraccessmanager_DuplicateBaseRecord": "Duplicate Records (ispl_useraccessmanager_DuplicateBaseRecord)",
+      "ispl_useraccessmanager_DuplicateMatchingRecord": "Duplicate Records (ispl_useraccessmanager_DuplicateMatchingRecord)",
+      "ispl_useraccessmanager_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ispl_useraccessmanager_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ispl_useraccessmanager_ProcessSession": "Process Sessions",
+      "ispl_useraccessmanager_SyncErrors": "Sync Errors",
+      "ispl_useraccessmanagerid": "User Access Manager",
+      "ispl_viewrights": "View Rights",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "User Access Managers",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "User Access Managers (Views)",
+    "Name": "_ispl_useraccessmanager_views",
+    "RelatedEntityName": "User Access Managers",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "0769cde4-c74b-452e-9e01-b88eb70d24db": "Inactive User Access Managers",
+      "4da3b72a-e0c6-4fec-8972-2c807a3d0457": "User Access Manager Advanced Find View",
+      "62f79d60-a7ac-480f-ad0d-da6dc7e1416e": "User Access Manager Lookup View",
+      "7749da81-b04d-4285-af66-9760d4c9609c": "Active User Access Managers",
+      "80ad7a8b-e5f8-4a11-8c15-994accf4deea": "User Access Manager Associated View"
+    }
+  },
+  {
+    "DisplayName": "Edit Rights (User Access Managers)",
+    "Name": "ispl_useraccessmanager_ispl_editrights",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_editrights",
+        "OptionSetReferenceEntityName": "User Access Managers"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_editrights",
+    "RelatedEntityName": "User Access Managers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Generate Report Rights (User Access Managers)",
+    "Name": "ispl_useraccessmanager_ispl_generatereportrights",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_generatereportrights",
+        "OptionSetReferenceEntityName": "User Access Managers"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_generatereportrights",
+    "RelatedEntityName": "User Access Managers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Manage Logs (User Access Managers)",
+    "Name": "ispl_useraccessmanager_ispl_managelogs",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_managelogs",
+        "OptionSetReferenceEntityName": "User Access Managers"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_managelogs",
+    "RelatedEntityName": "User Access Managers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Manage User Access (User Access Managers)",
+    "Name": "ispl_useraccessmanager_ispl_manageuseraccess",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_manageuseraccess",
+        "OptionSetReferenceEntityName": "User Access Managers"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_manageuseraccess",
+    "RelatedEntityName": "User Access Managers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Upload Extract Document Rights (User Access Managers)",
+    "Name": "ispl_useraccessmanager_ispl_uploadextractdocumentrights",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_uploadextractdocumentrights",
+        "OptionSetReferenceEntityName": "User Access Managers"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_uploadextractdocumentrights",
+    "RelatedEntityName": "User Access Managers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "View Rights (User Access Managers)",
+    "Name": "ispl_useraccessmanager_ispl_viewrights",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_viewrights",
+        "OptionSetReferenceEntityName": "User Access Managers"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_viewrights",
+    "RelatedEntityName": "User Access Managers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (User Access Managers)",
+    "Name": "ispl_useraccessmanager_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "User Access Managers"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "User Access Managers",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (User Access Managers)",
+    "Name": "ispl_useraccessmanager_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "User Access Managers"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "User Access Managers",
+    "Type": "OptionSetInfo"
+  }
+]

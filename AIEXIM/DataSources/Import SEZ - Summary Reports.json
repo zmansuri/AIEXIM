@@ -1,0 +1,195 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ispl_importsezsummaryreports",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ispl_importsezsummaryreport",
+    "MaxGetRowsCount": 2000,
+    "Name": "Import SEZ - Summary Reports",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "ispl_adcode": "AD code",
+      "ispl_additionaldutyamountbasicrs": "Additional Duty Amount Basic Rs.",
+      "ispl_additionaldutyratebasic": "Additional Duty Rate Basic",
+      "ispl_additionaldutyratebasic2": "Additional Duty Rate Basic 2",
+      "ispl_assessablevalueinrupees": "Assessable Value (In Rupees)",
+      "ispl_assessablevalueundersection14inrs": "Assessable Value Under Section 14 (in Rs.)",
+      "ispl_bedate": "BE date",
+      "ispl_bedatefilter": "BE Date Filter",
+      "ispl_beno": "BE No.",
+      "ispl_betype": "BE Type",
+      "ispl_billofladingnodate": "Bill of Lading No.& Date",
+      "ispl_company": "Company",
+      "ispl_countryoforigincode": "Country of Origin & Code",
+      "ispl_currency": "Currency",
+      "ispl_customsdutyamountbasicrs": "Customs Duty Amount Basic Rs.",
+      "ispl_customsdutyamountbasicswsrs": "Customs Duty Amount Basic SWS Rs.",
+      "ispl_customsdutyratebasicrate": "Customs Duty Rate Basic Rate ",
+      "ispl_customsdutyratebasicratesws": "Customs Duty Rate Basic Rate SWS",
+      "ispl_dmsentry": "DMS Entry",
+      "ispl_documentuploaddatetime": "Document Upload Date & Time",
+      "ispl_exchangerate": "Exchange rate",
+      "ispl_financialyear": "Financial Year",
+      "ispl_freightinfc": "Freight in FC",
+      "ispl_grossweight": "Gross Weight",
+      "ispl_gstintype": "GSTIN/Type",
+      "ispl_id": "ID",
+      "ispl_iecno": "IEC No.",
+      "ispl_importeraddress": "Importer Address",
+      "ispl_importername": "Importer Name",
+      "ispl_importsezsummaryreport_AsyncOperations": "System Jobs",
+      "ispl_importsezsummaryreport_BulkDeleteFailures": "Bulk Delete Failures",
+      "ispl_importsezsummaryreport_DuplicateBaseRecord": "Duplicate Records (ispl_importsezsummaryreport_DuplicateBaseRecord)",
+      "ispl_importsezsummaryreport_DuplicateMatchingRecord": "Duplicate Records (ispl_importsezsummaryreport_DuplicateMatchingRecord)",
+      "ispl_importsezsummaryreport_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ispl_importsezsummaryreport_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ispl_importsezsummaryreport_ProcessSession": "Process Sessions",
+      "ispl_importsezsummaryreport_SyncErrors": "Sync Errors",
+      "ispl_importsezsummaryreportid": "Import SEZ - Summary Report",
+      "ispl_insuranceinfc": "Insurance IN FC",
+      "ispl_invoicedate": "Invoice Date",
+      "ispl_invoiceno": "Invoice No",
+      "ispl_invoicevaluefcfob": "Invoice value FC (FOB)",
+      "ispl_isprocessed": "Is Processed",
+      "ispl_landingchargesinrs": "Landing Charges in Rs.",
+      "ispl_licensedetails": "License Details",
+      "ispl_lineno": "Line No.",
+      "ispl_loadinglocalagencycomm": "Loading/Local Agency comm",
+      "ispl_misccharges": "Misc Charges",
+      "ispl_month": "Month",
+      "ispl_name": "Name",
+      "ispl_packagesmarksnos": "Packages -Marks & Nos.",
+      "ispl_packagesnodescription": "Packages -No. & Description",
+      "ispl_podate": "PO Date",
+      "ispl_pono": "PO No.",
+      "ispl_portcode": "Port Code",
+      "ispl_portofshipment": "Port of Shipment",
+      "ispl_requestid": "Request ID",
+      "ispl_rotationnodate": "Rotation No. & date",
+      "ispl_sourcedoc": "SourceDoc",
+      "ispl_totalcustomdutyrsotherthanigstforgone": "Total Custom Duty  Rs. (other than IGST Forgone )",
+      "ispl_totalduty": "Total Duty",
+      "ispl_totaldutyamountrscutomdutyigstcompce": "Total Duty Amount Rs. (Cutom Duty + IGST & Comp Ce",
+      "ispl_totaligstcompensationcessdutyforgone": "Total IGST & Compensation Cess Duty Forgone )",
+      "ispl_totalvalueinrupees": "Total Value in Rupees",
+      "ispl_uploaddoclistidsezboe": "Upload Doc List IDSEZBOE",
+      "ispl_valueforthepurpose": "Value for the purpose",
+      "ispl_vesslesnameagentsname": "Vessles Name/Agents Name",
+      "ispl_year": "Year",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Import SEZ - Summary Reports",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Import SEZ - Summary Reports (Views)",
+    "Name": "_ispl_importsezsummaryreport_views",
+    "RelatedEntityName": "Import SEZ - Summary Reports",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "134c9cbc-8658-4ec3-8a5a-f48904e799ba": "Inactive Import SEZ - Summary Reports",
+      "2a45105e-ce8e-4950-bfc5-02d566959a83": "Import SEZ - Summary Report Lookup View",
+      "478da2c8-51bb-4440-9dd3-04fbca5ad110": "Active Import SEZ - Summary Reports",
+      "9bc14d18-36fd-456b-86db-9b159d7d8f7e": "Import SEZ - Summary Report Advanced Find View",
+      "f76efd77-9ca5-4b8d-be85-f2999cd8ba56": "Import SEZ - Summary Report Associated View"
+    }
+  },
+  {
+    "DisplayName": "DMS Entry (Import SEZ - Summary Reports)",
+    "Name": "ispl_importsezsummaryreport_ispl_dmsentry",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_dmsentry",
+        "OptionSetReferenceEntityName": "Import SEZ - Summary Reports"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_dmsentry",
+    "RelatedEntityName": "Import SEZ - Summary Reports",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Processed (Import SEZ - Summary Reports)",
+    "Name": "ispl_importsezsummaryreport_ispl_isprocessed",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_isprocessed",
+        "OptionSetReferenceEntityName": "Import SEZ - Summary Reports"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_isprocessed",
+    "RelatedEntityName": "Import SEZ - Summary Reports",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Import SEZ - Summary Reports)",
+    "Name": "ispl_importsezsummaryreport_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Import SEZ - Summary Reports"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Import SEZ - Summary Reports",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Import SEZ - Summary Reports)",
+    "Name": "ispl_importsezsummaryreport_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Import SEZ - Summary Reports"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Import SEZ - Summary Reports",
+    "Type": "OptionSetInfo"
+  }
+]

@@ -1,0 +1,10 @@
+[
+  {
+    "ApiId": "/providers/microsoft.powerapps/apis/shared_logicflows",
+    "FlowNameId": "99d2baa8-15df-43bf-a90d-d39d7749a2f2",
+    "Name": "ManualReportEmail-Dataverse",
+    "ServiceKind": "ConnectedWadl",
+    "Type": "ServiceInfo",
+    "WorkflowEntityId": "7a3b970a-7b08-ef11-9f89-002248d642c4"
+  }
+]

@@ -1,0 +1,1288 @@
+Documents As screen:
+    OnVisible: |-
+        =UpdateContext({varShowSubmenu:false});Refresh('Extracted Document Lists');
+
+    Navigation_2 As Navigation:
+        ApplicationHeader: ="AI EXIM OCR"
+        NavigationItems: |-
+            =Table(
+                {
+                    Title: "Home",
+                    Screen: Home
+                    //Icon: true
+                },
+                {
+                    Title: "Documents",
+                    Screen: Documents
+                    //Icon: true
+                },
+                {Title: "Extracted Data"},
+                {
+                    Title: "Reports",
+                    Screen: Reports
+                },
+                {
+                    Title: "Logs",
+                    Screen: Logs
+                },
+                {
+                    Title: "User Access",
+                    Screen: 'User Access'
+                }
+            )
+
+    LabelDocument As label:
+        Height: =106
+        Size: =21
+        Text: ="Document Screen."
+        Width: =318
+        X: =568
+        Y: =352
+        ZIndex: =1
+
+    ReportBtn_doc As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Generate Report Rights'= true, DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =33
+        HoverFill: =
+        OnSelect: =Navigate(Reports,ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =4
+        Y: =183
+        ZIndex: =3
+
+    LogsBtn_doc As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage Logs'= true, DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =31
+        HoverFill: =
+        OnSelect: =Navigate(Logs,ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        Y: =219
+        ZIndex: =4
+
+    UserAccessBtn_doc As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage User Access'= true && First(ColCurrentLoggedInUserDetails).Role="Admin", DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =32
+        HoverFill: =
+        OnSelect: =Navigate('User Access',ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =6
+        Y: =252
+        ZIndex: =5
+
+    btnHideComponentSearchHome_1 As button:
+        BorderStyle: =BorderStyle.None
+        Color: |-
+            =RGBA(
+                255,
+                255,
+                255,
+                1
+            )
+        DisabledFill: =
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =55
+        Text: =""
+        Width: =296
+        X: =952
+        Y: =15
+        ZIndex: =6
+
+    btn_header As button:
+        BorderColor: =RGBA(186, 186, 186, 1)
+        BorderStyle: =BorderStyle.None
+        DisabledBorderColor: =
+        DisabledColor: =
+        Fill: =RGBA(12, 77, 162, 1)
+        Height: =38
+        HoverBorderColor: =
+        HoverColor: =
+        HoverFill: =
+        PressedBorderColor: =
+        PressedColor: =
+        PressedFill: =
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        Text: =""
+        Width: =1056
+        X: =269
+        Y: =174
+        ZIndex: =7
+
+    "GalleryExtractedDoc As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
+        '#CopilotOverlayLabel': ="Filtered"
+        AccessibleLabel: ="List of recent document"
+        BorderStyle: =BorderStyle.None
+        DelayItemLoading: =true
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =540
+        Items: |-
+            =Filter(
+                Sort(
+                    AddColumns(
+                        'Extracted Document Lists',
+                        txtCompany,Company
+                    ),
+                    'Created On',
+                    SortOrder.Descending
+                ),
+                StartsWith(
+                    'Document Name',
+                    txtSearchDocsDocuments.Text
+                ) || StartsWith(
+                    txtCompany,
+                    txtSearchDocsDocuments.Text
+                ) || StartsWith(
+                    'Type Of Document',
+                    txtSearchDocsDocuments.Text
+                ) || StartsWith(
+                    'Created By Flow',
+                    txtSearchDocsDocuments.Text
+                ) || StartsWith(
+                    'Created By Flow',
+                    txtSearchDocsDocuments.Text
+                )
+            )
+        Layout: =Layout.Vertical
+        LoadingSpinner: =LoadingSpinner.Data
+        ShowScrollbar: =false
+        TabIndex: =
+        TemplatePadding: =0
+        TemplateSize: =49
+        Width: =1081
+        X: =240
+        Y: =212
+        ZIndex: =14
+
+        GLY_ID As label:
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =Self.Size * 1.8
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.Company
+            VerticalAlign: =VerticalAlign.Top
+            Width: =
+            X: =
+            Y: =
+            ZIndex: =3
+
+        GLY_Company As label:
+            Height: =45
+            Size: =9
+            Text: =ThisItem.Company
+            Width: =100
+            X: =52
+            Y: =2
+            ZIndex: =6
+
+        RectGLY As rectangle:
+            Fill: =RGBA(204, 204, 205, 1)
+            Height: =1
+            Width: =1055
+            X: =30
+            Y: =48
+            ZIndex: =7
+
+        GLY_fileName As label:
+            Align: =Align.Center
+            Height: =45
+            Size: =9
+            Text: =Left(ThisItem.'Document Name',10)
+            Width: =130
+            X: =170
+            Y: =2
+            ZIndex: =8
+
+        GLY_status As label:
+            Height: =45
+            Size: =9
+            Text: =ThisItem.SourceDoc
+            Width: =85
+            X: =320
+            Y: =2
+            ZIndex: =9
+
+        GLY_initiatedOn As label:
+            Align: =Align.Center
+            Height: =45
+            Size: =9
+            Text: =ThisItem.'Created On'
+            Width: =140
+            X: =560
+            Y: =2
+            ZIndex: =10
+
+        GLY_initiatedBy As label:
+            Align: =Align.Center
+            Height: =45
+            Size: =9
+            Text: =ThisItem.'Created By'.'Full Name'
+            Width: =120
+            X: =710
+            Y: =2
+            ZIndex: =11
+
+        Gly_status As label:
+            Align: =Align.Center
+            Color: |-
+                =If(
+                    ThisItem.StatusDoc = StatusType.Completed,
+                    RGBA(
+                        14,
+                        132,
+                        65,
+                        255
+                    ),
+                    ThisItem.StatusDoc = StatusType.'In Queue',
+                    RGBA(
+                        223,
+                        188,
+                        61,
+                        255
+                    ),
+                    ThisItem.StatusDoc = StatusType.'In Process' || ThisItem.StatusDoc = StatusType.'Duplicate document' || ThisItem.StatusDoc = StatusType.'Incorrect document',
+                    Color.Red,
+                    RGBA(
+                        30,
+                        90,
+                        169,
+                        255
+                    )
+                )
+            Height: =45
+            Size: =9
+            Text: =If(StatusType.'Incorrect document'=StatusType.'Incorrect document', "Incorrect Doc",StatusType.'Duplicate document' = StatusType.'Duplicate document',"Duplicate Doc")
+            Width: =100
+            X: =835
+            Y: =2
+            ZIndex: =12
+
+        GLY_View As image:
+            AccessibleLabel: ="View PDF"
+            Height: =45
+            Image: =view
+            OnSelect: |-
+                =UpdateContext({VarDocumentUpload:true});
+                //Set(varPDFViewer,GetFileContentFormAttachments.Run(ThisItem.ID).result)
+                Set(varPDFViewerDoc, GalleryExtractedDoc.Selected.'Attachment File'.Value)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            TabIndex: =0
+            Visible: =If(First(ColCurrentLoggedInUserDetails).'View Rights' = true, true,false)
+            Width: =40
+            X: =1041
+            Y: =2
+            ZIndex: =13
+
+        GLY_type As label:
+            Align: =Align.Center
+            Height: =45
+            Size: =9
+            Text: =ThisItem.'Type Of Document'
+            Width: =115
+            X: =419
+            Y: =2
+            ZIndex: =14
+
+        IconNotify As icon.Error:
+            AccessibleLabel: ="TEST"
+            Color: =RGBA(255, 0, 0, 1)
+            Height: =18
+            Icon: =Icon.Error
+            OnSelect: |-
+                =If(
+                    StatusType.'Duplicate document' = StatusType.'Duplicate document',
+                    Notify(
+                        "This document already has entry. Please upload new document.",
+                        NotificationType.Error
+                    ),
+                    If(
+                        StatusType.'Incorrect document' = StatusType.'Incorrect document',
+                        Notify(
+                            "Incorrect document! Please Upload the correct document type.",
+                            NotificationType.Error
+                        ),
+                        If(
+                            'DMS Status Choice'.'Document no missing' = 'DMS Status Choice'.'Document no missing',
+                            Notify(
+                                "Document no is missing!! Please update document no and try again.",
+                                NotificationType.Error
+                            ),
+                            'DMS Status Choice'.Failed = 'DMS Status Choice'.Failed ,
+                            Notify(
+                                "The Document has not uploaded in the DMS.",
+                                NotificationType.Error
+                            )
+                        )
+                    )
+                )
+            TabIndex: =
+            Visible: =If(ThisItem.StatusDoc = StatusType.'Duplicate document' || ThisItem.StatusDoc = StatusType.'Incorrect document' || ThisItem.'DMS Status' = 'DMS Status Choice'.Failed || ThisItem.'DMS Status' = 'DMS Status Choice'.'Document no missing',true,false)
+            Width: =17
+            X: =17
+            Y: =14
+            ZIndex: =15
+
+        GLY_DMS As label:
+            Align: =Align.Center
+            Color: |-
+                =If(
+                    ThisItem.'DMS Status' = 'DMS Status Choice'.Successful,
+                    RGBA(
+                        14,
+                        132,
+                        65,
+                        255
+                    ),
+                    ThisItem.'DMS Status' = 'DMS Status Choice'.'In Queue',
+                    RGBA(
+                        223,
+                        188,
+                        61,
+                        255
+                    ),
+                    ThisItem.'DMS Status' = 'DMS Status Choice'.Failed || ThisItem.'DMS Status' = 'DMS Status Choice'.'Document no missing',
+                    Color.Red,
+                    RGBA(
+                        30,
+                        90,
+                        169,
+                        255
+                    )
+                   
+                )
+            Height: =45
+            Size: =9
+            Text: =ThisItem.'DMS Status'
+            Width: =95
+            X: =940
+            Y: =2
+            ZIndex: =16
+
+    MiniHeader_DOC As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =14
+
+        LBL_doc_company As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =35
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Company"
+            Width: =100
+            X: =290
+            Y: =175
+            ZIndex: =8
+
+        LBL_doc_file As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =36
+            Size: =10
+            Text: ="File Name"
+            Width: =130
+            X: =411
+            Y: =175
+            ZIndex: =9
+
+        LBL_doc_source As label:
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =37
+            PaddingLeft: =10
+            Size: =10
+            Text: ="Source"
+            Width: =85
+            X: =555
+            Y: =175
+            ZIndex: =10
+
+        LBL_doc_initiatedOn As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =36
+            PaddingLeft: =0
+            Size: =10
+            Text: ="Initiated On"
+            Width: =140
+            X: =800
+            Y: =175
+            ZIndex: =11
+
+        LBL_doc_initiatedBy As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =36
+            Size: =10
+            Text: ="Initiated By"
+            Width: =120
+            X: =950
+            Y: =175
+            ZIndex: =12
+
+        LBL_Status_doc As label:
+            Align: =Align.Center
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =38
+            PaddingLeft: =0
+            PaddingRight: =30
+            Size: =10
+            Text: ="Status"
+            Width: =100
+            X: =1090
+            Y: =175
+            ZIndex: =13
+
+    UploadButton_4 As UploadButton:
+        Height: =92
+        Visible: =If(First(ColCurrentLoggedInUserDetails).'Upload Extract Document Rights' = true, true,false)
+        X: =1087
+        Y: =70
+        ZIndex: =15
+
+    txtSearchDocsDocuments As text:
+        AccessibleLabel: ="Search your document"
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Default: =""
+        HintText: ="Search Document"
+        HoverBorderColor: =RGBA(0, 0, 0, 0)
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =10
+        Width: =255
+        X: =269
+        Y: =119
+        ZIndex: =16
+
+    BtnUploadDOC As button:
+        Fill: =RGBA(215, 223, 240, 0.03)
+        Height: =62
+        HoverFill: =Color.Transparent
+        OnSelect: |
+            =UpdateContext({VarDocumentFileUpload: true});
+            ResetForm(AttachmentformDS);
+            NewForm(AttachmentformDS);
+        PressedFill: =Color.Transparent
+        Text: =""
+        Visible: =If(First(ColCurrentLoggedInUserDetails).'Upload Extract Document Rights' = true, true,false)
+        Width: =223
+        X: =1102
+        Y: =112
+        ZIndex: =17
+
+    Ltype As label:
+        Align: =Align.Center
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =37
+        Size: =10
+        Text: ="Type"
+        Width: =145
+        X: =640
+        Y: =175
+        ZIndex: =18
+
+    close_viewer As button:
+        Fill: =RGBA(56, 96, 178, 0)
+        Height: =60
+        HoverFill: =Color.Transparent
+        OnSelect: |
+            =UpdateContext({VarDocumentUpload:false})
+        PressedFill: =Color.Transparent
+        Text: =""
+        Width: =50
+        X: =939
+        Y: =36
+        ZIndex: =19
+
+    btnRemoveComponentLogo_1 As button:
+        BorderColor: =Color.Transparent
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =60
+        HoverBorderColor: =Color.Transparent
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =Color.Transparent
+        PressedBorderColor: =Color.Transparent
+        PressedFill: =Color.Transparent
+        Text: =""
+        Width: =170
+        X: =20
+        Y: =10
+        ZIndex: =20
+
+    ImageLogoDocument As image:
+        Height: =70
+        Image: ='MicrosoftTeams-image (1)'
+        Width: =190
+        ZIndex: =21
+
+    btnShowSubmenu_1 As button:
+        Color: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =29
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =UpdateContext({varShowSubmenu:false});UpdateContext({varShowSubmenu:true})
+        Text: ="Button"
+        Width: =201
+        X: =4
+        Y: =154
+        ZIndex: =22
+
+    FileUploadGrpHome_1 As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =26
+
+        BackgroundRect As rectangle:
+            Fill: =RGBA(0, 0, 0, 0.26)
+            Height: =768
+            Visible: =VarDocumentFileUpload
+            Width: =1366
+            ZIndex: =41
+
+        BackBTN As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =515
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Text: ="Button"
+            Visible: =VarDocumentFileUpload
+            Width: =859
+            X: =253
+            Y: =162
+            ZIndex: =42
+
+        BTNheader As button:
+            BorderThickness: =0
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(12, 77, 162, 1)
+            Height: =46
+            Text: ="Upload File"
+            Visible: =VarDocumentFileUpload
+            Width: =859
+            X: =253
+            Y: =162
+            ZIndex: =43
+
+        Upload_btn_pdf As button:
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(131, 134, 136, 1)
+            DisplayMode: =If(AttachmentformDS.Valid, DisplayMode.Edit, DisplayMode.Disabled)
+            Fill: =RGBA(12, 77, 162, 1)
+            Height: =42
+            OnSelect: |-
+                =SubmitForm(AttachmentformDS);
+                UpdateContext({VarDocumentFileUpload:false});
+            Text: ="Upload "
+            Visible: =VarDocumentFileUpload
+            Width: =144
+            X: =614
+            Y: =597
+            ZIndex: =44
+
+        closePDFviewer As icon.Cancel:
+            AccessibleLabel: ="close the panel"
+            Color: =RGBA(255, 255, 255, 1)
+            Height: =30
+            Icon: =Icon.Cancel
+            OnSelect: |-
+                =UpdateContext({VarDocumentFileUpload:false});
+                ResetForm(AttachmentformDS);
+                Refresh('Extracted Document Lists')
+            TabIndex: =0
+            Visible: =VarDocumentFileUpload
+            Width: =30
+            X: =1071
+            Y: =170
+            ZIndex: =45
+
+        AttachmentformDS As form:
+            DataSource: ='Upload Doc Parents'
+            Height: =374
+            NumberOfColumns: =1
+            OnSuccess: |
+                =//Patch('Extracted Document Lists',LookUp('Extracted Document Lists',ID = AttachmentformDS.LastSubmit.ID),{'Document Name':varFileNameDocs});
+                Notify(
+                    "File Uploaded Successfully",
+                    NotificationType.Success,
+                    2000
+                );
+                UpdateContext({VarDocumentFileUpload: false});
+            Visible: =VarDocumentFileUpload
+            Width: =851
+            X: =258
+            Y: =212
+            ZIndex: =46
+
+            "'Type Of Document_DataCard2' As typedDataCard.comboBoxOptionSetSingleEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_typeofdocument"
+                Default: =ThisItem.'Type Of Document'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Upload Doc Parents'],DataSourceInfo.DisplayName,ispl_typeofdocument)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue394.Selected.Value
+                Width: =851
+                X: =0
+                Y: =0
+                ZIndex: =1
+
+                DataCardKey396 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue394 As combobox:
+                    AccessibleLabel: ="Type of document"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    IsSearchable: =false
+                    Items: =Choices(DocType)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectMultiple: =false
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey396.Y + DataCardKey396.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage396 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue394.Y + DataCardValue394.Height
+                    ZIndex: =3
+
+                StarVisible396 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey396.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey396.Y
+                    ZIndex: =4
+
+            Company_DataCard3 As typedDataCard.comboBoxOptionSetSingleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_company"
+                Default: =ThisItem.Company
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Upload Doc Parents'],DataSourceInfo.DisplayName,ispl_company)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue395.Selected.Value
+                Width: =851
+                X: =0
+                Y: =1
+                ZIndex: =1
+
+                DataCardKey397 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue395 As combobox:
+                    AccessibleLabel: ="Type of company"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    IsSearchable: =false
+                    Items: =Choices(CompanyType)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectMultiple: =false
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey397.Y + DataCardKey397.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage397 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue395.Y + DataCardValue395.Height
+                    ZIndex: =3
+
+                StarVisible397 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey397.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey397.Y
+                    ZIndex: =4
+
+            Attachments_DataCard3 As typedDataCard.attachmentsEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="{Attachments}"
+                Default: =ThisItem.Attachments
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Upload Doc Parents'],DataSourceInfo.DisplayName,'{Attachments}')
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =true
+                Update: =DataCardValue664.Attachments
+                Width: =851
+                X: =0
+                Y: =2
+                ZIndex: =1
+
+                DataCardKey670 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: ="Attach your attachments"
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue664 As attachments:
+                    AccessibleLabel: ="Attach your attachment"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DisplayMode: =Parent.DisplayMode
+                    Height: =101
+                    IsInDataCard: =true
+                    Items: =Parent.Default
+                    PaddingBottom: =5
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    PaddingRight: =5
+                    PaddingTop: =5
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey670.Y + DataCardKey670.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage670 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue664.Y + DataCardValue664.Height
+                    ZIndex: =3
+
+                StarVisible670 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey670.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey670.Y
+                    ZIndex: =4
+
+            Source_DataCard2 As typedDataCard.comboBoxOptionSetSingleEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_source"
+                Default: =ThisItem.Source
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Upload Doc Parents'],DataSourceInfo.DisplayName,ispl_source)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                Required: =false
+                Update: =DataCardValue668.Selected.Value
+                Visible: =false
+                Width: =851
+                X: =0
+                Y: =3
+                ZIndex: =1
+
+                DataCardKey671 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue668 As combobox:
+                    AccessibleLabel: ="Source type"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    DefaultSelectedItems: =[Parent.Default]
+                    DisplayFields: =["Value"]
+                    DisplayMode: =Parent.DisplayMode
+                    IsSearchable: =false
+                    Items: =Choices(SourceType)
+                    PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                    SearchFields: =["Value"]
+                    SearchItems: =[]
+                    SelectMultiple: =false
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey671.Y + DataCardKey671.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage671 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue668.Y + DataCardValue668.Height
+                    ZIndex: =3
+
+                StarVisible671 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey671.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey671.Y
+                    ZIndex: =4
+
+            Name_DataCard1 As typedDataCard.textualEditCard:
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_name"
+                Default: =ThisItem.Name
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Upload Doc Parents'],DataSourceInfo.DisplayName,ispl_name)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Upload Doc Parents'], DataSourceInfo.MaxLength, ispl_name)
+                Required: =false
+                Update: =DataCardValue669.Text
+                Visible: =false
+                Width: =851
+                X: =0
+                Y: =4
+                ZIndex: =1
+
+                DataCardKey672 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue669 As text:
+                    AccessibleLabel: ="Your Name"
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey672.Y + DataCardKey672.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage672 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue669.Y + DataCardValue669.Height
+                    ZIndex: =3
+
+                StarVisible672 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey672.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey672.Y
+                    ZIndex: =4
+
+    TextInput As text:
+        AccessibleLabel: ="Total completed document"
+        Align: =Align.Justify
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Default: |-
+            ="Total Completed Documents : " & CountIf('Extracted Document Lists',StatusDoc = StatusType.Completed)
+        DisplayMode: =DisplayMode.View
+        FontWeight: =FontWeight.Semibold
+        Height: =31
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Size: =12
+        Width: =270
+        X: =808
+        Y: =129
+        ZIndex: =36
+
+    HeaderDMS As label:
+        Color: =RGBA(255, 255, 255, 1)
+        Height: =38
+        PaddingLeft: =15
+        Size: =10
+        Text: ="DMS"
+        Width: =95
+        X: =1190
+        Y: =175
+        ZIndex: =37
+
+    DocumentUploadDocumentScreen As DocumentUpload:
+        Visible: =VarDocumentUpload
+        ZIndex: =38
+
+    PdfViewer As pdfViewer:
+        BorderColor: =RGBA(0, 0, 0, 1)
+        Document: =varPDFViewerDoc
+        Fill: =RGBA(255, 255, 255, 1)
+        FindNext: =true
+        FindPrevious: =true
+        Height: =607
+        ShowControls: =true
+        Visible: =VarDocumentUpload
+        Width: =607
+        X: =379
+        Y: =108
+        ZIndex: =39
+
+    ClosePDFview As icon.Cancel:
+        AccessibleLabel: ="Close the panel"
+        BorderColor: =RGBA(0, 0, 0, 0)
+        Color: =RGBA(0, 0, 0, 0)
+        Height: =42
+        HoverBorderColor: =Color.Transparent
+        Icon: =Icon.Cancel
+        OnSelect: |-
+            =UpdateContext({VarDocumentUpload:false})
+        TabIndex: =0
+        Visible: =VarDocumentUpload
+        Width: =38
+        X: =946
+        Y: =46
+        ZIndex: =40
+
+    grpSubmenuDS As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =41
+
+        btnSubmenuCurve_1 As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =230
+            Text: =""
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =154
+            ZIndex: =23
+
+        Rect_submenu6 As rectangle:
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =224
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =154
+            ZIndex: =24
+
+        btn_nav_bill As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    ICEGATESBExtractedData,
+                    ScreenTransition.None
+                );
+                UpdateContext({varShowSubmenu: false})
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =223
+            Y: =162
+            ZIndex: =25
+
+        btn_nav_billOFentry As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    ICEGATEBOEExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =223
+            Y: =205
+            ZIndex: =26
+
+        btn_nav_SEZbill As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    SEZSBExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =223
+            Y: =247
+            ZIndex: =27
+
+        btn_nav_entry As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    SEZBOEExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =223
+            Y: =290
+            ZIndex: =28
+
+        btn_nav_Export As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    BillOfExportExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Export"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =331
+            ZIndex: =29
+
+        Rect_submenu5 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =194
+            ZIndex: =30
+
+        Rect_submenu4 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =240
+            ZIndex: =31
+
+        Rect_submenu3 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =282
+            ZIndex: =32
+
+        Rect_submenu2 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =324
+            ZIndex: =33
+
+        Rect_submenu1 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =365
+            ZIndex: =34
+
+        IconNav As icon.ChevronRight:
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =28
+            Icon: =Icon.ChevronRight
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =varShowSubmenu
+            Width: =28
+            X: =176
+            Y: =153
+            ZIndex: =35
+

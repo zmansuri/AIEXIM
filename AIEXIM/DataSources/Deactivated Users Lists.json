@@ -1,0 +1,100 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ispl_deactivateduserslists",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ispl_deactivateduserslist",
+    "MaxGetRowsCount": 2000,
+    "Name": "Deactivated Users Lists",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "ispl_deactivateduserslist_AsyncOperations": "System Jobs",
+      "ispl_deactivateduserslist_BulkDeleteFailures": "Bulk Delete Failures",
+      "ispl_deactivateduserslist_DuplicateBaseRecord": "Duplicate Records (ispl_deactivateduserslist_DuplicateBaseRecord)",
+      "ispl_deactivateduserslist_DuplicateMatchingRecord": "Duplicate Records (ispl_deactivateduserslist_DuplicateMatchingRecord)",
+      "ispl_deactivateduserslist_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ispl_deactivateduserslist_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ispl_deactivateduserslist_ProcessSession": "Process Sessions",
+      "ispl_deactivateduserslist_SyncErrors": "Sync Errors",
+      "ispl_deactivateduserslistid": "Deactivated Users List",
+      "ispl_emailaddress": "Email Address",
+      "ispl_id": "ID",
+      "ispl_name": "Name",
+      "ispl_nameofuser": "Name Of User",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Deactivated Users Lists",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Deactivated Users Lists (Views)",
+    "Name": "_ispl_deactivateduserslist_views",
+    "RelatedEntityName": "Deactivated Users Lists",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "113cd146-0fb8-4234-8195-8868ca970305": "Deactivated Users List Associated View",
+      "1a5fd4c7-c171-40e0-9ce1-64cfed9bf4d2": "Active Deactivated Users Lists",
+      "a27a1e84-46f6-4a37-b09b-0f4f2fc6404a": "Deactivated Users List Lookup View",
+      "d14c7518-d942-4a21-ab4a-eda5ec5f0bc7": "Inactive Deactivated Users Lists",
+      "d72bea5a-525f-4fd4-a4c5-47041a40367e": "Deactivated Users List Advanced Find View"
+    }
+  },
+  {
+    "DisplayName": "Status (Deactivated Users Lists)",
+    "Name": "ispl_deactivateduserslist_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Deactivated Users Lists"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Deactivated Users Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Deactivated Users Lists)",
+    "Name": "ispl_deactivateduserslist_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Deactivated Users Lists"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Deactivated Users Lists",
+    "Type": "OptionSetInfo"
+  }
+]

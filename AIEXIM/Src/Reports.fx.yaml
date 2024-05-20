@@ -1,0 +1,632 @@
+Reports As screen:
+    OnVisible: |-
+        =UpdateContext({varShowSubmenu:false});
+        Reset(FromDate);
+        Reset(ToDate)
+
+    Navigation_4 As Navigation:
+        ApplicationHeader: ="AI EXIM OCR"
+        Height: =768
+        NavigationItems: |-
+            =Table(
+                {
+                    Title: "Home",
+                    Screen: Home
+                    //Icon: true
+                },
+                {
+                    Title: "Documents",
+                    Screen: Documents
+                    //Icon: true
+                },
+                {
+                    Title: "Extracted Data",
+                    Screen: 'Extracted Data'
+                },
+                {
+                    Title: "Reports",
+                    Screen: Reports
+                },
+                {
+                    Title: "Logs",
+                    Screen: Logs
+                },
+                {
+                    Title: "User Access",
+                    Screen: 'User Access'
+                }
+            )
+        ZIndex: =1
+
+    Logs_BTN2 As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage Logs'= true, DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =32
+        HoverFill: =
+        OnSelect: =Navigate(Logs,ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =7
+        Y: =221
+        ZIndex: =2
+
+    UserAccess_btn As button:
+        Align: =Align.Left
+        Color: = RGBA(0, 0, 0, 0)
+        DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage User Access'= true && First(ColCurrentLoggedInUserDetails).Role="Admin", DisplayMode.Edit,DisplayMode.View)
+        Fill: |-
+            =//RGBA(12, 77, 162, 1)
+            RGBA(0,0,0,0)
+        Height: =31
+        HoverFill: =
+        OnSelect: =Navigate('User Access',ScreenTransition.Fade)
+        PressedColor: =
+        PressedFill: =RGBA(0, 18, 107, 1)
+        RadiusBottomLeft: =0
+        RadiusBottomRight: =0
+        RadiusTopLeft: =0
+        RadiusTopRight: =0
+        Size: =12
+        Text: =""
+        Width: =196
+        X: =7
+        Y: =254
+        ZIndex: =3
+
+    btnRemoveComponentLogo_3 As button:
+        BorderColor: =Color.Transparent
+        DisabledBorderColor: =RGBA(0, 0, 0, 0)
+        DisabledColor: =RGBA(255, 255, 255, 1)
+        DisabledFill: =RGBA(0, 0, 0, 0)
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =60
+        HoverBorderColor: =Color.Transparent
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =Color.Transparent
+        PressedBorderColor: =Color.Transparent
+        PressedFill: =Color.Transparent
+        Text: =""
+        Width: =170
+        X: =20
+        Y: =10
+        ZIndex: =4
+
+    intech_logo As image:
+        Height: =70
+        Image: ='MicrosoftTeams-image (1)'
+        Width: =190
+        ZIndex: =5
+
+    ShowSubmenu As button:
+        Color: =RGBA(0, 0, 0, 0)
+        Fill: =RGBA(0, 0, 0, 0)
+        Height: =29
+        HoverColor: =RGBA(0, 0, 0, 0)
+        HoverFill: =Color.Transparent
+        OnSelect: |-
+            =UpdateContext({varShowSubmenu:false});UpdateContext({varShowSubmenu:true})
+        Text: ="Button"
+        Width: =201
+        X: =4
+        Y: =154
+        ZIndex: =6
+
+    hideBTN As button:
+        BorderStyle: =BorderStyle.None
+        Color: |-
+            =RGBA(
+                255,
+                255,
+                255,
+                1
+            )
+        DisabledFill: =
+        DisplayMode: =DisplayMode.View
+        Fill: =RGBA(255, 255, 255, 1)
+        Height: =55
+        Text: =""
+        Width: =296
+        X: =952
+        Y: =15
+        ZIndex: =7
+
+    ConDocumentType As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Height: =40
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =250
+        X: =975
+        Y: =193
+        ZIndex: =8
+
+        drpDocumentType As dropdown:
+            AccessibleLabel: ="Select doccument "
+            AllowEmptySelection: =true
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Items: =Choices(DocType)
+            Width: =250
+            ZIndex: =1
+
+    ConUploadedFrom As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Height: =40
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =250
+        X: =446
+        Y: =272
+        ZIndex: =9
+
+        FromDate As datepicker:
+            AccessibleLabel: ="From date"
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Format: |-
+                =//DateTimeFormat.ShortDate
+                "dd-mmm-yyyy"
+            OnChange: =If(DateDiff(FromDate.SelectedDate,ToDate.SelectedDate,TimeUnit.Months) > 1,Notify("The selected date range is too large. Please choose a date range of a month.",NotificationType.Error));
+            Width: =250
+            ZIndex: =1
+
+    ConUploadedTo As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Height: =40
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =250
+        X: =975
+        Y: =272
+        ZIndex: =10
+
+        ToDate As datepicker:
+            AccessibleLabel: ="To date"
+            BorderColor: =RGBA(12, 77, 162, 1)
+            Format: |-
+                =//DateTimeFormat.ShortDate
+                "dd-mmm-yyyy"
+            OnChange: =If(DateDiff(FromDate.SelectedDate,ToDate.SelectedDate,TimeUnit.Months) > 1,Notify("The selected date range is too large. Please choose a date range of a month.",NotificationType.Error));
+            Width: =250
+            ZIndex: =1
+
+    ConCompany As groupContainer.manualLayoutContainer:
+        BorderColor: =RGBA(12, 77, 162, 1)
+        BorderThickness: =1
+        Height: =40
+        RadiusBottomLeft: =10
+        RadiusBottomRight: =10
+        RadiusTopLeft: =10
+        RadiusTopRight: =10
+        Width: =250
+        X: =446
+        Y: =189
+        ZIndex: =11
+
+        drpCompany As dropdown:
+            AccessibleLabel: ="Select company from the dropdown"
+            AllowEmptySelection: =true
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Items: =Choices(CompanyType)
+            Width: =250
+            ZIndex: =1
+
+    LBL_FromDate As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Text: ="From"
+        Width: =112
+        X: =292
+        Y: =272
+        ZIndex: =12
+
+    LBL_DocType As label:
+        FontWeight: =FontWeight.Semibold
+        Text: ="Document Type"
+        X: =806
+        Y: =189
+        ZIndex: =13
+
+    LBL_ToDate As label:
+        Align: =Align.Center
+        FontWeight: =FontWeight.Semibold
+        Text: ="To"
+        Width: =112
+        X: =806
+        Y: =276
+        ZIndex: =14
+
+    LBL_Company As label:
+        FontWeight: =FontWeight.Semibold
+        Height: =48
+        Text: ="Company"
+        Width: =133
+        X: =313
+        Y: =184
+        ZIndex: =15
+
+    DownloadOld As icon.Download:
+        AccessibleLabel: ="Download Report"
+        Color: =RGBA(12, 77, 162, 1)
+        Height: =37
+        Icon: =Icon.Download
+        OnSelect: |
+            =Set(
+                SpinnerVisible,
+                true
+            );
+            Set(
+                varFile,
+                'ManualReportDownload-Dataverse'.Run(
+                    drpDocumentType.Selected.Value,
+                    drpCompany.Selected.Value,
+                    Text(
+                        FromDate.SelectedDate,
+                        "dd-mmm-yyyy"
+                    ),
+                    Text(
+                        ToDate.SelectedDate,
+                        "dd-mmm-yyyy"
+                    )
+                ).result
+            );
+            Set(
+                SpinnerVisible,
+                false
+            );
+            Launch(varFile);
+            Notify(
+                "Your report is Downloaded",
+                NotificationType.Success,
+                5000
+            );
+        TabIndex: =
+        Visible: =false
+        Width: =58
+        X: =1180
+        Y: =107
+        ZIndex: =16
+
+    LabelSendEmail As label:
+        Align: =Align.Center
+        Color: =RGBA(12, 77, 162, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =18
+        Size: =10
+        Text: |-
+            ="Send Mail
+            "
+        Width: =83
+        X: =1073
+        Y: =144
+        ZIndex: =17
+
+    LabelDownload As label:
+        Align: =Align.Center
+        Color: =RGBA(12, 77, 162, 1)
+        DisplayMode: =If(DateDiff(FromDate.SelectedDate,ToDate.SelectedDate,TimeUnit.Months) > 1,DisplayMode.Disabled, DisplayMode.Edit)
+        FontWeight: =FontWeight.Semibold
+        Height: =18
+        Size: =10
+        Text: |-
+            ="Download
+            "
+        Width: =83
+        X: =1165
+        Y: =142
+        ZIndex: =18
+
+    grpSubmenuReports As group:
+        Height: =5
+        Width: =5
+        X: =40
+        Y: =40
+        ZIndex: =33
+
+        Sub_Curve As button:
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =230
+            Text: =""
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =154
+            ZIndex: =20
+
+        Rect6 As rectangle:
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =224
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =154
+            ZIndex: =21
+
+        Shipping_Bill_BTN As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    ICEGATESBExtractedData,
+                    ScreenTransition.None
+                );
+                UpdateContext({varShowSubmenu: false})
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =162
+            ZIndex: =22
+
+        Entry_BTN As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    ICEGATEBOEExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =205
+            ZIndex: =23
+
+        SEZbill_BTN As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    SEZSBExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =247
+            ZIndex: =24
+
+        SEZEntry_BTN As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    SEZBOEExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =290
+            ZIndex: =25
+
+        SezExport_BTN As button:
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =29
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+                =Navigate(
+                    BillOfExportExtractedData,
+                    ScreenTransition.None,
+                    {varShowSubmenu: false}
+                )
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Export"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =227
+            Y: =331
+            ZIndex: =26
+
+        Rect5 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =194
+            ZIndex: =27
+
+        Rect4 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =240
+            ZIndex: =28
+
+        Rect3 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =282
+            ZIndex: =29
+
+        Rect2 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =324
+            ZIndex: =30
+
+        Rect1 As rectangle:
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =365
+            ZIndex: =31
+
+        Icon_Nav_screen As icon.ChevronRight:
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =28
+            Icon: =Icon.ChevronRight
+            Visible: =varShowSubmenu
+            Width: =28
+            X: =176
+            Y: =153
+            ZIndex: =37
+
+    SendMailNew As icon.Mail:
+        AccessibleLabel: ="Get the email"
+        Color: =RGBA(12, 77, 162, 1)
+        Height: =45
+        Icon: =Icon.Mail
+        OnSelect: |-
+            =Set(SpinnerVisible,true);
+            'ManualReportEmail-Dataverse'.Run(
+                drpDocumentType.Selected.Value,
+                drpCompany.Selected.Value,
+                Text(
+                    FromDate.SelectedDate,
+                    "dd-mmm-yyyy"
+                ),
+                Text(
+                    ToDate.SelectedDate,
+                    "dd-mmm-yyyy"
+                ),
+                User().Email,
+                User().FullName
+            );
+            Set(SpinnerVisible,false);
+            Notify(
+                "Your report is being generated and will be sent to your email shortly
+            ",
+                NotificationType.Success,
+                5000
+            );
+        TabIndex: =0
+        Width: =63
+        X: =1083
+        Y: =99
+        ZIndex: =35
+
+    DownloadNew As icon.Download:
+        AccessibleLabel: ="Download report"
+        Color: =RGBA(12, 77, 162, 1)
+        DisplayMode: =If(DateDiff(FromDate.SelectedDate,ToDate.SelectedDate,TimeUnit.Months) > 1,DisplayMode.Disabled, DisplayMode.Edit)
+        Height: =37
+        Icon: =Icon.Download
+        OnSelect: |-
+            =Set(
+                SpinnerVisible,
+                true
+            );
+            Set(
+                varFile,
+                'ManualReportDownload-Dataverse'.Run(
+                    drpDocumentType.Selected.Value,
+                    drpCompany.Selected.Value,
+                    Text(
+                        FromDate.SelectedDate,
+                        "dd-mmm-yyyy"
+                    ),
+                    Text(
+                        ToDate.SelectedDate,
+                        "dd-mmm-yyyy"
+                    )
+                ).result
+            );
+            Set(
+                SpinnerVisible,
+                false
+            );
+            Launch(varFile);
+            Notify(
+                "Your report is Downloaded",
+                NotificationType.Success,
+                5000
+            );
+        TabIndex: =
+        Width: =58
+        X: =1177
+        Y: =105
+        ZIndex: =36
+
+    Rectangle_Background As rectangle:
+        Fill: =RGBA(0, 0, 0, 60%)
+        Height: =768
+        Visible: =SpinnerVisible
+        Width: =1366
+        ZIndex: =38
+
+    Image_Loading As image:
+        Image: ='loading-buffering'
+        Visible: =SpinnerVisible
+        X: =627
+        Y: =315
+        ZIndex: =39
+

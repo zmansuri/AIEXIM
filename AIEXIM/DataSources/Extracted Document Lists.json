@@ -1,0 +1,170 @@
+[
+  {
+    "CdsFCBContext": "{\"FileType\":true,\"ImageExternalStorage\":true}",
+    "EntitySetName": "ispl_extracteddocumentlists",
+    "IsHidden": false,
+    "IsSampleData": false,
+    "IsWritable": true,
+    "LogicalName": "ispl_extracteddocumentlist",
+    "MaxGetRowsCount": 2000,
+    "Name": "Extracted Document Lists",
+    "NativeCDSDataSourceInfoNameMapping": {
+      "_ownerid_value": "Owner",
+      "{Attachments}": "Attachments",
+      "cr1c5_jsonfile": "Jsonfile",
+      "createdby": "Created By",
+      "createdon": "Created On",
+      "createdonbehalfby": "Created By (Delegate)",
+      "importsequencenumber": "Import Sequence Number",
+      "ispl_attachmentfile": "Attachment File",
+      "ispl_base64ofdoc": "Base 64 of Doc",
+      "ispl_company": "Company",
+      "ispl_createdbyflow": "Created By Flow",
+      "ispl_dmsstatus": "DMS Status",
+      "ispl_documentarrivaltime": "Document Arrival Time",
+      "ispl_documentid": "Document ID",
+      "ispl_documentname": "Document Name",
+      "ispl_extractedbillofentrysummaryid": "Extracted Bill of Entry Summary ID",
+      "ispl_extractedbillofexportid": "Extracted Bill of Export ID",
+      "ispl_extracteddocumentlist_Annotations": "Notes",
+      "ispl_extracteddocumentlist_AsyncOperations": "System Jobs",
+      "ispl_extracteddocumentlist_BulkDeleteFailures": "Bulk Delete Failures",
+      "ispl_extracteddocumentlist_DuplicateBaseRecord": "Duplicate Records (ispl_extracteddocumentlist_DuplicateBaseRecord)",
+      "ispl_extracteddocumentlist_DuplicateMatchingRecord": "Duplicate Records (ispl_extracteddocumentlist_DuplicateMatchingRecord)",
+      "ispl_extracteddocumentlist_FileAttachments": "FileAttachments",
+      "ispl_extracteddocumentlist_MailboxTrackingFolders": "Mailbox Auto Tracking Folders",
+      "ispl_extracteddocumentlist_PrincipalObjectAttributeAccesses": "Field Sharing",
+      "ispl_extracteddocumentlist_ProcessSession": "Process Sessions",
+      "ispl_extracteddocumentlist_SyncErrors": "Sync Errors",
+      "ispl_extracteddocumentlistid": "Extracted Document List",
+      "ispl_extractedsezbillofentrysummaryid": "Extracted SEZ Bill Of Entry Summary ID",
+      "ispl_extractedsezsbsummaryid": "Extracted SEZSB Summary ID",
+      "ispl_extractedsummaryid": "Extracted Summary ID",
+      "ispl_id": "ID",
+      "ispl_IDFromAttachmentTable": "ID From Attachment Table",
+      "ispl_itemid": "Item ID",
+      "ispl_name": "Name",
+      "ispl_sourcedoc": "SourceDoc",
+      "ispl_status": "StatusDoc",
+      "ispl_typeofdocument": "Type Of Document",
+      "ispl_uploaddocparentitemid": "Upload Doc Parent Item ID",
+      "ispl_user": "User",
+      "modifiedby": "Modified By",
+      "modifiedon": "Modified On",
+      "modifiedonbehalfby": "Modified By (Delegate)",
+      "overriddencreatedon": "Record Created On",
+      "owningbusinessunit": "Owning Business Unit",
+      "owningteam": "Owning Team",
+      "owninguser": "Owning User",
+      "statecode": "Status",
+      "statuscode": "Status Reason",
+      "timezoneruleversionnumber": "Time Zone Rule Version Number",
+      "utcconversiontimezonecode": "UTC Conversion Time Zone Code",
+      "versionnumber": "Version Number"
+    },
+    "PreferredName": "Extracted Document Lists",
+    "Type": "NativeCDSDataSourceInfo"
+  },
+  {
+    "DisplayName": "Extracted Document Lists (Views)",
+    "Name": "_ispl_extracteddocumentlist_views",
+    "RelatedEntityName": "Extracted Document Lists",
+    "TrimmedViewName": true,
+    "Type": "ViewInfo",
+    "ViewInfoNameMapping": {
+      "17667d13-ce75-43ec-8f7e-1154a65e6c52": "Extracted Document List Associated View",
+      "4038c647-b1b9-4f1f-8529-67f7524980fe": "Extracted Document List Lookup View",
+      "b94aedb6-24fe-4d26-b019-b8d294b759be": "Extracted Document List Advanced Find View",
+      "f5486950-7bb4-4dc3-a15d-84790e7a6ff7": "Active Extracted Document Lists",
+      "fa4f564b-6a8d-4485-98a6-d35b55110b65": "Inactive Extracted Document Lists"
+    }
+  },
+  {
+    "DisplayName": "DMS Status Choice",
+    "Name": "ispl_dmsstatuschoice",
+    "OptionSetInfoNameMapping": {
+      "170620000": "In Process",
+      "170620001": "Failed",
+      "170620002": "Document no missing",
+      "170620003": "Successful",
+      "170620004": "In Queue"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_dmsstatus",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_dmsstatus",
+    "RelatedEntityName": "Extracted Document Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status (Extracted Document Lists)",
+    "Name": "ispl_extracteddocumentlist_statecode",
+    "OptionSetInfoNameMapping": {
+      "0": "Active",
+      "1": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statecode",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "StateType",
+    "RelatedColumnInvariantName": "statecode",
+    "RelatedEntityName": "Extracted Document Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Status Reason (Extracted Document Lists)",
+    "Name": "ispl_extracteddocumentlist_statuscode",
+    "OptionSetInfoNameMapping": {
+      "1": "Active",
+      "2": "Inactive"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "statuscode",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "StatusType",
+    "RelatedColumnInvariantName": "statuscode",
+    "RelatedEntityName": "Extracted Document Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "StatusType",
+    "Name": "ispl_statustype",
+    "OptionSetInfoNameMapping": {
+      "170620000": "Pending",
+      "170620001": "In Process",
+      "170620002": "Completed",
+      "170620003": "In Queue",
+      "170620004": "Not Processed",
+      "170620005": "Duplicate document",
+      "170620006": "Incorrect document"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_status",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_status",
+    "RelatedEntityName": "Extracted Document Lists",
+    "Type": "OptionSetInfo"
+  }
+]
