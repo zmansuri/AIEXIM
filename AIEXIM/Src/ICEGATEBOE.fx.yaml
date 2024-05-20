@@ -9471,6 +9471,7 @@ ICEGATEBOE As screen:
 
         Rectangle20_1 As rectangle:
             AccessibleLabel: ="test"
+            BorderColor: =RGBA(0, 18, 107, 0)
             Fill: =RGBA(255, 255, 255, 1)
             Height: =676
             TabIndex: =0
@@ -9482,6 +9483,7 @@ ICEGATEBOE As screen:
 
         Icon11_1 As icon.Check:
             AccessibleLabel: ="Save your changes"
+            BorderColor: =RGBA(0, 18, 107, 0)
             Color: =RGBA(12, 77, 162, 1)
             Height: =40
             Icon: =Icon.Save
@@ -9498,6 +9500,7 @@ ICEGATEBOE As screen:
 
         Icon12_1 As icon.ArrowLeft:
             AccessibleLabel: ="Back to your previous screen"
+            BorderColor: =RGBA(0, 18, 107, 0)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(12, 77, 162, 1)
             Height: =40
@@ -9512,6 +9515,7 @@ ICEGATEBOE As screen:
             ZIndex: =45
 
         lblExtBOESumDetailed As label:
+            BorderColor: =RGBA(0, 18, 107, 0)
             Color: =RGBA(12, 77, 162, 1)
             FocusedBorderThickness: =1
             FontWeight: =FontWeight.Semibold
@@ -9533,6 +9537,7 @@ ICEGATEBOE As screen:
 
         rectExtBOESumDetailed As rectangle:
             AccessibleLabel: ="test"
+            BorderColor: =RGBA(0, 18, 107, 0)
             Fill: =RGBA(12, 77, 162, 1)
             Height: =1
             TabIndex: =0
@@ -9543,6 +9548,7 @@ ICEGATEBOE As screen:
             ZIndex: =47
 
         frmICEGATEBOEDetailed As form:
+            BorderColor: =RGBA(0, 18, 107, 0)
             DataSource: ='Bill of Entry Detailed Report - ICEGates'
             DefaultMode: =If(varEditBOEDetailedForm,FormMode.Edit,FormMode.View)
             Height: =243
