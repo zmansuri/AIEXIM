@@ -80,6 +80,8 @@ Navigation As CanvasComponent:
             Color: =If(ThisItem.Screen=App.ActiveScreen,RGBA(255, 255, 255, 255),RGBA(0,0,0,100))
             FontWeight: =FontWeight.Semibold
             Height: =29
+            FocusedBorderThickness: =1
+            TabIndex: =0
             HoverFill: |-
                 =//Self.Fill
                 RGBA(186,202,226,100)
