@@ -266,7 +266,7 @@ ICEGATESB As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.QUANTITY
+            Text: =ThisItem.'CIN SITE ID'
             Width: =66
             X: =365
             Y: =2
@@ -282,7 +282,7 @@ ICEGATESB As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.'VALUE FC'
+            Text: =ThisItem.'DBK SNO(DRAWBACK&ROSLCLAIM)'
             Width: =85
             X: =510
             Y: =2
@@ -298,7 +298,7 @@ ICEGATESB As screen:
             PaddingRight: =0
             PaddingTop: =0
             Size: =12
-            Text: =ThisItem.RATE
+            Text: =ThisItem.DBK
             Width: =63
             X: =445
             Y: =2
@@ -27251,12 +27251,12 @@ ICEGATESB As screen:
             Y: =168
             ZIndex: =5
 
-        LBL_SB_Quantity As label:
+        "'LBL_SB_CinSite ID' As label":
             Align: =Align.Center
             Color: =RGBA(255, 255, 255, 1)
             Height: =38
             Size: =11
-            Text: ="Quantity"
+            Text: ="CinSite ID"
             Width: =77
             X: =954
             Y: =168
@@ -27267,7 +27267,7 @@ ICEGATESB As screen:
             Color: =RGBA(255, 255, 255, 1)
             Height: =38
             Size: =11
-            Text: ="Rate"
+            Text: ="DBK"
             Width: =63
             X: =1030
             Y: =168
@@ -27278,7 +27278,7 @@ ICEGATESB As screen:
             Color: =RGBA(255, 255, 255, 1)
             Height: =38
             Size: =11
-            Text: ="Value (F/C)"
+            Text: ="DBK SNO"
             Width: =87
             X: =1095
             Y: =168
