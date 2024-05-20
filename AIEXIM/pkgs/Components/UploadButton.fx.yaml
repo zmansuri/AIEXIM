@@ -40,6 +40,7 @@ UploadButton As CanvasComponent:
             ZIndex: =2
 
         Image1_1 As image:
+            AccessibleLabel: ="Test"
             Fill: =RGBA(0, 18, 107, 1)
             Height: =44
             Image: =upload
@@ -52,16 +53,19 @@ UploadButton As CanvasComponent:
             RadiusBottomRight: =8
             RadiusTopLeft: =8
             RadiusTopRight: =8
+            TabIndex: =0
             Width: =59
             X: =22
             Y: =48
             ZIndex: =3
 
         Rectangle1_4 As rectangle:
+            AccessibleLabel: ="Gallery"
             BorderStyle: =BorderStyle.None
             Fill: =RGBA(0, 18, 107, 1)
             Height: =43
             OnSelect: =true
+            TabIndex: =0
             Width: =9
             X: =74
             Y: =48

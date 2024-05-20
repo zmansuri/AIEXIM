@@ -58,6 +58,7 @@ Navigation As CanvasComponent:
 
     GalleryNavigation As gallery.galleryVertical:
         '#CopilotOverlayLabel': ="Filtered"
+        AccessibleLabel: ="Gallery"
         DelayItemLoading: =true
         Fill: =RGBA(245, 244, 244, 100)
         Height: =644
@@ -65,6 +66,7 @@ Navigation As CanvasComponent:
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         OnSelect: =Set(VarCurrentScreen,App.ActiveScreen)
+        TabIndex: =0
         TemplateFill: |-
             =If(ThisItem.Screen=App.ActiveScreen, RGBA(56, 96,178, 100),RGBA(245,244,244,100))
             
@@ -76,6 +78,7 @@ Navigation As CanvasComponent:
 
         Label1_2 As label:
             Color: =If(ThisItem.Screen=App.ActiveScreen,RGBA(255, 255, 255, 255),RGBA(0,0,0,100))
+            FocusedBorderThickness: =0
             FontWeight: =FontWeight.Semibold
             Height: =29
             HoverFill: |-
@@ -144,6 +147,7 @@ Navigation As CanvasComponent:
         ZIndex: =8
 
     TextInput1_1 As text:
+        AccessibleLabel: ="Test"
         BorderColor: =RGBA(12, 77, 162, 1)
         BorderThickness: =1
         Default: =""
@@ -155,6 +159,7 @@ Navigation As CanvasComponent:
         RadiusTopLeft: =10
         RadiusTopRight: =10
         Size: =10
+        TabIndex: =0
         Width: =255
         X: =983
         Y: =22
