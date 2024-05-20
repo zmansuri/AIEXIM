@@ -103,6 +103,33 @@
     "Type": "OptionSetInfo"
   },
   {
+    "DisplayName": "DocType",
+    "Name": "ispl_doctype",
+    "OptionSetInfoNameMapping": {
+      "170620000": "Bill Of Entry Import",
+      "170620001": "Shipping Bill Export",
+      "170620002": "SEZ Bill of Entry",
+      "170620003": "SEZ Shipping Bill",
+      "170620004": "SEZ Bill of Export"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_typeofdocument",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ispl_typeofdocument",
+        "OptionSetReferenceEntityName": "Upload Doc Parents"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_typeofdocument",
+    "RelatedEntityName": "Extracted Document Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
     "DisplayName": "Status (Extracted Document Lists)",
     "Name": "ispl_extracteddocumentlist_statecode",
     "OptionSetInfoNameMapping": {

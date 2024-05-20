@@ -254,5 +254,155 @@
     "RelatedColumnInvariantName": "statuscode",
     "RelatedEntityName": "Bill Of Entry - ICEGate Summary Reports",
     "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "CompanyType",
+    "Name": "ispl_companytype",
+    "OptionSetInfoNameMapping": {
+      "170620000": "Company 1",
+      "170620001": "Company 2",
+      "170620002": "Company 3",
+      "170620003": "Company 4"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Bill Of Entry - ICEGate Summary Reports"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Bill of Entry Detailed Report - ICEGates"
+      },
+      "OptionSetReferenceItem10": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Upload Doc Parents"
+      },
+      "OptionSetReferenceItem2": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Bill Of Export Reports"
+      },
+      "OptionSetReferenceItem3": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Export SEZ - Shipping Bill Detailed Reports"
+      },
+      "OptionSetReferenceItem4": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Export SEZ - Shipping Summary Reports"
+      },
+      "OptionSetReferenceItem5": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      },
+      "OptionSetReferenceItem6": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Import SEZ - Detailed Reports"
+      },
+      "OptionSetReferenceItem7": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Import SEZ - Summary Reports"
+      },
+      "OptionSetReferenceItem8": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Shipping Bill - Summary Reports"
+      },
+      "OptionSetReferenceItem9": {
+        "OptionSetReferenceColumnName": "ispl_company",
+        "OptionSetReferenceEntityName": "Shipping Bill Export - Detailed Reports"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_company",
+    "RelatedEntityName": "Bill Of Entry - ICEGate Summary Reports",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "Is Processed Choice",
+    "Name": "ispl_isprocessedchoice",
+    "OptionSetInfoNameMapping": {
+      "170620000": "Yes",
+      "170620001": "No"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_isprocessed",
+        "OptionSetReferenceEntityName": "Bill Of Entry - ICEGate Summary Reports"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "ispl_isprocessed",
+        "OptionSetReferenceEntityName": "Bill Of Export Reports"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_isprocessed",
+    "RelatedEntityName": "Bill Of Entry - ICEGate Summary Reports",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "SourceType",
+    "Name": "ispl_sourcetype",
+    "OptionSetInfoNameMapping": {
+      "170620000": "Mail",
+      "170620001": "Upload"
+    },
+    "OptionSetIsBooleanValued": false,
+    "OptionSetIsGlobal": true,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Bill Of Entry - ICEGate Summary Reports"
+      },
+      "OptionSetReferenceItem1": {
+        "OptionSetReferenceColumnName": "cr1c5_source",
+        "OptionSetReferenceEntityName": "Bill of Entry Detailed Report - ICEGates"
+      },
+      "OptionSetReferenceItem10": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Shipping Bill Export - Detailed Reports"
+      },
+      "OptionSetReferenceItem11": {
+        "OptionSetReferenceColumnName": "ispl_source",
+        "OptionSetReferenceEntityName": "Upload Doc Parents"
+      },
+      "OptionSetReferenceItem2": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Bill of Entry Detailed Report - ICEGates"
+      },
+      "OptionSetReferenceItem3": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Bill Of Export Reports"
+      },
+      "OptionSetReferenceItem4": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Export SEZ - Shipping Bill Detailed Reports"
+      },
+      "OptionSetReferenceItem5": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Export SEZ - Shipping Summary Reports"
+      },
+      "OptionSetReferenceItem6": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      },
+      "OptionSetReferenceItem7": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Import SEZ - Detailed Reports"
+      },
+      "OptionSetReferenceItem8": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Import SEZ - Summary Reports"
+      },
+      "OptionSetReferenceItem9": {
+        "OptionSetReferenceColumnName": "ispl_sourcedoc",
+        "OptionSetReferenceEntityName": "Shipping Bill - Summary Reports"
+      }
+    },
+    "OptionSetTypeKey": "PicklistType",
+    "RelatedColumnInvariantName": "ispl_sourcedoc",
+    "RelatedEntityName": "Bill Of Entry - ICEGate Summary Reports",
+    "Type": "OptionSetInfo"
   }
 ]

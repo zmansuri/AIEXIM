@@ -223,29 +223,5 @@
     "RelatedColumnInvariantName": "statuscode",
     "RelatedEntityName": "Bill Of Export Reports",
     "Type": "OptionSetInfo"
-  },
-  {
-    "DisplayName": "Is Processed Choice",
-    "Name": "ispl_isprocessedchoice",
-    "OptionSetInfoNameMapping": {
-      "170620000": "Yes",
-      "170620001": "No"
-    },
-    "OptionSetIsBooleanValued": false,
-    "OptionSetIsGlobal": true,
-    "OptionSetReference": {
-      "OptionSetReferenceItem0": {
-        "OptionSetReferenceColumnName": "ispl_isprocessed",
-        "OptionSetReferenceEntityName": "Bill Of Export Reports"
-      },
-      "OptionSetReferenceItem1": {
-        "OptionSetReferenceColumnName": "ispl_isprocessed",
-        "OptionSetReferenceEntityName": "Bill Of Entry - ICEGate Summary Reports"
-      }
-    },
-    "OptionSetTypeKey": "PicklistType",
-    "RelatedColumnInvariantName": "ispl_isprocessed",
-    "RelatedEntityName": "Bill Of Export Reports",
-    "Type": "OptionSetInfo"
   }
 ]

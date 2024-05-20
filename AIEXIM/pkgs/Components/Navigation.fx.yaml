@@ -78,7 +78,6 @@ Navigation As CanvasComponent:
 
         Label1_2 As label:
             Color: =If(ThisItem.Screen=App.ActiveScreen,RGBA(255, 255, 255, 255),RGBA(0,0,0,100))
-            FocusedBorderThickness: =0
             FontWeight: =FontWeight.Semibold
             Height: =29
             HoverFill: |-
@@ -159,7 +158,6 @@ Navigation As CanvasComponent:
         RadiusTopLeft: =10
         RadiusTopRight: =10
         Size: =10
-        TabIndex: =0
         Width: =255
         X: =983
         Y: =22

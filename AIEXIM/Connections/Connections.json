@@ -10,7 +10,7 @@
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
         "ca0e8246-9af6-4e87-a9c8-648916bd6f31": {
-          "value": "shared_sharepointonline_1"
+          "value": "shared_sharepointonline_9"
         },
         "workflowDisplayName": {
           "value": "DMS Entry From Application"
