@@ -91,11 +91,8 @@ Navigation As CanvasComponent:
             VerticalAlign: =VerticalAlign.Bottom
             Width: =197
             ZIndex: =2
-<<<<<<< HEAD
             FocusedBorderThickness: =1
             TabIndex: =0
-=======
->>>>>>> 27e8f10b65b8626bffe9ee9dc0146e3ccca8a456
 
         Rectangle3_9 As rectangle:
             Fill: =RGBA(149, 149, 149, 1)
