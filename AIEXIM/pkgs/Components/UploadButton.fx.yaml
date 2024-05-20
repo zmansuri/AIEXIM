@@ -44,6 +44,7 @@ UploadButton As CanvasComponent:
             Height: =44
             Image: =upload
             OnSelect: =true
+            AccessibleLabel: ="Test"
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
@@ -55,6 +56,7 @@ UploadButton As CanvasComponent:
             Width: =59
             X: =22
             Y: =48
+            TabIndex: =0
             ZIndex: =3
 
         Rectangle1_4 As rectangle:
@@ -66,4 +68,6 @@ UploadButton As CanvasComponent:
             X: =74
             Y: =48
             ZIndex: =4
+            AccessibleLabel: ="Gallery"
+            TabIndex: =0
 

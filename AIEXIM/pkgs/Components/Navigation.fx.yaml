@@ -61,6 +61,8 @@ Navigation As CanvasComponent:
         DelayItemLoading: =true
         Fill: =RGBA(245, 244, 244, 100)
         Height: =644
+        AccessibleLabel: ="Gallery"
+        TabIndex: =0
         Items: =Navigation.NavigationItems
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
@@ -88,6 +90,7 @@ Navigation As CanvasComponent:
             VerticalAlign: =VerticalAlign.Bottom
             Width: =197
             ZIndex: =2
+            FocusedBorderThickness: =0
 
         Rectangle3_9 As rectangle:
             Fill: =RGBA(149, 149, 149, 1)
@@ -158,6 +161,8 @@ Navigation As CanvasComponent:
         Width: =255
         X: =983
         Y: =22
+        AccessibleLabel: ="Test"
+        TabIndex: =0
         ZIndex: =9
 
     Rectangle2_1 As rectangle:
