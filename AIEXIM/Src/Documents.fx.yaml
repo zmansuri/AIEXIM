@@ -293,7 +293,9 @@ Documents As screen:
                 )
             Height: =45
             Size: =9
-            Text: =If(StatusType.'Incorrect document'=StatusType.'Incorrect document', "Incorrect Doc",StatusType.'Duplicate document' = StatusType.'Duplicate document',"Duplicate Doc")
+            Text: |-
+                =//If(StatusType.'Incorrect document'=StatusType.'Incorrect document', "Incorrect Doc",StatusType.'Duplicate document' = StatusType.'Duplicate document',"Duplicate Doc")
+                ThisItem.StatusDoc
             Width: =100
             X: =835
             Y: =2
