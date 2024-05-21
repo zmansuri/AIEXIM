@@ -83,54 +83,6 @@
     "dependents": [],
     "id": "14c072cb-104c-4a36-873c-5a93101e1ca2"
   },
-  "20ddbd1c-9f6f-4baa-906f-8da088b37662": {
-    "appActions": [
-      "Run"
-    ],
-    "connectionRef": {
-      "apiTier": "Standard",
-      "displayName": "Logic flows",
-      "iconUri": "https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png",
-      "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
-      "parameterHints": {
-        "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e": {
-          "value": "shared_commondataserviceforapps"
-        },
-        "workflowDisplayName": {
-          "value": "Manual Report Download- Dataverse"
-        },
-        "workflowEntityId": {
-          "value": "1760b221-b4f0-ee11-a1fd-002248d6581c"
-        },
-        "workflowName": {
-          "value": "b155b7ca-3205-6e6e-cec2-b19ca80daf79"
-        }
-      },
-      "parameterHintsV2": {
-        "shared_commondataserviceforapps": {
-          "value": "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e"
-        },
-        "workflowDisplayName": {
-          "value": "Manual Report Download- Dataverse"
-        },
-        "workflowEntityId": {
-          "value": "1760b221-b4f0-ee11-a1fd-002248d6581c"
-        },
-        "workflowName": {
-          "value": "b155b7ca-3205-6e6e-cec2-b19ca80daf79"
-        }
-      }
-    },
-    "datasets": {},
-    "dataSources": [
-      "ManualReportDownload-Dataverse"
-    ],
-    "dependencies": {
-      "shared_commondataserviceforapps": "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e"
-    },
-    "dependents": [],
-    "id": "20ddbd1c-9f6f-4baa-906f-8da088b37662"
-  },
   "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e": {
     "appActions": [],
     "connectionRef": {
@@ -146,7 +98,6 @@
     "dataSources": [],
     "dependencies": {},
     "dependents": [
-      "20ddbd1c-9f6f-4baa-906f-8da088b37662",
       "7233fba7-1d5e-4901-aad2-6c011d7c17c0"
     ],
     "id": "2d31cde1-7cec-4cb8-a8f9-e11e066ad55e"

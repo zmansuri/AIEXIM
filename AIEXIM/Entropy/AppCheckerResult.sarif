@@ -94,6 +94,244 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "Reports.DownloadNew.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Reports.DownloadNew.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 287,
+                  "charOffset": 59,
+                  "snippet": {
+                    "text": "'ManualReportDownload-Dataverse'.Run(\n        drpDocumentType.Selected.Value,\n        drpCompany.Selected.Value,\n        Text(\n            FromDate.SelectedDate,\n            \"dd-mmm-yyyy\"\n        ),\n        Text(\n            ToDate.SelectedDate,\n            \"dd-mmm-yyyy\"\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Reports",
+                "type": "Reports.DownloadNew"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "'ManualReportDownload-Dataverse'"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Reports.DownloadNew.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Reports.DownloadNew.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 346,
+                  "snippet": {
+                    "text": ".result"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Reports",
+                "type": "Reports.DownloadNew"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Reports.DownloadNew.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Reports.DownloadNew.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 402,
+                  "snippet": {
+                    "text": "varFile"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Reports",
+                "type": "Reports.DownloadNew"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Reports.DownloadOld.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Reports.DownloadOld.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 287,
+                  "charOffset": 59,
+                  "snippet": {
+                    "text": "'ManualReportDownload-Dataverse'.Run(\n        drpDocumentType.Selected.Value,\n        drpCompany.Selected.Value,\n        Text(\n            FromDate.SelectedDate,\n            \"dd-mmm-yyyy\"\n        ),\n        Text(\n            ToDate.SelectedDate,\n            \"dd-mmm-yyyy\"\n        )\n    )"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Reports",
+                "type": "Reports.DownloadOld"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Run",
+              "'ManualReportDownload-Dataverse'"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrUnknownNamespaceFunction",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Reports.DownloadOld.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Reports.DownloadOld.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 346,
+                  "snippet": {
+                    "text": ".result"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Reports",
+                "type": "Reports.DownloadOld"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrInvalidDot",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "Reports.DownloadOld.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "Reports.DownloadOld.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 402,
+                  "snippet": {
+                    "text": "varFile"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "Reports",
+                "type": "Reports.DownloadOld"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Text",
+              "Error"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "High"
+          },
+          "ruleId": "app-ErrBadType-ExpectedType-ProvidedType",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "SEZSBExtractedData.galExtDataSEZSB.Icon24.OnSelect"
                 }
               ],
@@ -917,7 +1155,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -946,7 +1184,7 @@
             "level": "Medium"
           },
           "ruleId": "app-DataSourceDefaultMaxRowsLimit",
-          "ruleIndex": 2
+          "ruleIndex": 5
         },
         {
           "locations": [
@@ -976,7 +1214,7 @@
             "level": "Medium"
           },
           "ruleId": "app-UnusedVariables",
-          "ruleIndex": 1
+          "ruleIndex": 4
         },
         {
           "locations": [
@@ -1005,7 +1243,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 3
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1034,7 +1272,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 3
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1063,7 +1301,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 3
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1092,7 +1330,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 3
+          "ruleIndex": 6
         },
         {
           "locations": [
@@ -1121,7 +1359,7 @@
             "level": "Medium"
           },
           "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 3
+          "ruleIndex": 6
         }
       ],
       "tool": {
@@ -1144,6 +1382,48 @@
                   "Try moving your data to a different data source."
                 ],
                 "level": "Medium",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrUnknownNamespaceFunction",
+              "messageStrings": {
+                "issue": {
+                  "text": "'{0}' is an unknown or unsupported function in namespace '{1}'."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrInvalidDot",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid use of '.'"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
+                "primaryCategory": "formula",
+                "whyFix": ""
+              }
+            },
+            {
+              "id": "app-ErrBadType-ExpectedType-ProvidedType",
+              "messageStrings": {
+                "issue": {
+                  "text": "Invalid argument type ({1}). Expecting a {0} value instead."
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "level": "High",
                 "primaryCategory": "formula",
                 "whyFix": ""
               }
