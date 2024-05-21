@@ -238,6 +238,12 @@
       "iconUri": "https://connectoricons-prod.azureedge.net/u/patelronak/specialtrain-logicflows-2/1.0.1692.3734/logicflows/icon.png",
       "id": "/providers/microsoft.powerapps/apis/shared_logicflows",
       "parameterHints": {
+        "a0f2c541-0331-4035-af7f-e510232b348b": {
+          "value": "shared_commondataserviceforapps"
+        },
+        "ca8ec0a1-7f44-4749-b5d7-af486c1bc801": {
+          "value": "shared_office365"
+        },
         "workflowDisplayName": {
           "value": "Manual Report Email - Dataverse"
         },
@@ -249,6 +255,12 @@
         }
       },
       "parameterHintsV2": {
+        "shared_commondataserviceforapps": {
+          "value": "a0f2c541-0331-4035-af7f-e510232b348b"
+        },
+        "shared_office365": {
+          "value": "ca8ec0a1-7f44-4749-b5d7-af486c1bc801"
+        },
         "workflowDisplayName": {
           "value": "Manual Report Email - Dataverse"
         },
