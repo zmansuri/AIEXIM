@@ -318,9 +318,9 @@ SEZBOEExtractedData As screen:
         Gal_LBL_Pono As label:
             Height: =39
             Size: =9
-            Text: =ThisItem.'PO No.'
-            Width: =95
-            X: =935
+            Text: =ThisItem.'Port Code'
+            Width: =70
+            X: =950
             Y: =4
             ZIndex: =21
 
@@ -821,7 +821,7 @@ SEZBOEExtractedData As screen:
         PaddingLeft: =15
         Size: =10
         Text: |
-            ="PO No."
+            ="PO Code"
         Width: =104
         X: =1221
         Y: =176
