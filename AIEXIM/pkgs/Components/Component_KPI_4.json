@@ -114,7 +114,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 58,
+        "PublishOrderIndex": 7435,
         "Rules": [
           {
             "Category": "Data",
@@ -436,7 +436,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 59,
+        "PublishOrderIndex": 7436,
         "Rules": [
           {
             "Category": "Data",
@@ -799,7 +799,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 60,
+        "PublishOrderIndex": 7437,
         "Rules": [
           {
             "Category": "Data",
@@ -1121,7 +1121,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 61,
+        "PublishOrderIndex": 7438,
         "Rules": [
           {
             "Category": "Data",
@@ -1484,7 +1484,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 62,
+        "PublishOrderIndex": 7439,
         "Rules": [
           {
             "Category": "Data",
@@ -1806,7 +1806,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 63,
+        "PublishOrderIndex": 7440,
         "Rules": [
           {
             "Category": "Data",
@@ -2169,7 +2169,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 64,
+        "PublishOrderIndex": 7441,
         "Rules": [
           {
             "Category": "Data",
@@ -2491,7 +2491,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 65,
+        "PublishOrderIndex": 7442,
         "Rules": [
           {
             "Category": "Data",
@@ -2851,7 +2851,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 66,
+        "PublishOrderIndex": 7443,
         "Rules": [
           {
             "Category": "Data",
@@ -3211,7 +3211,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 67,
+        "PublishOrderIndex": 7444,
         "Rules": [
           {
             "Category": "Data",
@@ -3571,7 +3571,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 68,
+        "PublishOrderIndex": 7445,
         "Rules": [
           {
             "Category": "Data",
@@ -3931,7 +3931,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 69,
+        "PublishOrderIndex": 7446,
         "Rules": [
           {
             "Category": "Data",
@@ -4271,7 +4271,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638518828583422702",
+    "LastModifiedTimestamp": "638519601354858790",
     "Name": "Component_KPI_4",
     "Rules": [
       {
@@ -4451,7 +4451,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638518828583422702",
+  "LastModifiedTimestamp": "638519601354858790",
   "Name": "8fe60fb2b4c745a1be26bce262704b5f",
   "OverridableProperties": {},
   "SourceLibraryId": "f373a164-3ed5-4558-b537-aeca98a6ffa1",

@@ -298,9 +298,9 @@
                     Height: =45
                     Image: ='edit icon'
                     OnSelect: |-
-                        =//Set(VarID,ThisItem.ID);
-                        ResetForm(UserAccessEditScreen);NewForm(UserAccessEditScreen);
-                        UpdateContext({VarEditDetailsScreen:true})
+                        =Set(VarIDFromUserTable,ThisItem.'User Access Manager');
+                        EditForm(UserAccessEditScreen);
+                        UpdateContext({VarEditDetailsScreen:true});
                     TabIndex: =0
                     Tooltip: ="Add rights for user"
                     Width: =35
@@ -313,9 +313,9 @@
                     Height: =45
                     HoverFill: =Color.Transparent
                     OnSelect: |-
-                        =//Set(VarID,ThisItem.ID);
-                        ResetForm(UserAccessEditScreen);NewForm(UserAccessEditScreen);
-                        UpdateContext({VarEditDetailsScreen:true})
+                        =Set(VarIDFromUserTable,ThisItem.'User Access Manager');
+                        EditForm(UserAccessEditScreen);
+                        UpdateContext({VarEditDetailsScreen:true});
                     Text: =""
                     Tooltip: ="Add rights for user"
                     Width: =35
@@ -1615,6 +1615,7 @@
             DataSource: ='User Access Managers'
             FocusedBorderThickness: =1
             Height: =717
+            Item: =LookUp('User Access Managers','User Access Manager'=VarIDFromUserTable)
             NumberOfColumns: =1
             TabIndex: =0
             Visible: |-
@@ -2237,7 +2238,7 @@
                     AccessibleLabel: ="Email"
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                     BorderThickness: =1
-                    Default: =gal_userAccess.Selected.'Upload Extract Document Rights'
+                    Default: =gal_userAccess.Selected.Email
                     DelayOutput: =true
                     DisplayMode: =Parent.DisplayMode
                     MaxLength: =Parent.MaxLength
@@ -2331,7 +2332,8 @@
                         'Manage User Access': DataCardValue1093.Value
                     }
                 );
-                Refresh('User Access Managers');UpdateContext({VarEditDetailsScreen:false})
+                Refresh('User Access Managers');
+                UpdateContext({VarEditDetailsScreen: false})
             PaddingBottom: =5
             PaddingLeft: =5
             PaddingRight: =5

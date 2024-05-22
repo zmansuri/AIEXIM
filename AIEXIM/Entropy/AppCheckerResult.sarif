@@ -94,86 +94,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "BillOfExportExtractedData.galExtractedBillofExport.View.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BillOfExportExtractedData.galExtractedBillofExport.View.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 7,
-                  "charOffset": 307,
-                  "snippet": {
-                    "text": "Int(ID)"
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "BillOfExportExtractedData",
-                "type": "BillOfExportExtractedData.galExtractedBillofExport.View"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "Int"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "BillOfExportExtractedData.galExtractedBillofExport.View.OnSelect"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "BillOfExportExtractedData.galExtractedBillofExport.View.OnSelect",
-                  "relativeAddress": 0
-                },
-                "region": {
-                  "charLength": 1,
-                  "charOffset": 315,
-                  "snippet": {
-                    "text": "="
-                  }
-                }
-              },
-              "properties": {
-                "member": "OnSelect",
-                "module": "BillOfExportExtractedData",
-                "type": "BillOfExportExtractedData.galExtractedBillofExport.View"
-              }
-            }
-          ],
-          "message": {
-            "arguments": [
-              "LookUp"
-            ],
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-SuggestRemoteExecutionHint",
-          "ruleIndex": 0
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "Home.Component_KPI_5.Text1"
                 }
               ],
@@ -654,6 +574,86 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "BillOfExportExtractedData.galExtractedBillofExport.View.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BillOfExportExtractedData.galExtractedBillofExport.View.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 7,
+                  "charOffset": 307,
+                  "snippet": {
+                    "text": "Int(ID)"
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "BillOfExportExtractedData",
+                "type": "BillOfExportExtractedData.galExtractedBillofExport.View"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "Int"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "BillOfExportExtractedData.galExtractedBillofExport.View.OnSelect"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "BillOfExportExtractedData.galExtractedBillofExport.View.OnSelect",
+                  "relativeAddress": 0
+                },
+                "region": {
+                  "charLength": 1,
+                  "charOffset": 315,
+                  "snippet": {
+                    "text": "="
+                  }
+                }
+              },
+              "properties": {
+                "member": "OnSelect",
+                "module": "BillOfExportExtractedData",
+                "type": "BillOfExportExtractedData.galExtractedBillofExport.View"
+              }
+            }
+          ],
+          "message": {
+            "arguments": [
+              "LookUp"
+            ],
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-SuggestRemoteExecutionHint",
+          "ruleIndex": 0
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ICEGATEBOEExtractedData.galICEGATEBOEExtData.Gal_View.OnSelect"
                 }
               ],
@@ -983,64 +983,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "SEZBillOfExport"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SEZBillOfExport",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "SEZBillOfExport",
-                "type": "SEZBillOfExport"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SEZSB"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SEZSB",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "module": "SEZSB",
-                "type": "SEZSB"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "app-ScreenHasManyControls",
-          "ruleIndex": 3
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ICEGATEBOE"
                 }
               ],
@@ -1053,6 +995,35 @@
               "properties": {
                 "module": "ICEGATEBOE",
                 "type": "ICEGATEBOE"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SEZBillOfExport"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SEZBillOfExport",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "SEZBillOfExport",
+                "type": "SEZBillOfExport"
               }
             }
           ],
@@ -1111,6 +1082,35 @@
               "properties": {
                 "module": "SEZBOE",
                 "type": "SEZBOE"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-ScreenHasManyControls",
+          "ruleIndex": 3
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SEZSB"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SEZSB",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "module": "SEZSB",
+                "type": "SEZSB"
               }
             }
           ],
@@ -1200,7 +1200,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"SEZBillOfExport\" is 575, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"ICEGATEBOE\" is 2375, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
