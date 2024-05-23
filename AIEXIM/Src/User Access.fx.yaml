@@ -680,7 +680,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =86
                     Required: =false
-                    Update: =
+                    Update: =If(DataCardValue1077.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
                     Width: =912
                     X: =0
                     Y: =4
