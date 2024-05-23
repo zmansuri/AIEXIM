@@ -882,7 +882,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =93
                     Required: =false
-                    Update: =DataCardValue1237.Selected.Value
+                    Update: =If(DataCardValue1237.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
                     Width: =912
                     X: =0
                     Y: =7
@@ -897,25 +897,6 @@
                         X: =30
                         Y: =10 + (DataCardValue1237.Height / 2) - (Self.Height / 2)
                         ZIndex: =1
-
-                    DataCardValue1237 As combobox:
-                        AccessibleLabel: ="test"
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        BorderThickness: =1
-                        DefaultSelectedItems: =[Parent.Default]
-                        DisplayFields: =["Value"]
-                        DisplayMode: =Parent.DisplayMode
-                        IsSearchable: =false
-                        Items: =Choices('Generate Report Rights (User Access Managers)')
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        SearchFields: =["Value"]
-                        SearchItems: =[]
-                        SelectMultiple: =false
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey1242.X + DataCardKey1242.Width
-                        Y: =10
-                        ZIndex: =2
 
                     ErrorMessage1242 As label:
                         AutoHeight: =true
@@ -952,6 +933,13 @@
                         Y: =71
                         ZIndex: =5
 
+                    DataCardValue1237 As toggleSwitch:
+                        Height: =38
+                        Width: =120
+                        X: =370
+                        Y: =12
+                        ZIndex: =6
+
                 "'Manage User Access_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
                     BorderStyle: =BorderStyle.Solid
                     DataField: ="ispl_manageuseraccess"
@@ -961,7 +949,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =90
                     Required: =false
-                    Update: =DataCardValue1238.Selected.Value
+                    Update: =If(DataCardValue1238.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
                     Width: =912
                     X: =0
                     Y: =8
@@ -976,25 +964,6 @@
                         X: =30
                         Y: =10 + (DataCardValue1238.Height / 2) - (Self.Height / 2)
                         ZIndex: =1
-
-                    DataCardValue1238 As combobox:
-                        AccessibleLabel: ="test"
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        BorderThickness: =1
-                        DefaultSelectedItems: =[Parent.Default]
-                        DisplayFields: =["Value"]
-                        DisplayMode: =Parent.DisplayMode
-                        IsSearchable: =false
-                        Items: =Choices('Manage User Access (User Access Managers)')
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        SearchFields: =["Value"]
-                        SearchItems: =[]
-                        SelectMultiple: =false
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey1243.X + DataCardKey1243.Width
-                        Y: =10
-                        ZIndex: =2
 
                     ErrorMessage1243 As label:
                         AutoHeight: =true
@@ -1030,6 +999,13 @@
                         X: =30
                         Y: =60
                         ZIndex: =5
+
+                    DataCardValue1238 As toggleSwitch:
+                        Height: =38
+                        Width: =120
+                        X: =370
+                        Y: =12
+                        ZIndex: =6
 
                 "'Manage Logs_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
                     BorderStyle: =BorderStyle.Solid
