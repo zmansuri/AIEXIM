@@ -334,7 +334,7 @@ SEZBillOfExport As screen:
                 Color: =If(Value(SCORE_15.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
                 Height: =33
                 Size: =10
-                Text: =ThisItem.'Request ID Confidence Score'
+                Text: =RoundUp(ThisItem.'Request ID Confidence Score'*100,0) & "%"
                 Width: =50
                 X: =130
                 Y: =10
