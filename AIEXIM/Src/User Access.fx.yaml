@@ -680,7 +680,7 @@
                     Fill: =RGBA(0, 0, 0, 0)
                     Height: =86
                     Required: =false
-                    Update: =DataCardValue1077.Selected.Value
+                    Update: =
                     Width: =912
                     X: =0
                     Y: =4
@@ -695,25 +695,6 @@
                         X: =30
                         Y: =10 + (DataCardValue1077.Height / 2) - (Self.Height / 2)
                         ZIndex: =1
-
-                    DataCardValue1077 As combobox:
-                        AccessibleLabel: ="test"
-                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                        BorderThickness: =1
-                        DefaultSelectedItems: =[Parent.Default]
-                        DisplayFields: =["Value"]
-                        DisplayMode: =Parent.DisplayMode
-                        IsSearchable: =false
-                        Items: =Choices('Upload Extract Document Rights (User Access Managers)')
-                        PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                        SearchFields: =["Value"]
-                        SearchItems: =[]
-                        SelectMultiple: =false
-                        Tooltip: =Parent.DisplayName
-                        Width: =(Parent.Width - 60) * 0.6
-                        X: =DataCardKey1077.X + DataCardKey1077.Width
-                        Y: =10
-                        ZIndex: =2
 
                     ErrorMessage1077 As label:
                         AutoHeight: =true
@@ -749,6 +730,14 @@
                         X: =40
                         Y: =60
                         ZIndex: =5
+
+                    DataCardValue1077 As toggleSwitch:
+                        Default: =ThisItem.'Upload Extract Document Rights'
+                        Height: =38
+                        Width: =118
+                        X: =370
+                        Y: =10
+                        ZIndex: =6
 
                 "'View Rights_DataCard1' As typedDataCard.comboBoxOptionSetSingleEditCard":
                     BorderStyle: =BorderStyle.Solid
