@@ -242,7 +242,7 @@ SEZSBExtractedData As screen:
             TabIndex: =0
             Visible: |-
                 =//If(First(ColCurrentLoggedInUserDetails).'View Rights'=true,true,false)
-                false
+                true
             Width: =40
             X: =1015
             ZIndex: =13
