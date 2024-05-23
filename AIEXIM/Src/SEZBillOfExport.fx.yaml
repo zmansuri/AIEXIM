@@ -265,10 +265,10 @@ SEZBillOfExport As screen:
                 Color: =If(Value(SCORE_15.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
                 Height: =33
                 Size: =10
-                Text: =RoundUp(ThisItem.*100,0) & "%"
+                Text: =RoundUp(ThisItem.'Request ID Confidence Score'*100,0) & "%"
                 Width: =50
-                X: =40
-                Y: =40
+                X: =125
+                Y: =10
                 ZIndex: =5
 
         "'Serial Number_DataCard1' As typedDataCard.textualEditCard":

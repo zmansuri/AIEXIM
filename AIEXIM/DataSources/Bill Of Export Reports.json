@@ -117,6 +117,7 @@
       "ispl_qtykgs": "Qty Kgs",
       "ispl_qtykgsaccuracyscore": "Qty Kgs Accuracy Score",
       "ispl_requestid": "Request ID",
+      "ispl_requestidconfidencescore": "Request ID Confidence Score",
       "ispl_scheme": "Scheme",
       "ispl_schemeaccuracyscore": "Scheme Accuracy Score",
       "ispl_serialnumber": "Serial Number",
