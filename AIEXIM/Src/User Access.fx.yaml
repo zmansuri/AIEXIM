@@ -2313,6 +2313,7 @@
                         'Last Name': DataCardValue1084.Text,
                         Email: DataCardValue1085.Text,
                         'Upload Extract Document Rights': DataCardValue1088.Value,
+                        Role:DataCardValue1081_2.Selected.Value,
                         'Generate Report Rights': DataCardValue1091.Value,
                         'View Rights': DataCardValue1089.Value,
                         'Manage Logs': DataCardValue1092.Value,
