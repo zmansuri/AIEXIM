@@ -267,7 +267,7 @@ SEZBillOfExport As screen:
                 Size: =10
                 Text: =RoundUp(ThisItem.'Request ID Confidence Score'*100,0) & "%"
                 Width: =50
-                X: =125
+                X: =130
                 Y: =10
                 ZIndex: =5
 
