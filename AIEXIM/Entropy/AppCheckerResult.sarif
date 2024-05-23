@@ -984,6 +984,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'User Access'.ContainerAddUser.CreateUserAccessForm.'View Rights_DataCard1'.DataCardValue1079.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Access'.ContainerAddUser.CreateUserAccessForm.'View Rights_DataCard1'.DataCardValue1079.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User Access",
+                "type": "'User Access'.ContainerAddUser.CreateUserAccessForm.'View Rights_DataCard1'.DataCardValue1079"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App.varPDFViewer"
                 }
               ],
