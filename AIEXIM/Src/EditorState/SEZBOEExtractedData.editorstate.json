@@ -8008,7 +8008,7 @@
       "MetaDataIDKey": "",
       "Name": "grpSubmenuSEZBOEExtData",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 41,
+      "ParentIndex": 40,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -13077,7 +13077,7 @@
       "MetaDataIDKey": "",
       "Name": "MiniHeader_SEZboe",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 40,
+      "ParentIndex": 41,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {

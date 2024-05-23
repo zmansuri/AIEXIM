@@ -8292,38 +8292,6 @@ SEZSB As screen:
             Y: =172
             ZIndex: =44
 
-    grpBtnEditIconSEZSBDetailed As group:
-        Height: =5
-        Width: =5
-        X: =20
-        Y: =20
-        ZIndex: =48
-
-        edit As image:
-            AccessibleLabel: ="TEST"
-            Height: =50
-            Image: ='edit icon'
-            OnSelect: =Set(varEditFormSEZSBDetailed,true)
-            TabIndex: =0
-            Visible: |
-                =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && varShowSEZSBDetailedPopup && frmSEZSBDetailed.Mode = FormMode.View,true,false)
-            Width: =50
-            X: =1238
-            Y: =96
-            ZIndex: =49
-
-        btnEditIcon_6 As button:
-            Fill: =RGBA(0, 0, 0, 0)
-            HoverFill: =Color.Transparent
-            OnSelect: =Set(varEditFormSEZSBDetailed,true)
-            Text: =""
-            Visible: |
-                =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && varShowSEZSBDetailedPopup && frmSEZSBDetailed.Mode = FormMode.View,true,false)
-            Width: =50
-            X: =1238
-            Y: =101
-            ZIndex: =50
-
     grpSEZSbDetailed As group:
         Height: =5
         Width: =5
@@ -15692,6 +15660,38 @@ SEZSB As screen:
             X: =598
             Y: =105
             ZIndex: =48
+
+    grpBtnEditIconSEZSBDetailed As group:
+        Height: =5
+        Width: =5
+        X: =20
+        Y: =20
+        ZIndex: =48
+
+        edit As image:
+            AccessibleLabel: ="TEST"
+            Height: =50
+            Image: ='edit icon'
+            OnSelect: =Set(varEditFormSEZSBDetailed,true)
+            TabIndex: =0
+            Visible: |
+                =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && varShowSEZSBDetailedPopup && frmSEZSBDetailed.Mode = FormMode.View,true,false)
+            Width: =50
+            X: =1238
+            Y: =96
+            ZIndex: =49
+
+        btnEditIcon_6 As button:
+            Fill: =RGBA(0, 0, 0, 0)
+            HoverFill: =Color.Transparent
+            OnSelect: =Set(varEditFormSEZSBDetailed,true)
+            Text: =""
+            Visible: |
+                =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && varShowSEZSBDetailedPopup && frmSEZSBDetailed.Mode = FormMode.View,true,false)
+            Width: =50
+            X: =1238
+            Y: =101
+            ZIndex: =50
 
     LBLNav As label:
         Color: =RGBA(12, 77, 162, 1)
