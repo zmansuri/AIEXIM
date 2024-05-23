@@ -8331,6 +8331,7 @@ SEZSB As screen:
         ZIndex: =48
 
         Rectangle9 As rectangle:
+            BorderStyle: =BorderStyle.None
             Fill: =RGBA(255, 255, 255, 1)
             Height: =661
             TabIndex: =
