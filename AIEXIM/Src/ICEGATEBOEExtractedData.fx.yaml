@@ -305,7 +305,7 @@ ICEGATEBOEExtractedData As screen:
         GAL_Icon_View As icon.View:
             AccessibleLabel: ="TEST"
             BorderStyle: =BorderStyle.None
-            Color: =If(ThisItem.'Is Processed'= 'Is Processed Choice'.Yes,Color.DarkGreen,Color.DarkRed)
+            Color: =Color.DarkGreen
             Height: =43
             Icon: =Icon.View
             OnSelect: |

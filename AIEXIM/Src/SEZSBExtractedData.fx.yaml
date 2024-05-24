@@ -210,43 +210,6 @@ SEZSBExtractedData As screen:
             Y: =2
             ZIndex: =11
 
-        Image3_8 As image:
-            AccessibleLabel: ="TEST"
-            Height: =48
-            Image: =view
-            OnSelect: |-
-                =Set(
-                    varExtractedSEZExportItem,
-                    ThisItem.ID
-                );
-                Set(
-                    varExtractedSEZExportSBNO,
-                    ThisItem.'SB NO'
-                );
-                Navigate(SEZSB);
-                /*Set(
-                    varPDFViewerExtractedData,
-                    GetFileContentFormAttachments.Run(ThisItem.UploadedDocListIDSEZSB).result
-                );*/
-                Set(
-                    varPDFViewerExtractedData,
-                    LookUp(
-                        'Extracted Document Lists',
-                        ID = Text(galExtDataSEZSB.Selected.'Uploaded Doc List IDSEZSB')
-                    ).'Attachment File'.Value
-                );
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Visible: |-
-                =//If(First(ColCurrentLoggedInUserDetails).'View Rights'=true,true,false)
-                true
-            Width: =40
-            X: =1015
-            ZIndex: =13
-
         Label6_18 As label:
             Height: =45
             OnSelect: =Select(Parent)
@@ -322,10 +285,10 @@ SEZSBExtractedData As screen:
         Icon24 As icon.View:
             AccessibleLabel: ="TEST"
             BorderStyle: =BorderStyle.None
-            Color: =If(ThisItem.'Is Processed'= 'Is Processed (Export SEZ - Shipping Summary Reports)'.Yes,Color.DarkGreen,Color.DarkRed)
+            Color: =Color.DarkGreen
             Height: =43
             Icon: =Icon.View
-            OnSelect: |
+            OnSelect: |+
                 =Set(
                     varExtractedSEZExportItem,
                     ThisItem.ID
@@ -336,6 +299,7 @@ SEZSBExtractedData As screen:
                 );
                 Navigate(SEZSB);
                 Set(VarSEZshippingBillPDF,LookUp('Extracted Document Lists',Int(ID)=galExtDataSEZSB.Selected.'Uploaded Doc List IDSEZSB').'Attachment File'.Value);
+                
             PaddingBottom: =4
             PaddingLeft: =4
             PaddingRight: =4
