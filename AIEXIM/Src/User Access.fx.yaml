@@ -559,7 +559,7 @@
 
             CreateUserAccessForm As form:
                 DataSource: ='User Access Managers'
-                Height: =560
+                Height: =550
                 NumberOfColumns: =1
                 OnFailure: =Notify("There has been some error please resubmit",NotificationType.Error)
                 OnSuccess: |
@@ -568,7 +568,7 @@
                     NewForm(CreateUserAccessForm);
                 Width: =912
                 X: =66
-                Y: =45
+                Y: =50
                 ZIndex: =3
 
                 Role_DataCard1 As typedDataCard.textualEditCard:
