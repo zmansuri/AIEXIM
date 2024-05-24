@@ -1574,7 +1574,7 @@
                     Width: =Parent.Width - 60
                     X: =30
                     Y: =DataCardValue1081_2.Y + DataCardValue1081_2.Height
-                    ZIndex: =3
+                    ZIndex: =2
 
                 StarVisible1081 As label:
                     Align: =Align.Center
@@ -1584,7 +1584,7 @@
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey1081.Y
-                    ZIndex: =4
+                    ZIndex: =3
 
                 DataCardValue1081_2 As dropdown:
                     Default: =gal_userAccess.Selected.Role
@@ -1593,6 +1593,13 @@
                     X: =30
                     Y: =DataCardKey1081.Y + DataCardKey1081.Height + 5
                     ZIndex: =5
+
+                Label11 As label:
+                    Text: =
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1081.Y + DataCardKey1081.Height + 5
+                    ZIndex: =6
 
             UploadExtractDocumentRights_DataCard2 As typedDataCard.toggleEditCard:
                 BorderStyle: =BorderStyle.Solid
