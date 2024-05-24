@@ -250,25 +250,6 @@ Home As screen:
             Y: =2
             ZIndex: =12
 
-        ImageView As image:
-            AccessibleLabel: ="View docoment"
-            Height: =48
-            Image: =view
-            OnSelect: |-
-                =UpdateContext({VarPdfOpenerHome: true});
-                //Set(varPDFViewer,GetFileContentFormAttachments.Run(ThisItem.ID).result);
-                Set(varPDFViewerHome, galRecentDocumentsLog.Selected.'Attachment File'.Value)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =
-            Visible: =If(First(ColCurrentLoggedInUserDetails).'View Rights' = true, true,false)
-            Width: =40
-            X: =1055
-            Y: =1
-            ZIndex: =13
-
         Lbl_Type As label:
             Height: =45
             PaddingLeft: =10
@@ -357,6 +338,23 @@ Home As screen:
             X: =960
             Y: =2
             ZIndex: =16
+
+        Icon3 As icon.View:
+            Color: =Color.DarkGreen
+            Height: =48
+            Icon: =Icon.View
+            OnSelect: |-
+                =UpdateContext({VarPdfOpenerHome: true});
+                //Set(varPDFViewer,GetFileContentFormAttachments.Run(ThisItem.ID).result);
+                Set(varPDFViewerHome, galRecentDocumentsLog.Selected.'Attachment File'.Value)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =40
+            X: =1055
+            Y: =1
+            ZIndex: =17
 
     MiniHeader As group:
         Height: =5
