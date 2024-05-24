@@ -1599,6 +1599,8 @@
                     ZIndex: =6
 
                     DataCardValue1081_2 As dropdown:
+                        BorderStyle: =BorderStyle.None
+                        BorderThickness: =0
                         Default: =gal_userAccess.Selected.Role
                         Height: =39
                         Items: =["Admin","User"]
