@@ -166,6 +166,7 @@
         "gal_userAccess As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
             '#CopilotOverlayLabel': ="Filtered"
             AccessibleLabel: ="List of users"
+            BorderStyle: =BorderStyle.None
             ContentLanguage: ="List of added user"
             DelayItemLoading: =true
             Fill: =RGBA(255, 255, 255, 1)
@@ -583,7 +584,7 @@
 
             CreateUserAccessForm As form:
                 DataSource: ='User Access Managers'
-                Height: =562
+                Height: =560
                 NumberOfColumns: =1
                 OnFailure: =Notify("There has been some error please resubmit",NotificationType.Error)
                 OnSuccess: |
