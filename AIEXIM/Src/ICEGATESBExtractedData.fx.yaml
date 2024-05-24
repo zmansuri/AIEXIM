@@ -149,13 +149,27 @@ ICEGATESBExtractedData As screen:
             =Sort(
                 Filter(
                     'Shipping Bill - Summary Reports',
-                    StartsWith('SB No',txtSearchICEGATESB.Text)
-                    ,
+                    StartsWith(
+                        'SB No',
+                        txtSearchICEGATESB.Text
+                    ) || StartsWith(
+                        'PORT OF LOADING',
+                        txtSearchICEGATESB.Text
+                    ) || StartsWith(
+                        'COUNTRY OF FINAL DESTINATION',
+                        txtSearchICEGATESB.Text
+                    ) || StartsWith(
+                        'CONSIGNEE NAME',
+                        txtSearchICEGATESB.Text
+                    ) || StartsWith(
+                        'INV No Inv Summary',
+                        txtSearchICEGATESB.Text
+                    ),
                     'Created On' >= dteFromICEGATESB.SelectedDate && 'Created On' <= DateAdd(
                         dteToICEGATESB.SelectedDate,
                         1,
                         TimeUnit.Days
-                    ) || IsBlank(dteFromICEGATESB.SelectedDate)  && IsBlank(dteToICEGATESB.SelectedDate)
+                    ) || IsBlank(dteFromICEGATESB.SelectedDate) && IsBlank(dteToICEGATESB.SelectedDate)
                 ),
                 'Created On',
                 SortOrder.Descending
