@@ -338,7 +338,7 @@ SEZBOEExtractedData As screen:
             Size: =9
             Text: =ThisItem.'Port Code'
             Width: =70
-            X: =950
+            X: =965
             Y: =4
             ZIndex: =21
 
