@@ -172,9 +172,6 @@ Documents As screen:
                     txtCompany,
                     txtSearchDocsDocuments.Text
                 ) || StartsWith(
-                    'Type Of Document',
-                    txtSearchDocsDocuments.Text
-                ) || StartsWith(
                     'Created By Flow',
                     txtSearchDocsDocuments.Text
                 ) || StartsWith(
