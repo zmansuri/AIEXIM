@@ -145,8 +145,11 @@ SEZBOEExtractedData As screen:
                     StartsWith(
                         'BE No.',
                         txtSearchSEZBOE.Text
-                    )|| StartsWith('Port of Shipment',txtSearchSEZBOE.Text),
-                    'Created On' >= dteFromSEZBOE.SelectedDate || dteFromSEZBOE.SelectedDate=Blank() && 'Created On' <= DateAdd(
+                    ) || StartsWith(
+                        'Port of Shipment',
+                        txtSearchSEZBOE.Text
+                    )|| StartsWith('Invoice No',txtSearchSEZBOE.Text) || StartsWith(Currency,txtSearchSEZBOE.Text),
+                    'Created On' >= dteFromSEZBOE.SelectedDate || dteFromSEZBOE.SelectedDate = Blank() && 'Created On' <= DateAdd(
                         dteToSEZBOE.SelectedDate,
                         1,
                         TimeUnit.Days
