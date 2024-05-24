@@ -1104,19 +1104,19 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2.AccessibleLabel"
+                  "fullyQualifiedName": "'User Access'.UserAccessEditScreen.Role_DataCard2.Container_dropDown.DataCardValue1081_2.AccessibleLabel"
                 }
               ],
               "physicalLocation": {
                 "address": {
-                  "fullyQualifiedName": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2.AccessibleLabel",
+                  "fullyQualifiedName": "'User Access'.UserAccessEditScreen.Role_DataCard2.Container_dropDown.DataCardValue1081_2.AccessibleLabel",
                   "relativeAddress": 0
                 }
               },
               "properties": {
                 "member": "AccessibleLabel",
                 "module": "User Access",
-                "type": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2"
+                "type": "'User Access'.UserAccessEditScreen.Role_DataCard2.Container_dropDown.DataCardValue1081_2"
               }
             }
           ],

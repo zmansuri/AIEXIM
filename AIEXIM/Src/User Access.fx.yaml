@@ -1586,20 +1586,26 @@
                     Y: =DataCardKey1081.Y
                     ZIndex: =3
 
-                DataCardValue1081_2 As dropdown:
-                    Default: =gal_userAccess.Selected.Role
-                    Items: =["Admin","User"]
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey1081.Y + DataCardKey1081.Height + 5
-                    ZIndex: =5
-
-                Label11 As label:
-                    Text: =
+                Container_dropDown As groupContainer.manualLayoutContainer:
+                    BorderThickness: =1
+                    Height: =40
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
                     Width: =Parent.Width - 60
                     X: =30
                     Y: =DataCardKey1081.Y + DataCardKey1081.Height + 5
                     ZIndex: =6
+
+                    DataCardValue1081_2 As dropdown:
+                        Default: =gal_userAccess.Selected.Role
+                        Height: =39
+                        Items: =["Admin","User"]
+                        Width: =515
+                        X: =2
+                        Y: =1
+                        ZIndex: =1
 
             UploadExtractDocumentRights_DataCard2 As typedDataCard.toggleEditCard:
                 BorderStyle: =BorderStyle.Solid
