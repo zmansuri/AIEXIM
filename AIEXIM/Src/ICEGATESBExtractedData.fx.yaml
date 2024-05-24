@@ -164,6 +164,12 @@ ICEGATESBExtractedData As screen:
                     ) || StartsWith(
                         'INV No Inv Summary',
                         txtSearchICEGATESB.Text
+                    ) || StartsWith(
+                        'Currency Inv Summary',
+                        txtSearchICEGATESB.Text
+                    ) || StartsWith(
+                        'INV Amt FC Inv Summary',
+                        txtSearchICEGATESB.Text
                     ),
                     'Created On' >= dteFromICEGATESB.SelectedDate && 'Created On' <= DateAdd(
                         dteToICEGATESB.SelectedDate,
