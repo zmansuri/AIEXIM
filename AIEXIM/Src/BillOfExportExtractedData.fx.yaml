@@ -168,7 +168,7 @@ BillOfExportExtractedData As screen:
                     ) || StartsWith(
                         Currency,
                         txtSearchBillOfExport.Text
-                    ),
+                    )||StartsWith('AD Code',txtSearchBillOfExport.Text),
                     'Created On' >= dteFrom.SelectedDate || dteFrom.SelectedDate= Blank() && 'Created On' <= DateAdd(
                         dteTo.SelectedDate,
                         1,
