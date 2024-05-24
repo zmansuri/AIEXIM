@@ -389,7 +389,7 @@
         BorderThickness: =1
         Default: =""
         Height: =35
-        HintText: ="Search Document"
+        HintText: ="Search User"
         RadiusBottomLeft: =10
         RadiusBottomRight: =10
         RadiusTopLeft: =10
