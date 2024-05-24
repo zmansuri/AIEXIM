@@ -228,20 +228,18 @@ Logs As screen:
             Y: =2
             ZIndex: =12
 
-        View_gal As image:
-            AccessibleLabel: ="View "
-            Height: =45
-            Image: =view
-            OnSelect: |
-                =
+        Icon6 As icon.View:
+            Color: =Color.DarkGreen
+            Height: =48
+            Icon: =Icon.View
+            OnSelect: =Select(Parent)
             PaddingBottom: =10
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
-            TabIndex: =0
             Width: =40
-            X: =1002
-            Y: =2
+            X: =1022
+            Y: =1
             ZIndex: =13
 
     MiniHeader_Logs As group:
