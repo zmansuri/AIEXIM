@@ -387,6 +387,7 @@ Documents As screen:
             ZIndex: =16
 
         Icon2 As icon.View:
+            BorderStyle: =BorderStyle.None
             Color: =Color.DarkGreen
             Height: =45
             Icon: =Icon.View
