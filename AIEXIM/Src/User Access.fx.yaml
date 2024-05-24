@@ -1542,7 +1542,7 @@
                 DisplayMode: =Parent.DisplayMode
                 DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_role)
                 Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
+                Height: =95
                 MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_role)
                 Required: =false
                 Update: =DataCardValue1081_2.Selected.Value
@@ -1599,8 +1599,7 @@
                     ZIndex: =6
 
                     DataCardValue1081_2 As dropdown:
-                        BorderStyle: =BorderStyle.None
-                        BorderThickness: =0
+                        BorderThickness: =1
                         Default: =gal_userAccess.Selected.Role
                         Height: =39
                         Items: =["Admin","User"]
