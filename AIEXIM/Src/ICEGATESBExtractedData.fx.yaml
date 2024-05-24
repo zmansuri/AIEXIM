@@ -170,7 +170,7 @@ ICEGATESBExtractedData As screen:
                     ) || StartsWith(
                         'INV Amt FC Inv Summary',
                         txtSearchICEGATESB.Text
-                    ),
+                    )|| StartsWith('AD CODE',txtSearchICEGATESB.Text),
                     'Created On' >= dteFromICEGATESB.SelectedDate && 'Created On' <= DateAdd(
                         dteToICEGATESB.SelectedDate,
                         1,
