@@ -732,7 +732,7 @@
                         ZIndex: =5
 
                     DataCardValue1077 As toggleSwitch:
-                        Default: =If(ThisItem.'Upload Extract Document Rights' = 'Upload Extract Document Rights (User Access Managers)'.Yes,true,false)
+                        Default: =If(ThisItem.'Upload Extract Document Rights' = 'Upload Extract Document Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
                         Height: =38
                         Width: =120
                         X: =370

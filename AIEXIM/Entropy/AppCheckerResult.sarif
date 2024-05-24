@@ -924,36 +924,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "User Access",
-                "type": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "'User Access'.ContainerAddUser.CreateUserAccessForm.'Upload Extract Document Rights_DataCard1'.DataCardValue1077.AccessibleLabel"
                 }
               ],
@@ -1117,6 +1087,36 @@
                 "member": "AccessibleLabel",
                 "module": "User Access",
                 "type": "'User Access'.ContainerAddUser.CreateUserAccessForm.'Manage Logs_DataCard1'.DataCardValue1239"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "User Access",
+                "type": "'User Access'.UserAccessEditScreen.Role_DataCard2.DataCardValue1081_2"
               }
             }
           ],
