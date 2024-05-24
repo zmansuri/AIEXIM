@@ -148,7 +148,22 @@ SEZBOEExtractedData As screen:
                     ) || StartsWith(
                         'Port of Shipment',
                         txtSearchSEZBOE.Text
-                    )|| StartsWith('Invoice No',txtSearchSEZBOE.Text) || StartsWith(Currency,txtSearchSEZBOE.Text),
+                    ) || StartsWith(
+                        'Invoice No',
+                        txtSearchSEZBOE.Text
+                    ) || StartsWith(
+                        Currency,
+                        txtSearchSEZBOE.Text
+                    ) || StartsWith(
+                        'Invoice value FC (FOB)',
+                        txtSearchSEZBOE.Text
+                    ) || StartsWith(
+                        'AD code',
+                        txtSearchSEZBOE.Text
+                    ) || StartsWith(
+                        'Port Code',
+                        txtSearchSEZBOE.Text
+                    ),
                     'Created On' >= dteFromSEZBOE.SelectedDate || dteFromSEZBOE.SelectedDate = Blank() && 'Created On' <= DateAdd(
                         dteToSEZBOE.SelectedDate,
                         1,
