@@ -301,25 +301,6 @@ Documents As screen:
             Y: =2
             ZIndex: =12
 
-        GLY_View As image:
-            AccessibleLabel: ="View PDF"
-            Height: =45
-            Image: =view
-            OnSelect: |-
-                =UpdateContext({VarDocumentUpload:true});
-                //Set(varPDFViewer,GetFileContentFormAttachments.Run(ThisItem.ID).result)
-                Set(varPDFViewerDoc, GalleryExtractedDoc.Selected.'Attachment File'.Value)
-            PaddingBottom: =10
-            PaddingLeft: =10
-            PaddingRight: =10
-            PaddingTop: =10
-            TabIndex: =0
-            Visible: =If(First(ColCurrentLoggedInUserDetails).'View Rights' = true, true,false)
-            Width: =40
-            X: =1041
-            Y: =2
-            ZIndex: =13
-
         GLY_type As label:
             Align: =Align.Center
             Height: =45
@@ -404,6 +385,23 @@ Documents As screen:
             X: =940
             Y: =2
             ZIndex: =16
+
+        Icon2 As icon.View:
+            Color: =Color.DarkGreen
+            Height: =45
+            Icon: =Icon.View
+            OnSelect: |-
+                =UpdateContext({VarDocumentUpload:true});
+                //Set(varPDFViewer,GetFileContentFormAttachments.Run(ThisItem.ID).result)
+                Set(varPDFViewerDoc, GalleryExtractedDoc.Selected.'Attachment File'.Value)
+            PaddingBottom: =10
+            PaddingLeft: =10
+            PaddingRight: =10
+            PaddingTop: =10
+            Width: =40
+            X: =1041
+            Y: =2
+            ZIndex: =17
 
     MiniHeader_DOC As group:
         Height: =5
