@@ -326,9 +326,8 @@ ICEGATESBExtractedData As screen:
         Icon21 As icon.View:
             AccessibleLabel: ="TEST"
             BorderStyle: =BorderStyle.None
-            Color: |-
-                =//RGBA(0, 18, 107, 1)
-                If(ThisItem.IsProcessed ='IsProcessed (Shipping Bill - Summary Reports)'.Yes,Color.DarkGreen,Color.DarkRed)
+            Color: |
+                =Color.DarkGreen
             Height: =43
             Icon: =Icon.View
             OnSelect: |
