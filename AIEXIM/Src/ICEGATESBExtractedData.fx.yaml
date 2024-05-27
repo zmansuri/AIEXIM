@@ -342,7 +342,7 @@ ICEGATESBExtractedData As screen:
                     VarPdfView,
                     LookUp(
                         'Extracted Document Lists',
-                        Int(ID) = GAL_ShippingBillExport.Selected.UploadDocListIDSB
+                        'Look Down To Shipping Bill Summary'.UploadDocListIDSB = GAL_ShippingBillExport.Selected.UploadDocListIDSB
                     ).'Attachment File'.Value
                 );
             PaddingBottom: =4

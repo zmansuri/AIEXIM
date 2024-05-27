@@ -288,7 +288,7 @@ SEZSBExtractedData As screen:
             Color: =Color.DarkGreen
             Height: =43
             Icon: =Icon.View
-            OnSelect: |+
+            OnSelect: |
                 =Set(
                     varExtractedSEZExportItem,
                     ThisItem.ID
@@ -298,8 +298,13 @@ SEZSBExtractedData As screen:
                     ThisItem.'SB NO'
                 );
                 Navigate(SEZSB);
-                Set(VarSEZshippingBillPDF,LookUp('Extracted Document Lists',Int(ID)=galExtDataSEZSB.Selected.'Uploaded Doc List IDSEZSB').'Attachment File'.Value);
-                
+                Set(
+                    VarSEZshippingBillPDF,
+                    LookUp(
+                        'Extracted Document Lists',
+                        'Look Down To Summary Export SEZ Shipping Bill'.'Uploaded Doc List IDSEZSB' = galExtDataSEZSB.Selected.'Uploaded Doc List IDSEZSB'
+                    ).'Attachment File'.Value
+                );
             PaddingBottom: =4
             PaddingLeft: =4
             PaddingRight: =4

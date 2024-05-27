@@ -308,7 +308,7 @@ BillOfExportExtractedData As screen:
                     varPDFViewerExtractedData,
                     LookUp(
                         'Extracted Document Lists',
-                        Int(ID) = galExtractedBillofExport.Selected.'Upload Doc List Ref ID'
+                        'Look Down To Bill of Export'.'Upload Doc List Ref ID' = galExtractedBillofExport.Selected.'Upload Doc List Ref ID'
                     ).'Attachment File'.Value
                 );
                 Navigate(SEZBillOfExport);

@@ -226,7 +226,7 @@ ICEGATEBOEExtractedData As screen:
                     VarPdfView,
                     LookUp(
                         'Extracted Document Lists',
-                        Int(ID) = galICEGATEBOEExtData.Selected.'Upload Doc List ID ICE GATE BOE'
+                        'Look Down To Bill of Entry'.'Upload Doc List ID ICE GATE BOE' = galICEGATEBOEExtData.Selected.'Upload Doc List ID ICE GATE BOE'
                     ).'Attachment File'.Value
                 );
                 Navigate(ICEGATEBOE);
@@ -321,7 +321,7 @@ ICEGATEBOEExtractedData As screen:
                     VarShippingPDFview,
                     LookUp(
                         'Extracted Document Lists',
-                        Int(ID) = galICEGATEBOEExtData.Selected.'Upload Doc List ID ICE GATE BOE'
+                        'Look Down To Bill of Entry'.'Upload Doc List ID ICE GATE BOE' = galICEGATEBOEExtData.Selected.'Upload Doc List ID ICE GATE BOE'
                     ).'Attachment File'.Value
                 );
                 Navigate(ICEGATEBOE);
