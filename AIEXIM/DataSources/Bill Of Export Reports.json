@@ -10,6 +10,8 @@
     "Name": "Bill Of Export Reports",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr1c5_ispl_extracteddocumentlist_LookDownToBOE": "Extracted Document Lists",
+      "cr1c5_LookUpToExtracted": "Look Up To Extracted",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",

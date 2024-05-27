@@ -10,6 +10,7 @@
     "Name": "Shipping Bill Export - Detailed Reports",
     "NativeCDSDataSourceInfoNameMapping": {
       "_ownerid_value": "Owner",
+      "cr1c5_LookUpToSummary": "Look Up To Summary",
       "createdby": "Created By",
       "createdon": "Created On",
       "createdonbehalfby": "Created By (Delegate)",

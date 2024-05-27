@@ -6129,10 +6129,10 @@ ICEGATEBOE As screen:
             DataField: ="ispl_invoiceno"
             Default: =ThisItem.'InvoiceNo Part1'
             DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_invoiceno)
+            DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_invoicesno)
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'], DataSourceInfo.MaxLength, ispl_invoiceno)
+            MaxLength: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'], DataSourceInfo.MaxLength, ispl_invoicesno)
             Required: =false
             Update: =DataCardValue699.Text
             Width: =378
