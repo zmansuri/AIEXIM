@@ -106,7 +106,8 @@ Logs As screen:
         DelayItemLoading: =true
         Fill: =RGBA(255, 255, 255, 1)
         Height: =528
-        Items: =Sort('Extracted Document Lists','Created On',SortOrder.Descending)
+        Items: |
+            =Sort('Extracted Document Lists','Created On',SortOrder.Descending)
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data
         ShowScrollbar: =false

@@ -5680,7 +5680,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey1082",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8430,7 +8430,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey1242",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8705,7 +8705,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey1243",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8980,7 +8980,7 @@
       "MetaDataIDKey": "%FieldName.ID%",
       "Name": "DataCardKey1244",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -11192,7 +11192,7 @@
       "MetaDataIDKey": "",
       "Name": "DataCardValue1082",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14038,7 +14038,7 @@
       "MetaDataIDKey": "",
       "Name": "DataCardValue1237",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14264,7 +14264,7 @@
       "MetaDataIDKey": "",
       "Name": "DataCardValue1238",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -14490,7 +14490,7 @@
       "MetaDataIDKey": "",
       "Name": "DataCardValue1239",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -39608,7 +39608,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible1082",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -42428,7 +42428,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible1242",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -42710,7 +42710,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible1243",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -42992,7 +42992,7 @@
       "MetaDataIDKey": "%FieldRequired.ID%",
       "Name": "StarVisible1244",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
