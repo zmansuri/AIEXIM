@@ -1647,7 +1647,7 @@
                     DisplayMode: =Parent.DisplayMode
                     FalseText: ="No"
                     Tooltip: =Parent.DisplayName
-                    TrueText: ="Ye"
+                    TrueText: ="Yes"
                     X: =30
                     Y: =DataCardKey1093.Y + DataCardKey1093.Height + 5
                     ZIndex: =2
@@ -1771,7 +1771,7 @@
                     DisplayMode: =Parent.DisplayMode
                     FalseText: ="No"
                     Tooltip: =Parent.DisplayName
-                    TrueText: ="Ye"
+                    TrueText: ="Yes"
                     X: =30
                     Y: =DataCardKey1095.Y + DataCardKey1095.Height + 5
                     ZIndex: =2
@@ -1895,7 +1895,7 @@
                     DisplayMode: =Parent.DisplayMode
                     FalseText: ="No"
                     Tooltip: =Parent.DisplayName
-                    TrueText: ="Ye"
+                    TrueText: ="Yes"
                     X: =30
                     Y: =DataCardKey1097.Y + DataCardKey1097.Height + 5
                     ZIndex: =2
