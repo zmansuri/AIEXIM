@@ -7419,6 +7419,7 @@ SEZBillOfExport As screen:
                 ZIndex: =1
 
             DataCardValue1078 As text:
+                AccessibleLabel: ="test"
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Parent.Default
                 DelayOutput: =true

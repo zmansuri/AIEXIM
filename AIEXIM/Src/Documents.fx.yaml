@@ -384,6 +384,7 @@ Documents As screen:
             ZIndex: =16
 
         Icon2 As icon.View:
+            AccessibleLabel: ="tes"
             BorderStyle: =BorderStyle.None
             Color: =Color.DarkGreen
             Height: =45
@@ -396,6 +397,7 @@ Documents As screen:
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
+            TabIndex: =0
             Width: =40
             X: =1041
             Y: =2

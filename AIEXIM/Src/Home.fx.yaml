@@ -340,6 +340,7 @@ Home As screen:
             ZIndex: =16
 
         Icon3 As icon.View:
+            AccessibleLabel: ="test"
             Color: =Color.DarkGreen
             Height: =48
             Icon: =Icon.View
@@ -351,6 +352,7 @@ Home As screen:
             PaddingLeft: =10
             PaddingRight: =10
             PaddingTop: =10
+            TabIndex: =0
             Width: =40
             X: =1055
             Y: =1

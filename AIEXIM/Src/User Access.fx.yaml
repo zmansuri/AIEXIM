@@ -708,6 +708,7 @@
                         ZIndex: =5
 
                     DataCardValue1077 As toggleSwitch:
+                        AccessibleLabel: ="test"
                         Default: =If(ThisItem.'Upload Extract Document Rights' = 'Upload Extract Document Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
                         Height: =38
                         Width: =120
@@ -776,6 +777,7 @@
                         ZIndex: =5
 
                     DataCardValue1079 As toggleSwitch:
+                        AccessibleLabel: ="test"
                         Default: =If(ThisItem.'View Rights' = 'View Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
                         Height: =38
                         Width: =120
@@ -844,6 +846,7 @@
                         ZIndex: =5
 
                     DataCardValue1082 As toggleSwitch:
+                        AccessibleLabel: ="test"
                         Default: =If(ThisItem.'Edit Rights' = 'Edit Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
                         Height: =38
                         Width: =120
@@ -912,6 +915,7 @@
                         ZIndex: =5
 
                     DataCardValue1237 As toggleSwitch:
+                        AccessibleLabel: ="test"
                         Default: =If(ThisItem.'Generate Report Rights' = 'Generate Report Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
                         Height: =38
                         Width: =120
@@ -980,6 +984,7 @@
                         ZIndex: =5
 
                     DataCardValue1238 As toggleSwitch:
+                        AccessibleLabel: ="test"
                         Default: =If(ThisItem.'Manage User Access' = 'Manage User Access (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
                         Height: =38
                         Width: =120
@@ -1048,6 +1053,7 @@
                         ZIndex: =5
 
                     DataCardValue1239 As toggleSwitch:
+                        AccessibleLabel: ="test"
                         Default: =If(ThisItem.'Manage Logs' = 'Manage Logs (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
                         Height: =38
                         Width: =120
@@ -1599,6 +1605,7 @@
                     ZIndex: =6
 
                     DataCardValue1081_2 As dropdown:
+                        AccessibleLabel: ="test"
                         BorderThickness: =1
                         Default: =gal_userAccess.Selected.Role
                         Height: =39
