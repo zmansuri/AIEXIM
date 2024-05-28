@@ -1957,7 +1957,7 @@
                     DisplayMode: =Parent.DisplayMode
                     FalseText: ="No"
                     Tooltip: =Parent.DisplayName
-                    TrueText: ="Ye"
+                    TrueText: ="Yes"
                     X: =30
                     Y: =DataCardKey1098.Y + DataCardKey1098.Height + 5
                     ZIndex: =2
