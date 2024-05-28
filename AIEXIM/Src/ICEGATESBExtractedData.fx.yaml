@@ -231,10 +231,7 @@ ICEGATESBExtractedData As screen:
                     varExtractedICEGATESBSummaryItemSBNO,
                     ThisItem.'SB No'
                 );
-                Set(
-                    varPDFViewer,
-                    GetFileContentFormAttachments.Run(ThisItem.UploadDocListIDSB).result
-                );
+                
                 Navigate(ICEGATESB);
             PaddingBottom: =10
             PaddingLeft: =10
