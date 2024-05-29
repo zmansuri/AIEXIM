@@ -3541,7 +3541,7 @@ SEZBOE As screen:
     Save_SEZBOE As icon.Check:
         Height: =57
         Icon: =Icon.Save
-        OnSelect: =SubmitForm(frmSEZBOESummary)
+        OnSelect: =SubmitForm(frmSEZBOESummary);Set(varEditFormSEZBOE,false)
         Visible: =varSEZBOESummary && varEditFormSEZBOE
         Width: =44
         X: =1298
