@@ -16585,7 +16585,7 @@ ICEGATESB As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =300
                 X: =30
                 Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                 ZIndex: =2
@@ -16605,23 +16605,6 @@ ICEGATESB As screen:
                 X: =
                 Y: =
                 ZIndex: =4
-
-            MinuteValue1 As dropdown:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Text(Minute(Parent.Default),"00")
-                DisplayMode: =Parent.DisplayMode
-                Height: =
-                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                Tooltip: =Parent.DisplayName
-                Width: =
-                X: =
-                Y: =
-                ZIndex: =5
 
             ErrorMessage6 As label:
                 AutoHeight: =true
@@ -16684,7 +16667,7 @@ ICEGATESB As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =300
                 X: =30
                 Y: =DataCardKey17.Y + DataCardKey17.Height + 5
                 ZIndex: =2
@@ -16704,23 +16687,6 @@ ICEGATESB As screen:
                 X: =
                 Y: =
                 ZIndex: =4
-
-            MinuteValue2 As dropdown:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Text(Minute(Parent.Default),"00")
-                DisplayMode: =Parent.DisplayMode
-                Height: =
-                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                Tooltip: =Parent.DisplayName
-                Width: =
-                X: =Separator2.Width
-                Y: =
-                ZIndex: =5
 
             ErrorMessage17 As label:
                 AutoHeight: =true
@@ -17090,7 +17056,7 @@ ICEGATESB As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =If(Not IsBlank(DateValue4.SelectedDate), DateValue4.SelectedDate + Time(Value(HourValue4.Selected.Value), Value(MinuteValue4.Selected.Value), 0))
+            Update: =If(Not IsBlank(DateValue4.SelectedDate), DateValue4.SelectedDate, 0)
             Width: =360
             X: =0
             Y: =56
@@ -17117,32 +17083,15 @@ ICEGATESB As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =300
                 X: =30
                 Y: =DataCardKey54.Y + DataCardKey54.Height + 5
                 ZIndex: =2
 
-            HourValue4 As dropdown:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Text(Hour(Parent.Default),"00")
-                DisplayMode: =Parent.DisplayMode
-                Height: =DateValue4.Height
-                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                Tooltip: =Parent.DisplayName
-                Width: =DateValue4.Width / 2 - 10
-                X: =DateValue4.X + DateValue4.Width + 10
-                Y: =DateValue4.Y
-                ZIndex: =3
-
             Separator6 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
-                Height: =HourValue4.Height
+                Height: =
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -17151,8 +17100,8 @@ ICEGATESB As screen:
                     =":"
                 Width: =10
                 Wrap: =false
-                X: =HourValue4.X + HourValue4.Width
-                Y: =HourValue4.Y
+                X: =
+                Y: =
                 ZIndex: =4
 
             MinuteValue4 As dropdown:
@@ -17160,16 +17109,16 @@ ICEGATESB As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Text(Minute(Parent.Default),"00")
                 DisplayMode: =Parent.DisplayMode
-                Height: =HourValue4.Height
+                Height: =
                 Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
-                Width: =HourValue4.Width
-                X: =HourValue4.X + HourValue4.Width + Separator6.Width
-                Y: =HourValue4.Y
+                Width: =
+                X: =Separator6.Width
+                Y: =
                 ZIndex: =5
 
             ErrorMessage54 As label:
@@ -17184,7 +17133,7 @@ ICEGATESB As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =HourValue4.Y + HourValue4.Height
+                Y: =
                 ZIndex: =6
 
             StarVisible54 As label:
@@ -17254,7 +17203,7 @@ ICEGATESB As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =50
             Required: =false
-            Update: =If(Not IsBlank(DateValue3.SelectedDate), DateValue3.SelectedDate + Time(Value(HourValue3.Selected.Value), Value(MinuteValue3.Selected.Value), 0))
+            Update: =If(Not IsBlank(DateValue3.SelectedDate), DateValue3.SelectedDate, 0)
             Width: =360
             X: =1
             Y: =69
@@ -17276,37 +17225,21 @@ ICEGATESB As screen:
                 DefaultDate: =Parent.Default
                 DisplayMode: =Parent.DisplayMode
                 EndYear: =Year(Today())+100
+                Height: =42
                 IsEditable: =true
                 PaddingBottom: =0
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =(Parent.Width - 60) / 2
+                Width: =300
                 X: =30
                 Y: =DataCardKey25.Y + DataCardKey25.Height + 5
                 ZIndex: =2
 
-            HourValue3 As dropdown:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Text(Hour(Parent.Default),"00")
-                DisplayMode: =Parent.DisplayMode
-                Height: =DateValue3.Height
-                Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23"]
-                PaddingBottom: =5
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                PaddingRight: =5
-                PaddingTop: =5
-                Tooltip: =Parent.DisplayName
-                Width: =DateValue3.Width / 2 - 10
-                X: =DateValue3.X + DateValue3.Width + 10
-                Y: =DateValue3.Y
-                ZIndex: =3
-
             Separator5 As label:
                 Align: =Align.Center
                 FontWeight: =FontWeight.Bold
-                Height: =HourValue3.Height
+                Height: =
                 PaddingBottom: =0
                 PaddingLeft: =0
                 PaddingRight: =0
@@ -17315,8 +17248,8 @@ ICEGATESB As screen:
                     =":"
                 Width: =10
                 Wrap: =false
-                X: =HourValue3.X + HourValue3.Width
-                Y: =HourValue3.Y
+                X: =
+                Y: =
                 ZIndex: =4
 
             MinuteValue3 As dropdown:
@@ -17324,16 +17257,16 @@ ICEGATESB As screen:
                 BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
                 Default: =Text(Minute(Parent.Default),"00")
                 DisplayMode: =Parent.DisplayMode
-                Height: =HourValue3.Height
+                Height: =
                 Items: =["00","01","02","03","04","05","06","07","08","09","10","11","12","13","14","15","16","17","18","19","20","21","22","23","24","25","26","27","28","29","30","31","32","33","34","35","36","37","38","39","40","41","42","43","44","45","46","47","48","49","50","51","52","53","54","55","56","57","58","59"]
                 PaddingBottom: =5
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 PaddingRight: =5
                 PaddingTop: =5
                 Tooltip: =Parent.DisplayName
-                Width: =HourValue3.Width
-                X: =HourValue3.X + HourValue3.Width + Separator5.Width
-                Y: =HourValue3.Y
+                Width: =
+                X: =Separator5.Width
+                Y: =
                 ZIndex: =5
 
             ErrorMessage25 As label:
@@ -17348,7 +17281,7 @@ ICEGATESB As screen:
                 Visible: =Parent.DisplayMode=DisplayMode.Edit
                 Width: =Parent.Width - 60
                 X: =30
-                Y: =HourValue3.Y + HourValue3.Height
+                Y: =
                 ZIndex: =6
 
             StarVisible25 As label:
