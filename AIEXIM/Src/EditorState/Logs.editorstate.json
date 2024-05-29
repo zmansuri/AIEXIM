@@ -169,7 +169,7 @@
       "MetaDataIDKey": "",
       "Name": "BackgroundSupportBTN",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 19,
+      "ParentIndex": 10,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -436,7 +436,7 @@
       "MetaDataIDKey": "",
       "Name": "BtnForHide",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 17,
+      "ParentIndex": 3,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -752,7 +752,7 @@
       "MetaDataIDKey": "",
       "Name": "btnRemoveComponentLogo_4",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 16,
+      "ParentIndex": 2,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1091,7 +1091,7 @@
       "MetaDataIDKey": "",
       "Name": "Entry_BTN_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 6,
+      "ParentIndex": 19,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -1386,7 +1386,7 @@
       "MetaDataIDKey": "",
       "Name": "gal_ExtractList",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 27,
+      "ParentIndex": 20,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -3975,7 +3975,7 @@
       "MetaDataIDKey": "",
       "Name": "Header_By",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 24,
+      "ParentIndex": 15,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4280,7 +4280,7 @@
       "MetaDataIDKey": "",
       "Name": "Header_Name",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 21,
+      "ParentIndex": 12,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4585,7 +4585,7 @@
       "MetaDataIDKey": "",
       "Name": "Header_No",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 20,
+      "ParentIndex": 11,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -4890,7 +4890,7 @@
       "MetaDataIDKey": "",
       "Name": "Header_On",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 23,
+      "ParentIndex": 14,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5195,7 +5195,7 @@
       "MetaDataIDKey": "",
       "Name": "Header_PartyName",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 22,
+      "ParentIndex": 13,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5500,7 +5500,7 @@
       "MetaDataIDKey": "",
       "Name": "Header_Status",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 25,
+      "ParentIndex": 16,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -5794,7 +5794,7 @@
       "MetaDataIDKey": "",
       "Name": "Icon_Nav_screen_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 1,
+      "ParentIndex": 5,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6273,7 +6273,7 @@
       "MetaDataIDKey": "",
       "Name": "Logo1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 15,
+      "ParentIndex": 1,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6616,7 +6616,7 @@
       "MetaDataIDKey": "",
       "Name": "Navigation_5",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 14,
+      "ParentIndex": 0,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6734,7 +6734,7 @@
       "MetaDataIDKey": "",
       "Name": "Rect1_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 13,
+      "ParentIndex": 28,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6880,7 +6880,7 @@
       "MetaDataIDKey": "",
       "Name": "Rect2_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 11,
+      "ParentIndex": 26,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7026,7 +7026,7 @@
       "MetaDataIDKey": "",
       "Name": "Rect3_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 9,
+      "ParentIndex": 24,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7172,7 +7172,7 @@
       "MetaDataIDKey": "",
       "Name": "Rect4_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 7,
+      "ParentIndex": 21,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7318,7 +7318,7 @@
       "MetaDataIDKey": "",
       "Name": "Rect5_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 5,
+      "ParentIndex": 18,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7450,7 +7450,7 @@
       "MetaDataIDKey": "",
       "Name": "Rect6_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 3,
+      "ParentIndex": 7,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -7700,7 +7700,7 @@
       "MetaDataIDKey": "",
       "Name": "Report_btn_Logs",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 26,
+      "ParentIndex": 17,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8044,7 +8044,7 @@
       "MetaDataIDKey": "",
       "Name": "SEZbill_BTN_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 8,
+      "ParentIndex": 22,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8393,7 +8393,7 @@
       "MetaDataIDKey": "",
       "Name": "SEZEntry_BTN_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 10,
+      "ParentIndex": 25,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -8742,7 +8742,7 @@
       "MetaDataIDKey": "",
       "Name": "SezExport_BTN_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 12,
+      "ParentIndex": 27,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9091,7 +9091,7 @@
       "MetaDataIDKey": "",
       "Name": "Shipping_Bill_BTN_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 4,
+      "ParentIndex": 9,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9362,7 +9362,7 @@
       "MetaDataIDKey": "",
       "Name": "Sub_Curve_1",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 2,
+      "ParentIndex": 6,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -9656,7 +9656,7 @@
       "MetaDataIDKey": "",
       "Name": "Submenu_extractedScreen",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 0,
+      "ParentIndex": 8,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10003,7 +10003,7 @@
       "MetaDataIDKey": "",
       "Name": "TextInput_Doc",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 18,
+      "ParentIndex": 4,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -10373,7 +10373,7 @@
       "MetaDataIDKey": "",
       "Name": "UserAccess_btn_lOGS",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 28,
+      "ParentIndex": 23,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
