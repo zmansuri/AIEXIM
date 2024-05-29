@@ -7852,7 +7852,7 @@ SEZSB As screen:
         Color: =RGBA(12, 77, 162, 1)
         Height: =40
         Icon: =Icon.Save
-        OnSelect: =SubmitForm(frmSEZSBExport)
+        OnSelect: =SubmitForm(frmSEZSBExport);Set(varEditFormSEZSB,false)
         Visible: =varSEZSBSummary && varEditFormSEZSB
         Width: =40
         X: =1270
