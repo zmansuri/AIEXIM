@@ -590,6 +590,7 @@ Logs As screen:
             Icon: =Icon.ChevronRight
             PaddingBottom: =5
             PaddingLeft: =5
+            PaddingRight: =5
             PaddingTop: =5
             Visible: =varShowSubmenu
             Width: =28
