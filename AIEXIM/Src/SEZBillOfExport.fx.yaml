@@ -7707,7 +7707,7 @@ SEZBillOfExport As screen:
         Size: =11
         Text: |-
             =Concatenate(
-                "Extracted Data > Bill of Expor > Bill of Export No. :",
+                "Extracted Data > Bill of Export > Bill of Export No. :",
                 VarBillOfExportNo
             )
         Width: =425
