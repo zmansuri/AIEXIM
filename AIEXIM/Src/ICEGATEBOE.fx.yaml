@@ -508,7 +508,9 @@ ICEGATEBOE As screen:
             ZIndex: =32
 
     frm_BOESummary As form:
-        DataSource: ='Bill of Entry Detailed Report - ICEGates'
+        DataSource: |-
+            =//'Bill of Entry Detailed Report - ICEGates'
+            'Bill Of Entry - ICEGate Summary Reports'
         DefaultMode: |-
             =If(
                 varEditFormBOE,
@@ -1297,7 +1299,7 @@ ICEGATEBOE As screen:
         RequestID_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_requestid"
-            Default: =ThisItem.RequestID
+            Default: =ThisItem.'Request ID'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_requestid)
             Fill: =RGBA(0, 0, 0, 0)
@@ -2137,7 +2139,7 @@ ICEGATEBOE As screen:
         "'Sec 48_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_sec48"
-            Default: =ThisItem.'SEC 48'
+            Default: =ThisItem.'Sec 48'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_sec48)
             Fill: =RGBA(0, 0, 0, 0)
@@ -4517,7 +4519,7 @@ ICEGATEBOE As screen:
         "'TOT.ASS VAL INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_totassvalinr"
-            Default: =ThisItem.'TOT ASS VAL INR'
+            Default: =ThisItem.'TOT.ASS VAL INR'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_totassvalinr)
             Fill: =RGBA(0, 0, 0, 0)
@@ -5357,7 +5359,7 @@ ICEGATEBOE As screen:
         "'G.WT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_gwt"
-            Default: =ThisItem.GWT
+            Default: =ThisItem.'G.WT'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_gwt)
             Fill: =RGBA(0, 0, 0, 0)
@@ -5707,7 +5709,7 @@ ICEGATEBOE As screen:
         "'BG AMT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_bgamt"
-            Default: =ThisItem.'BG Amt'
+            Default: =ThisItem.'BG AMT'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_bgamt)
             Fill: =RGBA(0, 0, 0, 0)
@@ -5987,7 +5989,7 @@ ICEGATEBOE As screen:
         "'Challan Amount (Rs.)_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_challanamountrs"
-            Default: =ThisItem.'Challan Amount'
+            Default: =ThisItem.'Challan Amount (Rs.)'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_challanamountrs)
             Fill: =RGBA(0, 0, 0, 0)
@@ -6057,7 +6059,7 @@ ICEGATEBOE As screen:
         "'Invoice SNo_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_invoicesno"
-            Default: =ThisItem.'Invoice Sr No Part2'
+            Default: =ThisItem.'Inv Sno Part 2'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_invoicesno)
             Fill: =RGBA(0, 0, 0, 0)
@@ -6127,7 +6129,7 @@ ICEGATEBOE As screen:
         "'Invoice No_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_invoiceno"
-            Default: =ThisItem.'InvoiceNo Part1'
+            Default: =ThisItem.'Invoice No'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_invoicesno)
             Fill: =RGBA(0, 0, 0, 0)
