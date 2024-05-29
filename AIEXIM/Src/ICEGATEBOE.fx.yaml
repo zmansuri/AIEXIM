@@ -529,7 +529,7 @@ ICEGATEBOE As screen:
         "'Addnl Details LIC NO_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailslicno"
-            Default: =ThisItem.'Addnl Details LIC NO'
+            Default: =ThisItem.'Addnl Details- LIC NO'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicno)
             Fill: =RGBA(0, 0, 0, 0)
@@ -599,7 +599,7 @@ ICEGATEBOE As screen:
         "'Addnl Details LIC CODE_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailsliccode"
-            Default: =ThisItem.'Addnl Details LIC CODE'
+            Default: =ThisItem.'Addnl Details- LIC CODE'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailsliccode)
             Fill: =RGBA(0, 0, 0, 0)
@@ -669,7 +669,7 @@ ICEGATEBOE As screen:
         "'Addnl Details LIC PORT_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailslicport"
-            Default: =ThisItem.'Addnl Details LIC PORT'
+            Default: =ThisItem.'Addnl Details- LIC PORT'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicport)
             Fill: =RGBA(0, 0, 0, 0)
@@ -739,7 +739,7 @@ ICEGATEBOE As screen:
         "'Addnl Details LIC DEBIT VALUE_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailslicdebitvalue"
-            Default: =ThisItem.'Addnl Details LIC DEBIT VALUE'
+            Default: =ThisItem.'Addnl Details- LIC DEBIT VALUE'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicdebitvalue)
             Fill: =RGBA(0, 0, 0, 0)
@@ -809,7 +809,7 @@ ICEGATEBOE As screen:
         "'Addnl Details LIC QTY_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailslicqty"
-            Default: =ThisItem.'Addnl Details LIC QTY'
+            Default: =ThisItem.'Addnl Details- LIC QTY'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicqty)
             Fill: =RGBA(0, 0, 0, 0)
@@ -879,7 +879,7 @@ ICEGATEBOE As screen:
         "'Addnl Details LIC UQC_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailslicuqc"
-            Default: =ThisItem.'Addnl Details LIC UQC'
+            Default: =ThisItem.'Addnl Details- LIC UQC'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicuqc)
             Fill: =RGBA(0, 0, 0, 0)
@@ -949,7 +949,7 @@ ICEGATEBOE As screen:
         "'Addnl Details LIC DEBIT DUTY_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailslicdebitduty"
-            Default: =ThisItem.'Addnl Details LIC DEBIT DUTY'
+            Default: =ThisItem.'Addnl Details- LIC DEBIT DUTY'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicdebitduty)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7950,7 +7950,7 @@ ICEGATEBOE As screen:
         "'Seller''s Name_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_sellersname"
-            Default: =ThisItem.'Seller Name Transaction Party'
+            Default: =ThisItem.'Seller''s Name'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_sellersname)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8020,7 +8020,7 @@ ICEGATEBOE As screen:
         "'Seller''s Address_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_sellersaddress"
-            Default: =ThisItem.'Seller Address Transaction Party'
+            Default: =ThisItem.'Seller''s Address'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_sellersaddress)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8090,7 +8090,7 @@ ICEGATEBOE As screen:
         "'Third Party  Name_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_thirdpartyname"
-            Default: =ThisItem.'Third Party Name Transaction Party'
+            Default: =ThisItem.'Third Party Name'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_thirdpartyname)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8160,7 +8160,7 @@ ICEGATEBOE As screen:
         "'Third Party Address_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_thirdpartyaddress"
-            Default: =ThisItem.'Third Party Address Transaction Party'
+            Default: =ThisItem.'Third Party Address'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_thirdpartyaddress)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8300,7 +8300,7 @@ ICEGATEBOE As screen:
         "'Invoice INCO Term_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_invoiceincoterm"
-            Default: =ThisItem.'Invoice Inco Term'
+            Default: =ThisItem.'Invoice INCO Term'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_invoiceincoterm)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8370,7 +8370,7 @@ ICEGATEBOE As screen:
         "'Invoice Value in FC_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_invoicevalueinfc"
-            Default: =ThisItem.'Invoice Value Valuation'
+            Default: =ThisItem.'Invoice Value in FC'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_invoicevalueinfc)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8440,7 +8440,7 @@ ICEGATEBOE As screen:
         "'Freight in FC_DataCard3' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_freightinfc"
-            Default: =ThisItem.'Freight Valuation'
+            Default: =ThisItem.'Freight in FC'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_freightinfc)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8510,7 +8510,7 @@ ICEGATEBOE As screen:
         "'Insurance in FC_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_insuranceinfc"
-            Default: =ThisItem.'Insurance Valuation'
+            Default: =ThisItem.'Insurance in FC'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_insuranceinfc)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8580,7 +8580,7 @@ ICEGATEBOE As screen:
         "'HSS in FC_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_hssinfc"
-            Default: =ThisItem.'HSS Valuation'
+            Default: =ThisItem.'HSS in FC'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_hssinfc)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8650,7 +8650,7 @@ ICEGATEBOE As screen:
         "'Loading Chrgs in FC_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_loadingchrgsinfc"
-            Default: =ThisItem.'Loading Charges'
+            Default: =ThisItem.'Loading Chrgs in FC'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_loadingchrgsinfc)
             Fill: =RGBA(0, 0, 0, 0)
@@ -8720,7 +8720,7 @@ ICEGATEBOE As screen:
         "'Commn in FC_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_commoninfc"
-            Default: =ThisItem.Commn
+            Default: =ThisItem.'Common in FC'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_commoninfc)
             Fill: =RGBA(0, 0, 0, 0)
