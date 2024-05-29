@@ -518,7 +518,7 @@ ICEGATEBOE As screen:
                 FormMode.View
             )
         Height: =536
-        Item: =LookUp('Bill of Entry Detailed Report - ICEGates',Text(ParentID) =varExtractedICEGATEBOESummaryItem)
+        Item: =LookUp('Bill Of Entry - ICEGate Summary Reports',ID =varExtractedICEGATEBOESummaryItem)
         NumberOfColumns: =2
         Visible: =varICEGATEBOESummary
         Width: =757
@@ -1019,7 +1019,7 @@ ICEGATEBOE As screen:
         "'Addnl Details CERTIFICATE NUMBER_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailscertificatenumber"
-            Default: =ThisItem.'Addnl Details CERTIFICATE NUMBER'
+            Default: =ThisItem.'Addnl Details- CERTIFICATE NUMBER'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatenumber)
             Fill: =RGBA(0, 0, 0, 0)
@@ -1089,7 +1089,7 @@ ICEGATEBOE As screen:
         "'Addnl Details CERTIFICATE TYPE_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailscertificatetype"
-            Default: =ThisItem.'Addnl Details CERTIFICATE TYPE'
+            Default: =ThisItem.'Addnl Details- CERTIFICATE TYPE'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatetype)
             Fill: =RGBA(0, 0, 0, 0)
@@ -1159,7 +1159,7 @@ ICEGATEBOE As screen:
         "'Addnl Details CERTIFICATE DATE_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailscertificatedate"
-            Default: =ThisItem.'Addnl Details CERTIFICATE DATE'
+            Default: =ThisItem.'Addnl Details- CERTIFICATE DATE'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatedate)
             Fill: =RGBA(0, 0, 0, 0)
@@ -1229,7 +1229,7 @@ ICEGATEBOE As screen:
         "'Addnl Details CONTAINER NO_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="cr1c5_addnldetailscontainerno"
-            Default: =ThisItem.'Addnl Details CONTAINER NO'
+            Default: =ThisItem.'Addnl Details-CONTAINER NO'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscontainerno)
             Fill: =RGBA(0, 0, 0, 0)
