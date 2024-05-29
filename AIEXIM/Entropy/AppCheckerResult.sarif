@@ -534,6 +534,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "SEZSB.frmSEZSBDetailed.'SB Date_DataCard5'.DataCardValue1080.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SEZSB.frmSEZSBDetailed.'SB Date_DataCard5'.DataCardValue1080.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SEZSB",
+                "type": "SEZSB.frmSEZSBDetailed.'SB Date_DataCard5'.DataCardValue1080"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],

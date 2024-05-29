@@ -7795,6 +7795,21 @@ SEZSB As screen:
             Y: =2
             ZIndex: =12
 
+        Gal_HS_CD_1 As label:
+            Align: =Align.Center
+            FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+            Height: =55
+            OnSelect: =Select(Parent)
+            PaddingBottom: =0
+            PaddingLeft: =0
+            PaddingRight: =0
+            PaddingTop: =0
+            Text: =ThisItem.'SB Date'
+            Width: =83
+            X: =110
+            Y: =15
+            ZIndex: =13
+
     btnRemoveComponentLogo_8 As button:
         BorderColor: =Color.Transparent
         DisabledBorderColor: =RGBA(0, 0, 0, 0)
@@ -8341,6 +8356,76 @@ SEZSB As screen:
             X: =604
             Y: =187
             ZIndex: =46
+
+            "'SB Date_DataCard5' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_sbdate"
+                Default: =ThisItem.'SB Date'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Export SEZ - Shipping Bill Detailed Reports'],DataSourceInfo.DisplayName,ispl_sbdate)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Export SEZ - Shipping Bill Detailed Reports'], DataSourceInfo.MaxLength, ispl_sbdate)
+                Required: =false
+                Update: =DataCardValue1080.Text
+                Visible: =false
+                Width: =363
+                X: =0
+                Y: =50
+                ZIndex: =1
+
+                DataCardKey1080 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1080 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: |
+                        =Text(DateValue(DataCardValue239.SelectedDate),"dd-mmm-yyyy")
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1080.Y + DataCardKey1080.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1080 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1080.Y + DataCardValue1080.Height
+                    ZIndex: =3
+
+                StarVisible1080 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1080.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1080.Y
+                    ZIndex: =4
 
             "'AD Code Confidence Score_DataCard2' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
@@ -12151,7 +12236,8 @@ SEZSB As screen:
                 Fill: =RGBA(0, 0, 0, 0)
                 Height: =50
                 Required: =false
-                Update: =Text(DateValue(DataCardValue239.SelectedDate),"dd-mmm-yyyy")
+                Update: |
+                    =Text(DateValue(DataCardValue239.SelectedDate),"dd-mmm-yyyy")
                 Width: =363
                 X: =0
                 Y: =1
@@ -12170,7 +12256,7 @@ SEZSB As screen:
                 DataCardValue239 As datepicker:
                     AccessibleLabel: ="TEST"
                     BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    DefaultDate: =ThisItem.'SB Date'
+                    DefaultDate: =Text(ThisItem.'SB Date')
                     DisplayMode: =Parent.DisplayMode
                     EndYear: =Year(Today())+100
                     Fill: =If(varEditFormSEZSBDetailed,Color.White,RGBA(237, 237, 237, 1))
@@ -15184,10 +15270,10 @@ SEZSB As screen:
                     Fill: =If(varEditFormSEZSBDetailed,Color.White,RGBA(237, 237, 237, 1))
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -15264,10 +15350,10 @@ SEZSB As screen:
                     Fill: =If(varEditFormSEZSBDetailed,Color.White,RGBA(237, 237, 237, 1))
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -15344,10 +15430,10 @@ SEZSB As screen:
                     Fill: =If(varEditFormSEZSBDetailed,Color.White,RGBA(237, 237, 237, 1))
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -15424,10 +15510,10 @@ SEZSB As screen:
                     Fill: =If(varEditFormSEZSBDetailed,Color.White,RGBA(237, 237, 237, 1))
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -15504,10 +15590,10 @@ SEZSB As screen:
                     Fill: =If(varEditFormSEZSBDetailed,Color.White,RGBA(237, 237, 237, 1))
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -15584,10 +15670,10 @@ SEZSB As screen:
                     Fill: =If(varEditFormSEZSBDetailed,Color.White,RGBA(237, 237, 237, 1))
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
-                    RadiusBottomLeft: =0
-                    RadiusBottomRight: =0
-                    RadiusTopLeft: =0
-                    RadiusTopRight: =0
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
