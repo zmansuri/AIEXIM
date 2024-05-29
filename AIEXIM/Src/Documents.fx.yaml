@@ -160,7 +160,8 @@ Documents As screen:
                 Sort(
                     AddColumns(
                         'Extracted Document Lists',
-                        txtCompany,Company
+                        txtCompany,
+                        Company
                     ),
                     'Created On',
                     SortOrder.Descending
@@ -176,6 +177,9 @@ Documents As screen:
                     txtSearchDocsDocuments.Text
                 ) || StartsWith(
                     'Created By Flow',
+                    txtSearchDocsDocuments.Text
+                ) || StartsWith(
+                    'Type Of Document',
                     txtSearchDocsDocuments.Text
                 )
             )
