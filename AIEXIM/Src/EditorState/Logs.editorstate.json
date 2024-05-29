@@ -3840,7 +3840,7 @@
       "MetaDataIDKey": "",
       "Name": "GroupSubmenu_Logs",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 29,
+      "ParentIndex": 30,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
@@ -6520,7 +6520,7 @@
       "MetaDataIDKey": "",
       "Name": "MiniHeader_Logs",
       "OptimizeForDevices": "Off",
-      "ParentIndex": 30,
+      "ParentIndex": 29,
       "PersistMetaDataIDKey": false,
       "Properties": [
         {
