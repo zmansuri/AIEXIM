@@ -2475,6 +2475,10 @@
             Color: =RGBA(12, 77, 162, 1)
             Height: =28
             Icon: =Icon.ChevronRight
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
             Visible: =varShowSubmenu
             Width: =28
             X: =176

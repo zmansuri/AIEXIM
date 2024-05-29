@@ -38,12 +38,10 @@ Home As screen:
                 {
                     Title: "Home",
                     Screen: Home
-                    //Icon: true
                 },
                 {
                     Title: "Documents",
                     Screen: Documents
-                    //Icon: true
                 },
                 {
                     Title: "Extracted Data",
