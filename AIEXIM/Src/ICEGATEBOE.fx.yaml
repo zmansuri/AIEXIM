@@ -6479,7 +6479,7 @@ ICEGATEBOE As screen:
         "'Examination DT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_examinationdt"
-            Default: =ThisItem.'Processing Examination DT'
+            Default: =ThisItem.'Examination DT'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_examinationdt)
             Fill: =RGBA(0, 0, 0, 0)
@@ -6619,7 +6619,7 @@ ICEGATEBOE As screen:
         "'Container Sno_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_containersno"
-            Default: =ThisItem.'ContainerSrNo Part1'
+            Default: =ThisItem.'Container Sno'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_containersno)
             Fill: =RGBA(0, 0, 0, 0)
@@ -6689,7 +6689,7 @@ ICEGATEBOE As screen:
         "'LCL/FCL_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_lclfcl"
-            Default: =ThisItem.'Container LCL/FCL Part1'
+            Default: =ThisItem.'LCL/FCL'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_lclfcl)
             Fill: =RGBA(0, 0, 0, 0)
@@ -6759,7 +6759,7 @@ ICEGATEBOE As screen:
         TRUCK_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_truck"
-            Default: =ThisItem.'Truck Number Part1'
+            Default: =ThisItem.TRUCK
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_truck)
             Fill: =RGBA(0, 0, 0, 0)
@@ -6829,7 +6829,7 @@ ICEGATEBOE As screen:
         SEAL_DataCard2 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_seal"
-            Default: =ThisItem.'Addnl Details SEAL NUMBER'
+            Default: =ThisItem.'Addnl Details-CONT SEAL NO'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_seal)
             Fill: =RGBA(0, 0, 0, 0)
@@ -6899,7 +6899,7 @@ ICEGATEBOE As screen:
         "'CONTAINER NUMBER_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_containernumber"
-            Default: =ThisItem.'Container Number Part1'
+            Default: =ThisItem.'CONTAINER NUMBER'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_containernumber)
             Fill: =RGBA(0, 0, 0, 0)
@@ -6969,7 +6969,7 @@ ICEGATEBOE As screen:
         "'OOC NO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_oocno"
-            Default: =ThisItem.'OOC No'
+            Default: =ThisItem.'OOC NO'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_oocno)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7039,7 +7039,7 @@ ICEGATEBOE As screen:
         "'OOC DT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_oocdt"
-            Default: =ThisItem.'OOC Date'
+            Default: =ThisItem.'OOC DT'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_oocdt)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7109,7 +7109,7 @@ ICEGATEBOE As screen:
         "'Inv Sno Part 2_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_invsnopart2"
-            Default: =ThisItem.'Invoice Sr No Part2'
+            Default: =ThisItem.'Inv Sno Part 2'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_invsnopart2)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7179,7 +7179,7 @@ ICEGATEBOE As screen:
         "'Invoice Dt_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_invoicedt"
-            Default: =ThisItem.'Invoice Date Part2'
+            Default: =ThisItem.'Invoice Dt'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_invoicedt)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7250,7 +7250,7 @@ ICEGATEBOE As screen:
         "'Purchase Order No_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_purchaseorderno"
-            Default: =ThisItem.'PO No Part2'
+            Default: =ThisItem.'Purchase Order No'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_purchaseorderno)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7320,7 +7320,7 @@ ICEGATEBOE As screen:
         "'Purchase Order Dt_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_purchaseorderdt"
-            Default: =ThisItem.'PO Date'
+            Default: =ThisItem.'Purchase Order Dt'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_purchaseorderdt)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7390,7 +7390,7 @@ ICEGATEBOE As screen:
         "'LC NO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_lcno"
-            Default: =ThisItem.'LC No Part2'
+            Default: =ThisItem.'LC NO'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_lcno)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7460,7 +7460,7 @@ ICEGATEBOE As screen:
         "'LC Dt_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_lcdt"
-            Default: =ThisItem.'LC Date Part2'
+            Default: =ThisItem.'LC Dt'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_lcdt)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7530,7 +7530,7 @@ ICEGATEBOE As screen:
         "'Contract No_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_contractno"
-            Default: =ThisItem.'Contract No Part2'
+            Default: =ThisItem.'Contract No'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_contractno)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7600,7 +7600,7 @@ ICEGATEBOE As screen:
         "'Contract Dt_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_contractdt"
-            Default: =ThisItem.'Contract Date Part2'
+            Default: =ThisItem.'Contract Dt'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_contractdt)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7670,7 +7670,7 @@ ICEGATEBOE As screen:
         "'Buyer Name_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_buyername"
-            Default: =ThisItem.'Buyer Name Transaction Party'
+            Default: =ThisItem.'Buyer Name'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_buyername)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7740,7 +7740,7 @@ ICEGATEBOE As screen:
         "'Buyer Address_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_buyeraddress"
-            Default: =ThisItem.'Buyer Address Transaction Party'
+            Default: =ThisItem.'Buyer Address'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_buyeraddress)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7810,7 +7810,7 @@ ICEGATEBOE As screen:
         "'Supplier''s Name_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_suppliersname"
-            Default: =ThisItem.'Supplier Name Transaction Party'
+            Default: =ThisItem.'Supplier''s Name'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_suppliersname)
             Fill: =RGBA(0, 0, 0, 0)
@@ -7880,7 +7880,7 @@ ICEGATEBOE As screen:
         "'Supplier''s Address_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_suppliersaddress"
-            Default: =ThisItem.'Supplier Address Transaction Party'
+            Default: =ThisItem.'Supplier''s Address'
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Entry - ICEGate Summary Reports'],DataSourceInfo.DisplayName,ispl_suppliersaddress)
             Fill: =RGBA(0, 0, 0, 0)
