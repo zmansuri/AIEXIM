@@ -1346,6 +1346,76 @@ ICEGATESB As screen:
                     Y: =DataCardKey183.Y
                     ZIndex: =4
 
+            "'INV SNO(AA/DFIALicenceDetails)_DataCard1' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_invsnoaadfialicencedetails"
+                Default: =ThisItem.'INV SNO(AA/DFIALicenceDetails)'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'],DataSourceInfo.DisplayName,ispl_invsnoaadfialicencedetails)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'], DataSourceInfo.MaxLength, ispl_invsnoaadfialicencedetails)
+                Required: =false
+                Update: =DataCardValue1248.Text
+                Width: =380
+                X: =0
+                Y: =101
+                ZIndex: =1
+
+                DataCardKey1248 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1248 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Fill: |
+                        =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1248.Y + DataCardKey1248.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1247 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1248.Y + DataCardValue1248.Height
+                    ZIndex: =3
+
+                StarVisible1248 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1248.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1248.Y
+                    ZIndex: =4
+
             "'EXP SNO(AA/DFIALiceance)Confidence Score_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="ispl_expsnoaadfialiceanceconfidencescore"
@@ -12953,76 +13023,6 @@ ICEGATESB As screen:
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey503.Y
-                    ZIndex: =4
-
-            "'INV SNO(AA/DFIALicenceDetails)_DataCard1' As typedDataCard.numberEditCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="ispl_invsnoaadfialicencedetails"
-                Default: =ThisItem.'INV SNO(AA/DFIALicenceDetails)'
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'],DataSourceInfo.DisplayName,ispl_invsnoaadfialicencedetails)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =Value(DataCardValue502.Text)
-                Width: =380
-                X: =0
-                Y: =101
-                ZIndex: =26
-
-                DataCardKey504 As label:
-                    AutoHeight: =true
-                    Height: =34
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue502 As text:
-                    AccessibleLabel: ="TEST"
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
-                    DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
-                    Fill: |
-                        =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
-                    Format: =TextFormat.Number
-                    PaddingLeft: =5
-                    RadiusBottomLeft: =10
-                    RadiusBottomRight: =10
-                    RadiusTopLeft: =10
-                    RadiusTopRight: =10
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey504.Y + DataCardKey504.Height + 5
-                    ZIndex: =2
-
-                ErrorMessage504 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue502.Y + DataCardValue502.Height
-                    ZIndex: =3
-
-                StarVisible504 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey504.Height
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey504.Y
                     ZIndex: =4
 
             "'ITEM SNO(AA/DFIALicenceDetails)_DataCard1' As typedDataCard.numberEditCard":
