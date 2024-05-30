@@ -894,6 +894,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ICEGATESB.frmICEGATESBDetailed.'FOB VALUE IN FC Val Dtls_DataCard3'.DataCardValue1241.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frmICEGATESBDetailed.'FOB VALUE IN FC Val Dtls_DataCard3'.DataCardValue1241.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frmICEGATESBDetailed.'FOB VALUE IN FC Val Dtls_DataCard3'.DataCardValue1241"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
