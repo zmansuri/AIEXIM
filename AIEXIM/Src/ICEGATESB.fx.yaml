@@ -90,7 +90,7 @@ ICEGATESB As screen:
         AccessibleLabel: ="TEST"
         Height: =46
         Icon: =Icon.Save
-        OnSelect: =SubmitForm(frm_SummaryDetails)
+        OnSelect: =SubmitForm(frm_SummaryDetails);
         TabIndex: =
         Visible: =varICEGATESBSummary && varEditForm
         Width: =37
@@ -16457,7 +16457,7 @@ ICEGATESB As screen:
         Height: =541
         Item: =LookUp('Shipping Bill - Summary Reports', 'Shipping Bill - Summary Report' =varID)
         NumberOfColumns: =2
-        OnSuccess: =Notify("Success",NotificationType.Success)
+        OnSuccess: =Notify("Success",NotificationType.Success);Set(varEditForm,false)
         Visible: =varICEGATESBSummary
         Width: =720
         X: =623
