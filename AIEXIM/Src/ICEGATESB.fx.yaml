@@ -1696,6 +1696,76 @@ ICEGATESB As screen:
                     Y: =DataCardKey511.Y
                     ZIndex: =4
 
+            "'INVSN(RODTEPDETAILS)_DataCard1' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_invsnrodtepdetails"
+                Default: =ThisItem.'INVSN(RODTEPDETAILS)'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'],DataSourceInfo.DisplayName,ispl_invsnrodtepdetails)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'], DataSourceInfo.MaxLength, ispl_invsnrodtepdetails)
+                Required: =false
+                Update: =DataCardValue1250.Text
+                Width: =380
+                X: =0
+                Y: =130
+                ZIndex: =1
+
+                DataCardKey1250 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1250 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Fill: |
+                        =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1250.Y + DataCardKey1250.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1249 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1250.Y + DataCardValue1250.Height
+                    ZIndex: =3
+
+                StarVisible1250 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1250.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1250.Y
+                    ZIndex: =4
+
             DataCard4 As typedDataCard.blankCard:
                 BorderStyle: =BorderStyle.Solid
                 DisplayMode: =DisplayMode.Edit
@@ -15726,7 +15796,7 @@ ICEGATESB As screen:
                 Required: =false
                 Update: =Value(DataCardValue546.Text)
                 Width: =380
-                X: =0
+                X: =1
                 Y: =130
                 ZIndex: =26
 
@@ -15797,8 +15867,8 @@ ICEGATESB As screen:
                 Required: =false
                 Update: =DataCardValue547.Text
                 Width: =380
-                X: =1
-                Y: =130
+                X: =0
+                Y: =131
                 ZIndex: =26
 
                 DataCardKey549 As label:
@@ -15868,7 +15938,7 @@ ICEGATESB As screen:
                 Required: =false
                 Update: =DataCardValue548.Text
                 Width: =380
-                X: =0
+                X: =1
                 Y: =131
                 ZIndex: =26
 
@@ -15938,8 +16008,8 @@ ICEGATESB As screen:
                 Required: =false
                 Update: =Value(DataCardValue549.Text)
                 Width: =380
-                X: =1
-                Y: =131
+                X: =0
+                Y: =132
                 ZIndex: =26
 
                 DataCardKey551 As label:
@@ -16008,7 +16078,7 @@ ICEGATESB As screen:
                 Required: =false
                 Update: =Value(DataCardValue550.Text)
                 Width: =380
-                X: =0
+                X: =1
                 Y: =132
                 ZIndex: =26
 
