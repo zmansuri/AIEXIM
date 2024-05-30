@@ -114,7 +114,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7446,
+        "PublishOrderIndex": 7439,
         "Rules": [
           {
             "Category": "Data",
@@ -436,7 +436,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7447,
+        "PublishOrderIndex": 7440,
         "Rules": [
           {
             "Category": "Data",
@@ -799,7 +799,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7448,
+        "PublishOrderIndex": 7441,
         "Rules": [
           {
             "Category": "Data",
@@ -1121,7 +1121,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7449,
+        "PublishOrderIndex": 7442,
         "Rules": [
           {
             "Category": "Data",
@@ -1484,7 +1484,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7450,
+        "PublishOrderIndex": 7443,
         "Rules": [
           {
             "Category": "Data",
@@ -1806,7 +1806,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7451,
+        "PublishOrderIndex": 7444,
         "Rules": [
           {
             "Category": "Data",
@@ -2169,7 +2169,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7452,
+        "PublishOrderIndex": 7445,
         "Rules": [
           {
             "Category": "Data",
@@ -2491,7 +2491,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7453,
+        "PublishOrderIndex": 7446,
         "Rules": [
           {
             "Category": "Data",
@@ -2851,7 +2851,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7454,
+        "PublishOrderIndex": 7447,
         "Rules": [
           {
             "Category": "Data",
@@ -3211,7 +3211,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7455,
+        "PublishOrderIndex": 7448,
         "Rules": [
           {
             "Category": "Data",
@@ -3571,7 +3571,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7456,
+        "PublishOrderIndex": 7449,
         "Rules": [
           {
             "Category": "Data",
@@ -3931,7 +3931,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "Component_KPI_4",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7457,
+        "PublishOrderIndex": 7450,
         "Rules": [
           {
             "Category": "Data",
