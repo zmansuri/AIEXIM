@@ -1404,6 +1404,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ICEGATESB.frmICEGATESBDetailed.'RODTEP AMT INR(EX-PR)_DataCard3'.DataCardValue1258.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frmICEGATESBDetailed.'RODTEP AMT INR(EX-PR)_DataCard3'.DataCardValue1258.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frmICEGATESBDetailed.'RODTEP AMT INR(EX-PR)_DataCard3'.DataCardValue1258"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
@@ -1714,7 +1744,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"ICEGATESB\" is 1990, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"ICEGATESB\" is 1995, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],

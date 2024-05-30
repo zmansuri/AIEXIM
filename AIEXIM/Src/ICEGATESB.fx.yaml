@@ -889,10 +889,10 @@ ICEGATESB As screen:
                         =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                     MaxLength: =Parent.MaxLength
                     PaddingLeft: =5
-                    RadiusBottomLeft: =10
-                    RadiusBottomRight: =10
-                    RadiusTopLeft: =10
-                    RadiusTopRight: =10
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
                     Tooltip: =Parent.DisplayName
                     Width: =Parent.Width - 60
                     X: =30
@@ -922,6 +922,74 @@ ICEGATESB As screen:
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey1257.Y
+                    ZIndex: =4
+
+            "'RODTEP AMT INR(EX-PR)_DataCard3' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_rodtepamtinrexpr"
+                Default: =ThisItem.'RODTEP AMT INR(EX-PR)'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'],DataSourceInfo.DisplayName,ispl_rodtepamtinrexpr)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'], DataSourceInfo.MaxLength, ispl_rodtepamtinrexpr)
+                Required: =false
+                Update: =DataCardValue1258.Text
+                Width: =380
+                X: =0
+                Y: =133
+                ZIndex: =1
+
+                DataCardKey1258 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1258 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =0
+                    RadiusBottomRight: =0
+                    RadiusTopLeft: =0
+                    RadiusTopRight: =0
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1258.Y + DataCardKey1258.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1257 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1258.Y + DataCardValue1258.Height
+                    ZIndex: =3
+
+                StarVisible1258 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1258.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1258.Y
                     ZIndex: =4
 
             "'LICENCE NO(AA/DFIALicenceDetails)_DataCard1' As typedDataCard.textualEditCard":
