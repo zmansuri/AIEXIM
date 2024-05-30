@@ -984,6 +984,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ICEGATESB.frmICEGATESBDetailed.'HS CD_DataCard2'.DataCardValue1244.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frmICEGATESBDetailed.'HS CD_DataCard2'.DataCardValue1244.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frmICEGATESBDetailed.'HS CD_DataCard2'.DataCardValue1244"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],

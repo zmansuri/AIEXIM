@@ -857,6 +857,76 @@ ICEGATESB As screen:
                     Y: =DataCardKey458.Y
                     ZIndex: =4
 
+            "'HS CD_DataCard2' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_hscd"
+                Default: =ThisItem.'HS CD'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'],DataSourceInfo.DisplayName,ispl_hscd)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'], DataSourceInfo.MaxLength, ispl_hscd)
+                Required: =false
+                Update: =DataCardValue1244.Text
+                Width: =380
+                X: =1
+                Y: =81
+                ZIndex: =1
+
+                DataCardKey1090 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1244 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Fill: |
+                        =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1090.Y + DataCardKey1090.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1081 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1244.Y + DataCardValue1244.Height
+                    ZIndex: =3
+
+                StarVisible1090 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1090.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1090.Y
+                    ZIndex: =4
+
             "'FOB(INR)_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="ispl_fobinr"
@@ -10697,76 +10767,6 @@ ICEGATESB As screen:
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey467.Y
-                    ZIndex: =4
-
-            "'HS CD_DataCard2' As typedDataCard.numberEditCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="ispl_hscd"
-                Default: =ThisItem.'HS CD'
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'],DataSourceInfo.DisplayName,ispl_hscd)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =Value(DataCardValue466.Text)
-                Width: =380
-                X: =1
-                Y: =81
-                ZIndex: =26
-
-                DataCardKey468 As label:
-                    AutoHeight: =true
-                    Height: =34
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue466 As text:
-                    AccessibleLabel: ="TEST"
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
-                    DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
-                    Fill: |
-                        =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
-                    Format: =TextFormat.Number
-                    PaddingLeft: =5
-                    RadiusBottomLeft: =10
-                    RadiusBottomRight: =10
-                    RadiusTopLeft: =10
-                    RadiusTopRight: =10
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey468.Y + DataCardKey468.Height + 5
-                    ZIndex: =2
-
-                ErrorMessage468 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue466.Y + DataCardValue466.Height
-                    ZIndex: =3
-
-                StarVisible468 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey468.Height
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey468.Y
                     ZIndex: =4
 
             DESCRIPTION_DataCard1 As typedDataCard.textualEditCard:
