@@ -1277,6 +1277,76 @@ ICEGATESB As screen:
                     Y: =DataCardKey1249.Y
                     ZIndex: =4
 
+            "'ITEM SNO(DRAWBACK&ROSLCLAIM)_DataCard1' As typedDataCard.textualEditCard":
+                BorderStyle: =BorderStyle.Solid
+                DataField: ="ispl_itemsnodrawbackroslclaim"
+                Default: =ThisItem.'ITEM SNO(DRAWBACK&ROSLCLAIM)'
+                DisplayMode: =Parent.DisplayMode
+                DisplayName: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'],DataSourceInfo.DisplayName,ispl_itemsnodrawbackroslclaim)
+                Fill: =RGBA(0, 0, 0, 0)
+                Height: =50
+                MaxLength: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'], DataSourceInfo.MaxLength, ispl_itemsnodrawbackroslclaim)
+                Required: =false
+                Update: =DataCardValue1252.Text
+                Width: =380
+                X: =1
+                Y: =96
+                ZIndex: =1
+
+                DataCardKey1252 As label:
+                    AutoHeight: =true
+                    Height: =34
+                    Text: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    Wrap: =false
+                    X: =30
+                    Y: =10
+                    ZIndex: =1
+
+                DataCardValue1252 As text:
+                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                    Default: =Parent.Default
+                    DelayOutput: =true
+                    DisplayMode: =Parent.DisplayMode
+                    Fill: |
+                        =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
+                    MaxLength: =Parent.MaxLength
+                    PaddingLeft: =5
+                    RadiusBottomLeft: =10
+                    RadiusBottomRight: =10
+                    RadiusTopLeft: =10
+                    RadiusTopRight: =10
+                    Tooltip: =Parent.DisplayName
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardKey1252.Y + DataCardKey1252.Height + 5
+                    ZIndex: =2
+
+                ErrorMessage1251 As label:
+                    AutoHeight: =true
+                    Height: =10
+                    Live: =Live.Assertive
+                    PaddingBottom: =0
+                    PaddingLeft: =0
+                    PaddingRight: =0
+                    PaddingTop: =0
+                    Text: =Parent.Error
+                    Visible: =Parent.DisplayMode=DisplayMode.Edit
+                    Width: =Parent.Width - 60
+                    X: =30
+                    Y: =DataCardValue1252.Y + DataCardValue1252.Height
+                    ZIndex: =3
+
+                StarVisible1252 As label:
+                    Align: =Align.Center
+                    Height: =DataCardKey1252.Height
+                    Text: ="*"
+                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                    Width: =30
+                    Wrap: =false
+                    Y: =DataCardKey1252.Y
+                    ZIndex: =4
+
             "'QTY/WT(DRAWBACK&ROSLCLAIM)_DataCard1' As typedDataCard.textualEditCard":
                 BorderStyle: =BorderStyle.Solid
                 DataField: ="ispl_qtywtdrawbackroslclaim"
@@ -12811,76 +12881,6 @@ ICEGATESB As screen:
                     Width: =30
                     Wrap: =false
                     Y: =DataCardKey494.Y
-                    ZIndex: =4
-
-            "'ITEM SNO(DRAWBACK&ROSLCLAIM)_DataCard1' As typedDataCard.numberEditCard":
-                BorderStyle: =BorderStyle.Solid
-                DataField: ="ispl_itemsnodrawbackroslclaim"
-                Default: =ThisItem.'ITEM SNO(DRAWBACK&ROSLCLAIM)'
-                DisplayMode: =Parent.DisplayMode
-                DisplayName: =DataSourceInfo([@'Shipping Bill Export - Detailed Reports'],DataSourceInfo.DisplayName,ispl_itemsnodrawbackroslclaim)
-                Fill: =RGBA(0, 0, 0, 0)
-                Height: =50
-                Required: =false
-                Update: =Value(DataCardValue494.Text)
-                Width: =380
-                X: =1
-                Y: =96
-                ZIndex: =26
-
-                DataCardKey496 As label:
-                    AutoHeight: =true
-                    Height: =34
-                    Text: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    Wrap: =false
-                    X: =30
-                    Y: =10
-                    ZIndex: =1
-
-                DataCardValue494 As text:
-                    AccessibleLabel: ="TEST"
-                    BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                    Default: =Parent.Default
-                    DelayOutput: =true
-                    DisplayMode: =Parent.DisplayMode
-                    Fill: |
-                        =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
-                    Format: =TextFormat.Number
-                    PaddingLeft: =5
-                    RadiusBottomLeft: =10
-                    RadiusBottomRight: =10
-                    RadiusTopLeft: =10
-                    RadiusTopRight: =10
-                    Tooltip: =Parent.DisplayName
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardKey496.Y + DataCardKey496.Height + 5
-                    ZIndex: =2
-
-                ErrorMessage496 As label:
-                    AutoHeight: =true
-                    Height: =10
-                    Live: =Live.Assertive
-                    PaddingBottom: =0
-                    PaddingLeft: =0
-                    PaddingRight: =0
-                    PaddingTop: =0
-                    Text: =Parent.Error
-                    Visible: =Parent.DisplayMode=DisplayMode.Edit
-                    Width: =Parent.Width - 60
-                    X: =30
-                    Y: =DataCardValue494.Y + DataCardValue494.Height
-                    ZIndex: =3
-
-                StarVisible496 As label:
-                    Align: =Align.Center
-                    Height: =DataCardKey496.Height
-                    Text: ="*"
-                    Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                    Width: =30
-                    Wrap: =false
-                    Y: =DataCardKey496.Y
                     ZIndex: =4
 
             "'DBK SNO(DRAWBACK&ROSLCLAIM)_DataCard1' As typedDataCard.textualEditCard":
