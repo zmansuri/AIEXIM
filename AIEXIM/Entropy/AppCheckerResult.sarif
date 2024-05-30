@@ -864,6 +864,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ICEGATESB.frmICEGATESBDetailed.'EXP SNO(AA/DFIALiceance)Confidence Score_DataCard1'.DataCardValue1240.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frmICEGATESBDetailed.'EXP SNO(AA/DFIALiceance)Confidence Score_DataCard1'.DataCardValue1240.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frmICEGATESBDetailed.'EXP SNO(AA/DFIALiceance)Confidence Score_DataCard1'.DataCardValue1240"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
