@@ -24844,7 +24844,6 @@ ICEGATESB As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                Format: =TextFormat.Number
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
                 RadiusBottomRight: =10
@@ -26243,7 +26242,6 @@ ICEGATESB As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                Format: =TextFormat.Number
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
                 RadiusBottomRight: =10
@@ -26522,7 +26520,6 @@ ICEGATESB As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                Format: =TextFormat.Number
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
                 RadiusBottomRight: =10
