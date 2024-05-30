@@ -3604,8 +3604,11 @@ SEZBOE As screen:
 
         NextArrow1 As icon.ChevronRight:
             AccessibleLabel: =Self.Tooltip
+            BorderColor: =RGBA(0, 0, 0, 1)
             BorderStyle: =BorderStyle.None
             Color: =RGBA(166, 166, 166, 1)
+            DisabledBorderColor: =RGBA(56, 56, 56, 1)
+            DisabledColor: =RGBA(119, 119, 119, 1)
             Height: =70
             Icon: =Icon.ChevronRight
             OnSelect: |-
