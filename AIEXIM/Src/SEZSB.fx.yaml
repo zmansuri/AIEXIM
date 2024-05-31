@@ -144,7 +144,7 @@ SEZSB As screen:
                 ID = varExtractedSEZExportItem
             )
         NumberOfColumns: =2
-        OnSuccess: =Notify("Success !",NotificationType.Success)
+        OnSuccess: =Notify("Success !",NotificationType.Success);
         Visible: =varSEZSBSummary
         Width: =738
         X: =603

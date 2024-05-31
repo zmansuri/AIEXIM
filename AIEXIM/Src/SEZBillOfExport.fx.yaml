@@ -164,14 +164,14 @@ SEZBillOfExport As screen:
     Icon_Save_Sez As icon.Check:
         AccessibleLabel: ="TEST"
         Color: =RGBA(12, 77, 162, 1)
-        Height: =46
+        Height: =40
         Icon: =Icon.Save
         OnSelect: =SubmitForm(frmSEZBillOfExport);Set(varEditFormBillofExport,false)
         TabIndex: =0
         Visible: =varEditFormBillofExport
-        Width: =37
-        X: =1286
-        Y: =95
+        Width: =40
+        X: =1280
+        Y: =100
         ZIndex: =9
 
     frmSEZBillOfExport As form:
@@ -186,6 +186,7 @@ SEZBillOfExport As screen:
         Height: =552
         Item: =LookUp('Bill Of Export Reports',ID = varExtractedBillOfExportItem)
         NumberOfColumns: =2
+        OnSuccess: =Notify("Success !",NotificationType.Success)
         Width: =723
         X: =600
         Y: =162
@@ -7752,24 +7753,24 @@ SEZBillOfExport As screen:
 
         Image_Export As image:
             AccessibleLabel: ="TEST"
-            Height: =40
+            Height: =35
             Image: ='edit icon'
             OnSelect: =Set(varEditFormBillofExport,true)
             TabIndex: =0
             Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && frmSEZBillOfExport.Mode = FormMode.View , true , false)
-            Width: =49
+            Width: =40
             X: =1210
             Y: =108
             ZIndex: =26
 
         btnEditIcon_Export As button:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =32
+            Height: =35
             HoverFill: =Color.Transparent
             OnSelect: =Set(varEditFormBillofExport,true)
             Text: =""
             Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && frmSEZBillOfExport.Mode = FormMode.View , true , false)
-            Width: =49
+            Width: =40
             X: =1210
             Y: =112
             ZIndex: =27

@@ -182,8 +182,9 @@ SEZBOE As screen:
         Height: =530
         Item: =LookUp('Import SEZ - Summary Reports',ID = varExtractedSEZImportItem)
         NumberOfColumns: =2
+        OnSuccess: =Notify("Success !",NotificationType.Success)
         Visible: =varSEZBOESummary
-        Width: =666
+        Width: =690
         X: =646
         Y: =178
         ZIndex: =10
@@ -3539,13 +3540,13 @@ SEZBOE As screen:
                 ZIndex: =4
 
     Save_SEZBOE As icon.Check:
-        Height: =57
+        Height: =40
         Icon: =Icon.Save
         OnSelect: =SubmitForm(frmSEZBOESummary);Set(varEditFormSEZBOE,false)
         Visible: =varSEZBOESummary && varEditFormSEZBOE
-        Width: =44
-        X: =1298
-        Y: =90
+        Width: =40
+        X: =1290
+        Y: =100
         ZIndex: =11
 
     "galSEZBOEDetailed As gallery.'BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0'":
