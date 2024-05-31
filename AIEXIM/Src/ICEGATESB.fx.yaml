@@ -618,7 +618,7 @@ ICEGATESB As screen:
         Height: =570
         Item: =LookUp('Shipping Bill Export - Detailed Reports', 'Shipping Bill Export - Detailed Report' =varICEGATESBDetailedItemGallery)
         NumberOfColumns: =2
-        OnSuccess: =Set(varEditSBDetailedForm,false)
+        OnSuccess: =Notify("Success !",NotificationType.Success);Set(varEditSBDetailedForm,false);
         Visible: =varShowICEGATESBDetailedPopup
         Width: =710
         X: =605
@@ -13535,7 +13535,7 @@ ICEGATESB As screen:
         Height: =541
         Item: =LookUp('Shipping Bill - Summary Reports', 'Shipping Bill - Summary Report' =varID)
         NumberOfColumns: =2
-        OnSuccess: =Notify("Success",NotificationType.Success);Set(varEditForm,false)
+        OnSuccess: =Notify("Success",NotificationType.Success);Set(varEditForm,false);
         Visible: =varICEGATESBSummary
         Width: =720
         X: =610
