@@ -8313,7 +8313,7 @@ SEZSB As screen:
             Visible: |
                 =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && varShowSEZSBDetailedPopup && frmSEZSBDetailed.Mode = FormMode.View,true,false)
             Width: =50
-            X: =1238
+            X: =1270
             Y: =96
             ZIndex: =49
 
@@ -8325,7 +8325,7 @@ SEZSB As screen:
             Visible: |
                 =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && varShowSEZSBDetailedPopup && frmSEZSBDetailed.Mode = FormMode.View,true,false)
             Width: =50
-            X: =1238
+            X: =1270
             Y: =101
             ZIndex: =50
 
@@ -15815,8 +15815,8 @@ SEZSB As screen:
             TabIndex: =
             Visible: =varShowSEZSBDetailedPopup && varEditFormSEZSBDetailed
             Width: =40
-            X: =1315
-            Y: =103
+            X: =1270
+            Y: =110
             ZIndex: =47
 
         Icon_back As icon.ArrowLeft:
