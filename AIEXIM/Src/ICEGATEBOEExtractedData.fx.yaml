@@ -616,7 +616,9 @@ ICEGATEBOEExtractedData As screen:
             Height: =29
             HoverFill: =RGBA(12, 77, 162, 1)
             OnSelect: |-
-                =Navigate(
+                =Reset(dteToICEGATEBOE);
+                Reset(dteFromICEGATEBOE);
+                Navigate(
                     ICEGATEBOEExtractedData,
                     ScreenTransition.None,
                     {varShowSubmenu: false}

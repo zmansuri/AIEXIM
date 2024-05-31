@@ -464,7 +464,7 @@ SEZSBExtractedData As screen:
         HoverColor: =RGBA(0, 0, 0, 0)
         HoverFill: =Color.Transparent
         OnSelect: |-
-            =UpdateContext({varShowSubmenu:false});UpdateContext({varShowSubmenu:true})
+            =UpdateContext({varShowSubmenu:!varShowSubmenu});
         Text: ="Button"
         Width: =201
         X: =4
@@ -642,12 +642,13 @@ SEZSBExtractedData As screen:
             Fill: =RGBA(245, 244, 244, 1)
             Height: =29
             HoverFill: =RGBA(12, 77, 162, 1)
-            OnSelect: |-
-                =Navigate(
+            OnSelect: |
+                =Reset(dteToSEZSB);Reset(dteFromSEZSB);
+                Navigate(
                     SEZSBExtractedData,
                     ScreenTransition.None,
                     {varShowSubmenu: false}
-                )
+                );
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0

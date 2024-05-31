@@ -703,13 +703,14 @@ SEZBOEExtractedData As screen:
             Height: =29
             HoverFill: =RGBA(12, 77, 162, 1)
             OnSelect: |
-                =Navigate(
+                =
+                Reset(dteToSEZBOE);
+                Reset(dteFromSEZBOE);
+                Navigate(
                     SEZBOEExtractedData,
                     ScreenTransition.None,
                     {varShowSubmenu: false}
                 );
-                Reset(dteToSEZBOE);
-                Reset(dteFromSEZBOE);
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0

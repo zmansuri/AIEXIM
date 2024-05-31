@@ -169,7 +169,7 @@ BillOfExportExtractedData As screen:
                         Currency,
                         txtSearchBillOfExport.Text
                     )||StartsWith('AD Code',txtSearchBillOfExport.Text),
-                    'Created On' >= dteFrom.SelectedDate || dteFrom.SelectedDate= Blank() && 'Created On' <= DateAdd(
+                    'Created On' >= dteFrom.SelectedDate && dteTo.SelectedDate= Blank() || 'Created On' <= DateAdd(
                         dteTo.SelectedDate,
                         1,
                         TimeUnit.Days
@@ -649,12 +649,14 @@ BillOfExportExtractedData As screen:
             Fill: =RGBA(245, 244, 244, 1)
             Height: =29
             HoverFill: =RGBA(12, 77, 162, 1)
-            OnSelect: |-
-                =Navigate(
+            OnSelect: |
+                =Reset(dteTo);
+                Reset(dteFrom);
+                Navigate(
                     BillOfExportExtractedData,
                     ScreenTransition.None,
                     {varShowSubmenu: false}
-                )
+                );
             RadiusBottomLeft: =0
             RadiusBottomRight: =0
             RadiusTopLeft: =0
