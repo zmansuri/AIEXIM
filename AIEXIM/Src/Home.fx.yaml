@@ -339,6 +339,7 @@ Home As screen:
 
         Icon3 As icon.View:
             AccessibleLabel: ="test"
+            BorderStyle: =BorderStyle.None
             Color: =Color.DarkGreen
             Height: =48
             Icon: =Icon.View
