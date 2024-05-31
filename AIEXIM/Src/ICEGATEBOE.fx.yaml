@@ -9363,7 +9363,7 @@ ICEGATEBOE As screen:
             Height: =40
             Icon: =Icon.Save
             OnSelect: |-
-                =SubmitForm(frmICEGATESBDetailed);
+                =SubmitForm(frmICEGATEBOEDetailed);
                 SubmitForm(frmICEGATEBOEDetailedExtended);
             TabIndex: =0
             Tooltip: ="Save the Data"
