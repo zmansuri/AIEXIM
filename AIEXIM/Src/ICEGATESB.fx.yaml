@@ -90,7 +90,7 @@ ICEGATESB As screen:
         AccessibleLabel: ="TEST"
         Height: =46
         Icon: =Icon.Save
-        OnSelect: =SubmitForm(form3);
+        OnSelect: =SubmitForm(frm_SummaryDetails);
         TabIndex: =
         Visible: =varICEGATESBSummary && varEditForm
         Width: =37
@@ -16314,7 +16314,7 @@ ICEGATESB As screen:
             Image: ='edit icon'
             OnSelect: =Set(varEditForm,true)
             TabIndex: =
-            Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varICEGATESBSummary && form3.Mode = FormMode.View, true,false)
+            Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varICEGATESBSummary && frm_SummaryDetails.Mode = FormMode.View, true,false)
             Width: =50
             X: =1238
             Y: =94
@@ -16325,7 +16325,7 @@ ICEGATESB As screen:
             HoverFill: =Color.Transparent
             OnSelect: =Set(varEditForm,true)
             Text: =""
-            Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varICEGATESBSummary && form3.Mode = FormMode.View, true,false)
+            Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varICEGATESBSummary && frm_SummaryDetails.Mode = FormMode.View, true,false)
             Width: =50
             X: =1238
             Y: =99
@@ -16373,7 +16373,7 @@ ICEGATESB As screen:
             Set(VarSpinner,false);
             If(VarDMDResult = "1",Notify("The Document is successfully uploaded to DMS",NotificationType.Success),Notify("The Processed Failed .Please Retry once again.",NotificationType.Error))
         TabIndex: =
-        Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varICEGATESBSummary && form3.Mode = FormMode.View, true,false)
+        Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varICEGATESBSummary && frm_SummaryDetails.Mode = FormMode.View, true,false)
         Width: =29
         X: =1295
         Y: =98
@@ -16437,7 +16437,7 @@ ICEGATESB As screen:
             Y: =384
             ZIndex: =58
 
-    form3 As form:
+    frm_SummaryDetails As form:
         DataSource: ='Shipping Bill - Summary Reports'
         DefaultMode: |-
             =//FormMode.Edit
@@ -16461,7 +16461,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(255, 255, 255, 1)
             Height: =48
-            Width: =360
+            Width: =0
             X: =0
             Y: =0
             ZIndex: =1
@@ -16487,7 +16487,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_requestnoid)
             Required: =false
             Update: =DataCardValue18.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =0
             ZIndex: =1
@@ -16556,7 +16556,7 @@ ICEGATESB As screen:
             Height: =50
             Required: =false
             Update: =If(Not IsBlank(DateValue1.SelectedDate), DateValue1.SelectedDate, 0)
-            Width: =360
+            Width: =0
             X: =0
             Y: =2
             ZIndex: =1
@@ -16639,7 +16639,7 @@ ICEGATESB As screen:
             Height: =50
             Required: =false
             Update: =If(Not IsBlank(DateValue2.SelectedDate), DateValue2.SelectedDate, 0)
-            Width: =360
+            Width: =0
             X: =1
             Y: =2
             ZIndex: =1
@@ -16717,7 +16717,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =5
             ZIndex: =1
@@ -16751,7 +16751,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_countryofdischarge)
             Required: =false
             Update: =DataCardValue8.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =13
             ZIndex: =1
@@ -16815,7 +16815,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =14
             ZIndex: =1
@@ -16834,7 +16834,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =1
             Y: =20
             ZIndex: =1
@@ -16858,7 +16858,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_insurancevalueinrvalsummary)
             Required: =false
             Update: =DataCardValue16.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =22
             ZIndex: =1
@@ -16922,7 +16922,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =1
             Y: =25
             ZIndex: =1
@@ -16940,7 +16940,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =29
             ZIndex: =1
@@ -16959,7 +16959,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =33
             ZIndex: =1
@@ -16978,7 +16978,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =1
             Y: =35
             ZIndex: =1
@@ -16997,7 +16997,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =38
             ZIndex: =1
@@ -17015,7 +17015,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =60
-            Width: =360
+            Width: =0
             X: =1
             Y: =40
             ZIndex: =1
@@ -17033,7 +17033,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =44
             ZIndex: =1
@@ -17056,7 +17056,7 @@ ICEGATESB As screen:
             Height: =50
             Required: =false
             Update: =If(Not IsBlank(DateValue4.SelectedDate), DateValue4.SelectedDate, 0)
-            Width: =360
+            Width: =0
             X: =1
             Y: =48
             ZIndex: =1
@@ -17134,7 +17134,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =49
             ZIndex: =1
@@ -17164,7 +17164,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =55
             ZIndex: =1
@@ -17188,7 +17188,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_exchangeratevaldtls)
             Required: =false
             Update: =DataCardValue148.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =59
             ZIndex: =1
@@ -17251,7 +17251,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =60
             ZIndex: =1
@@ -17270,7 +17270,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =0
             Y: =64
             ZIndex: =1
@@ -17293,7 +17293,7 @@ ICEGATESB As screen:
             Height: =50
             Required: =false
             Update: =DataCardValue180.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =64
             ZIndex: =1
@@ -17356,7 +17356,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =360
+            Width: =0
             X: =1
             Y: =71
             ZIndex: =1
@@ -17374,7 +17374,7 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =86
-            Width: =360
+            Width: =0
             X: =0
             Y: =75
             ZIndex: =1
@@ -17398,7 +17398,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invsrno)
             Required: =false
             Update: =DataCardValue181.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =75
             ZIndex: =1
@@ -17467,7 +17467,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_noofunits)
             Required: =false
             Update: =DataCardValue176.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =77
             ZIndex: =1
@@ -17536,7 +17536,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_rodtepvalue)
             Required: =false
             Update: =DataCardValue156.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =78
             ZIndex: =1
@@ -17605,7 +17605,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_documentsendby)
             Required: =false
             Update: =DataCardValue20.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =1
             ZIndex: =11
@@ -17675,7 +17675,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_sbno)
             Required: =false
             Update: =DataCardValue21.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =1
             ZIndex: =11
@@ -17745,7 +17745,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_portcode)
             Required: =false
             Update: =DataCardValue24.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =3
             ZIndex: =11
@@ -17815,7 +17815,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_iecbr)
             Required: =false
             Update: =DataCardValue25.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =3
             ZIndex: =11
@@ -17885,7 +17885,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_gstintype)
             Required: =false
             Update: =DataCardValue33.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =4
             ZIndex: =11
@@ -17955,7 +17955,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_cbcode)
             Required: =false
             Update: =DataCardValue35.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =4
             ZIndex: =11
@@ -18025,7 +18025,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_mode)
             Required: =false
             Update: =DataCardValue36.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =5
             ZIndex: =11
@@ -18095,7 +18095,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_assess)
             Required: =false
             Update: =DataCardValue37.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =6
             ZIndex: =11
@@ -18165,7 +18165,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_exmn)
             Required: =false
             Update: =DataCardValue38.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =6
             ZIndex: =11
@@ -18235,7 +18235,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_jobbing)
             Required: =false
             Update: =DataCardValue39.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =7
             ZIndex: =11
@@ -18305,7 +18305,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_meis)
             Required: =false
             Update: =DataCardValue40.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =7
             ZIndex: =11
@@ -18375,7 +18375,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_dbk)
             Required: =false
             Update: =DataCardValue41.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =8
             ZIndex: =11
@@ -18445,7 +18445,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_rodtp)
             Required: =false
             Update: =DataCardValue42.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =8
             ZIndex: =11
@@ -18515,7 +18515,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_deecdfia)
             Required: =false
             Update: =DataCardValue43.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =9
             ZIndex: =11
@@ -18585,7 +18585,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_dfrc)
             Required: =false
             Update: =DataCardValue44.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =9
             ZIndex: =11
@@ -18655,7 +18655,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_reexp )
             Required: =false
             Update: =DataCardValue45.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =10
             ZIndex: =11
@@ -18725,7 +18725,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_lut )
             Required: =false
             Update: =DataCardValue46.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =10
             ZIndex: =11
@@ -18795,7 +18795,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_portofloading)
             Required: =false
             Update: =DataCardValue47.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =11
             ZIndex: =11
@@ -18865,7 +18865,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_countryoffinaldestination)
             Required: =false
             Update: =DataCardValue48.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =11
             ZIndex: =11
@@ -18935,7 +18935,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_stateoforigin)
             Required: =false
             Update: =DataCardValue49.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =12
             ZIndex: =11
@@ -19005,7 +19005,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_portoffinaldestination)
             Required: =false
             Update: =DataCardValue50.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =12
             ZIndex: =11
@@ -19075,7 +19075,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_portofdischarge)
             Required: =false
             Update: =DataCardValue51.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =13
             ZIndex: =11
@@ -19145,7 +19145,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_exportername)
             Required: =false
             Update: =DataCardValue53.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =14
             ZIndex: =11
@@ -19215,7 +19215,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_exporteraddress)
             Required: =false
             Update: =DataCardValue54.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =15
             ZIndex: =11
@@ -19285,7 +19285,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_declarantype)
             Required: =false
             Update: =DataCardValue55.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =15
             ZIndex: =11
@@ -19355,7 +19355,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_adcode)
             Required: =false
             Update: =DataCardValue56.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =16
             ZIndex: =11
@@ -19425,7 +19425,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_rbiwaivernoanddate)
             Required: =false
             Update: =DataCardValue57.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =16
             ZIndex: =11
@@ -19495,7 +19495,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_cbname)
             Required: =false
             Update: =DataCardValue58.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =17
             ZIndex: =11
@@ -19565,7 +19565,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_aeo)
             Required: =false
             Update: =DataCardValue59.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =17
             ZIndex: =11
@@ -19635,7 +19635,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_consigneename)
             Required: =false
             Update: =DataCardValue60.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =18
             ZIndex: =11
@@ -19705,7 +19705,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_consigneeaddress)
             Required: =false
             Update: =DataCardValue61.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =18
             ZIndex: =11
@@ -19775,7 +19775,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_forexbankacno)
             Required: =false
             Update: =DataCardValue62.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =19
             ZIndex: =11
@@ -19845,7 +19845,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_dbkbankacno)
             Required: =false
             Update: =DataCardValue63.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =19
             ZIndex: =11
@@ -19915,7 +19915,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_ifscno)
             Required: =false
             Update: =DataCardValue64.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =20
             ZIndex: =11
@@ -19985,7 +19985,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_fobvalueinrvalsummary)
             Required: =false
             Update: =DataCardValue65.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =21
             ZIndex: =11
@@ -20055,7 +20055,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_freightvalueinrvalsummary)
             Required: =false
             Update: =DataCardValue66.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =21
             ZIndex: =11
@@ -20125,7 +20125,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_discountvalueinrvalsummary )
             Required: =false
             Update: =DataCardValue68.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =22
             ZIndex: =11
@@ -20195,7 +20195,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_comvalueinrvalsummary)
             Required: =false
             Update: =DataCardValue69.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =23
             ZIndex: =11
@@ -20265,7 +20265,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_deductionsvalsummary)
             Required: =false
             Update: =DataCardValue70.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =23
             ZIndex: =11
@@ -20335,7 +20335,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_pcvalsummary)
             Required: =false
             Update: =DataCardValue71.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =24
             ZIndex: =11
@@ -20405,7 +20405,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_dutyvalsummary)
             Required: =false
             Update: =DataCardValue72.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =24
             ZIndex: =11
@@ -20475,7 +20475,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_cessnocvalsummary)
             Required: =false
             Update: =DataCardValue73.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =25
             ZIndex: =11
@@ -20545,7 +20545,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_dbkclaiminrexpr)
             Required: =false
             Update: =DataCardValue74.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =26
             ZIndex: =11
@@ -20615,7 +20615,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_igstamtinrexpr)
             Required: =false
             Update: =DataCardValue83.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =26
             ZIndex: =11
@@ -20685,7 +20685,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_cessamtinr)
             Required: =false
             Update: =DataCardValue84.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =27
             ZIndex: =11
@@ -20755,7 +20755,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_igstvalueinrexpr)
             Required: =false
             Update: =DataCardValue85.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =27
             ZIndex: =11
@@ -20825,7 +20825,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_rodtepamtinrexpr)
             Required: =false
             Update: =DataCardValue86.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =28
             ZIndex: =11
@@ -20895,7 +20895,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_rosctlamtinrexpr)
             Required: =false
             Update: =DataCardValue87.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =28
             ZIndex: =11
@@ -20965,7 +20965,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_mawbno)
             Required: =false
             Update: =DataCardValue90.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =29
             ZIndex: =11
@@ -21035,7 +21035,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_mawbdate)
             Required: =false
             Update: =DataCardValue91.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =30
             ZIndex: =11
@@ -21105,7 +21105,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_hawbno)
             Required: =false
             Update: =DataCardValue92.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =30
             ZIndex: =11
@@ -21175,7 +21175,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_hawbdate)
             Required: =false
             Update: =DataCardValue93.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =31
             ZIndex: =11
@@ -21245,7 +21245,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_cinno)
             Required: =false
             Update: =DataCardValue94.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =31
             ZIndex: =11
@@ -21315,7 +21315,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_cindate)
             Required: =false
             Update: =DataCardValue95.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =32
             ZIndex: =11
@@ -21385,7 +21385,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_cinsiteid)
             Required: =false
             Update: =DataCardValue96.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =32
             ZIndex: =11
@@ -21455,7 +21455,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_snoinvsummary)
             Required: =false
             Update: =DataCardValue97.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =33
             ZIndex: =11
@@ -21525,7 +21525,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invnoinvsummary)
             Required: =false
             Update: =DataCardValue98.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =34
             ZIndex: =11
@@ -21595,7 +21595,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invamtfcinvsummary)
             Required: =false
             Update: =DataCardValue99.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =34
             ZIndex: =11
@@ -21665,7 +21665,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_currencyinvsummary)
             Required: =false
             Update: =DataCardValue100.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =35
             ZIndex: =11
@@ -21735,7 +21735,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_container)
             Required: =false
             Update: =DataCardValue101.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =36
             ZIndex: =11
@@ -21805,7 +21805,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_seal)
             Required: =false
             Update: =DataCardValue102.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =36
             ZIndex: =11
@@ -21875,7 +21875,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_date)
             Required: =false
             Update: =DataCardValue103.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =37
             ZIndex: =11
@@ -21945,7 +21945,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_equipmentsrno)
             Required: =false
             Update: =DataCardValue104.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =37
             ZIndex: =11
@@ -22015,7 +22015,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_srno)
             Required: =false
             Update: =DataCardValue105.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =38
             ZIndex: =11
@@ -22085,7 +22085,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_challanno)
             Required: =false
             Update: =DataCardValue106.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =39
             ZIndex: =11
@@ -22155,7 +22155,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_challanpaymtdt)
             Required: =false
             Update: =DataCardValue107.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =39
             ZIndex: =11
@@ -22225,7 +22225,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_challanamt)
             Required: =false
             Update: =DataCardValue108.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =40
             ZIndex: =11
@@ -22295,7 +22295,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_sealtype)
             Required: =false
             Update: =DataCardValue109.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =41
             ZIndex: =11
@@ -22365,7 +22365,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_natureofcargo)
             Required: =false
             Update: =DataCardValue110.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =41
             ZIndex: =11
@@ -22435,7 +22435,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_noofpackets)
             Required: =false
             Update: =DataCardValue111.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =42
             ZIndex: =11
@@ -22505,7 +22505,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_noofcontainers)
             Required: =false
             Update: =DataCardValue112.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =42
             ZIndex: =11
@@ -22575,7 +22575,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_loosepackets)
             Required: =false
             Update: =DataCardValue113.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =43
             ZIndex: =11
@@ -22645,7 +22645,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_marksandnumbers)
             Required: =false
             Update: =DataCardValue114.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =43
             ZIndex: =11
@@ -22715,7 +22715,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_submissiondate)
             Required: =false
             Update: =DataCardValue115.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =44
             ZIndex: =11
@@ -22785,7 +22785,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_submissiontime)
             Required: =false
             Update: =DataCardValue116.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =45
             ZIndex: =11
@@ -22855,7 +22855,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_assessmentdate)
             Required: =false
             Update: =DataCardValue117.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =45
             ZIndex: =11
@@ -22925,7 +22925,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_assessmenttime)
             Required: =false
             Update: =DataCardValue118.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =46
             ZIndex: =11
@@ -22995,7 +22995,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_examinationdate)
             Required: =false
             Update: =DataCardValue119.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =46
             ZIndex: =11
@@ -23065,7 +23065,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_examinationtime)
             Required: =false
             Update: =DataCardValue120.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =47
             ZIndex: =11
@@ -23135,7 +23135,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_leotime)
             Required: =false
             Update: =DataCardValue122.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =47
             ZIndex: =11
@@ -23205,7 +23205,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_leono)
             Required: =false
             Update: =DataCardValue123.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =48
             ZIndex: =11
@@ -23275,7 +23275,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invsrno)
             Required: =false
             Update: =DataCardValue125.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =49
             ZIndex: =11
@@ -23345,7 +23345,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invoiceno)
             Required: =false
             Update: =DataCardValue126.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =50
             ZIndex: =11
@@ -23415,7 +23415,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invoicedate)
             Required: =false
             Update: =DataCardValue127.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =50
             ZIndex: =11
@@ -23485,7 +23485,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_purchaseorderno)
             Required: =false
             Update: =DataCardValue128.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =51
             ZIndex: =11
@@ -23555,7 +23555,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_purchaseorderdt)
             Required: =false
             Update: =DataCardValue129.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =51
             ZIndex: =11
@@ -23625,7 +23625,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_locno)
             Required: =false
             Update: =DataCardValue130.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =52
             ZIndex: =11
@@ -23695,7 +23695,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_locdate)
             Required: =false
             Update: =DataCardValue135.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =52
             ZIndex: =11
@@ -23765,7 +23765,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_contractno)
             Required: =false
             Update: =DataCardValue136.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =53
             ZIndex: =11
@@ -23835,7 +23835,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_contractdate)
             Required: =false
             Update: =DataCardValue137.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =53
             ZIndex: =11
@@ -23905,7 +23905,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invoiceadcode)
             Required: =false
             Update: =DataCardValue138.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =54
             ZIndex: =11
@@ -23975,7 +23975,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invterm)
             Required: =false
             Update: =DataCardValue139.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =54
             ZIndex: =11
@@ -24045,7 +24045,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invoicevalueinfc)
             Required: =false
             Update: =DataCardValue140.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =55
             ZIndex: =11
@@ -24115,7 +24115,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_fobvalueinfcvaldtls)
             Required: =false
             Update: =DataCardValue141.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =56
             ZIndex: =11
@@ -24185,7 +24185,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_freightinfcvaldtls)
             Required: =false
             Update: =DataCardValue142.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =56
             ZIndex: =11
@@ -24255,7 +24255,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_insuranceinfcvaldtls)
             Required: =false
             Update: =DataCardValue143.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =57
             ZIndex: =11
@@ -24325,7 +24325,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_discountinfcvaldtls)
             Required: =false
             Update: =DataCardValue144.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =57
             ZIndex: =11
@@ -24395,7 +24395,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_commisioninfcvaldtls)
             Required: =false
             Update: =DataCardValue145.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =58
             ZIndex: =11
@@ -24465,7 +24465,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_deductinfcvaldtls)
             Required: =false
             Update: =DataCardValue146.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =58
             ZIndex: =11
@@ -24535,7 +24535,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_pcvaldtls)
             Required: =false
             Update: =DataCardValue147.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =59
             ZIndex: =11
@@ -24605,7 +24605,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_exportersname)
             Required: =false
             Update: =DataCardValue149.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =60
             ZIndex: =11
@@ -24675,7 +24675,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_exportersaddress)
             Required: =false
             Update: =DataCardValue150.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =61
             ZIndex: =11
@@ -24745,7 +24745,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_buyersname)
             Required: =false
             Update: =DataCardValue151.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =61
             ZIndex: =11
@@ -24815,7 +24815,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_buyersaddress)
             Required: =false
             Update: =DataCardValue152.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =62
             ZIndex: =11
@@ -24885,7 +24885,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_thirdpartyname)
             Required: =false
             Update: =DataCardValue153.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =62
             ZIndex: =11
@@ -24955,7 +24955,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_thirdpartyaddress)
             Required: =false
             Update: =DataCardValue154.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =63
             ZIndex: =11
@@ -25025,7 +25025,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_buyeraeostatus)
             Required: =false
             Update: =DataCardValue155.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =63
             ZIndex: =11
@@ -25095,7 +25095,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_itemsno)
             Required: =false
             Update: =DataCardValue157.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =65
             ZIndex: =11
@@ -25165,7 +25165,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_licenseno)
             Required: =false
             Update: =DataCardValue158.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =65
             ZIndex: =11
@@ -25235,7 +25235,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_descnofexportitem)
             Required: =false
             Update: =DataCardValue159.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =66
             ZIndex: =11
@@ -25305,7 +25305,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_expsno)
             Required: =false
             Update: =DataCardValue160.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =66
             ZIndex: =11
@@ -25375,7 +25375,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_expqty)
             Required: =false
             Update: =DataCardValue161.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =67
             ZIndex: =11
@@ -25445,7 +25445,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_uqc1)
             Required: =false
             Update: =DataCardValue162.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =67
             ZIndex: =11
@@ -25515,7 +25515,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_fobvalue)
             Required: =false
             Update: =DataCardValue163.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =68
             ZIndex: =11
@@ -25585,7 +25585,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_sion)
             Required: =false
             Update: =DataCardValue164.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =68
             ZIndex: =11
@@ -25655,7 +25655,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_descnofimportitems)
             Required: =false
             Update: =DataCardValue165.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =69
             ZIndex: =11
@@ -25725,7 +25725,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_impsno)
             Required: =false
             Update: =DataCardValue166.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =69
             ZIndex: =11
@@ -25795,7 +25795,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_impqt)
             Required: =false
             Update: =DataCardValue167.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =70
             ZIndex: =11
@@ -25865,7 +25865,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_uqc2)
             Required: =false
             Update: =DataCardValue168.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =70
             ZIndex: =11
@@ -25935,7 +25935,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_indigmp)
             Required: =false
             Update: =DataCardValue169.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =71
             ZIndex: =11
@@ -26005,7 +26005,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_benojobbingdetails)
             Required: =false
             Update: =DataCardValue170.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =72
             ZIndex: =11
@@ -26075,7 +26075,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_bedatejobbingdetails)
             Required: =false
             Update: =DataCardValue171.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =72
             ZIndex: =11
@@ -26145,7 +26145,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_portcodejobbingdetails)
             Required: =false
             Update: =DataCardValue172.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =73
             ZIndex: =11
@@ -26215,7 +26215,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_descnofimportedgoods)
             Required: =false
             Update: =DataCardValue173.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =73
             ZIndex: =11
@@ -26285,7 +26285,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_qtyimpjobbingdetails)
             Required: =false
             Update: =DataCardValue174.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =74
             ZIndex: =11
@@ -26355,7 +26355,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_qtyused)
             Required: =false
             Update: =DataCardValue175.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =74
             ZIndex: =11
@@ -26425,7 +26425,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_itmsn)
             Required: =false
             Update: =DataCardValue177.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =76
             ZIndex: =11
@@ -26495,7 +26495,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_qtyrodtepdetails)
             Required: =false
             Update: =DataCardValue178.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =76
             ZIndex: =11
@@ -26565,7 +26565,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_uqcrodtepdetails)
             Required: =false
             Update: =DataCardValue179.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =77
             ZIndex: =11
@@ -26635,7 +26635,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength,ispl_infocd)
             Required: =false
             Update: =DataCardValue182.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =78
             ZIndex: =11
@@ -26705,7 +26705,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_drwbackamtininr)
             Required: =false
             Update: =DataCardValue183.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =79
             ZIndex: =11
@@ -26775,7 +26775,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_roslamtinr)
             Required: =false
             Update: =DataCardValue184.Text
-            Width: =360
+            Width: =0
             X: =1
             Y: =79
             ZIndex: =11
@@ -26845,7 +26845,7 @@ ICEGATESB As screen:
             MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_schemedescription)
             Required: =false
             Update: =DataCardValue185.Text
-            Width: =360
+            Width: =0
             X: =0
             Y: =80
             ZIndex: =11
@@ -26925,7 +26925,7 @@ ICEGATESB As screen:
             Y: =315
             ZIndex: =60
 
-    frm_SummaryDetails As form:
+    form2 As form:
         DataSource: ='Shipping Bill Export - Detailed Reports'
         Height: =578
         NumberOfColumns: =1
