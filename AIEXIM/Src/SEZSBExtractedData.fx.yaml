@@ -140,39 +140,39 @@ SEZSBExtractedData As screen:
         Fill: =RGBA(255, 255, 255, 1)
         Height: =525
         Items: |-
-            =Filter(
-                Sort(
+            =Sort(
+                Filter(
                     'Export SEZ - Shipping Summary Reports',
-                    'Created On',
-                    SortOrder.Descending
+                    StartsWith(
+                        'SB NO',
+                        txtSearchExtractedData_3.Text
+                    ) || StartsWith(
+                        'SB Date',
+                        txtSearchExtractedData_3.Text
+                    ) || StartsWith(
+                        'Port CODE',
+                        txtSearchExtractedData_3.Text
+                    ) || StartsWith(
+                        'Port of Loading',
+                        txtSearchExtractedData_3.Text
+                    ) || StartsWith(
+                        'Port of Discharge',
+                        txtSearchExtractedData_3.Text
+                    ) || StartsWith(
+                        'Country of Final Destination',
+                        txtSearchExtractedData_3.Text
+                    ) || StartsWith(
+                        'Consignee Name',
+                        txtSearchExtractedData_3.Text
+                    ),
+                    'Created On' >= dteFromSEZSB.SelectedDate || dteFromSEZSB.SelectedDate = Blank() && 'Created On' <= DateAdd(
+                        dteToSEZSB.SelectedDate,
+                        1,
+                        TimeUnit.Days
+                    ) || dteToSEZSB.SelectedDate = Blank()
                 ),
-                StartsWith(
-                    'SB NO',
-                    txtSearchExtractedData_3.Text
-                ) || StartsWith(
-                    'SB Date',
-                    txtSearchExtractedData_3.Text
-                ) || StartsWith(
-                    'Port CODE',
-                    txtSearchExtractedData_3.Text
-                ) || StartsWith(
-                    'Port of Loading',
-                    txtSearchExtractedData_3.Text
-                ) || StartsWith(
-                    'Port of Discharge',
-                    txtSearchExtractedData_3.Text
-                ) || StartsWith(
-                    'Country of Final Destination',
-                    txtSearchExtractedData_3.Text
-                ) || StartsWith(
-                    'Consignee Name',
-                    txtSearchExtractedData_3.Text
-                ),
-                'Created On' >= dteFromSEZSB.SelectedDate || dteFromSEZSB.SelectedDate=Blank() && 'Created On' <= DateAdd(
-                    dteToSEZSB.SelectedDate,
-                    1,
-                    TimeUnit.Days
-                ) || dteToSEZSB.SelectedDate = Blank()
+                'Created On',
+                SortOrder.Descending
             )
         Layout: =Layout.Vertical
         LoadingSpinner: =LoadingSpinner.Data

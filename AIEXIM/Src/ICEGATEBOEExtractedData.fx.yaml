@@ -147,7 +147,7 @@ ICEGATEBOEExtractedData As screen:
                         'BE No',
                         txtSearchICEGATBOE.Text
                     ),
-                    'Created On' >= dteFromICEGATEBOE.SelectedDate || dteFromICEGATEBOE.SelectedDate = Blank()  && 'Created On' <= DateAdd(
+                    'BE Date - BillOfEntrySummary' >= dteFromICEGATEBOE.SelectedDate || dteFromICEGATEBOE.SelectedDate = Blank() && 'BE Date - BillOfEntrySummary' <= DateAdd(
                         dteToICEGATEBOE.SelectedDate,
                         1,
                         TimeUnit.Days
