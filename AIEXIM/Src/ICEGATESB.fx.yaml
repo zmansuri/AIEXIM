@@ -13574,8 +13574,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue18.Text
             Width: =320
-            X: =1
-            Y: =0
+            X: =0
+            Y: =1
             ZIndex: =1
 
             DataCardKey20 As label:
@@ -13643,8 +13643,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =If(Not IsBlank(DateValue1.SelectedDate), DateValue1.SelectedDate, 0)
             Width: =320
-            X: =320
-            Y: =141
+            X: =0
+            Y: =3
             ZIndex: =1
 
             DataCardKey6 As label:
@@ -13669,7 +13669,7 @@ ICEGATESB As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =300
+                Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey6.Y + DataCardKey6.Height + 5
                 ZIndex: =2
@@ -13726,7 +13726,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =If(Not IsBlank(DateValue2.SelectedDate), DateValue2.SelectedDate, 0)
             Width: =320
-            X: =1
+            X: =0
             Y: =2
             ZIndex: =1
 
@@ -13752,7 +13752,7 @@ ICEGATESB As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =300
+                Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey17.Y + DataCardKey17.Height + 5
                 ZIndex: =2
@@ -13803,8 +13803,8 @@ ICEGATESB As screen:
             DisplayMode: =DisplayMode.Edit
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
-            Width: =320
-            X: =0
+            Width: =720
+            X: =1
             Y: =5
             ZIndex: =1
 
@@ -13838,8 +13838,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue8.Text
             Width: =320
-            X: =1
-            Y: =13
+            X: =0
+            Y: =14
             ZIndex: =1
 
             DataCardKey24 As label:
@@ -13903,7 +13903,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =700
             X: =0
-            Y: =14
+            Y: =15
             ZIndex: =1
 
             Label14 As label:
@@ -13921,8 +13921,8 @@ ICEGATESB As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Width: =720
-            X: =1
-            Y: =20
+            X: =0
+            Y: =22
             ZIndex: =1
 
             Label16 As label:
@@ -13946,7 +13946,7 @@ ICEGATESB As screen:
             Update: =DataCardValue16.Text
             Width: =320
             X: =0
-            Y: =22
+            Y: =24
             ZIndex: =1
 
             DataCardKey69 As label:
@@ -14009,8 +14009,8 @@ ICEGATESB As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Width: =720
-            X: =1
-            Y: =25
+            X: =0
+            Y: =28
             ZIndex: =1
 
             Label17 As label:
@@ -14028,7 +14028,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =720
             X: =0
-            Y: =29
+            Y: =32
             ZIndex: =1
 
             Label18 As label:
@@ -14047,7 +14047,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =720
             X: =0
-            Y: =33
+            Y: =37
             ZIndex: =1
 
             "'Invoice Summary' As label":
@@ -14065,8 +14065,8 @@ ICEGATESB As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Width: =720
-            X: =1
-            Y: =35
+            X: =0
+            Y: =40
             ZIndex: =1
 
             Label21 As label:
@@ -14085,7 +14085,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =720
             X: =0
-            Y: =38
+            Y: =43
             ZIndex: =1
 
             Label22 As label:
@@ -14102,8 +14102,8 @@ ICEGATESB As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =60
             Width: =720
-            X: =1
-            Y: =40
+            X: =0
+            Y: =46
             ZIndex: =1
 
             Label23 As label:
@@ -14121,7 +14121,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =720
             X: =0
-            Y: =44
+            Y: =50
             ZIndex: =1
 
             Label24 As label:
@@ -14143,8 +14143,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =If(Not IsBlank(DateValue4.SelectedDate), DateValue4.SelectedDate, 0)
             Width: =320
-            X: =1
-            Y: =48
+            X: =0
+            Y: =55
             ZIndex: =1
 
             DataCardKey54 As label:
@@ -14169,7 +14169,7 @@ ICEGATESB As screen:
                 PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                 StartYear: =1899
                 Tooltip: =Parent.DisplayName
-                Width: =300
+                Width: =Parent.Width - 60
                 X: =30
                 Y: =DataCardKey54.Y + DataCardKey54.Height + 5
                 ZIndex: =2
@@ -14222,7 +14222,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =720
             X: =0
-            Y: =49
+            Y: =56
             ZIndex: =1
 
             Label25 As label:
@@ -14252,7 +14252,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =720
             X: =0
-            Y: =55
+            Y: =63
             ZIndex: =1
 
             Label28 As label:
@@ -14275,8 +14275,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue148.Text
             Width: =320
-            X: =1
-            Y: =59
+            X: =0
+            Y: =68
             ZIndex: =1
 
             DataCardKey25 As label:
@@ -14339,7 +14339,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =720
             X: =0
-            Y: =60
+            Y: =69
             ZIndex: =1
 
             Label29 As label:
@@ -14358,7 +14358,7 @@ ICEGATESB As screen:
             Height: =70
             Width: =720
             X: =0
-            Y: =64
+            Y: =74
             ZIndex: =1
 
             Label30 As label:
@@ -14380,8 +14380,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue180.Text
             Width: =320
-            X: =1
-            Y: =64
+            X: =0
+            Y: =75
             ZIndex: =1
 
             DataCardKey178 As label:
@@ -14443,8 +14443,8 @@ ICEGATESB As screen:
             Fill: =RGBA(0, 0, 0, 0)
             Height: =70
             Width: =720
-            X: =1
-            Y: =71
+            X: =0
+            Y: =82
             ZIndex: =1
 
             Label31 As label:
@@ -14462,7 +14462,7 @@ ICEGATESB As screen:
             Height: =86
             Width: =720
             X: =0
-            Y: =75
+            Y: =86
             ZIndex: =1
 
             Label32 As label:
@@ -14485,8 +14485,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue181.Text
             Width: =320
-            X: =1
-            Y: =75
+            X: =0
+            Y: =87
             ZIndex: =1
 
             DataCardKey182 As label:
@@ -14507,10 +14507,10 @@ ICEGATESB As screen:
                 Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14554,8 +14554,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue176.Text
             Width: =320
-            X: =1
-            Y: =77
+            X: =0
+            Y: =89
             ZIndex: =1
 
             DataCardKey158 As label:
@@ -14576,10 +14576,10 @@ ICEGATESB As screen:
                 Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14623,8 +14623,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue156.Text
             Width: =320
-            X: =0
-            Y: =78
+            X: =1
+            Y: =89
             ZIndex: =1
 
             DataCardKey150 As label:
@@ -14645,10 +14645,10 @@ ICEGATESB As screen:
                 Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -14692,8 +14692,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue20.Text
             Width: =320
-            X: =320
-            Y: =0
+            X: =1
+            Y: =1
             ZIndex: =11
 
             DataCardKey22 As label:
@@ -14763,7 +14763,7 @@ ICEGATESB As screen:
             Update: =DataCardValue21.Text
             Width: =320
             X: =1
-            Y: =1
+            Y: =2
             ZIndex: =11
 
             DataCardKey23 As label:
@@ -14832,7 +14832,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue24.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =3
             ZIndex: =11
 
@@ -14902,8 +14902,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue25.Text
             Width: =320
-            X: =1
-            Y: =3
+            X: =0
+            Y: =4
             ZIndex: =11
 
             DataCardKey34 As label:
@@ -14972,7 +14972,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue33.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =4
             ZIndex: =11
 
@@ -15042,8 +15042,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue35.Text
             Width: =320
-            X: =1
-            Y: =4
+            X: =0
+            Y: =5
             ZIndex: =11
 
             DataCardKey37 As label:
@@ -15112,8 +15112,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue36.Text
             Width: =320
-            X: =1
-            Y: =5
+            X: =0
+            Y: =6
             ZIndex: =11
 
             DataCardKey38 As label:
@@ -15182,7 +15182,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue37.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =6
             ZIndex: =11
 
@@ -15252,8 +15252,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue38.Text
             Width: =320
-            X: =1
-            Y: =6
+            X: =0
+            Y: =7
             ZIndex: =11
 
             DataCardKey40 As label:
@@ -15322,7 +15322,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue39.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =7
             ZIndex: =11
 
@@ -15392,8 +15392,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue40.Text
             Width: =320
-            X: =1
-            Y: =7
+            X: =0
+            Y: =8
             ZIndex: =11
 
             DataCardKey42 As label:
@@ -15462,7 +15462,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue41.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =8
             ZIndex: =11
 
@@ -15532,8 +15532,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue42.Text
             Width: =320
-            X: =1
-            Y: =8
+            X: =0
+            Y: =9
             ZIndex: =11
 
             DataCardKey44 As label:
@@ -15602,7 +15602,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue43.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =9
             ZIndex: =11
 
@@ -15672,8 +15672,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue44.Text
             Width: =320
-            X: =1
-            Y: =9
+            X: =0
+            Y: =10
             ZIndex: =11
 
             DataCardKey46 As label:
@@ -15742,7 +15742,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue45.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =10
             ZIndex: =11
 
@@ -15812,8 +15812,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue46.Text
             Width: =320
-            X: =1
-            Y: =10
+            X: =0
+            Y: =11
             ZIndex: =11
 
             DataCardKey48 As label:
@@ -15882,7 +15882,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue47.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =11
             ZIndex: =11
 
@@ -15952,8 +15952,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue48.Text
             Width: =320
-            X: =1
-            Y: =11
+            X: =0
+            Y: =12
             ZIndex: =11
 
             DataCardKey50 As label:
@@ -16022,7 +16022,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue49.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =12
             ZIndex: =11
 
@@ -16092,8 +16092,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue50.Text
             Width: =320
-            X: =1
-            Y: =12
+            X: =0
+            Y: =13
             ZIndex: =11
 
             DataCardKey52 As label:
@@ -16162,7 +16162,7 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue51.Text
             Width: =320
-            X: =0
+            X: =1
             Y: =13
             ZIndex: =11
 
@@ -16232,8 +16232,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue53.Text
             Width: =320
-            X: =1
-            Y: =14
+            X: =0
+            Y: =16
             ZIndex: =11
 
             DataCardKey55 As label:
@@ -16302,8 +16302,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue54.Text
             Width: =320
-            X: =0
-            Y: =15
+            X: =1
+            Y: =16
             ZIndex: =11
 
             DataCardKey56 As label:
@@ -16372,8 +16372,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue55.Text
             Width: =320
-            X: =1
-            Y: =15
+            X: =0
+            Y: =17
             ZIndex: =11
 
             DataCardKey57 As label:
@@ -16442,8 +16442,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue56.Text
             Width: =320
-            X: =0
-            Y: =16
+            X: =1
+            Y: =17
             ZIndex: =11
 
             DataCardKey58 As label:
@@ -16512,8 +16512,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue57.Text
             Width: =320
-            X: =1
-            Y: =16
+            X: =0
+            Y: =18
             ZIndex: =11
 
             DataCardKey59 As label:
@@ -16582,8 +16582,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue58.Text
             Width: =320
-            X: =0
-            Y: =17
+            X: =1
+            Y: =18
             ZIndex: =11
 
             DataCardKey60 As label:
@@ -16652,8 +16652,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue59.Text
             Width: =320
-            X: =1
-            Y: =17
+            X: =0
+            Y: =19
             ZIndex: =11
 
             DataCardKey61 As label:
@@ -16722,8 +16722,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue60.Text
             Width: =320
-            X: =0
-            Y: =18
+            X: =1
+            Y: =19
             ZIndex: =11
 
             DataCardKey62 As label:
@@ -16792,8 +16792,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue61.Text
             Width: =320
-            X: =1
-            Y: =18
+            X: =0
+            Y: =20
             ZIndex: =11
 
             DataCardKey63 As label:
@@ -16862,8 +16862,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue62.Text
             Width: =320
-            X: =0
-            Y: =19
+            X: =1
+            Y: =20
             ZIndex: =11
 
             DataCardKey64 As label:
@@ -16932,8 +16932,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue63.Text
             Width: =320
-            X: =1
-            Y: =19
+            X: =0
+            Y: =21
             ZIndex: =11
 
             DataCardKey65 As label:
@@ -17002,8 +17002,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue64.Text
             Width: =320
-            X: =0
-            Y: =20
+            X: =1
+            Y: =21
             ZIndex: =11
 
             DataCardKey66 As label:
@@ -17073,7 +17073,7 @@ ICEGATESB As screen:
             Update: =DataCardValue65.Text
             Width: =320
             X: =0
-            Y: =21
+            Y: =23
             ZIndex: =11
 
             DataCardKey67 As label:
@@ -17143,7 +17143,7 @@ ICEGATESB As screen:
             Update: =DataCardValue66.Text
             Width: =320
             X: =1
-            Y: =21
+            Y: =23
             ZIndex: =11
 
             DataCardKey68 As label:
@@ -17213,7 +17213,7 @@ ICEGATESB As screen:
             Update: =DataCardValue68.Text
             Width: =320
             X: =1
-            Y: =22
+            Y: =24
             ZIndex: =11
 
             DataCardKey70 As label:
@@ -17283,7 +17283,7 @@ ICEGATESB As screen:
             Update: =DataCardValue69.Text
             Width: =320
             X: =0
-            Y: =23
+            Y: =25
             ZIndex: =11
 
             DataCardKey71 As label:
@@ -17353,7 +17353,7 @@ ICEGATESB As screen:
             Update: =DataCardValue70.Text
             Width: =320
             X: =1
-            Y: =23
+            Y: =25
             ZIndex: =11
 
             DataCardKey72 As label:
@@ -17423,7 +17423,7 @@ ICEGATESB As screen:
             Update: =DataCardValue71.Text
             Width: =320
             X: =0
-            Y: =24
+            Y: =26
             ZIndex: =11
 
             DataCardKey73 As label:
@@ -17493,7 +17493,7 @@ ICEGATESB As screen:
             Update: =DataCardValue72.Text
             Width: =320
             X: =1
-            Y: =24
+            Y: =26
             ZIndex: =11
 
             DataCardKey74 As label:
@@ -17563,7 +17563,7 @@ ICEGATESB As screen:
             Update: =DataCardValue73.Text
             Width: =320
             X: =0
-            Y: =25
+            Y: =27
             ZIndex: =11
 
             DataCardKey75 As label:
@@ -17633,7 +17633,7 @@ ICEGATESB As screen:
             Update: =DataCardValue74.Text
             Width: =320
             X: =0
-            Y: =26
+            Y: =29
             ZIndex: =11
 
             DataCardKey84 As label:
@@ -17703,7 +17703,7 @@ ICEGATESB As screen:
             Update: =DataCardValue83.Text
             Width: =320
             X: =1
-            Y: =26
+            Y: =29
             ZIndex: =11
 
             DataCardKey85 As label:
@@ -17773,7 +17773,7 @@ ICEGATESB As screen:
             Update: =DataCardValue84.Text
             Width: =320
             X: =0
-            Y: =27
+            Y: =30
             ZIndex: =11
 
             DataCardKey86 As label:
@@ -17843,7 +17843,7 @@ ICEGATESB As screen:
             Update: =DataCardValue85.Text
             Width: =320
             X: =1
-            Y: =27
+            Y: =30
             ZIndex: =11
 
             DataCardKey87 As label:
@@ -17913,7 +17913,7 @@ ICEGATESB As screen:
             Update: =DataCardValue86.Text
             Width: =320
             X: =0
-            Y: =28
+            Y: =31
             ZIndex: =11
 
             DataCardKey88 As label:
@@ -17983,7 +17983,7 @@ ICEGATESB As screen:
             Update: =DataCardValue87.Text
             Width: =320
             X: =1
-            Y: =28
+            Y: =31
             ZIndex: =11
 
             DataCardKey91 As label:
@@ -18052,8 +18052,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue90.Text
             Width: =320
-            X: =1
-            Y: =29
+            X: =0
+            Y: =33
             ZIndex: =11
 
             DataCardKey92 As label:
@@ -18122,8 +18122,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue91.Text
             Width: =320
-            X: =0
-            Y: =30
+            X: =1
+            Y: =33
             ZIndex: =11
 
             DataCardKey93 As label:
@@ -18192,8 +18192,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue92.Text
             Width: =320
-            X: =1
-            Y: =30
+            X: =0
+            Y: =34
             ZIndex: =11
 
             DataCardKey94 As label:
@@ -18262,8 +18262,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue93.Text
             Width: =320
-            X: =0
-            Y: =31
+            X: =1
+            Y: =34
             ZIndex: =11
 
             DataCardKey95 As label:
@@ -18332,8 +18332,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue94.Text
             Width: =320
-            X: =1
-            Y: =31
+            X: =0
+            Y: =35
             ZIndex: =11
 
             DataCardKey96 As label:
@@ -18402,8 +18402,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue95.Text
             Width: =320
-            X: =0
-            Y: =32
+            X: =1
+            Y: =35
             ZIndex: =11
 
             DataCardKey97 As label:
@@ -18472,8 +18472,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue96.Text
             Width: =320
-            X: =1
-            Y: =32
+            X: =0
+            Y: =36
             ZIndex: =11
 
             DataCardKey98 As label:
@@ -18542,8 +18542,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue97.Text
             Width: =320
-            X: =1
-            Y: =33
+            X: =0
+            Y: =38
             ZIndex: =11
 
             DataCardKey99 As label:
@@ -18612,8 +18612,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue98.Text
             Width: =320
-            X: =0
-            Y: =34
+            X: =1
+            Y: =38
             ZIndex: =11
 
             DataCardKey100 As label:
@@ -18682,8 +18682,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue99.Text
             Width: =320
-            X: =1
-            Y: =34
+            X: =0
+            Y: =39
             ZIndex: =11
 
             DataCardKey101 As label:
@@ -18752,8 +18752,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue100.Text
             Width: =320
-            X: =0
-            Y: =35
+            X: =1
+            Y: =39
             ZIndex: =11
 
             DataCardKey102 As label:
@@ -18823,7 +18823,7 @@ ICEGATESB As screen:
             Update: =DataCardValue101.Text
             Width: =320
             X: =0
-            Y: =36
+            Y: =41
             ZIndex: =11
 
             DataCardKey103 As label:
@@ -18893,7 +18893,7 @@ ICEGATESB As screen:
             Update: =DataCardValue102.Text
             Width: =320
             X: =1
-            Y: =36
+            Y: =41
             ZIndex: =11
 
             DataCardKey104 As label:
@@ -18963,7 +18963,7 @@ ICEGATESB As screen:
             Update: =DataCardValue103.Text
             Width: =320
             X: =0
-            Y: =37
+            Y: =42
             ZIndex: =11
 
             DataCardKey105 As label:
@@ -19033,7 +19033,7 @@ ICEGATESB As screen:
             Update: =DataCardValue104.Text
             Width: =320
             X: =1
-            Y: =37
+            Y: =42
             ZIndex: =11
 
             DataCardKey106 As label:
@@ -19102,8 +19102,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue105.Text
             Width: =320
-            X: =1
-            Y: =38
+            X: =0
+            Y: =44
             ZIndex: =11
 
             DataCardKey107 As label:
@@ -19172,8 +19172,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue106.Text
             Width: =320
-            X: =0
-            Y: =39
+            X: =1
+            Y: =44
             ZIndex: =11
 
             DataCardKey108 As label:
@@ -19242,8 +19242,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue107.Text
             Width: =320
-            X: =1
-            Y: =39
+            X: =0
+            Y: =45
             ZIndex: =11
 
             DataCardKey109 As label:
@@ -19312,8 +19312,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue108.Text
             Width: =320
-            X: =0
-            Y: =40
+            X: =1
+            Y: =45
             ZIndex: =11
 
             DataCardKey110 As label:
@@ -19383,7 +19383,7 @@ ICEGATESB As screen:
             Update: =DataCardValue109.Text
             Width: =320
             X: =0
-            Y: =41
+            Y: =47
             ZIndex: =11
 
             DataCardKey111 As label:
@@ -19453,7 +19453,7 @@ ICEGATESB As screen:
             Update: =DataCardValue110.Text
             Width: =320
             X: =1
-            Y: =41
+            Y: =47
             ZIndex: =11
 
             DataCardKey112 As label:
@@ -19523,7 +19523,7 @@ ICEGATESB As screen:
             Update: =DataCardValue111.Text
             Width: =320
             X: =0
-            Y: =42
+            Y: =48
             ZIndex: =11
 
             DataCardKey113 As label:
@@ -19593,7 +19593,7 @@ ICEGATESB As screen:
             Update: =DataCardValue112.Text
             Width: =320
             X: =1
-            Y: =42
+            Y: =48
             ZIndex: =11
 
             DataCardKey114 As label:
@@ -19663,7 +19663,7 @@ ICEGATESB As screen:
             Update: =DataCardValue113.Text
             Width: =320
             X: =0
-            Y: =43
+            Y: =49
             ZIndex: =11
 
             DataCardKey115 As label:
@@ -19733,7 +19733,7 @@ ICEGATESB As screen:
             Update: =DataCardValue114.Text
             Width: =320
             X: =1
-            Y: =43
+            Y: =49
             ZIndex: =11
 
             DataCardKey116 As label:
@@ -19802,8 +19802,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue115.Text
             Width: =320
-            X: =1
-            Y: =44
+            X: =0
+            Y: =51
             ZIndex: =11
 
             DataCardKey117 As label:
@@ -19872,8 +19872,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue116.Text
             Width: =320
-            X: =0
-            Y: =45
+            X: =1
+            Y: =51
             ZIndex: =11
 
             DataCardKey118 As label:
@@ -19942,8 +19942,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue117.Text
             Width: =320
-            X: =1
-            Y: =45
+            X: =0
+            Y: =52
             ZIndex: =11
 
             DataCardKey119 As label:
@@ -20012,8 +20012,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue118.Text
             Width: =320
-            X: =0
-            Y: =46
+            X: =1
+            Y: =52
             ZIndex: =11
 
             DataCardKey120 As label:
@@ -20082,8 +20082,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue119.Text
             Width: =320
-            X: =1
-            Y: =46
+            X: =0
+            Y: =53
             ZIndex: =11
 
             DataCardKey121 As label:
@@ -20152,8 +20152,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue120.Text
             Width: =320
-            X: =0
-            Y: =47
+            X: =1
+            Y: =53
             ZIndex: =11
 
             DataCardKey122 As label:
@@ -20222,8 +20222,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue122.Text
             Width: =320
-            X: =1
-            Y: =47
+            X: =0
+            Y: =54
             ZIndex: =11
 
             DataCardKey124 As label:
@@ -20292,8 +20292,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue123.Text
             Width: =320
-            X: =0
-            Y: =48
+            X: =1
+            Y: =54
             ZIndex: =11
 
             DataCardKey125 As label:
@@ -20362,8 +20362,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue125.Text
             Width: =320
-            X: =1
-            Y: =49
+            X: =0
+            Y: =57
             ZIndex: =11
 
             DataCardKey127 As label:
@@ -20432,8 +20432,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue126.Text
             Width: =320
-            X: =0
-            Y: =50
+            X: =1
+            Y: =57
             ZIndex: =11
 
             DataCardKey128 As label:
@@ -20502,8 +20502,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue127.Text
             Width: =320
-            X: =1
-            Y: =50
+            X: =0
+            Y: =58
             ZIndex: =11
 
             DataCardKey129 As label:
@@ -20572,8 +20572,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue128.Text
             Width: =320
-            X: =0
-            Y: =51
+            X: =1
+            Y: =58
             ZIndex: =11
 
             DataCardKey130 As label:
@@ -20642,8 +20642,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue129.Text
             Width: =320
-            X: =1
-            Y: =51
+            X: =0
+            Y: =59
             ZIndex: =11
 
             DataCardKey131 As label:
@@ -20712,8 +20712,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue130.Text
             Width: =320
-            X: =0
-            Y: =52
+            X: =1
+            Y: =59
             ZIndex: =11
 
             DataCardKey136 As label:
@@ -20782,8 +20782,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue135.Text
             Width: =320
-            X: =1
-            Y: =52
+            X: =0
+            Y: =60
             ZIndex: =11
 
             DataCardKey137 As label:
@@ -20852,8 +20852,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue136.Text
             Width: =320
-            X: =0
-            Y: =53
+            X: =1
+            Y: =60
             ZIndex: =11
 
             DataCardKey138 As label:
@@ -20922,8 +20922,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue137.Text
             Width: =320
-            X: =1
-            Y: =53
+            X: =0
+            Y: =61
             ZIndex: =11
 
             DataCardKey139 As label:
@@ -20992,8 +20992,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue138.Text
             Width: =320
-            X: =0
-            Y: =54
+            X: =1
+            Y: =61
             ZIndex: =11
 
             DataCardKey140 As label:
@@ -21062,8 +21062,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue139.Text
             Width: =320
-            X: =1
-            Y: =54
+            X: =0
+            Y: =62
             ZIndex: =11
 
             DataCardKey141 As label:
@@ -21132,8 +21132,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue140.Text
             Width: =320
-            X: =1
-            Y: =55
+            X: =0
+            Y: =64
             ZIndex: =11
 
             DataCardKey142 As label:
@@ -21202,8 +21202,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue141.Text
             Width: =320
-            X: =0
-            Y: =56
+            X: =1
+            Y: =64
             ZIndex: =11
 
             DataCardKey143 As label:
@@ -21272,8 +21272,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue142.Text
             Width: =320
-            X: =1
-            Y: =56
+            X: =0
+            Y: =65
             ZIndex: =11
 
             DataCardKey144 As label:
@@ -21342,8 +21342,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue143.Text
             Width: =320
-            X: =0
-            Y: =57
+            X: =1
+            Y: =65
             ZIndex: =11
 
             DataCardKey145 As label:
@@ -21412,8 +21412,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue144.Text
             Width: =320
-            X: =1
-            Y: =57
+            X: =0
+            Y: =66
             ZIndex: =11
 
             DataCardKey146 As label:
@@ -21482,8 +21482,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue145.Text
             Width: =320
-            X: =0
-            Y: =58
+            X: =1
+            Y: =66
             ZIndex: =11
 
             DataCardKey147 As label:
@@ -21552,8 +21552,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue146.Text
             Width: =320
-            X: =1
-            Y: =58
+            X: =0
+            Y: =67
             ZIndex: =11
 
             DataCardKey148 As label:
@@ -21622,8 +21622,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue147.Text
             Width: =320
-            X: =0
-            Y: =59
+            X: =1
+            Y: =67
             ZIndex: =11
 
             DataCardKey149 As label:
@@ -21692,8 +21692,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue149.Text
             Width: =320
-            X: =1
-            Y: =60
+            X: =0
+            Y: =70
             ZIndex: =11
 
             DataCardKey151 As label:
@@ -21762,8 +21762,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue150.Text
             Width: =320
-            X: =0
-            Y: =61
+            X: =1
+            Y: =70
             ZIndex: =11
 
             DataCardKey152 As label:
@@ -21832,8 +21832,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue151.Text
             Width: =320
-            X: =1
-            Y: =61
+            X: =0
+            Y: =71
             ZIndex: =11
 
             DataCardKey153 As label:
@@ -21902,8 +21902,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue152.Text
             Width: =320
-            X: =0
-            Y: =62
+            X: =1
+            Y: =71
             ZIndex: =11
 
             DataCardKey154 As label:
@@ -21972,8 +21972,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue153.Text
             Width: =320
-            X: =1
-            Y: =62
+            X: =0
+            Y: =72
             ZIndex: =11
 
             DataCardKey155 As label:
@@ -22042,8 +22042,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue154.Text
             Width: =320
-            X: =0
-            Y: =63
+            X: =1
+            Y: =72
             ZIndex: =11
 
             DataCardKey156 As label:
@@ -22112,8 +22112,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue155.Text
             Width: =320
-            X: =1
-            Y: =63
+            X: =0
+            Y: =73
             ZIndex: =11
 
             DataCardKey157 As label:
@@ -22182,8 +22182,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue157.Text
             Width: =320
-            X: =0
-            Y: =65
+            X: =1
+            Y: =75
             ZIndex: =11
 
             DataCardKey159 As label:
@@ -22252,8 +22252,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue158.Text
             Width: =320
-            X: =1
-            Y: =65
+            X: =0
+            Y: =76
             ZIndex: =11
 
             DataCardKey160 As label:
@@ -22322,8 +22322,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue159.Text
             Width: =320
-            X: =0
-            Y: =66
+            X: =1
+            Y: =76
             ZIndex: =11
 
             DataCardKey161 As label:
@@ -22392,8 +22392,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue160.Text
             Width: =320
-            X: =1
-            Y: =66
+            X: =0
+            Y: =77
             ZIndex: =11
 
             DataCardKey162 As label:
@@ -22462,8 +22462,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue161.Text
             Width: =320
-            X: =0
-            Y: =67
+            X: =1
+            Y: =77
             ZIndex: =11
 
             DataCardKey163 As label:
@@ -22532,8 +22532,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue162.Text
             Width: =320
-            X: =1
-            Y: =67
+            X: =0
+            Y: =78
             ZIndex: =11
 
             DataCardKey164 As label:
@@ -22602,8 +22602,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue163.Text
             Width: =320
-            X: =0
-            Y: =68
+            X: =1
+            Y: =78
             ZIndex: =11
 
             DataCardKey165 As label:
@@ -22672,8 +22672,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue164.Text
             Width: =320
-            X: =1
-            Y: =68
+            X: =0
+            Y: =79
             ZIndex: =11
 
             DataCardKey166 As label:
@@ -22742,8 +22742,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue165.Text
             Width: =320
-            X: =0
-            Y: =69
+            X: =1
+            Y: =79
             ZIndex: =11
 
             DataCardKey167 As label:
@@ -22812,8 +22812,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue166.Text
             Width: =320
-            X: =1
-            Y: =69
+            X: =0
+            Y: =80
             ZIndex: =11
 
             DataCardKey168 As label:
@@ -22882,8 +22882,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue167.Text
             Width: =320
-            X: =0
-            Y: =70
+            X: =1
+            Y: =80
             ZIndex: =11
 
             DataCardKey169 As label:
@@ -22952,8 +22952,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue168.Text
             Width: =320
-            X: =1
-            Y: =70
+            X: =0
+            Y: =81
             ZIndex: =11
 
             DataCardKey170 As label:
@@ -23022,8 +23022,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue169.Text
             Width: =320
-            X: =0
-            Y: =71
+            X: =1
+            Y: =81
             ZIndex: =11
 
             DataCardKey171 As label:
@@ -23093,7 +23093,7 @@ ICEGATESB As screen:
             Update: =DataCardValue170.Text
             Width: =320
             X: =0
-            Y: =72
+            Y: =83
             ZIndex: =11
 
             DataCardKey172 As label:
@@ -23163,7 +23163,7 @@ ICEGATESB As screen:
             Update: =DataCardValue171.Text
             Width: =320
             X: =1
-            Y: =72
+            Y: =83
             ZIndex: =11
 
             DataCardKey173 As label:
@@ -23233,7 +23233,7 @@ ICEGATESB As screen:
             Update: =DataCardValue172.Text
             Width: =320
             X: =0
-            Y: =73
+            Y: =84
             ZIndex: =11
 
             DataCardKey174 As label:
@@ -23303,7 +23303,7 @@ ICEGATESB As screen:
             Update: =DataCardValue173.Text
             Width: =320
             X: =1
-            Y: =73
+            Y: =84
             ZIndex: =11
 
             DataCardKey175 As label:
@@ -23373,7 +23373,7 @@ ICEGATESB As screen:
             Update: =DataCardValue174.Text
             Width: =320
             X: =0
-            Y: =74
+            Y: =85
             ZIndex: =11
 
             DataCardKey176 As label:
@@ -23443,7 +23443,7 @@ ICEGATESB As screen:
             Update: =DataCardValue175.Text
             Width: =320
             X: =1
-            Y: =74
+            Y: =85
             ZIndex: =11
 
             DataCardKey177 As label:
@@ -23512,8 +23512,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue177.Text
             Width: =320
-            X: =0
-            Y: =76
+            X: =1
+            Y: =87
             ZIndex: =11
 
             DataCardKey179 As label:
@@ -23582,8 +23582,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue178.Text
             Width: =320
-            X: =1
-            Y: =76
+            X: =0
+            Y: =88
             ZIndex: =11
 
             DataCardKey180 As label:
@@ -23652,8 +23652,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue179.Text
             Width: =320
-            X: =0
-            Y: =77
+            X: =1
+            Y: =88
             ZIndex: =11
 
             DataCardKey181 As label:
@@ -23722,8 +23722,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue182.Text
             Width: =320
-            X: =1
-            Y: =78
+            X: =0
+            Y: =90
             ZIndex: =11
 
             DataCardKey184 As label:
@@ -23792,8 +23792,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue183.Text
             Width: =320
-            X: =0
-            Y: =79
+            X: =1
+            Y: =90
             ZIndex: =11
 
             DataCardKey185 As label:
@@ -23862,8 +23862,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue184.Text
             Width: =320
-            X: =1
-            Y: =79
+            X: =0
+            Y: =91
             ZIndex: =11
 
             DataCardKey186 As label:
@@ -23932,8 +23932,8 @@ ICEGATESB As screen:
             Required: =false
             Update: =DataCardValue185.Text
             Width: =320
-            X: =0
-            Y: =80
+            X: =1
+            Y: =91
             ZIndex: =11
 
             DataCardKey187 As label:
