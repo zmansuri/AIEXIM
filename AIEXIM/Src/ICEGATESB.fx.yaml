@@ -725,7 +725,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -794,7 +794,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -863,7 +863,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -932,7 +932,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1001,7 +1001,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1070,7 +1070,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1139,7 +1139,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1208,7 +1208,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1277,7 +1277,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1346,7 +1346,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1415,7 +1415,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1484,7 +1484,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1553,7 +1553,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1622,7 +1622,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1691,7 +1691,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1760,7 +1760,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1829,7 +1829,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1898,7 +1898,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -1967,7 +1967,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2036,7 +2036,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2105,7 +2105,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2174,7 +2174,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2243,7 +2243,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2312,7 +2312,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2381,7 +2381,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2450,7 +2450,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2519,7 +2519,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2588,7 +2588,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2657,7 +2657,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2726,7 +2726,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2795,7 +2795,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2864,7 +2864,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -2933,7 +2933,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3002,7 +3002,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3071,7 +3071,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3140,7 +3140,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3209,7 +3209,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3278,7 +3278,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3347,7 +3347,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3416,7 +3416,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3485,7 +3485,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3554,7 +3554,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3623,7 +3623,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3692,7 +3692,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3761,7 +3761,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3830,7 +3830,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3899,7 +3899,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -3968,7 +3968,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4037,7 +4037,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4106,7 +4106,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4175,7 +4175,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4244,7 +4244,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4313,7 +4313,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4382,7 +4382,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4451,7 +4451,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4520,7 +4520,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4589,7 +4589,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4658,7 +4658,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4727,7 +4727,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4796,7 +4796,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4865,7 +4865,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -4934,7 +4934,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5003,7 +5003,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5072,7 +5072,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5141,7 +5141,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5210,7 +5210,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5279,7 +5279,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5348,7 +5348,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5417,7 +5417,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5486,7 +5486,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5555,7 +5555,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5624,7 +5624,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5693,7 +5693,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5762,7 +5762,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5831,7 +5831,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5900,7 +5900,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -5969,7 +5969,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6038,7 +6038,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6107,7 +6107,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6176,7 +6176,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6245,7 +6245,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6314,7 +6314,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6383,7 +6383,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6452,7 +6452,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6521,7 +6521,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6590,7 +6590,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6659,7 +6659,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6728,7 +6728,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6797,7 +6797,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6866,7 +6866,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -6935,7 +6935,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7004,7 +7004,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7073,7 +7073,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7142,7 +7142,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7211,7 +7211,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7280,7 +7280,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7349,7 +7349,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7417,7 +7417,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Height: =80
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -7487,7 +7487,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7555,7 +7555,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Height: =80
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -7625,7 +7625,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7693,7 +7693,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Height: =80
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -7763,7 +7763,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7832,7 +7832,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7901,7 +7901,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -7970,7 +7970,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8039,7 +8039,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8108,7 +8108,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8177,7 +8177,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8246,7 +8246,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8315,7 +8315,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8384,7 +8384,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8453,7 +8453,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8522,7 +8522,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8591,7 +8591,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8659,7 +8659,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Format: =TextFormat.Number
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8727,7 +8727,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Format: =TextFormat.Number
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8796,7 +8796,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8865,7 +8865,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -8934,7 +8934,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9003,7 +9003,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9072,7 +9072,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9141,7 +9141,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9210,7 +9210,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9279,7 +9279,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9348,7 +9348,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9417,7 +9417,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9486,7 +9486,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9555,7 +9555,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9624,7 +9624,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9693,7 +9693,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9762,7 +9762,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9831,7 +9831,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9900,7 +9900,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -9969,7 +9969,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10038,7 +10038,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10107,7 +10107,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10176,7 +10176,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10245,7 +10245,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10314,7 +10314,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10382,7 +10382,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Height: =80
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
@@ -10452,7 +10452,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10521,7 +10521,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10590,7 +10590,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10659,7 +10659,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10728,7 +10728,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10797,7 +10797,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10866,7 +10866,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -10935,7 +10935,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11004,7 +11004,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11073,7 +11073,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11142,7 +11142,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11211,7 +11211,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11280,7 +11280,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11349,7 +11349,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11418,7 +11418,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11487,7 +11487,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11556,7 +11556,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11625,7 +11625,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11693,7 +11693,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Format: =TextFormat.Number
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11762,7 +11762,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11831,7 +11831,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11899,7 +11899,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Format: =TextFormat.Number
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -11968,7 +11968,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12037,7 +12037,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12106,7 +12106,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12175,7 +12175,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12244,7 +12244,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12313,7 +12313,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12382,7 +12382,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12451,7 +12451,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12520,7 +12520,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12589,7 +12589,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12658,7 +12658,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12727,7 +12727,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12795,7 +12795,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 Format: =TextFormat.Number
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12864,7 +12864,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -12933,7 +12933,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -13002,7 +13002,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -13071,7 +13071,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -13140,7 +13140,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -13209,7 +13209,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -13278,7 +13278,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -13347,7 +13347,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -13416,7 +13416,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
@@ -13485,7 +13485,7 @@ ICEGATESB As screen:
                 Default: =Parent.Default
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Fill: =If(varEditSBDetailedForm,Color.White,RGBA(237, 237, 237, 1))
                 MaxLength: =Parent.MaxLength
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
