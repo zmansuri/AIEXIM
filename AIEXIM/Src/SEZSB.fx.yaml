@@ -15948,7 +15948,9 @@ SEZSB As screen:
                 )
             )
         TabIndex: =0
-        Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' =true && varSEZSBSummary && frmSEZSBExport.Mode = FormMode.View , true,false)
+        Visible: |-
+            =//If(First(ColCurrentLoggedInUserDetails).'Edit Rights' =true && varSEZSBSummary && frmSEZSBExport.Mode = FormMode.View , true,false)
+            false
         Width: =29
         X: =1275
         Y: =113

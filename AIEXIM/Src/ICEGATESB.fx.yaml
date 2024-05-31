@@ -24253,7 +24253,9 @@ ICEGATESB As screen:
             Set(VarSpinner,false);
             If(VarDMDResult = "1",Notify("The Document is successfully uploaded to DMS",NotificationType.Success),Notify("The Processed Failed .Please Retry once again.",NotificationType.Error))
         TabIndex: =
-        Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varICEGATESBSummary && frm_SummaryDetails.Mode = FormMode.View, true,false)
+        Visible: |-
+            =//If(First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varICEGATESBSummary && frm_SummaryDetails.Mode = FormMode.View, true,false)
+            false
         Width: =29
         X: =1295
         Y: =98

@@ -7753,25 +7753,24 @@ SEZBillOfExport As screen:
 
         Image_Export As image:
             AccessibleLabel: ="TEST"
-            Height: =35
+            Height: =40
             Image: ='edit icon'
             OnSelect: =Set(varEditFormBillofExport,true)
             TabIndex: =0
             Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && frmSEZBillOfExport.Mode = FormMode.View , true , false)
             Width: =40
-            X: =1210
+            X: =1275
             Y: =108
             ZIndex: =26
 
         btnEditIcon_Export As button:
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =35
             HoverFill: =Color.Transparent
             OnSelect: =Set(varEditFormBillofExport,true)
             Text: =""
             Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && frmSEZBillOfExport.Mode = FormMode.View , true , false)
             Width: =40
-            X: =1210
+            X: =1275
             Y: =112
             ZIndex: =27
 
@@ -7842,7 +7841,9 @@ SEZBillOfExport As screen:
                 )
             )
         TabIndex: =
-        Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && frmSEZBillOfExport.Mode = FormMode.View , true , false)
+        Visible: |-
+            =//If(First(ColCurrentLoggedInUserDetails).'Edit Rights'=true && frmSEZBillOfExport.Mode = FormMode.View , true , false)
+            false
         Width: =29
         X: =1275
         Y: =113

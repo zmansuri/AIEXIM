@@ -8642,11 +8642,8 @@ SEZBOE As screen:
             )
         TabIndex: =
         Visible: |-
-            =If(
-                First(ColCurrentLoggedInUserDetails).'Edit Rights' = true && varSEZBOESummary && frmSEZBOESummary.Mode = FormMode.View,
-                true,
-                false
-            )
+            =//If(First(ColCurrentLoggedInUserDetails).'Edit Rights'= true &&varSEZBOESummary&&frmSEZBOESummary.Mode=FormMode.View, true , false )
+            false
         Width: =29
         X: =1285
         Y: =121

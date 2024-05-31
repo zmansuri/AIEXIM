@@ -33704,7 +33704,9 @@ ICEGATEBOE As screen:
             Set(VarSpinner,false);
             If(VarDMDResult = "1",Notify("The Document is successfully uploaded in DMS",NotificationType.Success),Notify("The Processe is failed. Please try again ",NotificationType.Error))
         TabIndex: =0
-        Visible: =If(First(ColCurrentLoggedInUserDetails).'Edit Rights' =true && varICEGATEBOESummary && frm_BOESummary.Mode = FormMode.View,true,false)
+        Visible: |-
+            =//If(First(ColCurrentLoggedInUserDetails).'Edit Rights' =true && varICEGATEBOESummary && frm_BOESummary.Mode = FormMode.View,true,false)
+            false
         Width: =34
         X: =1290
         Y: =110
