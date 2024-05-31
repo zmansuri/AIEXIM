@@ -508,9 +508,7 @@ ICEGATEBOE As screen:
             ZIndex: =32
 
     frm_BOESummary As form:
-        DataSource: |-
-            =//'Bill of Entry Detailed Report - ICEGates'
-            'Bill Of Entry - ICEGate Summary Reports'
+        DataSource: ='Bill Of Entry - ICEGate Summary Reports'
         DefaultMode: |-
             =If(
                 varEditFormBOE,
@@ -9468,7 +9466,7 @@ ICEGATEBOE As screen:
                 SubmitForm(frmICEGATEBOEDetailedExtended)
             TabIndex: =0
             Tooltip: ="Save the Data"
-            Visible: =varShowICEGATEBOEDetailedPopup && varEditBOEDetailedForm
+            Visible: =varShowICEGATEBOEDetailedPopup && varEditBOEDetailedForm = true
             Width: =30
             X: =1323
             Y: =96
@@ -9526,10 +9524,12 @@ ICEGATEBOE As screen:
         frmICEGATEBOEDetailed As form:
             BorderColor: =RGBA(0, 18, 107, 0)
             DataSource: ='Bill of Entry Detailed Report - ICEGates'
-            DefaultMode: =If(varEditBOEDetailedForm,FormMode.Edit,FormMode.View)
+            DefaultMode: |
+                =If(varEditBOEDetailedForm = false,FormMode.View,FormMode.Edit)
             Height: =243
             Item: =LookUp('Bill of Entry Detailed Report - ICEGates',ID = galICEGATEBOEDetailed.Selected.ID)
             NumberOfColumns: =2
+            OnSuccess: =Set(varEditBOEDetailedForm,false)
             TabIndex: =0
             Visible: =varShowICEGATEBOEDetailedPopup
             Width: =711
