@@ -7859,8 +7859,8 @@ SEZSB As screen:
         OnSelect: =SubmitForm(frmSEZSBExport);Set(varEditFormSEZSB,false)
         Visible: =varSEZSBSummary && varEditFormSEZSB
         Width: =40
-        X: =1270
-        Y: =103
+        X: =1290
+        Y: =100
         ZIndex: =14
 
     btnHideComponentSearchHome_8 As button:
