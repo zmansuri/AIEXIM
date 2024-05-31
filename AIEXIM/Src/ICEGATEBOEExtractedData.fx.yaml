@@ -473,7 +473,7 @@ ICEGATEBOEExtractedData As screen:
         HoverColor: =RGBA(0, 0, 0, 0)
         HoverFill: =Color.Transparent
         OnSelect: |-
-            =UpdateContext({varShowSubmenu:false});UpdateContext({varShowSubmenu:true})
+            =UpdateContext({varShowSubmenu:!varShowSubmenu});
         Text: ="Button"
         Width: =201
         X: =4
