@@ -8,20 +8,8 @@ Home As screen:
         Label2: ="Monthly Documents"
         Label3: ="In Process / In Queue"
         Label4: ="Completed"
-        Text1: |-
-            =CountRows(
-                Filter(
-                    'Extracted Document Lists',
-                    DateValue('Created On') = Today()
-                )
-            )
-        Text2: |-
-            =CountRows(
-                Filter(
-                    'Extracted Document Lists',
-                    Month('Created On') = Month(Today())
-                )
-            )
+        Text1: =CountRows(Filter('Extracted Document Lists',DateValue('Created On')=Today()))
+        Text2: =CountRows(Filter('Extracted Document Lists',Month('Created On')=Month(Today())))
         Text3: |-
             =CountRows(
                 Filter(
@@ -29,7 +17,13 @@ Home As screen:
                     (StatusDoc = StatusType.'In Process' || StatusDoc = StatusType.'In Queue') && (Month('Created On') = Month(Today()))
                 )
             )
-        Text4: =CountRows(Filter('Extracted Document Lists',StatusDoc =StatusType.Completed  && Month('Created On')=Month(Today())))
+        Text4: |-
+            =CountRows(
+                Filter(
+                    'Extracted Document Lists',
+                    StatusDoc = StatusType.Completed && Month('Created On') = Month(Today())
+                )
+            )
 
     Navigation_1 As Navigation:
         ApplicationHeader: ="AI EXIM OCR"

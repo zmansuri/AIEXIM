@@ -24,7 +24,7 @@
                 },
                 "region": {
                   "charLength": 23,
-                  "charOffset": 67,
+                  "charOffset": 44,
                   "snippet": {
                     "text": "DateValue('Created On')"
                   }
@@ -64,7 +64,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 91,
+                  "charOffset": 67,
                   "snippet": {
                     "text": "="
                   }
@@ -104,7 +104,7 @@
                 },
                 "region": {
                   "charLength": 19,
-                  "charOffset": 67,
+                  "charOffset": 44,
                   "snippet": {
                     "text": "Month('Created On')"
                   }
@@ -144,7 +144,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 87,
+                  "charOffset": 63,
                   "snippet": {
                     "text": "="
                   }
@@ -304,7 +304,7 @@
                 },
                 "region": {
                   "charLength": 19,
-                  "charOffset": 80,
+                  "charOffset": 103,
                   "snippet": {
                     "text": "Month('Created On')"
                   }
@@ -344,7 +344,7 @@
                 },
                 "region": {
                   "charLength": 1,
-                  "charOffset": 99,
+                  "charOffset": 123,
                   "snippet": {
                     "text": "="
                   }
@@ -384,7 +384,7 @@
                 },
                 "region": {
                   "charLength": 2,
-                  "charOffset": 77,
+                  "charOffset": 100,
                   "snippet": {
                     "text": "&&"
                   }
