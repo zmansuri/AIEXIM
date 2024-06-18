@@ -479,6 +479,16 @@ SEZBOE As screen:
                 Y: =DataCardKey289.Y
                 ZIndex: =4
 
+            ScoreLBL_1 As label:
+                Color: =If(Value(ScoreLBL_1.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BE No. Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =90
+                Y: =10
+                ZIndex: =5
+
         "'BE date_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_bedate"
@@ -548,6 +558,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey290.Y
                 ZIndex: =4
+
+            ScoreLBL_2 As label:
+                Color: =If(Value(ScoreLBL_2.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BE Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
 
         "'Invoice No_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -619,6 +639,16 @@ SEZBOE As screen:
                 Y: =DataCardKey556.Y
                 ZIndex: =4
 
+            ScoreLBL_3 As label:
+                Color: =If(Value(ScoreLBL_3.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Invoice No Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =125
+                Y: =10
+                ZIndex: =5
+
         "'Invoice Date_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_invoicedate"
@@ -688,6 +718,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey557.Y
                 ZIndex: =4
+
+            ScoreLBL_4 As label:
+                Color: =If(Value(ScoreLBL_4.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Invoice Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =140
+                Y: =10
+                ZIndex: =5
 
         "'Port Code_DataCard4' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -759,6 +799,16 @@ SEZBOE As screen:
                 Y: =DataCardKey558.Y
                 ZIndex: =4
 
+            ScoreLBL_5 As label:
+                Color: =If(Value(ScoreLBL_5.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Port Code Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
+
         "'BE Type_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_betype"
@@ -828,6 +878,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey559.Y
                 ZIndex: =4
+
+            ScoreLBL_6 As label:
+                Color: =If(Value(ScoreLBL_6.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BE TYPE Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
 
         "'IEC No._DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -899,6 +959,16 @@ SEZBOE As screen:
                 Y: =DataCardKey560.Y
                 ZIndex: =4
 
+            ScoreLBL_7 As label:
+                Color: =If(Value(ScoreLBL_7.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'IEC No. Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =95
+                Y: =10
+                ZIndex: =5
+
         "'GSTIN/Type_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_gstintype"
@@ -968,6 +1038,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey561.Y
                 ZIndex: =4
+
+            ScoreLBL_8 As label:
+                Color: =If(Value(ScoreLBL_8.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'GSTIN/Type Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =130
+                Y: =10
+                ZIndex: =5
 
         "'Importer Name_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1039,6 +1119,16 @@ SEZBOE As screen:
                 Y: =DataCardKey562.Y
                 ZIndex: =4
 
+            ScoreLBL_9 As label:
+                Color: =If(Value(ScoreLBL_9.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Importer Name Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =160
+                Y: =10
+                ZIndex: =5
+
         "'Importer Address_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_importeraddress"
@@ -1108,6 +1198,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey563.Y
                 ZIndex: =4
+
+            ScoreLBL_10 As label:
+                Color: =If(Value(ScoreLBL_10.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Importer Address Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
 
         "'AD code_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1179,6 +1279,16 @@ SEZBOE As screen:
                 Y: =DataCardKey564.Y
                 ZIndex: =4
 
+            ScoreLBL_11 As label:
+                Color: =If(Value(ScoreLBL_11.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'AD Code Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
+
         "'Packages -No. & Descreption_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_packagesnodescription"
@@ -1248,6 +1358,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey565.Y
                 ZIndex: =4
+
+            ScoreLBL_12 As label:
+                Color: =If(Value(ScoreLBL_12.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Packages - No. & Description Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =260
+                Y: =10
+                ZIndex: =5
 
         "'Packages -Marks & Nos._DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1319,6 +1439,16 @@ SEZBOE As screen:
                 Y: =DataCardKey566.Y
                 ZIndex: =4
 
+            ScoreLBL_13 As label:
+                Color: =If(Value(ScoreLBL_13.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Packages - Marks & Nos. Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =230
+                Y: =10
+                ZIndex: =5
+
         "'Gross Weight_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_grossweight"
@@ -1388,6 +1518,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey567.Y
                 ZIndex: =4
+
+            ScoreLBL_14 As label:
+                Color: =If(Value(ScoreLBL_14.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Gross Weight Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =150
+                Y: =10
+                ZIndex: =5
 
         "'Vessles Name/Agents Name_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1459,6 +1599,16 @@ SEZBOE As screen:
                 Y: =DataCardKey568.Y
                 ZIndex: =4
 
+            ScoreLBL_15 As label:
+                Color: =If(Value(ScoreLBL_15.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Vessles Name/Agents Name Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =260
+                Y: =10
+                ZIndex: =5
+
         "'Rotation No. & date_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_rotationnodate"
@@ -1528,6 +1678,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey569.Y
                 ZIndex: =4
+
+            ScoreLBL_16 As label:
+                Color: =If(Value(ScoreLBL_16.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Rotation No. & Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =200
+                Y: =10
+                ZIndex: =5
 
         "'Line No._DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1599,6 +1759,16 @@ SEZBOE As screen:
                 Y: =DataCardKey570.Y
                 ZIndex: =4
 
+            ScoreLBL_17 As label:
+                Color: =If(Value(ScoreLBL_17.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Line No. Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
+
         "'Port of Shipment_DataCard2' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_portofshipment"
@@ -1668,6 +1838,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey571.Y
                 ZIndex: =4
+
+            ScoreLBL_18 As label:
+                Color: =If(Value(ScoreLBL_18.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Port of Shipment Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =175
+                Y: =10
+                ZIndex: =5
 
         "'Bill of Lading No.& Date_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -1739,6 +1919,16 @@ SEZBOE As screen:
                 Y: =DataCardKey572.Y
                 ZIndex: =4
 
+            ScoreLBL_19 As label:
+                Color: =If(Value(ScoreLBL_19.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Bill of Landing No.&Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =230
+                Y: =10
+                ZIndex: =5
+
         "'Country of Origin & Code_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_countryoforigincode"
@@ -1808,6 +1998,16 @@ SEZBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey573.Y
                 ZIndex: =4
+
+            ScoreLBL_20 As label:
+                Color: =If(Value(ScoreLBL_20.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Country of Origin & Code Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =240
+                Y: =10
+                ZIndex: =5
 
         "'Assessable Value Under Section 14 (in Rs.)_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
