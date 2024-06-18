@@ -5825,6 +5825,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey686.Y
                 ZIndex: =4
 
+            Lbl_Score_54 As label:
+                Color: =If(Value(Lbl_Score_54.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'HAWB Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =130
+                Y: =10
+                ZIndex: =5
+
         PKG_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_pkg"
@@ -5894,6 +5904,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey687.Y
                 ZIndex: =4
+
+            Lbl_Score_55 As label:
+                Color: =If(Value(Lbl_Score_55.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'PKG Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =80
+                Y: =10
+                ZIndex: =5
 
         "'G.WT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -5965,6 +5985,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey688.Y
                 ZIndex: =4
 
+            Lbl_Score_56 As label:
+                Color: =If(Value(Lbl_Score_56.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'G.WT Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =80
+                Y: =10
+                ZIndex: =5
+
         "'BOND NO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_bondno"
@@ -6034,6 +6064,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey689.Y
                 ZIndex: =4
+
+            Lbl_Score_57 As label:
+                Color: =If(Value(Lbl_Score_57.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BOND NO Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
 
         "'BOND PORT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -6105,6 +6145,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey690.Y
                 ZIndex: =4
 
+            Lbl_Score_58 As label:
+                Color: =If(Value(Lbl_Score_58.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BOND PORT Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =140
+                Y: =10
+                ZIndex: =5
+
         "'BOND CD_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_bondcd"
@@ -6174,6 +6224,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey691.Y
                 ZIndex: =4
+
+            Lbl_Score_59 As label:
+                Color: =If(Value(Lbl_Score_59.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BOND CD Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
 
         "'DEBT AMT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -6245,6 +6305,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey692.Y
                 ZIndex: =4
 
+            Lbl_Score_60 As label:
+                Color: =If(Value(Lbl_Score_60.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'DEBT AMT Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =130
+                Y: =10
+                ZIndex: =5
+
         "'BG AMT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_bgamt"
@@ -6314,6 +6384,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey693.Y
                 ZIndex: =4
+
+            Lbl_Score_61 As label:
+                Color: =If(Value(Lbl_Score_61.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BG AMT Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =110
+                Y: =10
+                ZIndex: =5
 
         "'Payment SR No_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
