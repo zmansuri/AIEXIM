@@ -4271,7 +4271,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638531859552686754",
+    "LastModifiedTimestamp": "638542884987463572",
     "Name": "Component_KPI_4",
     "Rules": [
       {
@@ -4451,7 +4451,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638531859552686754",
+  "LastModifiedTimestamp": "638542884987463572",
   "Name": "8fe60fb2b4c745a1be26bce262704b5f",
   "OverridableProperties": {},
   "SourceLibraryId": "f373a164-3ed5-4558-b537-aeca98a6ffa1",

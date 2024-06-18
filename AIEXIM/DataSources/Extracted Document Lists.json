@@ -30,6 +30,7 @@
       "ispl_base64ofdoc": "Base 64 of Doc",
       "ispl_company": "Company",
       "ispl_createdbyflow": "Created By Flow",
+      "ispl_datatransformation": "DataTransformation",
       "ispl_dmsstatus": "DMS Status",
       "ispl_documentarrivaltime": "Document Arrival Time",
       "ispl_documentid": "Document ID",
@@ -53,12 +54,14 @@
       "ispl_id": "ID",
       "ispl_IDFromAttachmentTable": "ID From Attachment Table",
       "ispl_itemid": "Item ID",
+      "ispl_jsonfilecreated": "JsonFileCreated",
       "ispl_name": "Name",
       "ispl_sourcedoc": "SourceDoc",
       "ispl_status": "StatusDoc",
       "ispl_typeofdocument": "Type Of Document",
       "ispl_uploaddocparentitemid": "Upload Doc Parent Item ID",
       "ispl_user": "User",
+      "ispl_validationcheck": "ValidationCheck",
       "modifiedby": "Modified By",
       "modifiedon": "Modified On",
       "modifiedonbehalfby": "Modified By (Delegate)",
@@ -136,6 +139,66 @@
     },
     "OptionSetTypeKey": "PicklistType",
     "RelatedColumnInvariantName": "ispl_typeofdocument",
+    "RelatedEntityName": "Extracted Document Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "DataTransformation (Extracted Document Lists)",
+    "Name": "ispl_extracteddocumentlist_ispl_datatransformation",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_datatransformation",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_datatransformation",
+    "RelatedEntityName": "Extracted Document Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "JsonFileCreated (Extracted Document Lists)",
+    "Name": "ispl_extracteddocumentlist_ispl_jsonfilecreated",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_jsonfilecreated",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_jsonfilecreated",
+    "RelatedEntityName": "Extracted Document Lists",
+    "Type": "OptionSetInfo"
+  },
+  {
+    "DisplayName": "ValidationCheck (Extracted Document Lists)",
+    "Name": "ispl_extracteddocumentlist_ispl_validationcheck",
+    "OptionSetInfoNameMapping": {
+      "0": "No",
+      "1": "Yes"
+    },
+    "OptionSetIsBooleanValued": true,
+    "OptionSetIsGlobal": false,
+    "OptionSetReference": {
+      "OptionSetReferenceItem0": {
+        "OptionSetReferenceColumnName": "ispl_validationcheck",
+        "OptionSetReferenceEntityName": "Extracted Document Lists"
+      }
+    },
+    "OptionSetTypeKey": "BooleanType",
+    "RelatedColumnInvariantName": "ispl_validationcheck",
     "RelatedEntityName": "Extracted Document Lists",
     "Type": "OptionSetInfo"
   },
