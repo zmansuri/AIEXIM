@@ -3765,6 +3765,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey83.Y
                 ZIndex: =4
 
+            Lbl_Score_30 As label:
+                Color: =If(Value(Lbl_Score_30.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'ACD Amount INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =170
+                Y: =10
+                ZIndex: =5
+
         "'SWS Amount INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_swsamountinr"
@@ -3834,6 +3844,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey89.Y
                 ZIndex: =4
+
+            Lbl_Score_31 As label:
+                Color: =If(Value(Lbl_Score_31.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'SWS Amount INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
 
         "'NCCD Amount INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -3905,6 +3925,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey90.Y
                 ZIndex: =4
 
+            Lbl_Score_32 As label:
+                Color: =If(Value(Lbl_Score_32.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'NCCD Amount INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =190
+                Y: =10
+                ZIndex: =5
+
         "'ADD Amount INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_addamountinr"
@@ -3974,6 +4004,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey132.Y
                 ZIndex: =4
+
+            Lbl_Score_33 As label:
+                Color: =If(Value(Lbl_Score_33.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'ADD Amount INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
 
         "'CVD Amount INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -4045,6 +4085,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey133.Y
                 ZIndex: =4
 
+            Lbl_Score_34 As label:
+                Color: =If(Value(Lbl_Score_34.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'CVD Amount INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
+
         "'IGST Value INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_igstvalueinr"
@@ -4114,6 +4164,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey134.Y
                 ZIndex: =4
+
+            Lbl_Score_35 As label:
+                Color: =If(Value(Lbl_Score_35.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'IGST Value INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =160
+                Y: =10
+                ZIndex: =5
 
         "'G.CESS Value INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -4185,6 +4245,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey135.Y
                 ZIndex: =4
 
+            Lbl_Score_36 As label:
+                Color: =If(Value(Lbl_Score_36.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'G.CESS Value INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
+
         "'SG Value INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_sgvalueinr"
@@ -4254,6 +4324,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey188.Y
                 ZIndex: =4
+
+            Lbl_Score_37 As label:
+                Color: =If(Value(Lbl_Score_37.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'SG Value INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =150
+                Y: =10
+                ZIndex: =5
 
         "'SAED Value INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -4325,6 +4405,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey189.Y
                 ZIndex: =4
 
+            Lbl_Score_38 As label:
+                Color: =If(Value(Lbl_Score_38.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'SAED Value INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =170
+                Y: =10
+                ZIndex: =5
+
         "'GSIA Value INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_gsiavalueinr"
@@ -4394,6 +4484,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey190.Y
                 ZIndex: =4
+
+            Lbl_Score_39 As label:
+                Color: =If(Value(Lbl_Score_39.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'GSIA Value INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =170
+                Y: =10
+                ZIndex: =5
 
         "'TTA Value INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -4605,6 +4705,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey553.Y
                 ZIndex: =4
 
+            Lbl_Score_40 As label:
+                Color: =If(Value(Lbl_Score_40.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'TOTAL DUTY Value INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =220
+                Y: =10
+                ZIndex: =5
+
         "'INTEREST Value INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_interestvalueinr"
@@ -4674,6 +4784,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey554.Y
                 ZIndex: =4
+
+            Lbl_Score_41 As label:
+                Color: =If(Value(Lbl_Score_41.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'INTEREST Value INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =200
+                Y: =10
+                ZIndex: =5
 
         "'PENALTY INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -4745,6 +4865,16 @@ ICEGATEBOE As screen:
                 Y: =DataCardKey555.Y
                 ZIndex: =4
 
+            Lbl_Score_42 As label:
+                Color: =If(Value(Lbl_Score_42.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'PENALTY INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =150
+                Y: =10
+                ZIndex: =5
+
         "'FINE INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_fineinr"
@@ -4814,6 +4944,16 @@ ICEGATEBOE As screen:
                 Wrap: =false
                 Y: =DataCardKey675.Y
                 ZIndex: =4
+
+            Lbl_Score_43 As label:
+                Color: =If(Value(Lbl_Score_43.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'FINE INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =110
+                Y: =10
+                ZIndex: =5
 
         "'TOT.ASS VAL INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
