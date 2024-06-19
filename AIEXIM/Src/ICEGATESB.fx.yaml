@@ -26754,6 +26754,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey57.Y
                 ZIndex: =4
 
+            Confidence_25 As label:
+                Color: =If(Value(Confidence_25.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'DECLARAN TYPE Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =170
+                Y: =10
+                ZIndex: =5
+
         "'AD CODE_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_adcode"
@@ -26823,6 +26833,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey58.Y
                 ZIndex: =4
+
+            Confidence_26 As label:
+                Color: =If(Value(Confidence_26.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'AD Code Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
 
         "'RBI WAIVER NO.& DT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -26894,6 +26914,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey59.Y
                 ZIndex: =4
 
+            Confidence_27 As label:
+                Color: =If(Value(Confidence_27.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'RBI WAIVER NO AND DATE  Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =250
+                Y: =10
+                ZIndex: =5
+
         "'CB NAME_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_cbname"
@@ -26963,6 +26993,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey60.Y
                 ZIndex: =4
+
+            Confidence_28 As label:
+                Color: =If(Value(Confidence_28.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'CB NAME Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
 
         AEO_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -27034,6 +27074,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey61.Y
                 ZIndex: =4
 
+            Confidence_29 As label:
+                Color: =If(Value(Confidence_29.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'AEO Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =70
+                Y: =10
+                ZIndex: =5
+
         "'CONSIGNEE NAME_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_consigneename"
@@ -27103,6 +27153,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey62.Y
                 ZIndex: =4
+
+            Confidence_30 As label:
+                Color: =If(Value(Confidence_30.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Consignee Name Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =190
+                Y: =10
+                ZIndex: =5
 
         "'CONSIGNEE ADDRESS_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -27174,6 +27234,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey63.Y
                 ZIndex: =4
 
+            Confidence_31 As label:
+                Color: =If(Value(Confidence_31.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Consignee Address Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =220
+                Y: =10
+                ZIndex: =5
+
         "'FOREX BANK AC NO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_forexbankacno"
@@ -27243,6 +27313,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey64.Y
                 ZIndex: =4
+
+            Confidence_32 As label:
+                Color: =If(Value(Confidence_32.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'FOREX BANK AC NO Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =200
+                Y: =10
+                ZIndex: =5
 
         "'DBK BANK AC NO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -27314,6 +27394,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey65.Y
                 ZIndex: =4
 
+            Confidence_33 As label:
+                Color: =If(Value(Confidence_33.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'DBK BANK AC NO Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
+
         "'IFSC NO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_ifscno"
@@ -27383,6 +27473,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey66.Y
                 ZIndex: =4
+
+            Confidence_34 As label:
+                Color: =If(Value(Confidence_34.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'IFSC NO Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
 
         "'FOB VALUE  INR Val Summary_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
