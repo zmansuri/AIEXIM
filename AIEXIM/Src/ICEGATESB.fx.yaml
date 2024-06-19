@@ -33664,6 +33664,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey162.Y
                 ZIndex: =4
 
+            Confidence_114 As label:
+                Color: =If(Value(Confidence_114.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'EXP SNO Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
+
         EXPQTY_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_expqty"
@@ -33733,6 +33743,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey163.Y
                 ZIndex: =4
+
+            Confidence_115 As label:
+                Color: =If(Value(Confidence_115.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'EXPQTY Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
 
         "'UQC 1_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -33804,6 +33824,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey164.Y
                 ZIndex: =4
 
+            Confidence_116 As label:
+                Color: =If(Value(Confidence_116.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'UQC 1 Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =90
+                Y: =10
+                ZIndex: =5
+
         "'FOB VALUE_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_fobvalue"
@@ -33873,6 +33903,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey165.Y
                 ZIndex: =4
+
+            Confidence_117 As label:
+                Color: =If(Value(Confidence_117.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'FOB VALUE Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =130
+                Y: =10
+                ZIndex: =5
 
         SION_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -33944,6 +33984,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey166.Y
                 ZIndex: =4
 
+            Confidence_118 As label:
+                Color: =If(Value(Confidence_118.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'SION Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =80
+                Y: =10
+                ZIndex: =5
+
         "'DESCN OF IMPORT ITEMS_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_descnofimportitems"
@@ -34013,6 +34063,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey167.Y
                 ZIndex: =4
+
+            Confidence_119 As label:
+                Color: =If(Value(Confidence_119.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'DESCN OF IMPORT ITEM Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =250
+                Y: =10
+                ZIndex: =5
 
         "'IMP SNO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -34084,6 +34144,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey168.Y
                 ZIndex: =4
 
+            Confidence_120 As label:
+                Color: =If(Value(Confidence_120.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'IMP SNO Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =110
+                Y: =10
+                ZIndex: =5
+
         IMPQT_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_impqt"
@@ -34153,6 +34223,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey169.Y
                 ZIndex: =4
+
+            Confidence_121 As label:
+                Color: =If(Value(Confidence_121.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'IMPQT Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
 
         "'UQC 2_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
