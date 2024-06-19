@@ -24329,6 +24329,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey54.Y
                 ZIndex: =7
 
+            Confidence_82 As label:
+                Color: =If(Value(Confidence_82.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BRC Realization Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =190
+                Y: =10
+                ZIndex: =8
+
         DataCard13 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
@@ -30674,6 +30684,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey117.Y
                 ZIndex: =4
 
+            Confidence_74 As label:
+                Color: =If(Value(Confidence_74.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Submission Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =170
+                Y: =10
+                ZIndex: =5
+
         "'SUBMISSION TIME_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_submissiontime"
@@ -30743,6 +30763,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey118.Y
                 ZIndex: =4
+
+            Confidence_76 As label:
+                Color: =If(Value(Confidence_76.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Submission Time Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
 
         "'ASSESSMENT DT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -30814,6 +30844,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey119.Y
                 ZIndex: =4
 
+            Confidence_75 As label:
+                Color: =If(Value(Confidence_75.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Assessment Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
+
         "'ASSESSMENT TIME_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_assessmenttime"
@@ -30883,6 +30923,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey120.Y
                 ZIndex: =4
+
+            Confidence_77 As label:
+                Color: =If(Value(Confidence_77.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Assessment Time Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
 
         "'EXAMINATION DT_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -30954,6 +31004,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey121.Y
                 ZIndex: =4
 
+            Confidence_78 As label:
+                Color: =If(Value(Confidence_78.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Examination Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
+
         "'EXAMINATION TIME_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_examinationtime"
@@ -31023,6 +31083,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey122.Y
                 ZIndex: =4
+
+            Confidence_79 As label:
+                Color: =If(Value(Confidence_79.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Examination Time Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =180
+                Y: =10
+                ZIndex: =5
 
         "'LEO TIME_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -31094,6 +31164,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey124.Y
                 ZIndex: =4
 
+            Confidence_80 As label:
+                Color: =If(Value(Confidence_80.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'LEO Time Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
+
         "'LEO NO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_leono"
@@ -31163,6 +31243,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey125.Y
                 ZIndex: =4
+
+            Confidence_81 As label:
+                Color: =If(Value(Confidence_81.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'LEO No Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
 
         "'Invoice Sr NO_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
