@@ -25314,6 +25314,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey38.Y
                 ZIndex: =4
 
+            Confidence_7 As label:
+                Color: =If(Value(Confidence_7.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'MODE Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =90
+                Y: =10
+                ZIndex: =5
+
         ASSESS_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_assess"
@@ -25454,6 +25464,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey40.Y
                 ZIndex: =4
 
+            Confidence_8 As label:
+                Color: =If(Value(Confidence_8.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'EXMN Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =90
+                Y: =10
+                ZIndex: =5
+
         JOBBING_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_jobbing"
@@ -25523,6 +25543,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey41.Y
                 ZIndex: =4
+
+            Confidence_9 As label:
+                Color: =If(Value(Confidence_9.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'JOBBIING Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =110
+                Y: =10
+                ZIndex: =5
 
         MEIS_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -25594,6 +25624,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey42.Y
                 ZIndex: =4
 
+            Confidence_10 As label:
+                Color: =If(Value(Confidence_10.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'MEIS Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =80
+                Y: =10
+                ZIndex: =5
+
         DBK_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_dbk"
@@ -25663,6 +25703,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey43.Y
                 ZIndex: =4
+
+            Confidence_11 As label:
+                Color: =If(Value(Confidence_11.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'DBK Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =80
+                Y: =10
+                ZIndex: =5
 
         RODTP_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -25734,6 +25784,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey44.Y
                 ZIndex: =4
 
+            Confidence_12 As label:
+                Color: =If(Value(Confidence_12.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'RODTP Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
+
         "'DEEC/DFIA_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_deecdfia"
@@ -25803,6 +25863,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey45.Y
                 ZIndex: =4
+
+            Confidence_13 As label:
+                Color: =If(Value(Confidence_13.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'DEEC/DFIA Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =130
+                Y: =10
+                ZIndex: =5
 
         DFRC_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
@@ -25874,6 +25944,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey46.Y
                 ZIndex: =4
 
+            Confidence_14 As label:
+                Color: =If(Value(Confidence_14.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'DFRC Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =90
+                Y: =10
+                ZIndex: =5
+
         "'RE-EXP_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_reexp"
@@ -25943,6 +26023,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey47.Y
                 ZIndex: =4
+
+            Confidence_15 As label:
+                Color: =If(Value(Confidence_15.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'RE-EXP Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
 
         LUT_DataCard1 As typedDataCard.textualEditCard:
             BorderStyle: =BorderStyle.Solid
