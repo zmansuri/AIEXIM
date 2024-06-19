@@ -6354,6 +6354,4086 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ACD Amount INR Confidence Score_DataCard1'.DataCardValue289.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ACD Amount INR Confidence Score_DataCard1'.DataCardValue289.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'ACD Amount INR Confidence Score_DataCard1'.DataCardValue289"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'AD Code Confidence Score_DataCard3'.DataCardValue290.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'AD Code Confidence Score_DataCard3'.DataCardValue290.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'AD Code Confidence Score_DataCard3'.DataCardValue290"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ADD Amount INR Confidence Score_DataCard1'.DataCardValue291.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ADD Amount INR Confidence Score_DataCard1'.DataCardValue291.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'ADD Amount INR Confidence Score_DataCard1'.DataCardValue291"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details - Certificate Date Confidence Score_DataCard1'.DataCardValue292.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details - Certificate Date Confidence Score_DataCard1'.DataCardValue292.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details - Certificate Date Confidence Score_DataCard1'.DataCardValue292"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT FCL/LCL Confidence Score_DataCard1'.DataCardValue293.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT FCL/LCL Confidence Score_DataCard1'.DataCardValue293.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT FCL/LCL Confidence Score_DataCard1'.DataCardValue293"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT SEAL NO Confidence Score_DataCard1'.DataCardValue294.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT SEAL NO Confidence Score_DataCard1'.DataCardValue294.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT SEAL NO Confidence Score_DataCard1'.DataCardValue294"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT TRUCK NO Confidence Score_DataCard1'.DataCardValue295.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT TRUCK NO Confidence Score_DataCard1'.DataCardValue295.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONT TRUCK NO Confidence Score_DataCard1'.DataCardValue295"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONTAINER NO Confidence Score_DataCard1'.DataCardValue296.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONTAINER NO Confidence Score_DataCard1'.DataCardValue296.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- CONTAINER NO Confidence Score_DataCard1'.DataCardValue296"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC CODE Confidence Score_DataCard1'.DataCardValue297.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC CODE Confidence Score_DataCard1'.DataCardValue297.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC CODE Confidence Score_DataCard1'.DataCardValue297"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC DEBIT VALUE Confidence Score_DataCard1'.DataCardValue298.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC DEBIT VALUE Confidence Score_DataCard1'.DataCardValue298.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC DEBIT VALUE Confidence Score_DataCard1'.DataCardValue298"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC DT Confidence Score_DataCard1'.DataCardValue299.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC DT Confidence Score_DataCard1'.DataCardValue299.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC DT Confidence Score_DataCard1'.DataCardValue299"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC NO Confidence Score_DataCard1'.DataCardValue300.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC NO Confidence Score_DataCard1'.DataCardValue300.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC NO Confidence Score_DataCard1'.DataCardValue300"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC PORT Confidence Score_DataCard1'.DataCardValue301.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC PORT Confidence Score_DataCard1'.DataCardValue301.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC PORT Confidence Score_DataCard1'.DataCardValue301"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC UQC Confidence Score_DataCard1'.DataCardValue302.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC UQC Confidence Score_DataCard1'.DataCardValue302.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC UQC Confidence Score_DataCard1'.DataCardValue302"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ADV BE Confidence Score_DataCard1'.DataCardValue303.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ADV BE Confidence Score_DataCard1'.DataCardValue303.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'ADV BE Confidence Score_DataCard1'.DataCardValue303"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'AEO Confidence Score_DataCard1'.DataCardValue304.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'AEO Confidence Score_DataCard1'.DataCardValue304.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'AEO Confidence Score_DataCard1'.DataCardValue304"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ASSESS Confidence Score_DataCard1'.DataCardValue305.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ASSESS Confidence Score_DataCard1'.DataCardValue305.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'ASSESS Confidence Score_DataCard1'.DataCardValue305"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Assessment DT Confidence Score_DataCard1'.DataCardValue306.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Assessment DT Confidence Score_DataCard1'.DataCardValue306.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Assessment DT Confidence Score_DataCard1'.DataCardValue306"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC debit duty Confidence Score_DataCard1'.DataCardValue307.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC debit duty Confidence Score_DataCard1'.DataCardValue307.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Addnl Details- LIC debit duty Confidence Score_DataCard1'.DataCardValue307"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BCD Amount INR Confidence Score_DataCard1'.DataCardValue308.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BCD Amount INR Confidence Score_DataCard1'.DataCardValue308.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BCD Amount INR Confidence Score_DataCard1'.DataCardValue308"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE DATE - BillOfEntrySummary Confidence Score_DataCard1'.DataCardValue309.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE DATE - BillOfEntrySummary Confidence Score_DataCard1'.DataCardValue309.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BE DATE - BillOfEntrySummary Confidence Score_DataCard1'.DataCardValue309"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE DATE Confidence Score_DataCard1'.DataCardValue310.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE DATE Confidence Score_DataCard1'.DataCardValue310.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BE DATE Confidence Score_DataCard1'.DataCardValue310"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE NO Confidence Score_DataCard1'.DataCardValue311.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE NO Confidence Score_DataCard1'.DataCardValue311.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BE NO Confidence Score_DataCard1'.DataCardValue311"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE STATUS Confidence Score_DataCard1'.DataCardValue312.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE STATUS Confidence Score_DataCard1'.DataCardValue312.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BE STATUS Confidence Score_DataCard1'.DataCardValue312"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE TYPE Confidence Score_DataCard1'.DataCardValue313.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BE TYPE Confidence Score_DataCard1'.DataCardValue313.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BE TYPE Confidence Score_DataCard1'.DataCardValue313"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BG AMT Confidence Score_DataCard1'.DataCardValue314.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BG AMT Confidence Score_DataCard1'.DataCardValue314.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BG AMT Confidence Score_DataCard1'.DataCardValue314"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BOND CD Confidence Score_DataCard1'.DataCardValue315.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BOND CD Confidence Score_DataCard1'.DataCardValue315.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BOND CD Confidence Score_DataCard1'.DataCardValue315"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BOND NO Confidence Score_DataCard1'.DataCardValue316.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BOND NO Confidence Score_DataCard1'.DataCardValue316.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BOND NO Confidence Score_DataCard1'.DataCardValue316"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BOND PORT Confidence Score_DataCard1'.DataCardValue317.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'BOND PORT Confidence Score_DataCard1'.DataCardValue317.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'BOND PORT Confidence Score_DataCard1'.DataCardValue317"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Buyer Address Confidence Score_DataCard1'.DataCardValue318.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Buyer Address Confidence Score_DataCard1'.DataCardValue318.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Buyer Address Confidence Score_DataCard1'.DataCardValue318"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Buyer Name Confidence Score_DataCard1'.DataCardValue319.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Buyer Name Confidence Score_DataCard1'.DataCardValue319.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Buyer Name Confidence Score_DataCard1'.DataCardValue319"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'CB CODE Confidence Score_DataCard1'.DataCardValue320.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'CB CODE Confidence Score_DataCard1'.DataCardValue320.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'CB CODE Confidence Score_DataCard1'.DataCardValue320"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'CB NAME Confidence Score_DataCard1'.DataCardValue321.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'CB NAME Confidence Score_DataCard1'.DataCardValue321.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'CB NAME Confidence Score_DataCard1'.DataCardValue321"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Challan Amount(Rs.) Confidence Score_DataCard1'.DataCardValue322.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Challan Amount(Rs.) Confidence Score_DataCard1'.DataCardValue322.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Challan Amount(Rs.) Confidence Score_DataCard1'.DataCardValue322"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Challan No Confidence Score_DataCard1'.DataCardValue323.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Challan No Confidence Score_DataCard1'.DataCardValue323.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Challan No Confidence Score_DataCard1'.DataCardValue323"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Challan Paid On Confidence Score_DataCard1'.DataCardValue324.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Challan Paid On Confidence Score_DataCard1'.DataCardValue324.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Challan Paid On Confidence Score_DataCard1'.DataCardValue324"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Common in FC Confidence Score_DataCard1'.DataCardValue325.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Common in FC Confidence Score_DataCard1'.DataCardValue325.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Common in FC Confidence Score_DataCard1'.DataCardValue325"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Container Sno Confidence Score_DataCard1'.DataCardValue326.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Container Sno Confidence Score_DataCard1'.DataCardValue326.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Container Sno Confidence Score_DataCard1'.DataCardValue326"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'CONTAINER NUMBER Confidence Score_DataCard1'.DataCardValue327.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'CONTAINER NUMBER Confidence Score_DataCard1'.DataCardValue327.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'CONTAINER NUMBER Confidence Score_DataCard1'.DataCardValue327"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Contract Dt Confidence Score_DataCard1'.DataCardValue328.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Contract Dt Confidence Score_DataCard1'.DataCardValue328.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Contract Dt Confidence Score_DataCard1'.DataCardValue328"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Contract No Confidence Score_DataCard1'.DataCardValue329.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Contract No Confidence Score_DataCard1'.DataCardValue329.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Contract No Confidence Score_DataCard1'.DataCardValue329"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Country of Consignment Confidence Score_DataCard1'.DataCardValue330.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Country of Consignment Confidence Score_DataCard1'.DataCardValue330.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Country of Consignment Confidence Score_DataCard1'.DataCardValue330"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Country of Origin Confidence Score_DataCard1'.DataCardValue331.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Country of Origin Confidence Score_DataCard1'.DataCardValue331.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Country of Origin Confidence Score_DataCard1'.DataCardValue331"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'CVD Amount INR Confidence Score_DataCard1'.DataCardValue332.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'CVD Amount INR Confidence Score_DataCard1'.DataCardValue332.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'CVD Amount INR Confidence Score_DataCard1'.DataCardValue332"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'DEBT AMT Confidence Score_DataCard1'.DataCardValue333.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'DEBT AMT Confidence Score_DataCard1'.DataCardValue333.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'DEBT AMT Confidence Score_DataCard1'.DataCardValue333"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'DEF BE Confidence Score_DataCard1'.DataCardValue334.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'DEF BE Confidence Score_DataCard1'.DataCardValue334.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'DEF BE Confidence Score_DataCard1'.DataCardValue334"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'EXAM Confidence Score_DataCard1'.DataCardValue335.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'EXAM Confidence Score_DataCard1'.DataCardValue335.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'EXAM Confidence Score_DataCard1'.DataCardValue335"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Examination DT Confidence Score_DataCard1'.DataCardValue336.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Examination DT Confidence Score_DataCard1'.DataCardValue336.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Examination DT Confidence Score_DataCard1'.DataCardValue336"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Exchange Rate Confidence Score_DataCard3'.DataCardValue337.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Exchange Rate Confidence Score_DataCard3'.DataCardValue337.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Exchange Rate Confidence Score_DataCard3'.DataCardValue337"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Financial Year Confidence Score_DataCard2'.DataCardValue338.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Financial Year Confidence Score_DataCard2'.DataCardValue338.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Financial Year Confidence Score_DataCard2'.DataCardValue338"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'FINE INR Confidence Score_DataCard1'.DataCardValue339.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'FINE INR Confidence Score_DataCard1'.DataCardValue339.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'FINE INR Confidence Score_DataCard1'.DataCardValue339"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Freight Currency Confidence Score_DataCard1'.DataCardValue340.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Freight Currency Confidence Score_DataCard1'.DataCardValue340.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Freight Currency Confidence Score_DataCard1'.DataCardValue340"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Freight in FC Confidence Score_DataCard1'.DataCardValue341.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Freight in FC Confidence Score_DataCard1'.DataCardValue341.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Freight in FC Confidence Score_DataCard1'.DataCardValue341"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'G.CESS Value INR Confidence Score_DataCard1'.DataCardValue342.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'G.CESS Value INR Confidence Score_DataCard1'.DataCardValue342.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'G.CESS Value INR Confidence Score_DataCard1'.DataCardValue342"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'G.WT Confidence Score_DataCard1'.DataCardValue343.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'G.WT Confidence Score_DataCard1'.DataCardValue343.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'G.WT Confidence Score_DataCard1'.DataCardValue343"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'GIGMDT Confidence Score_DataCard1'.DataCardValue344.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'GIGMDT Confidence Score_DataCard1'.DataCardValue344.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'GIGMDT Confidence Score_DataCard1'.DataCardValue344"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'GIGMNO Confidence Score_DataCard1'.DataCardValue345.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'GIGMNO Confidence Score_DataCard1'.DataCardValue345.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'GIGMNO Confidence Score_DataCard1'.DataCardValue345"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'GSIA Value INR Confidence Score_DataCard1'.DataCardValue396.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'GSIA Value INR Confidence Score_DataCard1'.DataCardValue396.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'GSIA Value INR Confidence Score_DataCard1'.DataCardValue396"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'GSTIN/Type Confidence Score_DataCard2'.DataCardValue397.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'GSTIN/Type Confidence Score_DataCard2'.DataCardValue397.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'GSTIN/Type Confidence Score_DataCard2'.DataCardValue397"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HAWB Date Confidence Score_DataCard1'.DataCardValue398.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HAWB Date Confidence Score_DataCard1'.DataCardValue398.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'HAWB Date Confidence Score_DataCard1'.DataCardValue398"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HAWB No Confidence Score_DataCard1'.DataCardValue399.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HAWB No Confidence Score_DataCard1'.DataCardValue399.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'HAWB No Confidence Score_DataCard1'.DataCardValue399"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HEALTH Value INR Confidence Score_DataCard1'.DataCardValue400.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HEALTH Value INR Confidence Score_DataCard1'.DataCardValue400.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'HEALTH Value INR Confidence Score_DataCard1'.DataCardValue400"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HSS Confidence Score_DataCard1'.DataCardValue401.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HSS Confidence Score_DataCard1'.DataCardValue401.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'HSS Confidence Score_DataCard1'.DataCardValue401"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HSS Details- PRC LEVEL Confidence Score_DataCard1'.DataCardValue402.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HSS Details- PRC LEVEL Confidence Score_DataCard1'.DataCardValue402.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'HSS Details- PRC LEVEL Confidence Score_DataCard1'.DataCardValue402"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HSS in FC Confidence Score_DataCard1'.DataCardValue403.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'HSS in FC Confidence Score_DataCard1'.DataCardValue403.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'HSS in FC Confidence Score_DataCard1'.DataCardValue403"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'IEC NO Confidence Score_DataCard1'.DataCardValue404.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'IEC NO Confidence Score_DataCard1'.DataCardValue404.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'IEC NO Confidence Score_DataCard1'.DataCardValue404"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'IGM Date Confidence Score_DataCard1'.DataCardValue405.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'IGM Date Confidence Score_DataCard1'.DataCardValue405.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'IGM Date Confidence Score_DataCard1'.DataCardValue405"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'IGM No Confidence Score_DataCard1'.DataCardValue406.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'IGM No Confidence Score_DataCard1'.DataCardValue406.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'IGM No Confidence Score_DataCard1'.DataCardValue406"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'IGST Value INR Confidence Score_DataCard1'.DataCardValue407.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'IGST Value INR Confidence Score_DataCard1'.DataCardValue407.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'IGST Value INR Confidence Score_DataCard1'.DataCardValue407"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Importer Address Confidence Score_DataCard1'.DataCardValue408.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Importer Address Confidence Score_DataCard1'.DataCardValue408.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Importer Address Confidence Score_DataCard1'.DataCardValue408"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Importer Name Confidence Score_DataCard1'.DataCardValue409.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Importer Name Confidence Score_DataCard1'.DataCardValue409.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Importer Name Confidence Score_DataCard1'.DataCardValue409"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Insurance Currency Confidence Score_DataCard1'.DataCardValue410.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Insurance Currency Confidence Score_DataCard1'.DataCardValue410.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Insurance Currency Confidence Score_DataCard1'.DataCardValue410"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Insurance in FC Confidence Score_DataCard1'.DataCardValue411.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Insurance in FC Confidence Score_DataCard1'.DataCardValue411.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Insurance in FC Confidence Score_DataCard1'.DataCardValue411"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'INTEREST Value INR Confidence Score_DataCard1'.DataCardValue412.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'INTEREST Value INR Confidence Score_DataCard1'.DataCardValue412.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'INTEREST Value INR Confidence Score_DataCard1'.DataCardValue412"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Inv Amt in FC Confidence Score_DataCard1'.DataCardValue413.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Inv Amt in FC Confidence Score_DataCard1'.DataCardValue413.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Inv Amt in FC Confidence Score_DataCard1'.DataCardValue413"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Inv Currency Confidence Score_DataCard1'.DataCardValue414.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Inv Currency Confidence Score_DataCard1'.DataCardValue414.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Inv Currency Confidence Score_DataCard1'.DataCardValue414"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Inv Sno Part 2 Confidence Score_DataCard1'.DataCardValue415.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Inv Sno Part 2 Confidence Score_DataCard1'.DataCardValue415.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Inv Sno Part 2 Confidence Score_DataCard1'.DataCardValue415"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice Currency Confidence Score_DataCard1'.DataCardValue416.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice Currency Confidence Score_DataCard1'.DataCardValue416.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Invoice Currency Confidence Score_DataCard1'.DataCardValue416"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice Dt Confidence Score_DataCard1'.DataCardValue417.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice Dt Confidence Score_DataCard1'.DataCardValue417.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Invoice Dt Confidence Score_DataCard1'.DataCardValue417"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice ICO Term Confidence Score_DataCard1'.DataCardValue418.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice ICO Term Confidence Score_DataCard1'.DataCardValue418.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Invoice ICO Term Confidence Score_DataCard1'.DataCardValue418"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice No Confidence Score_DataCard1'.DataCardValue419.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice No Confidence Score_DataCard1'.DataCardValue419.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Invoice No Confidence Score_DataCard1'.DataCardValue419"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice SNO Confidence Score_DataCard1'.DataCardValue420.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice SNO Confidence Score_DataCard1'.DataCardValue420.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Invoice SNO Confidence Score_DataCard1'.DataCardValue420"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice Value in FC Confidence Score_DataCard2'.DataCardValue421.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Invoice Value in FC Confidence Score_DataCard2'.DataCardValue421.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Invoice Value in FC Confidence Score_DataCard2'.DataCardValue421"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'INW Date Confidence Score_DataCard1'.DataCardValue422.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'INW Date Confidence Score_DataCard1'.DataCardValue422.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'INW Date Confidence Score_DataCard1'.DataCardValue422"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'KACHA Confidence Score_DataCard1'.DataCardValue423.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'KACHA Confidence Score_DataCard1'.DataCardValue423.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'KACHA Confidence Score_DataCard1'.DataCardValue423"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'LC Dt Confidence Score_DataCard1'.DataCardValue424.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'LC Dt Confidence Score_DataCard1'.DataCardValue424.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'LC Dt Confidence Score_DataCard1'.DataCardValue424"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'LC NO Confidence Score_DataCard1'.DataCardValue425.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'LC NO Confidence Score_DataCard1'.DataCardValue425.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'LC NO Confidence Score_DataCard1'.DataCardValue425"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'LCL/FCL Confidence Score_DataCard1'.DataCardValue426.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'LCL/FCL Confidence Score_DataCard1'.DataCardValue426.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'LCL/FCL Confidence Score_DataCard1'.DataCardValue426"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Loading Chrgs in FC Confidence Score_DataCard1'.DataCardValue427.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Loading Chrgs in FC Confidence Score_DataCard1'.DataCardValue427.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Loading Chrgs in FC Confidence Score_DataCard1'.DataCardValue427"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'MAWB DATE Confidence Score_DataCard1'.DataCardValue428.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'MAWB DATE Confidence Score_DataCard1'.DataCardValue428.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'MAWB DATE Confidence Score_DataCard1'.DataCardValue428"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'MAWB NO Confidence Score_DataCard2'.DataCardValue429.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'MAWB NO Confidence Score_DataCard2'.DataCardValue429.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'MAWB NO Confidence Score_DataCard2'.DataCardValue429"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Mode Confidence Score_DataCard2'.DataCardValue430.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Mode Confidence Score_DataCard2'.DataCardValue430.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Mode Confidence Score_DataCard2'.DataCardValue430"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Month Confidence Score_DataCard2'.DataCardValue431.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Month Confidence Score_DataCard2'.DataCardValue431.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Month Confidence Score_DataCard2'.DataCardValue431"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Name Confidence Score_DataCard2'.DataCardValue432.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Name Confidence Score_DataCard2'.DataCardValue432.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Name Confidence Score_DataCard2'.DataCardValue432"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'NCCD Amount INR Confidence Score_DataCard1'.DataCardValue433.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'NCCD Amount INR Confidence Score_DataCard1'.DataCardValue433.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'NCCD Amount INR Confidence Score_DataCard1'.DataCardValue433"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'OOC DT Confidence Score_DataCard1'.DataCardValue434.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'OOC DT Confidence Score_DataCard1'.DataCardValue434.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'OOC DT Confidence Score_DataCard1'.DataCardValue434"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'OOC NO Confidence Score_DataCard1'.DataCardValue435.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'OOC NO Confidence Score_DataCard1'.DataCardValue435.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'OOC NO Confidence Score_DataCard1'.DataCardValue435"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Payment SR No Confidence Score_DataCard1'.DataCardValue436.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Payment SR No Confidence Score_DataCard1'.DataCardValue436.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Payment SR No Confidence Score_DataCard1'.DataCardValue436"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Payment Term Confidence Score_DataCard1'.DataCardValue437.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Payment Term Confidence Score_DataCard1'.DataCardValue437.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Payment Term Confidence Score_DataCard1'.DataCardValue437"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Payment Terms Confidence Score_DataCard1'.DataCardValue438.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Payment Terms Confidence Score_DataCard1'.DataCardValue438.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Payment Terms Confidence Score_DataCard1'.DataCardValue438"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'PENALTY INR Confidence Score_DataCard1'.DataCardValue439.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'PENALTY INR Confidence Score_DataCard1'.DataCardValue439.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'PENALTY INR Confidence Score_DataCard1'.DataCardValue439"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'PKG Confidence Score_DataCard1'.DataCardValue440.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'PKG Confidence Score_DataCard1'.DataCardValue440.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'PKG Confidence Score_DataCard1'.DataCardValue440"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Port Code Confidence Score_DataCard3'.DataCardValue441.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Port Code Confidence Score_DataCard3'.DataCardValue441.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Port Code Confidence Score_DataCard3'.DataCardValue441"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Port of Loading Confidence Score_DataCard3'.DataCardValue442.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Port of Loading Confidence Score_DataCard3'.DataCardValue442.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Port of Loading Confidence Score_DataCard3'.DataCardValue442"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Port of Shipment DT Confidence Score_DataCard1'.DataCardValue443.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Port of Shipment DT Confidence Score_DataCard1'.DataCardValue443.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Port of Shipment DT Confidence Score_DataCard1'.DataCardValue443"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Processing Submission DT Confidence Score_DataCard1'.DataCardValue444.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Processing Submission DT Confidence Score_DataCard1'.DataCardValue444.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Processing Submission DT Confidence Score_DataCard1'.DataCardValue444"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'PROV / FINAL Confidence Score_DataCard1'.DataCardValue445.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'PROV / FINAL Confidence Score_DataCard1'.DataCardValue445.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'PROV / FINAL Confidence Score_DataCard1'.DataCardValue445"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Purchase Order Dt Confidence Score_DataCard1'.DataCardValue446.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Purchase Order Dt Confidence Score_DataCard1'.DataCardValue446.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Purchase Order Dt Confidence Score_DataCard1'.DataCardValue446"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Purchase Order No Confidence Score_DataCard1'.DataCardValue447.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Purchase Order No Confidence Score_DataCard1'.DataCardValue447.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Purchase Order No Confidence Score_DataCard1'.DataCardValue447"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'REIMP Confidence Score_DataCard1'.DataCardValue448.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'REIMP Confidence Score_DataCard1'.DataCardValue448.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'REIMP Confidence Score_DataCard1'.DataCardValue448"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Request ID Confidence Score_DataCard3'.DataCardValue449.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Request ID Confidence Score_DataCard3'.DataCardValue449.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Request ID Confidence Score_DataCard3'.DataCardValue449"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'SAED Value INR Confidence Score_DataCard1'.DataCardValue450.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'SAED Value INR Confidence Score_DataCard1'.DataCardValue450.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'SAED Value INR Confidence Score_DataCard1'.DataCardValue450"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'SEAL Confidence Score_DataCard1'.DataCardValue451.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'SEAL Confidence Score_DataCard1'.DataCardValue451.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'SEAL Confidence Score_DataCard1'.DataCardValue451"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Sec 48 Confidence Score_DataCard1'.DataCardValue452.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Sec 48 Confidence Score_DataCard1'.DataCardValue452.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Sec 48 Confidence Score_DataCard1'.DataCardValue452"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Seller''s Address Confidence Score_DataCard1'.DataCardValue453.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Seller''s Address Confidence Score_DataCard1'.DataCardValue453.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Seller''s Address Confidence Score_DataCard1'.DataCardValue453"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Seller''s Name Confidence Score_DataCard1'.DataCardValue454.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Seller''s Name Confidence Score_DataCard1'.DataCardValue454.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Seller''s Name Confidence Score_DataCard1'.DataCardValue454"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'SG Value INR Confidence Score_DataCard1'.DataCardValue455.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'SG Value INR Confidence Score_DataCard1'.DataCardValue455.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'SG Value INR Confidence Score_DataCard1'.DataCardValue455"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Supplier''s Address Confidence Score_DataCard1'.DataCardValue456.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Supplier''s Address Confidence Score_DataCard1'.DataCardValue456.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Supplier''s Address Confidence Score_DataCard1'.DataCardValue456"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Supplier''s Name Confidence Score_DataCard1'.DataCardValue457.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Supplier''s Name Confidence Score_DataCard1'.DataCardValue457.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Supplier''s Name Confidence Score_DataCard1'.DataCardValue457"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'SWS Amount INR Confidence Score_DataCard1'.DataCardValue458.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'SWS Amount INR Confidence Score_DataCard1'.DataCardValue458.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'SWS Amount INR Confidence Score_DataCard1'.DataCardValue458"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Third Party  Name Confidence Score_DataCard1'.DataCardValue459.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Third Party  Name Confidence Score_DataCard1'.DataCardValue459.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Third Party  Name Confidence Score_DataCard1'.DataCardValue459"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Third Party Address Confidence Score_DataCard1'.DataCardValue460.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Third Party Address Confidence Score_DataCard1'.DataCardValue460.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Third Party Address Confidence Score_DataCard1'.DataCardValue460"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Time Zone Rule Version Number Confidence Score_DataCard2'.DataCardValue461.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Time Zone Rule Version Number Confidence Score_DataCard2'.DataCardValue461.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Time Zone Rule Version Number Confidence Score_DataCard2'.DataCardValue461"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TOT AMOUNT INR Confidence Score_DataCard2'.DataCardValue462.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TOT AMOUNT INR Confidence Score_DataCard2'.DataCardValue462.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'TOT AMOUNT INR Confidence Score_DataCard2'.DataCardValue462"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TOT.ASS VAL INR Confidence Score_DataCard1'.DataCardValue463.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TOT.ASS VAL INR Confidence Score_DataCard1'.DataCardValue463.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'TOT.ASS VAL INR Confidence Score_DataCard1'.DataCardValue463"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TOTAL DUTY Value INR Confidence Score_DataCard1'.DataCardValue464.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TOTAL DUTY Value INR Confidence Score_DataCard1'.DataCardValue464.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'TOTAL DUTY Value INR Confidence Score_DataCard1'.DataCardValue464"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TRUCK Confidence Score_DataCard1'.DataCardValue465.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TRUCK Confidence Score_DataCard1'.DataCardValue465.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'TRUCK Confidence Score_DataCard1'.DataCardValue465"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TTA Value INR Confidence Score_DataCard1'.DataCardValue466.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'TTA Value INR Confidence Score_DataCard1'.DataCardValue466.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'TTA Value INR Confidence Score_DataCard1'.DataCardValue466"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'UCR Confidence Score_DataCard1'.DataCardValue467.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'UCR Confidence Score_DataCard1'.DataCardValue467.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'UCR Confidence Score_DataCard1'.DataCardValue467"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'UTC Conversion Time Zone Code Confidence Score_DataCard1'.DataCardValue468.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'UTC Conversion Time Zone Code Confidence Score_DataCard1'.DataCardValue468.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'UTC Conversion Time Zone Code Confidence Score_DataCard1'.DataCardValue468"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Valuation Method Confidence Score _DataCard1'.DataCardValue469.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Valuation Method Confidence Score _DataCard1'.DataCardValue469.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Valuation Method Confidence Score _DataCard1'.DataCardValue469"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'WBE Date Confidence Score_DataCard1'.DataCardValue470.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'WBE Date Confidence Score_DataCard1'.DataCardValue470.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'WBE Date Confidence Score_DataCard1'.DataCardValue470"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'WBE No Confidence Score_DataCard1'.DataCardValue471.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'WBE No Confidence Score_DataCard1'.DataCardValue471.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'WBE No Confidence Score_DataCard1'.DataCardValue471"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'WBE Site Confidence Score_DataCard1'.DataCardValue472.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'WBE Site Confidence Score_DataCard1'.DataCardValue472.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'WBE Site Confidence Score_DataCard1'.DataCardValue472"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'WH Code Confidence Score_DataCard1'.DataCardValue473.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'WH Code Confidence Score_DataCard1'.DataCardValue473.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'WH Code Confidence Score_DataCard1'.DataCardValue473"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Year Confidence Score_DataCard3'.DataCardValue474.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'Year Confidence Score_DataCard3'.DataCardValue474.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATEBOE",
+                "type": "ICEGATEBOE.frm_BOESummary.'Year Confidence Score_DataCard3'.DataCardValue474"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
