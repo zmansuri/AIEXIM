@@ -13704,6 +13704,906 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'P/C Val Dtls Confidence Score_DataCard1'.DataCardValue1271.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'P/C Val Dtls Confidence Score_DataCard1'.DataCardValue1271.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'P/C Val Dtls Confidence Score_DataCard1'.DataCardValue1271"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'P/C Val Summary Confidence Score_DataCard1'.DataCardValue1272.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'P/C Val Summary Confidence Score_DataCard1'.DataCardValue1272.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'P/C Val Summary Confidence Score_DataCard1'.DataCardValue1272"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Port Code Confidence Score_DataCard4'.DataCardValue1273.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Port Code Confidence Score_DataCard4'.DataCardValue1273.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Port Code Confidence Score_DataCard4'.DataCardValue1273"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'PORT CODE Jobbing Details Confidence Score_DataCard1'.DataCardValue1274.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'PORT CODE Jobbing Details Confidence Score_DataCard1'.DataCardValue1274.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'PORT CODE Jobbing Details Confidence Score_DataCard1'.DataCardValue1274"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Port Of Discharge Confidence Score_DataCard3'.DataCardValue1275.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Port Of Discharge Confidence Score_DataCard3'.DataCardValue1275.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Port Of Discharge Confidence Score_DataCard3'.DataCardValue1275"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'PORT OF FINAL DESTINATION Confidence Score_DataCard1'.DataCardValue1276.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'PORT OF FINAL DESTINATION Confidence Score_DataCard1'.DataCardValue1276.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'PORT OF FINAL DESTINATION Confidence Score_DataCard1'.DataCardValue1276"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Port of Loading Confidence Score_DataCard4'.DataCardValue1277.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Port of Loading Confidence Score_DataCard4'.DataCardValue1277.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Port of Loading Confidence Score_DataCard4'.DataCardValue1277"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Purchase Order Dt Confidence Score_DataCard2'.DataCardValue1278.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Purchase Order Dt Confidence Score_DataCard2'.DataCardValue1278.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Purchase Order Dt Confidence Score_DataCard2'.DataCardValue1278"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Purchase Order No Confidence Score_DataCard2'.DataCardValue1279.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Purchase Order No Confidence Score_DataCard2'.DataCardValue1279.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Purchase Order No Confidence Score_DataCard2'.DataCardValue1279"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'QT IMP Jobbing Details Confidence Score_DataCard1'.DataCardValue1280.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'QT IMP Jobbing Details Confidence Score_DataCard1'.DataCardValue1280.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'QT IMP Jobbing Details Confidence Score_DataCard1'.DataCardValue1280"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'QTY RODTEP Details Confidence Score_DataCard1'.DataCardValue1281.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'QTY RODTEP Details Confidence Score_DataCard1'.DataCardValue1281.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'QTY RODTEP Details Confidence Score_DataCard1'.DataCardValue1281"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'QTY USED Confidence Score_DataCard1'.DataCardValue1282.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'QTY USED Confidence Score_DataCard1'.DataCardValue1282.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'QTY USED Confidence Score_DataCard1'.DataCardValue1282"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RBI WAIVER NO AND DATE  Confidence Score_DataCard1'.DataCardValue1283.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RBI WAIVER NO AND DATE  Confidence Score_DataCard1'.DataCardValue1283.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'RBI WAIVER NO AND DATE  Confidence Score_DataCard1'.DataCardValue1283"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RE-EXP Confidence Score_DataCard1'.DataCardValue1284.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RE-EXP Confidence Score_DataCard1'.DataCardValue1284.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'RE-EXP Confidence Score_DataCard1'.DataCardValue1284"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Request ID Confidence Score_DataCard4'.DataCardValue1285.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Request ID Confidence Score_DataCard4'.DataCardValue1285.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Request ID Confidence Score_DataCard4'.DataCardValue1285"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTEP AMT INR EXPR Confidence Score_DataCard1'.DataCardValue1286.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTEP AMT INR EXPR Confidence Score_DataCard1'.DataCardValue1286.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'RODTEP AMT INR EXPR Confidence Score_DataCard1'.DataCardValue1286"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTEP Value Confidence Score_DataCard1'.DataCardValue1287.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTEP Value Confidence Score_DataCard1'.DataCardValue1287.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'RODTEP Value Confidence Score_DataCard1'.DataCardValue1287"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTP Confidence Score_DataCard1'.DataCardValue1288.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTP Confidence Score_DataCard1'.DataCardValue1288.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'RODTP Confidence Score_DataCard1'.DataCardValue1288"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'ROSCTL AMT INR EXPR Confidence Score_DataCard1'.DataCardValue1289.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'ROSCTL AMT INR EXPR Confidence Score_DataCard1'.DataCardValue1289.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'ROSCTL AMT INR EXPR Confidence Score_DataCard1'.DataCardValue1289"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'ROSL AMT INR Confidence Score_DataCard1'.DataCardValue1290.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'ROSL AMT INR Confidence Score_DataCard1'.DataCardValue1290.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'ROSL AMT INR Confidence Score_DataCard1'.DataCardValue1290"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SCHEME DESCRIPTION Confidence Score_DataCard1'.DataCardValue1291.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SCHEME DESCRIPTION Confidence Score_DataCard1'.DataCardValue1291.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'SCHEME DESCRIPTION Confidence Score_DataCard1'.DataCardValue1291"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SB NO Confidence Score_DataCard3'.DataCardValue1292.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SB NO Confidence Score_DataCard3'.DataCardValue1292.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'SB NO Confidence Score_DataCard3'.DataCardValue1292"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SEAL Confidence Score_DataCard2'.DataCardValue1293.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SEAL Confidence Score_DataCard2'.DataCardValue1293.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'SEAL Confidence Score_DataCard2'.DataCardValue1293"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SEAL TYPE Confidence Score_DataCard1'.DataCardValue1294.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SEAL TYPE Confidence Score_DataCard1'.DataCardValue1294.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'SEAL TYPE Confidence Score_DataCard1'.DataCardValue1294"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SION Confidence Score_DataCard1'.DataCardValue1295.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SION Confidence Score_DataCard1'.DataCardValue1295.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'SION Confidence Score_DataCard1'.DataCardValue1295"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Sno Inv Summary Confidence Score_DataCard1'.DataCardValue1296.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Sno Inv Summary Confidence Score_DataCard1'.DataCardValue1296.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Sno Inv Summary Confidence Score_DataCard1'.DataCardValue1296"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SR NO Confidence Score_DataCard1'.DataCardValue1297.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'SR NO Confidence Score_DataCard1'.DataCardValue1297.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'SR NO Confidence Score_DataCard1'.DataCardValue1297"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'STATE OF ORIGIN Confidence Score_DataCard1'.DataCardValue1298.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'STATE OF ORIGIN Confidence Score_DataCard1'.DataCardValue1298.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'STATE OF ORIGIN Confidence Score_DataCard1'.DataCardValue1298"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Submission Date Confidence Score_DataCard1'.DataCardValue1299.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Submission Date Confidence Score_DataCard1'.DataCardValue1299.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Submission Date Confidence Score_DataCard1'.DataCardValue1299"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Submission Time Confidence Score_DataCard1'.DataCardValue1300.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Submission Time Confidence Score_DataCard1'.DataCardValue1300.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Submission Time Confidence Score_DataCard1'.DataCardValue1300"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "App"
                 }
               ],
@@ -14014,7 +14914,7 @@
                 ],
                 "level": "Medium",
                 "primaryCategory": "performance",
-                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"ICEGATESB\" is 2366, which exceeds the maximum threshold recommended (300)."
+                "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"ICEGATESB\" is 2516, which exceeds the maximum threshold recommended (300)."
               }
             }
           ],
