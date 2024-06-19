@@ -22994,6 +22994,482 @@ ICEGATESB As screen:
                 Y: =DataCardKey1305.Y
                 ZIndex: =4
 
+        "'Third Party Address Confidence Score_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_thirdpartyaddressconfidencescore"
+            Default: =ThisItem.'Third Party Address Confidence Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_thirdpartyaddressconfidencescore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_thirdpartyaddressconfidencescore)
+            Required: =false
+            Update: =DataCardValue1301.Text
+            Width: =360
+            X: =1
+            Y: =161
+            ZIndex: =1
+
+            DataCardKey1306 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1301 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1306.Y + DataCardKey1306.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1305 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1301.Y + DataCardValue1301.Height
+                ZIndex: =3
+
+            StarVisible1306 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1306.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1306.Y
+                ZIndex: =4
+
+        "'Third Party Name Confidence Score_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_thirdpartynameconfidencescore"
+            Default: =ThisItem.'Third Party Name Confidence Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_thirdpartynameconfidencescore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_thirdpartynameconfidencescore)
+            Required: =false
+            Update: =DataCardValue1302.Text
+            Width: =360
+            X: =0
+            Y: =162
+            ZIndex: =1
+
+            DataCardKey1307 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1302 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1307.Y + DataCardKey1307.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1306 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1302.Y + DataCardValue1302.Height
+                ZIndex: =3
+
+            StarVisible1307 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1307.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1307.Y
+                ZIndex: =4
+
+        "'Time Zone Rule Version Number Confidence Score_DataCard3' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_timezoneruleversionnumberconfidencescore"
+            Default: =ThisItem.'Time Zone Rule Version Number Confidence Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_timezoneruleversionnumberconfidencescore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_timezoneruleversionnumberconfidencescore)
+            Required: =false
+            Update: =DataCardValue1303.Text
+            Width: =360
+            X: =1
+            Y: =162
+            ZIndex: =1
+
+            DataCardKey1308 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1303 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1308.Y + DataCardKey1308.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1307 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1303.Y + DataCardValue1303.Height
+                ZIndex: =3
+
+            StarVisible1308 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1308.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1308.Y
+                ZIndex: =4
+
+        "'UQC 1 Confidence Score_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_uqc1confidencescore"
+            Default: =ThisItem.'UQC 1 Confidence Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_uqc1confidencescore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_uqc1confidencescore)
+            Required: =false
+            Update: =DataCardValue1304.Text
+            Width: =360
+            X: =0
+            Y: =163
+            ZIndex: =1
+
+            DataCardKey1309 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1304 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1309.Y + DataCardKey1309.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1308 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1304.Y + DataCardValue1304.Height
+                ZIndex: =3
+
+            StarVisible1309 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1309.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1309.Y
+                ZIndex: =4
+
+        "'UQC 2 Confidence Score_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_uqc2confidencescore"
+            Default: =ThisItem.'UQC 2 Confidence Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_uqc2confidencescore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_uqc2confidencescore)
+            Required: =false
+            Update: =DataCardValue1305.Text
+            Width: =360
+            X: =1
+            Y: =163
+            ZIndex: =1
+
+            DataCardKey1310 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1305 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1310.Y + DataCardKey1310.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1309 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1305.Y + DataCardValue1305.Height
+                ZIndex: =3
+
+            StarVisible1310 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1310.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1310.Y
+                ZIndex: =4
+
+        "'UQC RODTEP Details Confidence Score_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_uqcrodtepdetailsconfidencescore"
+            Default: =ThisItem.'UQC RODTEP Details Confidence Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_uqcrodtepdetailsconfidencescore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_uqcrodtepdetailsconfidencescore)
+            Required: =false
+            Update: =DataCardValue1306.Text
+            Width: =360
+            X: =0
+            Y: =164
+            ZIndex: =1
+
+            DataCardKey1311 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1306 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1311.Y + DataCardKey1311.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1310 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1306.Y + DataCardValue1306.Height
+                ZIndex: =3
+
+            StarVisible1311 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1311.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1311.Y
+                ZIndex: =4
+
+        "'UTC Conversion Time Zone Code Confidence Score_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_utcconversiontimezonecodeconfidencescore"
+            Default: =ThisItem.'UTC Conversion Time Zone Code Confidence Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_utcconversiontimezonecodeconfidencescore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_utcconversiontimezonecodeconfidencescore)
+            Required: =false
+            Update: =DataCardValue1307.Text
+            Width: =360
+            X: =1
+            Y: =164
+            ZIndex: =1
+
+            DataCardKey1312 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1307 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1312.Y + DataCardKey1312.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1311 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1307.Y + DataCardValue1307.Height
+                ZIndex: =3
+
+            StarVisible1312 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1312.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1312.Y
+                ZIndex: =4
+
         DataCard1 As typedDataCard.blankCard:
             BorderStyle: =BorderStyle.Solid
             DisplayMode: =DisplayMode.Edit
