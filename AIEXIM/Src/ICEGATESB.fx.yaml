@@ -24686,6 +24686,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey182.Y
                 ZIndex: =4
 
+            Confidence_129 As label:
+                Color: =If(Value(Confidence_129.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'INV Sr No Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
+
         "'No of Units_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_noofunits"
@@ -24823,6 +24833,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey150.Y
                 ZIndex: =4
+
+            Confidence_133 As label:
+                Color: =If(Value(Confidence_133.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'RODTEP Value Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =160
+                Y: =10
+                ZIndex: =5
 
         "'Document Sent By_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -34934,6 +34954,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey179.Y
                 ZIndex: =4
 
+            Confidence_130 As label:
+                Color: =If(Value(Confidence_130.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'ITMSN Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =100
+                Y: =10
+                ZIndex: =5
+
         "'QTY RODTEP Details_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_qtyrodtepdetails"
@@ -35003,6 +35033,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey180.Y
                 ZIndex: =4
+
+            Confidence_131 As label:
+                Color: =If(Value(Confidence_131.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'QTY RODTEP Details Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =210
+                Y: =10
+                ZIndex: =5
 
         "'UQC Rodtep Details_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -35074,6 +35114,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey181.Y
                 ZIndex: =4
 
+            Confidence_132 As label:
+                Color: =If(Value(Confidence_132.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'UQC RODTEP Details Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =210
+                Y: =10
+                ZIndex: =5
+
         "'INFO CD (D Single window Declaration)_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_infocd"
@@ -35143,6 +35193,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey184.Y
                 ZIndex: =4
+
+            Confidence_134 As label:
+                Color: =If(Value(Confidence_134.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'INFO CD Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =110
+                Y: =10
+                ZIndex: =5
 
         "'Drawback Amt in INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
@@ -35214,6 +35274,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey185.Y
                 ZIndex: =4
 
+            Confidence_135 As label:
+                Color: =If(Value(Confidence_135.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'DRAWBACK AMT IN INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =220
+                Y: =10
+                ZIndex: =5
+
         "' Rosl AMT INR_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_roslamtinr"
@@ -35284,6 +35354,16 @@ ICEGATESB As screen:
                 Y: =DataCardKey186.Y
                 ZIndex: =4
 
+            Confidence_136 As label:
+                Color: =If(Value(Confidence_136.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'ROSL AMT INR Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =150
+                Y: =10
+                ZIndex: =5
+
         "'SCHEME DESCRIPTION_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_schemedescription"
@@ -35353,6 +35433,16 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey187.Y
                 ZIndex: =4
+
+            Confidence_137 As label:
+                Color: =If(Value(Confidence_137.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'SCHEME DESCRIPTION Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =230
+                Y: =10
+                ZIndex: =5
 
     ReportBtn_SB As button:
         Align: =Align.Left
