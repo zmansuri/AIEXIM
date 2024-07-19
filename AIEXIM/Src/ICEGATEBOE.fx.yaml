@@ -525,6 +525,776 @@ ICEGATEBOE As screen:
         Y: =185
         ZIndex: =40
 
+        "'Addnl Details LIC NO_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailslicno"
+            Default: =ThisItem.'Addnl Details- LIC NO'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicno)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicno)
+            Required: =false
+            Update: =DataCardValue22.Text
+            Width: =378
+            X: =1
+            Y: =54
+            ZIndex: =1
+
+            DataCardKey123 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue22 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey123.Y + DataCardKey123.Height + 5
+                ZIndex: =2
+
+            ErrorMessage123 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue22.Y + DataCardValue22.Height
+                ZIndex: =3
+
+            StarVisible123 As label:
+                Align: =Align.Center
+                Height: =DataCardKey123.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey123.Y
+                ZIndex: =4
+
+        "'Addnl Details LIC CODE_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailsliccode"
+            Default: =ThisItem.'Addnl Details- LIC CODE'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailsliccode)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailsliccode)
+            Required: =false
+            Update: =DataCardValue23.Text
+            Width: =378
+            X: =0
+            Y: =55
+            ZIndex: =1
+
+            DataCardKey126 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue23 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey126.Y + DataCardKey126.Height + 5
+                ZIndex: =2
+
+            ErrorMessage126 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue23.Y + DataCardValue23.Height
+                ZIndex: =3
+
+            StarVisible126 As label:
+                Align: =Align.Center
+                Height: =DataCardKey126.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey126.Y
+                ZIndex: =4
+
+        "'Addnl Details LIC PORT_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailslicport"
+            Default: =ThisItem.'Addnl Details- LIC PORT'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicport)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicport)
+            Required: =false
+            Update: =DataCardValue52.Text
+            Width: =378
+            X: =1
+            Y: =55
+            ZIndex: =1
+
+            DataCardKey393 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue52 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey393.Y + DataCardKey393.Height + 5
+                ZIndex: =2
+
+            ErrorMessage393 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue52.Y + DataCardValue52.Height
+                ZIndex: =3
+
+            StarVisible393 As label:
+                Align: =Align.Center
+                Height: =DataCardKey393.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey393.Y
+                ZIndex: =4
+
+        "'Addnl Details LIC DEBIT VALUE_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailslicdebitvalue"
+            Default: =ThisItem.'Addnl Details- LIC DEBIT VALUE'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicdebitvalue)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicdebitvalue)
+            Required: =false
+            Update: =DataCardValue67.Text
+            Width: =378
+            X: =0
+            Y: =56
+            ZIndex: =1
+
+            DataCardKey673 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue67 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey673.Y + DataCardKey673.Height + 5
+                ZIndex: =2
+
+            ErrorMessage673 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue67.Y + DataCardValue67.Height
+                ZIndex: =3
+
+            StarVisible673 As label:
+                Align: =Align.Center
+                Height: =DataCardKey673.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey673.Y
+                ZIndex: =4
+
+        "'Addnl Details LIC QTY_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailslicqty"
+            Default: =ThisItem.'Addnl Details- LIC QTY'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicqty)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicqty)
+            Required: =false
+            Update: =DataCardValue121.Text
+            Width: =378
+            X: =1
+            Y: =56
+            ZIndex: =1
+
+            DataCardKey674 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue121 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey674.Y + DataCardKey674.Height + 5
+                ZIndex: =2
+
+            ErrorMessage674 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue121.Y + DataCardValue121.Height
+                ZIndex: =3
+
+            StarVisible674 As label:
+                Align: =Align.Center
+                Height: =DataCardKey674.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey674.Y
+                ZIndex: =4
+
+        "'Addnl Details LIC UQC_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailslicuqc"
+            Default: =ThisItem.'Addnl Details- LIC UQC'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicuqc)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicuqc)
+            Required: =false
+            Update: =DataCardValue124.Text
+            Width: =378
+            X: =0
+            Y: =57
+            ZIndex: =1
+
+            DataCardKey739 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue124 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey739.Y + DataCardKey739.Height + 5
+                ZIndex: =2
+
+            ErrorMessage739 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue124.Y + DataCardValue124.Height
+                ZIndex: =3
+
+            StarVisible739 As label:
+                Align: =Align.Center
+                Height: =DataCardKey739.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey739.Y
+                ZIndex: =4
+
+        "'Addnl Details LIC DEBIT DUTY_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailslicdebitduty"
+            Default: =ThisItem.'Addnl Details- LIC DEBIT DUTY'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicdebitduty)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicdebitduty)
+            Required: =false
+            Update: =DataCardValue391.Text
+            Width: =378
+            X: =1
+            Y: =57
+            ZIndex: =1
+
+            DataCardKey740 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue391 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey740.Y + DataCardKey740.Height + 5
+                ZIndex: =2
+
+            ErrorMessage740 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue391.Y + DataCardValue391.Height
+                ZIndex: =3
+
+            StarVisible740 As label:
+                Align: =Align.Center
+                Height: =DataCardKey740.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey740.Y
+                ZIndex: =4
+
+        "'Addnl Details CERTIFICATE NUMBER_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailscertificatenumber"
+            Default: =ThisItem.'Addnl Details- CERTIFICATE NUMBER'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatenumber)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailscertificatenumber)
+            Required: =false
+            Update: =DataCardValue670.Text
+            Width: =378
+            X: =0
+            Y: =58
+            ZIndex: =1
+
+            DataCardKey741 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue670 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey741.Y + DataCardKey741.Height + 5
+                ZIndex: =2
+
+            ErrorMessage741 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue670.Y + DataCardValue670.Height
+                ZIndex: =3
+
+            StarVisible741 As label:
+                Align: =Align.Center
+                Height: =DataCardKey741.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey741.Y
+                ZIndex: =4
+
+        "'Addnl Details CERTIFICATE TYPE_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailscertificatetype"
+            Default: =ThisItem.'Addnl Details- CERTIFICATE TYPE'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatetype)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailscertificatetype)
+            Required: =false
+            Update: =DataCardValue671.Text
+            Width: =378
+            X: =1
+            Y: =58
+            ZIndex: =1
+
+            DataCardKey742 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue671 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey742.Y + DataCardKey742.Height + 5
+                ZIndex: =2
+
+            ErrorMessage742 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue671.Y + DataCardValue671.Height
+                ZIndex: =3
+
+            StarVisible742 As label:
+                Align: =Align.Center
+                Height: =DataCardKey742.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey742.Y
+                ZIndex: =4
+
+        "'Addnl Details CERTIFICATE DATE_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailscertificatedate"
+            Default: =ThisItem.'Addnl Details- CERTIFICATE DATE'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatedate)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailscertificatedate)
+            Required: =false
+            Update: =DataCardValue672.Text
+            Width: =378
+            X: =0
+            Y: =59
+            ZIndex: =1
+
+            DataCardKey743 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue672 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey743.Y + DataCardKey743.Height + 5
+                ZIndex: =2
+
+            ErrorMessage743 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue672.Y + DataCardValue672.Height
+                ZIndex: =3
+
+            StarVisible743 As label:
+                Align: =Align.Center
+                Height: =DataCardKey743.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey743.Y
+                ZIndex: =4
+
+        "'Addnl Details CONTAINER NO_DataCard2' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="cr1c5_addnldetailscontainerno"
+            Default: =ThisItem.'Addnl Details-CONTAINER NO'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscontainerno)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailscontainerno)
+            Required: =false
+            Update: =DataCardValue739.Text
+            Width: =378
+            X: =1
+            Y: =59
+            ZIndex: =1
+
+            DataCardKey744 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue739 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey744.Y + DataCardKey744.Height + 5
+                ZIndex: =2
+
+            ErrorMessage744 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue739.Y + DataCardValue739.Height
+                ZIndex: =3
+
+            StarVisible744 As label:
+                Align: =Align.Center
+                Height: =DataCardKey744.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey744.Y
+                ZIndex: =4
+
         "'ACD Amount INR Confidence Score_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_acdamountinrconfidencescore"
@@ -9907,776 +10677,6 @@ ICEGATEBOE As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey475.Y
-                ZIndex: =4
-
-        "'Addnl Details LIC NO_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailslicno"
-            Default: =ThisItem.'Addnl Details- LIC NO'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicno)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicno)
-            Required: =false
-            Update: =DataCardValue22.Text
-            Width: =378
-            X: =1
-            Y: =54
-            ZIndex: =1
-
-            DataCardKey123 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue22 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey123.Y + DataCardKey123.Height + 5
-                ZIndex: =2
-
-            ErrorMessage123 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue22.Y + DataCardValue22.Height
-                ZIndex: =3
-
-            StarVisible123 As label:
-                Align: =Align.Center
-                Height: =DataCardKey123.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey123.Y
-                ZIndex: =4
-
-        "'Addnl Details LIC CODE_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailsliccode"
-            Default: =ThisItem.'Addnl Details- LIC CODE'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailsliccode)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailsliccode)
-            Required: =false
-            Update: =DataCardValue23.Text
-            Width: =378
-            X: =0
-            Y: =55
-            ZIndex: =1
-
-            DataCardKey126 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue23 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey126.Y + DataCardKey126.Height + 5
-                ZIndex: =2
-
-            ErrorMessage126 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue23.Y + DataCardValue23.Height
-                ZIndex: =3
-
-            StarVisible126 As label:
-                Align: =Align.Center
-                Height: =DataCardKey126.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey126.Y
-                ZIndex: =4
-
-        "'Addnl Details LIC PORT_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailslicport"
-            Default: =ThisItem.'Addnl Details- LIC PORT'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicport)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicport)
-            Required: =false
-            Update: =DataCardValue52.Text
-            Width: =378
-            X: =1
-            Y: =55
-            ZIndex: =1
-
-            DataCardKey393 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue52 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey393.Y + DataCardKey393.Height + 5
-                ZIndex: =2
-
-            ErrorMessage393 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue52.Y + DataCardValue52.Height
-                ZIndex: =3
-
-            StarVisible393 As label:
-                Align: =Align.Center
-                Height: =DataCardKey393.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey393.Y
-                ZIndex: =4
-
-        "'Addnl Details LIC DEBIT VALUE_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailslicdebitvalue"
-            Default: =ThisItem.'Addnl Details- LIC DEBIT VALUE'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicdebitvalue)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicdebitvalue)
-            Required: =false
-            Update: =DataCardValue67.Text
-            Width: =378
-            X: =0
-            Y: =56
-            ZIndex: =1
-
-            DataCardKey673 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue67 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey673.Y + DataCardKey673.Height + 5
-                ZIndex: =2
-
-            ErrorMessage673 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue67.Y + DataCardValue67.Height
-                ZIndex: =3
-
-            StarVisible673 As label:
-                Align: =Align.Center
-                Height: =DataCardKey673.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey673.Y
-                ZIndex: =4
-
-        "'Addnl Details LIC QTY_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailslicqty"
-            Default: =ThisItem.'Addnl Details- LIC QTY'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicqty)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicqty)
-            Required: =false
-            Update: =DataCardValue121.Text
-            Width: =378
-            X: =1
-            Y: =56
-            ZIndex: =1
-
-            DataCardKey674 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue121 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey674.Y + DataCardKey674.Height + 5
-                ZIndex: =2
-
-            ErrorMessage674 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue121.Y + DataCardValue121.Height
-                ZIndex: =3
-
-            StarVisible674 As label:
-                Align: =Align.Center
-                Height: =DataCardKey674.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey674.Y
-                ZIndex: =4
-
-        "'Addnl Details LIC UQC_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailslicuqc"
-            Default: =ThisItem.'Addnl Details- LIC UQC'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicuqc)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicuqc)
-            Required: =false
-            Update: =DataCardValue124.Text
-            Width: =378
-            X: =0
-            Y: =57
-            ZIndex: =1
-
-            DataCardKey739 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue124 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey739.Y + DataCardKey739.Height + 5
-                ZIndex: =2
-
-            ErrorMessage739 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue124.Y + DataCardValue124.Height
-                ZIndex: =3
-
-            StarVisible739 As label:
-                Align: =Align.Center
-                Height: =DataCardKey739.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey739.Y
-                ZIndex: =4
-
-        "'Addnl Details LIC DEBIT DUTY_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailslicdebitduty"
-            Default: =ThisItem.'Addnl Details- LIC DEBIT DUTY'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailslicdebitduty)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailslicdebitduty)
-            Required: =false
-            Update: =DataCardValue391.Text
-            Width: =378
-            X: =1
-            Y: =57
-            ZIndex: =1
-
-            DataCardKey740 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue391 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey740.Y + DataCardKey740.Height + 5
-                ZIndex: =2
-
-            ErrorMessage740 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue391.Y + DataCardValue391.Height
-                ZIndex: =3
-
-            StarVisible740 As label:
-                Align: =Align.Center
-                Height: =DataCardKey740.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey740.Y
-                ZIndex: =4
-
-        "'Addnl Details CERTIFICATE NUMBER_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailscertificatenumber"
-            Default: =ThisItem.'Addnl Details- CERTIFICATE NUMBER'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatenumber)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailscertificatenumber)
-            Required: =false
-            Update: =DataCardValue670.Text
-            Width: =378
-            X: =0
-            Y: =58
-            ZIndex: =1
-
-            DataCardKey741 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue670 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey741.Y + DataCardKey741.Height + 5
-                ZIndex: =2
-
-            ErrorMessage741 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue670.Y + DataCardValue670.Height
-                ZIndex: =3
-
-            StarVisible741 As label:
-                Align: =Align.Center
-                Height: =DataCardKey741.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey741.Y
-                ZIndex: =4
-
-        "'Addnl Details CERTIFICATE TYPE_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailscertificatetype"
-            Default: =ThisItem.'Addnl Details- CERTIFICATE TYPE'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatetype)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailscertificatetype)
-            Required: =false
-            Update: =DataCardValue671.Text
-            Width: =378
-            X: =1
-            Y: =58
-            ZIndex: =1
-
-            DataCardKey742 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue671 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey742.Y + DataCardKey742.Height + 5
-                ZIndex: =2
-
-            ErrorMessage742 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue671.Y + DataCardValue671.Height
-                ZIndex: =3
-
-            StarVisible742 As label:
-                Align: =Align.Center
-                Height: =DataCardKey742.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey742.Y
-                ZIndex: =4
-
-        "'Addnl Details CERTIFICATE DATE_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailscertificatedate"
-            Default: =ThisItem.'Addnl Details- CERTIFICATE DATE'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscertificatedate)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailscertificatedate)
-            Required: =false
-            Update: =DataCardValue672.Text
-            Width: =378
-            X: =0
-            Y: =59
-            ZIndex: =1
-
-            DataCardKey743 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue672 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey743.Y + DataCardKey743.Height + 5
-                ZIndex: =2
-
-            ErrorMessage743 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue672.Y + DataCardValue672.Height
-                ZIndex: =3
-
-            StarVisible743 As label:
-                Align: =Align.Center
-                Height: =DataCardKey743.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey743.Y
-                ZIndex: =4
-
-        "'Addnl Details CONTAINER NO_DataCard2' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="cr1c5_addnldetailscontainerno"
-            Default: =ThisItem.'Addnl Details-CONTAINER NO'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'],DataSourceInfo.DisplayName,cr1c5_addnldetailscontainerno)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill of Entry Detailed Report - ICEGates'], DataSourceInfo.MaxLength, cr1c5_addnldetailscontainerno)
-            Required: =false
-            Update: =DataCardValue739.Text
-            Width: =378
-            X: =1
-            Y: =59
-            ZIndex: =1
-
-            DataCardKey744 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue739 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditFormBOE,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey744.Y + DataCardKey744.Height + 5
-                ZIndex: =2
-
-            ErrorMessage744 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue739.Y + DataCardValue739.Height
-                ZIndex: =3
-
-            StarVisible744 As label:
-                Align: =Align.Center
-                Height: =DataCardKey744.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey744.Y
                 ZIndex: =4
 
         RequestID_DataCard1 As typedDataCard.textualEditCard:

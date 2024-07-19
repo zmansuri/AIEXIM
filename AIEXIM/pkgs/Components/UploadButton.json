@@ -46,7 +46,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "UploadButton",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7261,
+        "PublishOrderIndex": 9536,
         "Rules": [
           {
             "Category": "Data",
@@ -338,7 +338,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "UploadButton",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7262,
+        "PublishOrderIndex": 9537,
         "Rules": [
           {
             "Category": "Data",
@@ -635,7 +635,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "UploadButton",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7263,
+        "PublishOrderIndex": 9538,
         "Rules": [
           {
             "Category": "Data",
@@ -929,7 +929,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "UploadButton",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7264,
+        "PublishOrderIndex": 9539,
         "Rules": [
           {
             "Category": "Data",
@@ -1193,7 +1193,7 @@
         "OptimizeForDevices": "Off",
         "Parent": "UploadButton",
         "PersistMetaDataIDKey": false,
-        "PublishOrderIndex": 7260,
+        "PublishOrderIndex": 9535,
         "Rules": [
           {
             "Category": "Design",
@@ -1265,7 +1265,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638543870208705498",
+    "LastModifiedTimestamp": "638569771595472617",
     "Name": "UploadButton",
     "Rules": [
       {
@@ -1324,7 +1324,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638543870208705498",
+  "LastModifiedTimestamp": "638569771595472617",
   "Name": "905ff9a2d3ac465197c446478e9454cc",
   "OverridableProperties": {},
   "SourceLibraryId": "f373a164-3ed5-4558-b537-aeca98a6ffa1",

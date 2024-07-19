@@ -22,7 +22,7 @@
       "blockmovingcontrol": true,
       "cdsdataformatting": false,
       "classiccontrols": false,
-      "commentgeneratedformulas": true,
+      "commentgeneratedformulasv2": false,
       "consistentreturnschemafortabularfunctions": true,
       "copyandmerge": true,
       "dataflowanalysisenabled": false,
@@ -71,6 +71,7 @@
       "longlivingcache": false,
       "mobilenativerendering": false,
       "nativecdsexperimental": true,
+      "offlineprofilegenerationemitscolumns": false,
       "onegrid": false,
       "optimizedforteamsmeeting": false,
       "packagemodernruntime": false,
@@ -116,13 +117,13 @@
     "Id": "a7ef8292-a4ae-4bb9-b513-08322d47b5f3",
     "InstrumentationKey": "",
     "ManualOfflineProfileId": "",
-    "Name": "Export Import Automation",
+    "Name": "Azure AI Export Import Automation",
     "OriginatingVersion": "1.334",
     "ParserErrorCount": 0,
     "ShowStatusBar": false
   },
   "PublishInfo": {
-    "AppName": "bc251f07-6d52-41ab-bf29-bc772ea86474",
+    "AppName": "Azure AI Export Import Automation",
     "BackgroundColor": "RGBA(0,176,240,1)",
     "IconColor": "RGBA(255,255,255,1)",
     "IconName": "Edit",
@@ -148,6 +149,7 @@
     "ICEGATESB",
     "ICEGATEBOE",
     "SEZBillOfExport",
+    "SEZBillOfExportDuplicateTest",
     "SEZBOE"
   ]
 }

@@ -284,6 +284,7 @@
       "ispl_roslamtinr": "ROSL AMT INR",
       "ispl_roslamtinrconfidencescore": "ROSL AMT INR Confidence Score",
       "ispl_sbdate": "SB Date",
+      "ispl_sbdateconfidencescore": "SB Date Confidence Score",
       "ispl_sbdatefilter": "SB Date Filter",
       "ispl_sbno": "SB No",
       "ispl_sbnoconfidencescore": "SB NO Confidence Score",

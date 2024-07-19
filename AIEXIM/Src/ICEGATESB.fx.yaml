@@ -13542,6 +13542,1234 @@ ICEGATESB As screen:
         Y: =170
         ZIndex: =44
 
+        DataCard1 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =48
+            Width: =720
+            X: =0
+            Y: =0
+            ZIndex: =1
+
+            Label12 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =38
+                Text: ="Document Details"
+                Width: =179
+                X: =29
+                Y: =15
+                ZIndex: =2
+
+        RequestNoID_DataCard1 As typedDataCard.textualEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_requestnoid"
+            Default: =ThisItem.RequestNoID
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_requestnoid)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_requestnoid)
+            Required: =false
+            Update: =DataCardValue18.Text
+            Width: =320
+            X: =0
+            Y: =1
+            ZIndex: =1
+
+            DataCardKey20 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue18 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
+                ZIndex: =2
+
+            ErrorMessage20 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue18.Y + DataCardValue18.Height
+                ZIndex: =3
+
+            StarVisible20 As label:
+                Align: =Align.Center
+                Height: =DataCardKey20.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey20.Y
+                ZIndex: =4
+
+            Confidence As label:
+                Color: =If(Value(Confidence.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Request ID Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =140
+                Y: =10
+                ZIndex: =5
+
+        "'LEO Date_DataCard1' As typedDataCard.dateTimeEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_leodate"
+            Default: =ThisItem.'LEO Date'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_leodate)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =If(Not IsBlank(DateValue2.SelectedDate), DateValue2.SelectedDate, 0)
+            Width: =320
+            X: =0
+            Y: =2
+            ZIndex: =1
+
+            DataCardKey17 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DateValue2 As datepicker:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
+                ZIndex: =2
+
+            Separator2 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    =":"
+                Width: =10
+                Wrap: =false
+                X: =
+                Y: =
+                ZIndex: =4
+
+            ErrorMessage17 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =
+                ZIndex: =6
+
+            StarVisible17 As label:
+                Align: =Align.Center
+                Height: =DataCardKey17.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey17.Y
+                ZIndex: =7
+
+            Confidence_1 As label:
+                Color: =If(Value(Confidence_1.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'LEO Date Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =110
+                Y: =10
+                ZIndex: =8
+
+        "'SB Date_DataCard1' As typedDataCard.dateTimeEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_sbdate"
+            Default: =ThisItem.'SB Date'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_sbdate)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =If(Not IsBlank(DateValue1.SelectedDate), DateValue1.SelectedDate, 0)
+            Width: =320
+            X: =0
+            Y: =3
+            ZIndex: =1
+
+            DataCardKey6 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DateValue1 As datepicker:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
+                ZIndex: =2
+
+            Separator1 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    =":"
+                Width: =10
+                Wrap: =false
+                X: =
+                Y: =
+                ZIndex: =4
+
+            ErrorMessage6 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =
+                ZIndex: =6
+
+            StarVisible6 As label:
+                Align: =Align.Center
+                Height: =DataCardKey6.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey6.Y
+                ZIndex: =7
+
+        DataCard2 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =1
+            Y: =5
+            ZIndex: =1
+
+            Label13 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Status"
+                X: =27
+                Y: =30
+                ZIndex: =1
+
+            Label2 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Height: =38
+                Size: =14
+                Text: ="PART - I - SHIPPING BILL SUMMARY"
+                Width: =332
+                X: =27
+                ZIndex: =2
+
+        "'Country Of Discharge_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_countryofdischarge"
+            Default: =ThisItem.'Country Of Discharge'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_countryofdischarge)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_countryofdischarge)
+            Required: =false
+            Update: =DataCardValue8.Text
+            Width: =320
+            X: =0
+            Y: =14
+            ZIndex: =1
+
+            DataCardKey24 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue8 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey24.Y + DataCardKey24.Height + 5
+                ZIndex: =2
+
+            ErrorMessage24 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue8.Y + DataCardValue8.Height
+                ZIndex: =3
+
+            StarVisible24 As label:
+                Align: =Align.Center
+                Height: =DataCardKey24.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey24.Y
+                ZIndex: =4
+
+            Confidence_22 As label:
+                Color: =If(Value(Confidence_22.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Country of Discharge Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =210
+                Y: =10
+                ZIndex: =5
+
+        DataCard3 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =700
+            X: =0
+            Y: =15
+            ZIndex: =1
+
+            Label14 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Declaran Details"
+                Width: =160
+                X: =26
+                Y: =21
+                ZIndex: =1
+
+        DataCard5 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =22
+            ZIndex: =1
+
+            Label16 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Value Summary"
+                X: =30
+                Y: =15
+                ZIndex: =1
+
+        "'Insurance Value INR ValSummary_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_insurancevalueinrvalsummary"
+            Default: =ThisItem.'Insurance Value INR ValSummary'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_insurancevalueinrvalsummary)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_insurancevalueinrvalsummary)
+            Required: =false
+            Update: =DataCardValue16.Text
+            Width: =320
+            X: =0
+            Y: =24
+            ZIndex: =1
+
+            DataCardKey69 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue16 As text:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey69.Y + DataCardKey69.Height + 5
+                ZIndex: =2
+
+            ErrorMessage69 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue16.Y + DataCardValue16.Height
+                ZIndex: =3
+
+            StarVisible69 As label:
+                Align: =Align.Center
+                Height: =DataCardKey69.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey69.Y
+                ZIndex: =4
+
+            Confidence_37 As label:
+                Color: =If(Value(Confidence_37.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Insurance Value INR ValSummary Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =280
+                Y: =10
+                ZIndex: =5
+
+        DataCard6 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =28
+            ZIndex: =1
+
+            Label17 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="EX. PR."
+                X: =30
+                Y: =15
+                ZIndex: =1
+
+        DataCard7 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =32
+            ZIndex: =1
+
+            Label18 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Manifest Details"
+                Width: =160
+                X: =30
+                Y: =20
+                ZIndex: =1
+
+        DataCard8 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =37
+            ZIndex: =1
+
+            "'Invoice Summary' As label":
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Invoice Summary"
+                Width: =200
+                X: =30
+                Y: =20
+                ZIndex: =1
+
+        DataCard9 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =40
+            ZIndex: =1
+
+            Label21 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Equipment Details"
+                Width: =200
+                X: =26
+                Y: =18
+                ZIndex: =1
+
+        DataCard10 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =43
+            ZIndex: =1
+
+            Label22 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Challan Details"
+                X: =30
+                Y: =20
+                ZIndex: =1
+
+        DataCard11 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =60
+            Width: =720
+            X: =0
+            Y: =46
+            ZIndex: =1
+
+            Label23 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Annex Details"
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+        DataCard12 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =50
+            ZIndex: =1
+
+            Label24 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Process Details"
+                X: =33
+                Y: =19
+                ZIndex: =1
+
+        "'BRC Realisation Dt_DataCard1' As typedDataCard.dateTimeEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_brcrealisationdt"
+            Default: =ThisItem.'BRC Realisation Dt'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_brcrealisationdt)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =If(Not IsBlank(DateValue4.SelectedDate), DateValue4.SelectedDate, 0)
+            Width: =320
+            X: =0
+            Y: =55
+            ZIndex: =1
+
+            DataCardKey54 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DateValue4 As datepicker:
+                AccessibleLabel: ="TEST"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                DefaultDate: =Parent.Default
+                DisplayMode: =Parent.DisplayMode
+                EndYear: =Year(Today())+100
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                IsEditable: =true
+                PaddingBottom: =0
+                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
+                StartYear: =1899
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
+                ZIndex: =2
+
+            Separator6 As label:
+                Align: =Align.Center
+                FontWeight: =FontWeight.Bold
+                Height: =
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: |-
+                    =":"
+                Width: =10
+                Wrap: =false
+                X: =
+                Y: =
+                ZIndex: =4
+
+            ErrorMessage54 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =
+                ZIndex: =6
+
+            StarVisible54 As label:
+                Align: =Align.Center
+                Height: =DataCardKey54.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey54.Y
+                ZIndex: =7
+
+            Confidence_82 As label:
+                Color: =If(Value(Confidence_82.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'BRC Realization Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =190
+                Y: =10
+                ZIndex: =8
+
+        DataCard13 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =56
+            ZIndex: =1
+
+            Label25 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Size: =14
+                Text: |-
+                    ="PART - II - INVOICE DETAILS
+                    "
+                Width: =289
+                X: =29
+                Y: =20
+                ZIndex: =1
+
+            Label26 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="REF."
+                X: =28
+                Y: =60
+                ZIndex: =2
+
+        DataCard15 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =63
+            ZIndex: =1
+
+            Label28 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Value Details"
+                X: =40
+                Y: =20
+                ZIndex: =1
+
+        "'Exchange Rate Val Dtls_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_exchangeratevaldtls"
+            Default: =ThisItem.'Exchange Rate Val Dtls'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_exchangeratevaldtls)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_exchangeratevaldtls)
+            Required: =false
+            Update: =DataCardValue148.Text
+            Width: =320
+            X: =0
+            Y: =68
+            ZIndex: =1
+
+            DataCardKey25 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue148 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey25.Y + DataCardKey25.Height + 5
+                ZIndex: =2
+
+            ErrorMessage25 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue148.Y + DataCardValue148.Height
+                ZIndex: =3
+
+            StarVisible25 As label:
+                Align: =Align.Center
+                Height: =DataCardKey25.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey25.Y
+                ZIndex: =4
+
+            Confidence_102 As label:
+                Color: =If(Value(Confidence_102.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'Exchange Rate Val Dtls Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =220
+                Y: =10
+                ZIndex: =5
+
+        DataCard14 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =69
+            ZIndex: =1
+
+            Label29 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Transaction Parties"
+                Width: =210
+                X: =30
+                Y: =16
+                ZIndex: =1
+
+        DataCard16 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =74
+            ZIndex: =1
+
+            Label30 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="License Details"
+                X: =29
+                Y: =18
+                ZIndex: =1
+
+        INVSN_DataCard1 As typedDataCard.textualMultiLineEditCard:
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_invsn"
+            Default: =ThisItem.INVSN
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_invsn)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            Required: =false
+            Update: =DataCardValue180.Text
+            Width: =320
+            X: =0
+            Y: =75
+            ZIndex: =1
+
+            DataCardKey178 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue180 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                Mode: =TextMode.MultiLine
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey178.Y + DataCardKey178.Height + 5
+                ZIndex: =2
+
+            ErrorMessage178 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue180.Y + DataCardValue180.Height
+                ZIndex: =3
+
+            StarVisible178 As label:
+                Align: =Align.Center
+                Height: =DataCardKey178.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey178.Y
+                ZIndex: =4
+
+            Confidence_110 As label:
+                Color: =If(Value(Confidence_110.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'INVSN Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =90
+                Y: =10
+                ZIndex: =5
+
+        DataCard17 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =70
+            Width: =720
+            X: =0
+            Y: =82
+            ZIndex: =1
+
+            Label31 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="Jobbing Details"
+                X: =36
+                Y: =19
+                ZIndex: =1
+
+        DataCard18 As typedDataCard.blankCard:
+            BorderStyle: =BorderStyle.Solid
+            DisplayMode: =DisplayMode.Edit
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =86
+            Width: =720
+            X: =0
+            Y: =86
+            ZIndex: =1
+
+            Label32 As label:
+                Color: =RGBA(12, 77, 162, 1)
+                FontWeight: =FontWeight.Bold
+                Text: ="RODTEP Details"
+                X: =27
+                Y: =21
+                ZIndex: =1
+
+        "'INV Sr No_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_invsrno"
+            Default: =ThisItem.'INV Sr No'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_invsrno)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invsrno)
+            Required: =false
+            Update: =DataCardValue181.Text
+            Width: =320
+            X: =0
+            Y: =87
+            ZIndex: =1
+
+            DataCardKey182 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue181 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey182.Y + DataCardKey182.Height + 5
+                ZIndex: =2
+
+            ErrorMessage182 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue181.Y + DataCardValue181.Height
+                ZIndex: =3
+
+            StarVisible182 As label:
+                Align: =Align.Center
+                Height: =DataCardKey182.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey182.Y
+                ZIndex: =4
+
+            Confidence_129 As label:
+                Color: =If(Value(Confidence_129.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'INV Sr No Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =120
+                Y: =10
+                ZIndex: =5
+
+        "'No of Units_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_noofunits"
+            Default: =ThisItem.'No of Units'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_noofunits)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_noofunits)
+            Required: =false
+            Update: =DataCardValue176.Text
+            Width: =320
+            X: =0
+            Y: =89
+            ZIndex: =1
+
+            DataCardKey158 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue176 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey158.Y + DataCardKey158.Height + 5
+                ZIndex: =2
+
+            ErrorMessage158 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue176.Y + DataCardValue176.Height
+                ZIndex: =3
+
+            StarVisible158 As label:
+                Align: =Align.Center
+                Height: =DataCardKey158.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey158.Y
+                ZIndex: =4
+
+        "'RODTEP Value_DataCard1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_rodtepvalue"
+            Default: =ThisItem.'RODTEP Value'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_rodtepvalue)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_rodtepvalue)
+            Required: =false
+            Update: =DataCardValue156.Text
+            Width: =320
+            X: =1
+            Y: =89
+            ZIndex: =1
+
+            DataCardKey150 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue156 As text:
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =10
+                RadiusBottomRight: =10
+                RadiusTopLeft: =10
+                RadiusTopRight: =10
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey150.Y + DataCardKey150.Height + 5
+                ZIndex: =2
+
+            ErrorMessage150 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue156.Y + DataCardValue156.Height
+                ZIndex: =3
+
+            StarVisible150 As label:
+                Align: =Align.Center
+                Height: =DataCardKey150.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey150.Y
+                ZIndex: =4
+
+            Confidence_133 As label:
+                Color: =If(Value(Confidence_133.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
+                Height: =33
+                Size: =10
+                Text: =RoundUp(ThisItem.'RODTEP Value Confidence Score'*100,0) & "%"
+                Width: =50
+                X: =160
+                Y: =10
+                ZIndex: =5
+
         "'AD Code Confidence Score_DataCard4' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_adcodeconfidencescore"
@@ -23615,1234 +24843,6 @@ ICEGATESB As screen:
                 Wrap: =false
                 Y: =DataCardKey1312.Y
                 ZIndex: =4
-
-        DataCard1 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(255, 255, 255, 1)
-            Height: =48
-            Width: =720
-            X: =0
-            Y: =0
-            ZIndex: =1
-
-            Label12 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =38
-                Text: ="Document Details"
-                Width: =179
-                X: =29
-                Y: =15
-                ZIndex: =2
-
-        RequestNoID_DataCard1 As typedDataCard.textualEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_requestnoid"
-            Default: =ThisItem.RequestNoID
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_requestnoid)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_requestnoid)
-            Required: =false
-            Update: =DataCardValue18.Text
-            Width: =320
-            X: =0
-            Y: =1
-            ZIndex: =1
-
-            DataCardKey20 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue18 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey20.Y + DataCardKey20.Height + 5
-                ZIndex: =2
-
-            ErrorMessage20 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue18.Y + DataCardValue18.Height
-                ZIndex: =3
-
-            StarVisible20 As label:
-                Align: =Align.Center
-                Height: =DataCardKey20.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey20.Y
-                ZIndex: =4
-
-            Confidence As label:
-                Color: =If(Value(Confidence.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'Request ID Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =140
-                Y: =10
-                ZIndex: =5
-
-        "'LEO Date_DataCard1' As typedDataCard.dateTimeEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_leodate"
-            Default: =ThisItem.'LEO Date'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_leodate)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =If(Not IsBlank(DateValue2.SelectedDate), DateValue2.SelectedDate, 0)
-            Width: =320
-            X: =0
-            Y: =2
-            ZIndex: =1
-
-            DataCardKey17 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DateValue2 As datepicker:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey17.Y + DataCardKey17.Height + 5
-                ZIndex: =2
-
-            Separator2 As label:
-                Align: =Align.Center
-                FontWeight: =FontWeight.Bold
-                Height: =
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    =":"
-                Width: =10
-                Wrap: =false
-                X: =
-                Y: =
-                ZIndex: =4
-
-            ErrorMessage17 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =
-                ZIndex: =6
-
-            StarVisible17 As label:
-                Align: =Align.Center
-                Height: =DataCardKey17.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey17.Y
-                ZIndex: =7
-
-            Confidence_1 As label:
-                Color: =If(Value(Confidence_1.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'LEO Date Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =110
-                Y: =10
-                ZIndex: =8
-
-        "'SB Date_DataCard1' As typedDataCard.dateTimeEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_sbdate"
-            Default: =ThisItem.'SB Date'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_sbdate)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =If(Not IsBlank(DateValue1.SelectedDate), DateValue1.SelectedDate, 0)
-            Width: =320
-            X: =0
-            Y: =3
-            ZIndex: =1
-
-            DataCardKey6 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DateValue1 As datepicker:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey6.Y + DataCardKey6.Height + 5
-                ZIndex: =2
-
-            Separator1 As label:
-                Align: =Align.Center
-                FontWeight: =FontWeight.Bold
-                Height: =
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    =":"
-                Width: =10
-                Wrap: =false
-                X: =
-                Y: =
-                ZIndex: =4
-
-            ErrorMessage6 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =
-                ZIndex: =6
-
-            StarVisible6 As label:
-                Align: =Align.Center
-                Height: =DataCardKey6.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey6.Y
-                ZIndex: =7
-
-        DataCard2 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =1
-            Y: =5
-            ZIndex: =1
-
-            Label13 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Status"
-                X: =27
-                Y: =30
-                ZIndex: =1
-
-            Label2 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Height: =38
-                Size: =14
-                Text: ="PART - I - SHIPPING BILL SUMMARY"
-                Width: =332
-                X: =27
-                ZIndex: =2
-
-        "'Country Of Discharge_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_countryofdischarge"
-            Default: =ThisItem.'Country Of Discharge'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_countryofdischarge)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_countryofdischarge)
-            Required: =false
-            Update: =DataCardValue8.Text
-            Width: =320
-            X: =0
-            Y: =14
-            ZIndex: =1
-
-            DataCardKey24 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue8 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey24.Y + DataCardKey24.Height + 5
-                ZIndex: =2
-
-            ErrorMessage24 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue8.Y + DataCardValue8.Height
-                ZIndex: =3
-
-            StarVisible24 As label:
-                Align: =Align.Center
-                Height: =DataCardKey24.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey24.Y
-                ZIndex: =4
-
-            Confidence_22 As label:
-                Color: =If(Value(Confidence_22.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'Country of Discharge Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =210
-                Y: =10
-                ZIndex: =5
-
-        DataCard3 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =700
-            X: =0
-            Y: =15
-            ZIndex: =1
-
-            Label14 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Declaran Details"
-                Width: =160
-                X: =26
-                Y: =21
-                ZIndex: =1
-
-        DataCard5 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =22
-            ZIndex: =1
-
-            Label16 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Value Summary"
-                X: =30
-                Y: =15
-                ZIndex: =1
-
-        "'Insurance Value INR ValSummary_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_insurancevalueinrvalsummary"
-            Default: =ThisItem.'Insurance Value INR ValSummary'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_insurancevalueinrvalsummary)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_insurancevalueinrvalsummary)
-            Required: =false
-            Update: =DataCardValue16.Text
-            Width: =320
-            X: =0
-            Y: =24
-            ZIndex: =1
-
-            DataCardKey69 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue16 As text:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey69.Y + DataCardKey69.Height + 5
-                ZIndex: =2
-
-            ErrorMessage69 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue16.Y + DataCardValue16.Height
-                ZIndex: =3
-
-            StarVisible69 As label:
-                Align: =Align.Center
-                Height: =DataCardKey69.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey69.Y
-                ZIndex: =4
-
-            Confidence_37 As label:
-                Color: =If(Value(Confidence_37.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'Insurance Value INR ValSummary Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =280
-                Y: =10
-                ZIndex: =5
-
-        DataCard6 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =28
-            ZIndex: =1
-
-            Label17 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="EX. PR."
-                X: =30
-                Y: =15
-                ZIndex: =1
-
-        DataCard7 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =32
-            ZIndex: =1
-
-            Label18 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Manifest Details"
-                Width: =160
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-        DataCard8 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =37
-            ZIndex: =1
-
-            "'Invoice Summary' As label":
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Invoice Summary"
-                Width: =200
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-        DataCard9 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =40
-            ZIndex: =1
-
-            Label21 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Equipment Details"
-                Width: =200
-                X: =26
-                Y: =18
-                ZIndex: =1
-
-        DataCard10 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =43
-            ZIndex: =1
-
-            Label22 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Challan Details"
-                X: =30
-                Y: =20
-                ZIndex: =1
-
-        DataCard11 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =60
-            Width: =720
-            X: =0
-            Y: =46
-            ZIndex: =1
-
-            Label23 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Annex Details"
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-        DataCard12 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =50
-            ZIndex: =1
-
-            Label24 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Process Details"
-                X: =33
-                Y: =19
-                ZIndex: =1
-
-        "'BRC Realisation Dt_DataCard1' As typedDataCard.dateTimeEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_brcrealisationdt"
-            Default: =ThisItem.'BRC Realisation Dt'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_brcrealisationdt)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =If(Not IsBlank(DateValue4.SelectedDate), DateValue4.SelectedDate, 0)
-            Width: =320
-            X: =0
-            Y: =55
-            ZIndex: =1
-
-            DataCardKey54 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DateValue4 As datepicker:
-                AccessibleLabel: ="TEST"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                DefaultDate: =Parent.Default
-                DisplayMode: =Parent.DisplayMode
-                EndYear: =Year(Today())+100
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                IsEditable: =true
-                PaddingBottom: =0
-                PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
-                StartYear: =1899
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey54.Y + DataCardKey54.Height + 5
-                ZIndex: =2
-
-            Separator6 As label:
-                Align: =Align.Center
-                FontWeight: =FontWeight.Bold
-                Height: =
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: |-
-                    =":"
-                Width: =10
-                Wrap: =false
-                X: =
-                Y: =
-                ZIndex: =4
-
-            ErrorMessage54 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =
-                ZIndex: =6
-
-            StarVisible54 As label:
-                Align: =Align.Center
-                Height: =DataCardKey54.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey54.Y
-                ZIndex: =7
-
-            Confidence_82 As label:
-                Color: =If(Value(Confidence_82.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'BRC Realization Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =190
-                Y: =10
-                ZIndex: =8
-
-        DataCard13 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =56
-            ZIndex: =1
-
-            Label25 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Size: =14
-                Text: |-
-                    ="PART - II - INVOICE DETAILS
-                    "
-                Width: =289
-                X: =29
-                Y: =20
-                ZIndex: =1
-
-            Label26 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="REF."
-                X: =28
-                Y: =60
-                ZIndex: =2
-
-        DataCard15 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =63
-            ZIndex: =1
-
-            Label28 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Value Details"
-                X: =40
-                Y: =20
-                ZIndex: =1
-
-        "'Exchange Rate Val Dtls_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_exchangeratevaldtls"
-            Default: =ThisItem.'Exchange Rate Val Dtls'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_exchangeratevaldtls)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_exchangeratevaldtls)
-            Required: =false
-            Update: =DataCardValue148.Text
-            Width: =320
-            X: =0
-            Y: =68
-            ZIndex: =1
-
-            DataCardKey25 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue148 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey25.Y + DataCardKey25.Height + 5
-                ZIndex: =2
-
-            ErrorMessage25 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue148.Y + DataCardValue148.Height
-                ZIndex: =3
-
-            StarVisible25 As label:
-                Align: =Align.Center
-                Height: =DataCardKey25.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey25.Y
-                ZIndex: =4
-
-            Confidence_102 As label:
-                Color: =If(Value(Confidence_102.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'Exchange Rate Val Dtls Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =220
-                Y: =10
-                ZIndex: =5
-
-        DataCard14 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =69
-            ZIndex: =1
-
-            Label29 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Transaction Parties"
-                Width: =210
-                X: =30
-                Y: =16
-                ZIndex: =1
-
-        DataCard16 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =74
-            ZIndex: =1
-
-            Label30 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="License Details"
-                X: =29
-                Y: =18
-                ZIndex: =1
-
-        INVSN_DataCard1 As typedDataCard.textualMultiLineEditCard:
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_invsn"
-            Default: =ThisItem.INVSN
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_invsn)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            Required: =false
-            Update: =DataCardValue180.Text
-            Width: =320
-            X: =0
-            Y: =75
-            ZIndex: =1
-
-            DataCardKey178 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue180 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                Mode: =TextMode.MultiLine
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey178.Y + DataCardKey178.Height + 5
-                ZIndex: =2
-
-            ErrorMessage178 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue180.Y + DataCardValue180.Height
-                ZIndex: =3
-
-            StarVisible178 As label:
-                Align: =Align.Center
-                Height: =DataCardKey178.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey178.Y
-                ZIndex: =4
-
-            Confidence_110 As label:
-                Color: =If(Value(Confidence_110.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'INVSN Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =90
-                Y: =10
-                ZIndex: =5
-
-        DataCard17 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =70
-            Width: =720
-            X: =0
-            Y: =82
-            ZIndex: =1
-
-            Label31 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="Jobbing Details"
-                X: =36
-                Y: =19
-                ZIndex: =1
-
-        DataCard18 As typedDataCard.blankCard:
-            BorderStyle: =BorderStyle.Solid
-            DisplayMode: =DisplayMode.Edit
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =86
-            Width: =720
-            X: =0
-            Y: =86
-            ZIndex: =1
-
-            Label32 As label:
-                Color: =RGBA(12, 77, 162, 1)
-                FontWeight: =FontWeight.Bold
-                Text: ="RODTEP Details"
-                X: =27
-                Y: =21
-                ZIndex: =1
-
-        "'INV Sr No_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_invsrno"
-            Default: =ThisItem.'INV Sr No'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_invsrno)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_invsrno)
-            Required: =false
-            Update: =DataCardValue181.Text
-            Width: =320
-            X: =0
-            Y: =87
-            ZIndex: =1
-
-            DataCardKey182 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue181 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey182.Y + DataCardKey182.Height + 5
-                ZIndex: =2
-
-            ErrorMessage182 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue181.Y + DataCardValue181.Height
-                ZIndex: =3
-
-            StarVisible182 As label:
-                Align: =Align.Center
-                Height: =DataCardKey182.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey182.Y
-                ZIndex: =4
-
-            Confidence_129 As label:
-                Color: =If(Value(Confidence_129.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'INV Sr No Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =120
-                Y: =10
-                ZIndex: =5
-
-        "'No of Units_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_noofunits"
-            Default: =ThisItem.'No of Units'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_noofunits)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_noofunits)
-            Required: =false
-            Update: =DataCardValue176.Text
-            Width: =320
-            X: =0
-            Y: =89
-            ZIndex: =1
-
-            DataCardKey158 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue176 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey158.Y + DataCardKey158.Height + 5
-                ZIndex: =2
-
-            ErrorMessage158 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue176.Y + DataCardValue176.Height
-                ZIndex: =3
-
-            StarVisible158 As label:
-                Align: =Align.Center
-                Height: =DataCardKey158.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey158.Y
-                ZIndex: =4
-
-        "'RODTEP Value_DataCard1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_rodtepvalue"
-            Default: =ThisItem.'RODTEP Value'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Shipping Bill - Summary Reports'],DataSourceInfo.DisplayName,ispl_rodtepvalue)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Shipping Bill - Summary Reports'], DataSourceInfo.MaxLength, ispl_rodtepvalue)
-            Required: =false
-            Update: =DataCardValue156.Text
-            Width: =320
-            X: =1
-            Y: =89
-            ZIndex: =1
-
-            DataCardKey150 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue156 As text:
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                Fill: =If(varEditForm,Color.White,RGBA(237, 237, 237, 1))
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =10
-                RadiusBottomRight: =10
-                RadiusTopLeft: =10
-                RadiusTopRight: =10
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey150.Y + DataCardKey150.Height + 5
-                ZIndex: =2
-
-            ErrorMessage150 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue156.Y + DataCardValue156.Height
-                ZIndex: =3
-
-            StarVisible150 As label:
-                Align: =Align.Center
-                Height: =DataCardKey150.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey150.Y
-                ZIndex: =4
-
-            Confidence_133 As label:
-                Color: =If(Value(Confidence_133.Text)<90%,RGBA(217, 30, 24, 1),RGBA(6,158,22,100))
-                Height: =33
-                Size: =10
-                Text: =RoundUp(ThisItem.'RODTEP Value Confidence Score'*100,0) & "%"
-                Width: =50
-                X: =160
-                Y: =10
-                ZIndex: =5
 
         "'Document Sent By_DataCard1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid

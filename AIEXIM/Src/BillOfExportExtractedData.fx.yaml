@@ -312,6 +312,8 @@ BillOfExportExtractedData As screen:
                     ).'Attachment File'.Value
                 );
                 Navigate(SEZBillOfExport);
+                
+                UpdateContext({VarShowGallerySEZBillofExport:true})
             PaddingBottom: =4
             PaddingLeft: =4
             PaddingRight: =4
