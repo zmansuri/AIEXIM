@@ -308,6 +308,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey1160_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -328,6 +329,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -388,6 +390,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey1161_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -408,6 +411,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -458,6 +462,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey1162_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -478,6 +483,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -538,6 +544,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey1163_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -558,6 +565,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -618,6 +626,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey1164_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -638,6 +647,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -698,6 +708,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey1165_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -718,6 +729,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -778,6 +790,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey2_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -798,6 +811,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -858,6 +872,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey10_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -878,6 +893,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -937,6 +953,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey348_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -958,6 +975,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1018,6 +1036,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey349_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1038,6 +1057,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1086,7 +1106,7 @@ SEZBillOfExportDuplicateTest As screen:
             DisplayMode: =Parent.DisplayMode
             DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_consigneeaddressfirstline)
             Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
+            Height: =143
             Required: =false
             Update: =DataCardValue348_1.Text
             Width: =354
@@ -1097,6 +1117,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey350_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1111,13 +1132,14 @@ SEZBillOfExportDuplicateTest As screen:
                 DelayOutput: =true
                 DisplayMode: =Parent.DisplayMode
                 Fill: =If(varEditFormBillofExport,Color.White,RGBA(237, 237, 237, 1))
-                Height: =38
+                Height: =92
                 Mode: =TextMode.MultiLine
                 PaddingLeft: =5
                 RadiusBottomLeft: =10
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1178,6 +1200,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey351_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1198,6 +1221,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1258,6 +1282,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey352_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1278,6 +1303,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1338,6 +1364,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey353_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1358,6 +1385,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1418,6 +1446,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey354_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1438,6 +1467,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1498,6 +1528,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey355_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1518,6 +1549,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1578,6 +1610,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey356_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1598,6 +1631,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1648,6 +1682,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey357_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1668,6 +1703,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1718,6 +1754,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey358_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1738,6 +1775,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1788,6 +1826,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey359_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1808,6 +1847,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1858,6 +1898,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey360_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1878,6 +1919,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -1938,6 +1980,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey361_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -1958,6 +2001,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2018,6 +2062,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey362_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2038,6 +2083,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2098,6 +2144,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey363_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2118,6 +2165,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2178,6 +2226,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey364_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2198,6 +2247,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2258,6 +2308,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey365_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2278,6 +2329,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2338,6 +2390,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey366_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2358,6 +2411,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2418,6 +2472,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey367_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2438,6 +2493,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2498,6 +2554,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey368_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2518,6 +2575,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2578,6 +2636,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey369_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2598,6 +2657,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2658,6 +2718,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey370_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2678,6 +2739,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2738,6 +2800,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey371_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2758,6 +2821,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2818,6 +2882,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey372_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2838,6 +2903,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2898,6 +2964,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey373_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2918,6 +2985,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -2978,6 +3046,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey374_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -2998,6 +3067,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3058,6 +3128,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey375_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3078,6 +3149,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3138,6 +3210,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey376_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3158,6 +3231,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3218,6 +3292,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey377_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3238,6 +3313,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3298,6 +3374,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey378_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3318,6 +3395,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3378,6 +3456,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey379_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3398,6 +3477,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3458,6 +3538,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey380_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3478,6 +3559,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =0
                 RadiusTopLeft: =0
                 RadiusTopRight: =0
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3538,6 +3620,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey381_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3558,6 +3641,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3608,6 +3692,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey382_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3628,6 +3713,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3688,6 +3774,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey383_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3708,6 +3795,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3768,6 +3856,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey384_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3788,6 +3877,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3848,6 +3938,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey385_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3868,6 +3959,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3918,6 +4010,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey386_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -3938,6 +4031,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -3988,6 +4082,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey388_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4008,6 +4103,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4068,6 +4164,7 @@ SEZBillOfExportDuplicateTest As screen:
             DataCardKey389_1 As label:
                 AutoHeight: =true
                 Height: =34
+                Size: =10
                 Text: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 Wrap: =false
@@ -4088,6 +4185,7 @@ SEZBillOfExportDuplicateTest As screen:
                 RadiusBottomRight: =10
                 RadiusTopLeft: =10
                 RadiusTopRight: =10
+                Size: =10
                 Tooltip: =Parent.DisplayName
                 Width: =Parent.Width - 60
                 X: =30
@@ -4269,76 +4367,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey599_1.Y
                 ZIndex: =4
 
-        "'AD Name Address Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_adnameaddressaccuracyscore"
-            Default: =ThisItem.'AD Name Address Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_adnameaddressaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_adnameaddressaccuracyscore)
-            Required: =false
-            Update: =DataCardValue919_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =25
-            ZIndex: =1
-
-            DataCardKey924_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue919_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey924_1.Y + DataCardKey924_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage924_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue919_1.Y + DataCardValue919_1.Height
-                ZIndex: =3
-
-            StarVisible924_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey924_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey924_1.Y
-                ZIndex: =4
-
         "'All Industry DBK Rate Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_allindustrydbkrateaccuracyscore"
@@ -4407,76 +4435,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey936_1.Y
-                ZIndex: =4
-
-        "'Bill Of Export Date Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_billofexportdateaccuracyscore"
-            Default: =ThisItem.'Bill Of Export Date Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_billofexportdateaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_billofexportdateaccuracyscore)
-            Required: =false
-            Update: =DataCardValue932_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =26
-            ZIndex: =1
-
-            DataCardKey937_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue932_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey937_1.Y + DataCardKey937_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage937_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue932_1.Y + DataCardValue932_1.Height
-                ZIndex: =3
-
-            StarVisible937_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey937_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey937_1.Y
                 ZIndex: =4
 
         "'Bill Of Export No Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -4549,76 +4507,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey938_1.Y
                 ZIndex: =4
 
-        "'Bond LUT Date Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_bondlutdateaccuracyscore"
-            Default: =ThisItem.'Bond LUT Date Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_bondlutdateaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_bondlutdateaccuracyscore)
-            Required: =false
-            Update: =DataCardValue934_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =27
-            ZIndex: =1
-
-            DataCardKey939_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue934_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey939_1.Y + DataCardKey939_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage939_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue934_1.Y + DataCardValue934_1.Height
-                ZIndex: =3
-
-            StarVisible939_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey939_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey939_1.Y
-                ZIndex: =4
-
         "'Bond LUT No Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_bondlutnoaccuracyscore"
@@ -4687,76 +4575,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey940_1.Y
-                ZIndex: =4
-
-        "'Commission(FC)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_commissionfcaccuracyscore"
-            Default: =ThisItem.'Commission(FC)Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_commissionfcaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_commissionfcaccuracyscore)
-            Required: =false
-            Update: =DataCardValue936_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =28
-            ZIndex: =1
-
-            DataCardKey941_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue936_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey941_1.Y + DataCardKey941_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage941_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue936_1.Y + DataCardValue936_1.Height
-                ZIndex: =3
-
-            StarVisible941_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey941_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey941_1.Y
                 ZIndex: =4
 
         "'Commission(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -4829,76 +4647,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey942_1.Y
                 ZIndex: =4
 
-        "'Consignee Address Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_consigneeaddressaccuracyscore"
-            Default: =ThisItem.'Consignee Address Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_consigneeaddressaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_consigneeaddressaccuracyscore)
-            Required: =false
-            Update: =DataCardValue938_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =29
-            ZIndex: =1
-
-            DataCardKey943_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue938_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey943_1.Y + DataCardKey943_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage943_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue938_1.Y + DataCardValue938_1.Height
-                ZIndex: =3
-
-            StarVisible943_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey943_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey943_1.Y
-                ZIndex: =4
-
         "'Consignee Name Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_consigneenameaccuracyscore"
@@ -4967,76 +4715,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1086_1.Y
-                ZIndex: =4
-
-        "'Currency Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_currencyaccuracyscore"
-            Default: =ThisItem.'Currency Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_currencyaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_currencyaccuracyscore)
-            Required: =false
-            Update: =DataCardValue940_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =30
-            ZIndex: =1
-
-            DataCardKey1087_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue940_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1087_1.Y + DataCardKey1087_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1087_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue940_1.Y + DataCardValue940_1.Height
-                ZIndex: =3
-
-            StarVisible1087_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1087_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1087_1.Y
                 ZIndex: =4
 
         "'Discount(FC)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -5109,76 +4787,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1088_1.Y
                 ZIndex: =4
 
-        "'Discount(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_discountinraccuracyscore"
-            Default: =ThisItem.'Discount(INR)Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_discountinraccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_discountinraccuracyscore)
-            Required: =false
-            Update: =DataCardValue942_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =31
-            ZIndex: =1
-
-            DataCardKey1089_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue942_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1089_1.Y + DataCardKey1089_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1089_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue942_1.Y + DataCardValue942_1.Height
-                ZIndex: =3
-
-            StarVisible1089_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1089_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1089_1.Y
-                ZIndex: =4
-
         "'Exchange Rate Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_exchangerateaccuracyscore"
@@ -5247,76 +4855,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1091_1.Y
-                ZIndex: =4
-
-        "'Exporter Address Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_exporteraddressaccuracyscore"
-            Default: =ThisItem.'Exporter Address Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_exporteraddressaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_exporteraddressaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1087_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =32
-            ZIndex: =1
-
-            DataCardKey1092_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1087_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1092_1.Y + DataCardKey1092_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1092_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1087_1.Y + DataCardValue1087_1.Height
-                ZIndex: =3
-
-            StarVisible1092_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1092_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1092_1.Y
                 ZIndex: =4
 
         "'Exporter Name Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -5389,76 +4927,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1099_1.Y
                 ZIndex: =4
 
-        "'Freight(FC) Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_freightfcaccuracyscore"
-            Default: =ThisItem.'Freight(FC) Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_freightfcaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_freightfcaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1095_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =33
-            ZIndex: =1
-
-            DataCardKey1100_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1095_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1100_1.Y + DataCardKey1100_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1100_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1095_1.Y + DataCardValue1095_1.Height
-                ZIndex: =3
-
-            StarVisible1100_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1100_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1100_1.Y
-                ZIndex: =4
-
         "'Freight(INR) Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_freightinraccuracyscore"
@@ -5527,76 +4995,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1101_1.Y
-                ZIndex: =4
-
-        "'Gross Weight Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_grossweightaccuracyscore"
-            Default: =ThisItem.'Gross Weight Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_grossweightaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_grossweightaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1097_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =34
-            ZIndex: =1
-
-            DataCardKey1102_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1097_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1102_1.Y + DataCardKey1102_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1102_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1097_1.Y + DataCardValue1097_1.Height
-                ZIndex: =3
-
-            StarVisible1102_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1102_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1102_1.Y
                 ZIndex: =4
 
         "'Gross Weight UQC Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -5669,76 +5067,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1103_1.Y
                 ZIndex: =4
 
-        "'GST Invoice No Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_gstinvoicenoaccuracyscore"
-            Default: =ThisItem.'GST Invoice No Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_gstinvoicenoaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_gstinvoicenoaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1099_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =35
-            ZIndex: =1
-
-            DataCardKey1104_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1099_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1104_1.Y + DataCardKey1104_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1104_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1099_1.Y + DataCardValue1099_1.Height
-                ZIndex: =3
-
-            StarVisible1104_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1104_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1104_1.Y
-                ZIndex: =4
-
         "'HSN Code Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_hsncodeaccuracyscore"
@@ -5807,76 +5135,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1105_1.Y
-                ZIndex: =4
-
-        "'Import Export Code No Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_importexportcodenoaccuracyscore"
-            Default: =ThisItem.'Import Export Code No Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_importexportcodenoaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_importexportcodenoaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1101_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =36
-            ZIndex: =1
-
-            DataCardKey1106_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1101_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1106_1.Y + DataCardKey1106_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1106_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1101_1.Y + DataCardValue1101_1.Height
-                ZIndex: =3
-
-            StarVisible1106_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1106_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1106_1.Y
                 ZIndex: =4
 
         "'Insurance(FC) Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -5949,76 +5207,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1107_1.Y
                 ZIndex: =4
 
-        "'Insurance(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_insuranceinraccuracyscore"
-            Default: =ThisItem.'Insurance(INR)Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_insuranceinraccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_insuranceinraccuracyscore)
-            Required: =false
-            Update: =DataCardValue1103_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =37
-            ZIndex: =1
-
-            DataCardKey1108_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1103_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1108_1.Y + DataCardKey1108_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1108_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1103_1.Y + DataCardValue1103_1.Height
-                ZIndex: =3
-
-            StarVisible1108_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1108_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1108_1.Y
-                ZIndex: =4
-
         "'Invoice Date Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_invoicedateaccuracyscore"
@@ -6087,76 +5275,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1109_1.Y
-                ZIndex: =4
-
-        "'Invoice value USD Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_invoicevalueusdaccuracyscore"
-            Default: =ThisItem.'Invoice value USD Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_invoicevalueusdaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_invoicevalueusdaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1105_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =38
-            ZIndex: =1
-
-            DataCardKey1110_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1105_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1110_1.Y + DataCardKey1110_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1110_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1105_1.Y + DataCardValue1105_1.Height
-                ZIndex: =3
-
-            StarVisible1110_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1110_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1110_1.Y
                 ZIndex: =4
 
         "'Land Cus Station Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -6229,76 +5347,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1111_1.Y
                 ZIndex: =4
 
-        "'License No Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_licensenoaccuracyscore"
-            Default: =ThisItem.'License No Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_licensenoaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_licensenoaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1107_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =39
-            ZIndex: =1
-
-            DataCardKey1112_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1107_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1112_1.Y + DataCardKey1112_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1112_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1107_1.Y + DataCardValue1107_1.Height
-                ZIndex: =3
-
-            StarVisible1112_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1112_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1112_1.Y
-                ZIndex: =4
-
         "'License Registration Date Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_licenseregistrationdateaccuracyscore"
@@ -6367,76 +5415,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1113_1.Y
-                ZIndex: =4
-
-        "'Name of Goods Exported Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_nameofgoodsexportedaccuracyscore"
-            Default: =ThisItem.'Name of Goods Exported Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_nameofgoodsexportedaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_nameofgoodsexportedaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1109_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =40
-            ZIndex: =1
-
-            DataCardKey1114_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1109_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1114_1.Y + DataCardKey1114_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1114_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1109_1.Y + DataCardValue1109_1.Height
-                ZIndex: =3
-
-            StarVisible1114_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1114_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1114_1.Y
                 ZIndex: =4
 
         "'Nature of Contract Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -6509,76 +5487,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1115_1.Y
                 ZIndex: =4
 
-        "'Originating From Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_originatingfromaccuracyscore"
-            Default: =ThisItem.'Originating From Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_originatingfromaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_originatingfromaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1111_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =41
-            ZIndex: =1
-
-            DataCardKey1116_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1111_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1116_1.Y + DataCardKey1116_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1116_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1111_1.Y + DataCardValue1111_1.Height
-                ZIndex: =3
-
-            StarVisible1116_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1116_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1116_1.Y
-                ZIndex: =4
-
         "'Other Deductions(FC)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_otherdeductionsfcaccuracyscore"
@@ -6647,76 +5555,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1117_1.Y
-                ZIndex: =4
-
-        "'Other Deductions(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_otherdeductionsinraccuracyscore"
-            Default: =ThisItem.'Other Deductions(INR)Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_otherdeductionsinraccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_otherdeductionsinraccuracyscore)
-            Required: =false
-            Update: =DataCardValue1113_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =42
-            ZIndex: =1
-
-            DataCardKey1118_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1113_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1118_1.Y + DataCardKey1118_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1118_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1113_1.Y + DataCardValue1113_1.Height
-                ZIndex: =3
-
-            StarVisible1118_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1118_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1118_1.Y
                 ZIndex: =4
 
         "'Other Discount(FC)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -6789,76 +5627,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1119_1.Y
                 ZIndex: =4
 
-        "'Other Discount(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_otherdiscountinraccuracyscore"
-            Default: =ThisItem.'Other Discount(INR)Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_otherdiscountinraccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_otherdiscountinraccuracyscore)
-            Required: =false
-            Update: =DataCardValue1115_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =43
-            ZIndex: =1
-
-            DataCardKey1120_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1115_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1120_1.Y + DataCardKey1120_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1120_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1115_1.Y + DataCardValue1115_1.Height
-                ZIndex: =3
-
-            StarVisible1120_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1120_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1120_1.Y
-                ZIndex: =4
-
         "'Place Of Delivery Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_placeofdeliveryaccuracyscore"
@@ -6927,76 +5695,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1121_1.Y
-                ZIndex: =4
-
-        "'Qty Kgs Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_qtykgsaccuracyscore"
-            Default: =ThisItem.'Qty Kgs Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_qtykgsaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_qtykgsaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1117_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =44
-            ZIndex: =1
-
-            DataCardKey1122_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1117_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1122_1.Y + DataCardKey1122_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1122_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1117_1.Y + DataCardValue1117_1.Height
-                ZIndex: =3
-
-            StarVisible1122_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1122_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1122_1.Y
                 ZIndex: =4
 
         "'Scheme Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -7069,76 +5767,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1123_1.Y
                 ZIndex: =4
 
-        "'Serial Number Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_serialnumberaccuracyscore"
-            Default: =ThisItem.'Serial Number Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_serialnumberaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_serialnumberaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1119_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =45
-            ZIndex: =1
-
-            DataCardKey1124_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1119_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1124_1.Y + DataCardKey1124_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1124_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1119_1.Y + DataCardValue1119_1.Height
-                ZIndex: =3
-
-            StarVisible1124_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1124_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1124_1.Y
-                ZIndex: =4
-
         "'State of Origin of goods Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_stateoforiginofgoodsaccuracyscore"
@@ -7207,76 +5835,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1125_1.Y
-                ZIndex: =4
-
-        "'Trade Classification Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_tradeclassificationaccuracyscore"
-            Default: =ThisItem.'Trade Classification Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_tradeclassificationaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_tradeclassificationaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1121_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =46
-            ZIndex: =1
-
-            DataCardKey1126_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1121_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1126_1.Y + DataCardKey1126_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1126_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1121_1.Y + DataCardValue1121_1.Height
-                ZIndex: =3
-
-            StarVisible1126_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1126_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1126_1.Y
                 ZIndex: =4
 
         "'UQC Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
@@ -7349,76 +5907,6 @@ SEZBillOfExportDuplicateTest As screen:
                 Y: =DataCardKey1127_1.Y
                 ZIndex: =4
 
-        "'Value in INR(Bill of exports)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
-            BorderStyle: =BorderStyle.Solid
-            DataField: ="ispl_valueininrbillofexportsaccuracyscore"
-            Default: =ThisItem.'Value in INR(Bill of exports)Accuracy Score'
-            DisplayMode: =Parent.DisplayMode
-            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_valueininrbillofexportsaccuracyscore)
-            Fill: =RGBA(0, 0, 0, 0)
-            Height: =50
-            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_valueininrbillofexportsaccuracyscore)
-            Required: =false
-            Update: =DataCardValue1123_1.Text
-            Visible: =false
-            Width: =354
-            X: =1
-            Y: =47
-            ZIndex: =1
-
-            DataCardKey1128_1 As label:
-                AutoHeight: =true
-                Height: =34
-                Text: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                Wrap: =false
-                X: =30
-                Y: =10
-                ZIndex: =1
-
-            DataCardValue1123_1 As text:
-                AccessibleLabel: ="test"
-                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
-                Default: =Parent.Default
-                DelayOutput: =true
-                DisplayMode: =Parent.DisplayMode
-                MaxLength: =Parent.MaxLength
-                PaddingLeft: =5
-                RadiusBottomLeft: =0
-                RadiusBottomRight: =0
-                RadiusTopLeft: =0
-                RadiusTopRight: =0
-                Tooltip: =Parent.DisplayName
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardKey1128_1.Y + DataCardKey1128_1.Height + 5
-                ZIndex: =2
-
-            ErrorMessage1128_1 As label:
-                AutoHeight: =true
-                Height: =10
-                Live: =Live.Assertive
-                PaddingBottom: =0
-                PaddingLeft: =0
-                PaddingRight: =0
-                PaddingTop: =0
-                Text: =Parent.Error
-                Visible: =Parent.DisplayMode=DisplayMode.Edit
-                Width: =Parent.Width - 60
-                X: =30
-                Y: =DataCardValue1123_1.Y + DataCardValue1123_1.Height
-                ZIndex: =3
-
-            StarVisible1128_1 As label:
-                Align: =Align.Center
-                Height: =DataCardKey1128_1.Height
-                Text: ="*"
-                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
-                Width: =30
-                Wrap: =false
-                Y: =DataCardKey1128_1.Y
-                ZIndex: =4
-
         "'Whether IGST Paid(Y-N)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
             BorderStyle: =BorderStyle.Solid
             DataField: ="ispl_whetherigstpaidynaccuracyscore"
@@ -7487,6 +5975,1616 @@ SEZBillOfExportDuplicateTest As screen:
                 Width: =30
                 Wrap: =false
                 Y: =DataCardKey1129_1.Y
+                ZIndex: =4
+
+        "'AD Name Address Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_adnameaddressaccuracyscore"
+            Default: =ThisItem.'AD Name Address Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_adnameaddressaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_adnameaddressaccuracyscore)
+            Required: =false
+            Update: =DataCardValue919_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =25
+            ZIndex: =1
+
+            DataCardKey924_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue919_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey924_1.Y + DataCardKey924_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage924_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue919_1.Y + DataCardValue919_1.Height
+                ZIndex: =3
+
+            StarVisible924_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey924_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey924_1.Y
+                ZIndex: =4
+
+        "'Bill Of Export Date Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_billofexportdateaccuracyscore"
+            Default: =ThisItem.'Bill Of Export Date Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_billofexportdateaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_billofexportdateaccuracyscore)
+            Required: =false
+            Update: =DataCardValue932_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =26
+            ZIndex: =1
+
+            DataCardKey937_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue932_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey937_1.Y + DataCardKey937_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage937_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue932_1.Y + DataCardValue932_1.Height
+                ZIndex: =3
+
+            StarVisible937_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey937_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey937_1.Y
+                ZIndex: =4
+
+        "'Bond LUT Date Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_bondlutdateaccuracyscore"
+            Default: =ThisItem.'Bond LUT Date Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_bondlutdateaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_bondlutdateaccuracyscore)
+            Required: =false
+            Update: =DataCardValue934_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =27
+            ZIndex: =1
+
+            DataCardKey939_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue934_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey939_1.Y + DataCardKey939_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage939_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue934_1.Y + DataCardValue934_1.Height
+                ZIndex: =3
+
+            StarVisible939_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey939_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey939_1.Y
+                ZIndex: =4
+
+        "'Commission(FC)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_commissionfcaccuracyscore"
+            Default: =ThisItem.'Commission(FC)Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_commissionfcaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_commissionfcaccuracyscore)
+            Required: =false
+            Update: =DataCardValue936_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =28
+            ZIndex: =1
+
+            DataCardKey941_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue936_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey941_1.Y + DataCardKey941_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage941_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue936_1.Y + DataCardValue936_1.Height
+                ZIndex: =3
+
+            StarVisible941_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey941_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey941_1.Y
+                ZIndex: =4
+
+        "'Consignee Address Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_consigneeaddressaccuracyscore"
+            Default: =ThisItem.'Consignee Address Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_consigneeaddressaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_consigneeaddressaccuracyscore)
+            Required: =false
+            Update: =DataCardValue938_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =29
+            ZIndex: =1
+
+            DataCardKey943_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue938_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey943_1.Y + DataCardKey943_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage943_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue938_1.Y + DataCardValue938_1.Height
+                ZIndex: =3
+
+            StarVisible943_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey943_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey943_1.Y
+                ZIndex: =4
+
+        "'Currency Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_currencyaccuracyscore"
+            Default: =ThisItem.'Currency Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_currencyaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_currencyaccuracyscore)
+            Required: =false
+            Update: =DataCardValue940_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =30
+            ZIndex: =1
+
+            DataCardKey1087_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue940_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1087_1.Y + DataCardKey1087_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1087_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue940_1.Y + DataCardValue940_1.Height
+                ZIndex: =3
+
+            StarVisible1087_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1087_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1087_1.Y
+                ZIndex: =4
+
+        "'Discount(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_discountinraccuracyscore"
+            Default: =ThisItem.'Discount(INR)Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_discountinraccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_discountinraccuracyscore)
+            Required: =false
+            Update: =DataCardValue942_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =31
+            ZIndex: =1
+
+            DataCardKey1089_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue942_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1089_1.Y + DataCardKey1089_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1089_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue942_1.Y + DataCardValue942_1.Height
+                ZIndex: =3
+
+            StarVisible1089_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1089_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1089_1.Y
+                ZIndex: =4
+
+        "'Exporter Address Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_exporteraddressaccuracyscore"
+            Default: =ThisItem.'Exporter Address Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_exporteraddressaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_exporteraddressaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1087_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =32
+            ZIndex: =1
+
+            DataCardKey1092_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1087_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1092_1.Y + DataCardKey1092_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1092_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1087_1.Y + DataCardValue1087_1.Height
+                ZIndex: =3
+
+            StarVisible1092_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1092_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1092_1.Y
+                ZIndex: =4
+
+        "'Freight(FC) Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_freightfcaccuracyscore"
+            Default: =ThisItem.'Freight(FC) Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_freightfcaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_freightfcaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1095_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =33
+            ZIndex: =1
+
+            DataCardKey1100_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1095_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1100_1.Y + DataCardKey1100_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1100_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1095_1.Y + DataCardValue1095_1.Height
+                ZIndex: =3
+
+            StarVisible1100_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1100_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1100_1.Y
+                ZIndex: =4
+
+        "'Gross Weight Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_grossweightaccuracyscore"
+            Default: =ThisItem.'Gross Weight Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_grossweightaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_grossweightaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1097_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =34
+            ZIndex: =1
+
+            DataCardKey1102_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1097_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1102_1.Y + DataCardKey1102_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1102_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1097_1.Y + DataCardValue1097_1.Height
+                ZIndex: =3
+
+            StarVisible1102_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1102_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1102_1.Y
+                ZIndex: =4
+
+        "'GST Invoice No Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_gstinvoicenoaccuracyscore"
+            Default: =ThisItem.'GST Invoice No Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_gstinvoicenoaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_gstinvoicenoaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1099_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =35
+            ZIndex: =1
+
+            DataCardKey1104_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1099_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1104_1.Y + DataCardKey1104_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1104_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1099_1.Y + DataCardValue1099_1.Height
+                ZIndex: =3
+
+            StarVisible1104_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1104_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1104_1.Y
+                ZIndex: =4
+
+        "'Import Export Code No Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_importexportcodenoaccuracyscore"
+            Default: =ThisItem.'Import Export Code No Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_importexportcodenoaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_importexportcodenoaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1101_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =36
+            ZIndex: =1
+
+            DataCardKey1106_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1101_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1106_1.Y + DataCardKey1106_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1106_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1101_1.Y + DataCardValue1101_1.Height
+                ZIndex: =3
+
+            StarVisible1106_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1106_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1106_1.Y
+                ZIndex: =4
+
+        "'Insurance(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_insuranceinraccuracyscore"
+            Default: =ThisItem.'Insurance(INR)Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_insuranceinraccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_insuranceinraccuracyscore)
+            Required: =false
+            Update: =DataCardValue1103_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =37
+            ZIndex: =1
+
+            DataCardKey1108_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1103_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1108_1.Y + DataCardKey1108_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1108_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1103_1.Y + DataCardValue1103_1.Height
+                ZIndex: =3
+
+            StarVisible1108_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1108_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1108_1.Y
+                ZIndex: =4
+
+        "'Invoice value USD Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_invoicevalueusdaccuracyscore"
+            Default: =ThisItem.'Invoice value USD Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_invoicevalueusdaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_invoicevalueusdaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1105_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =38
+            ZIndex: =1
+
+            DataCardKey1110_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1105_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1110_1.Y + DataCardKey1110_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1110_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1105_1.Y + DataCardValue1105_1.Height
+                ZIndex: =3
+
+            StarVisible1110_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1110_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1110_1.Y
+                ZIndex: =4
+
+        "'License No Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_licensenoaccuracyscore"
+            Default: =ThisItem.'License No Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_licensenoaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_licensenoaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1107_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =39
+            ZIndex: =1
+
+            DataCardKey1112_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1107_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1112_1.Y + DataCardKey1112_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1112_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1107_1.Y + DataCardValue1107_1.Height
+                ZIndex: =3
+
+            StarVisible1112_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1112_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1112_1.Y
+                ZIndex: =4
+
+        "'Name of Goods Exported Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_nameofgoodsexportedaccuracyscore"
+            Default: =ThisItem.'Name of Goods Exported Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_nameofgoodsexportedaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_nameofgoodsexportedaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1109_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =40
+            ZIndex: =1
+
+            DataCardKey1114_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1109_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1114_1.Y + DataCardKey1114_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1114_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1109_1.Y + DataCardValue1109_1.Height
+                ZIndex: =3
+
+            StarVisible1114_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1114_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1114_1.Y
+                ZIndex: =4
+
+        "'Originating From Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_originatingfromaccuracyscore"
+            Default: =ThisItem.'Originating From Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_originatingfromaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_originatingfromaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1111_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =41
+            ZIndex: =1
+
+            DataCardKey1116_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1111_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1116_1.Y + DataCardKey1116_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1116_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1111_1.Y + DataCardValue1111_1.Height
+                ZIndex: =3
+
+            StarVisible1116_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1116_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1116_1.Y
+                ZIndex: =4
+
+        "'Other Deductions(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_otherdeductionsinraccuracyscore"
+            Default: =ThisItem.'Other Deductions(INR)Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_otherdeductionsinraccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_otherdeductionsinraccuracyscore)
+            Required: =false
+            Update: =DataCardValue1113_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =42
+            ZIndex: =1
+
+            DataCardKey1118_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1113_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1118_1.Y + DataCardKey1118_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1118_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1113_1.Y + DataCardValue1113_1.Height
+                ZIndex: =3
+
+            StarVisible1118_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1118_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1118_1.Y
+                ZIndex: =4
+
+        "'Other Discount(INR)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_otherdiscountinraccuracyscore"
+            Default: =ThisItem.'Other Discount(INR)Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_otherdiscountinraccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_otherdiscountinraccuracyscore)
+            Required: =false
+            Update: =DataCardValue1115_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =43
+            ZIndex: =1
+
+            DataCardKey1120_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1115_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1120_1.Y + DataCardKey1120_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1120_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1115_1.Y + DataCardValue1115_1.Height
+                ZIndex: =3
+
+            StarVisible1120_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1120_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1120_1.Y
+                ZIndex: =4
+
+        "'Qty Kgs Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_qtykgsaccuracyscore"
+            Default: =ThisItem.'Qty Kgs Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_qtykgsaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_qtykgsaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1117_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =44
+            ZIndex: =1
+
+            DataCardKey1122_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1117_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1122_1.Y + DataCardKey1122_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1122_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1117_1.Y + DataCardValue1117_1.Height
+                ZIndex: =3
+
+            StarVisible1122_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1122_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1122_1.Y
+                ZIndex: =4
+
+        "'Serial Number Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_serialnumberaccuracyscore"
+            Default: =ThisItem.'Serial Number Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_serialnumberaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_serialnumberaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1119_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =45
+            ZIndex: =1
+
+            DataCardKey1124_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1119_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1124_1.Y + DataCardKey1124_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1124_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1119_1.Y + DataCardValue1119_1.Height
+                ZIndex: =3
+
+            StarVisible1124_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1124_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1124_1.Y
+                ZIndex: =4
+
+        "'Trade Classification Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_tradeclassificationaccuracyscore"
+            Default: =ThisItem.'Trade Classification Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_tradeclassificationaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_tradeclassificationaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1121_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =46
+            ZIndex: =1
+
+            DataCardKey1126_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1121_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1126_1.Y + DataCardKey1126_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1126_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1121_1.Y + DataCardValue1121_1.Height
+                ZIndex: =3
+
+            StarVisible1126_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1126_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1126_1.Y
+                ZIndex: =4
+
+        "'Value in INR(Bill of exports)Accuracy Score_DataCard1_1' As typedDataCard.textualEditCard":
+            BorderStyle: =BorderStyle.Solid
+            DataField: ="ispl_valueininrbillofexportsaccuracyscore"
+            Default: =ThisItem.'Value in INR(Bill of exports)Accuracy Score'
+            DisplayMode: =Parent.DisplayMode
+            DisplayName: =DataSourceInfo([@'Bill Of Export Reports'],DataSourceInfo.DisplayName,ispl_valueininrbillofexportsaccuracyscore)
+            Fill: =RGBA(0, 0, 0, 0)
+            Height: =50
+            MaxLength: =DataSourceInfo([@'Bill Of Export Reports'], DataSourceInfo.MaxLength, ispl_valueininrbillofexportsaccuracyscore)
+            Required: =false
+            Update: =DataCardValue1123_1.Text
+            Visible: =false
+            Width: =354
+            X: =1
+            Y: =47
+            ZIndex: =1
+
+            DataCardKey1128_1 As label:
+                AutoHeight: =true
+                Height: =34
+                Text: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                Wrap: =false
+                X: =30
+                Y: =10
+                ZIndex: =1
+
+            DataCardValue1123_1 As text:
+                AccessibleLabel: ="test"
+                BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                Default: =Parent.Default
+                DelayOutput: =true
+                DisplayMode: =Parent.DisplayMode
+                MaxLength: =Parent.MaxLength
+                PaddingLeft: =5
+                RadiusBottomLeft: =0
+                RadiusBottomRight: =0
+                RadiusTopLeft: =0
+                RadiusTopRight: =0
+                Tooltip: =Parent.DisplayName
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardKey1128_1.Y + DataCardKey1128_1.Height + 5
+                ZIndex: =2
+
+            ErrorMessage1128_1 As label:
+                AutoHeight: =true
+                Height: =10
+                Live: =Live.Assertive
+                PaddingBottom: =0
+                PaddingLeft: =0
+                PaddingRight: =0
+                PaddingTop: =0
+                Text: =Parent.Error
+                Visible: =Parent.DisplayMode=DisplayMode.Edit
+                Width: =Parent.Width - 60
+                X: =30
+                Y: =DataCardValue1123_1.Y + DataCardValue1123_1.Height
+                ZIndex: =3
+
+            StarVisible1128_1 As label:
+                Align: =Align.Center
+                Height: =DataCardKey1128_1.Height
+                Text: ="*"
+                Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                Width: =30
+                Wrap: =false
+                Y: =DataCardKey1128_1.Y
                 ZIndex: =4
 
         "'Request ID Confidence Score_DataCard2_1' As typedDataCard.textualEditCard":

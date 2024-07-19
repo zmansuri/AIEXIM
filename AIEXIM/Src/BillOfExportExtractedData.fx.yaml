@@ -311,7 +311,7 @@ BillOfExportExtractedData As screen:
                         'Look Down To Bill of Export'.'Upload Doc List Ref ID' = galExtractedBillofExport.Selected.'Upload Doc List Ref ID'
                     ).'Attachment File'.Value
                 );
-                Navigate(SEZBillOfExport);
+                Navigate(SEZBillOfExportDuplicateTest);
                 
                 UpdateContext({VarShowGallerySEZBillofExport:true})
             PaddingBottom: =4

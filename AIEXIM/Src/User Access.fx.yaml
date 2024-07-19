@@ -126,11 +126,13 @@
         ZIndex: =6
 
     LblEdit As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Size: =10
         Text: ="Edit"
-        Width: =91
-        X: =957
+        Width: =68
+        X: =959
         Y: =182
         ZIndex: =9
 
@@ -201,7 +203,7 @@
             gal_Name As label:
                 Height: =45
                 PaddingLeft: =15
-                Size: =9
+                Size: =10
                 Text: =ThisItem.'First Name' & " " & ThisItem.'Last Name'
                 Width: =126
                 Y: =2
@@ -218,25 +220,27 @@
 
             gal_Email As label:
                 Height: =45
-                Size: =9
+                Size: =10
                 Text: =ThisItem.Email
-                Width: =182
-                X: =126
+                Width: =175
+                X: =144
                 Y: =2
                 ZIndex: =8
 
             gal_ReportGenerate As label:
+                Align: =Align.Center
                 Height: =45
-                Size: =9
+                Size: =10
                 Text: =If( ThisItem.'Generate Report Rights' = true, "Yes","No")
                 Width: =94
-                X: =549
+                X: =532
                 Y: =2
                 ZIndex: =9
 
             gal_View As label:
+                Align: =Align.Center
                 Height: =45
-                Size: =9
+                Size: =10
                 Text: =If(ThisItem.'View Rights'= true,"Yes","No")
                 Width: =73
                 X: =648
@@ -244,20 +248,22 @@
                 ZIndex: =10
 
             gal_AccessLogs As label:
+                Align: =Align.Center
                 Height: =45
-                Size: =9
+                Size: =10
                 Text: =If(ThisItem.'Manage Logs'=true,"Yes","No")
                 Width: =81
-                X: =913
-                Y: =2
+                X: =926
+                Y: =1
                 ZIndex: =11
 
             gal_ExtractedDOC As label:
+                Align: =Align.Center
                 Height: =45
-                Size: =9
+                Size: =10
                 Text: =If( ThisItem.'Upload Extract Document Rights' = true,"Yes","No")
-                Width: =114
-                X: =396
+                Width: =97
+                X: =413
                 Y: =2
                 ZIndex: =14
 
@@ -299,12 +305,13 @@
                     ZIndex: =16
 
             gal_role As label:
+                Align: =Align.Center
                 Height: =45
                 PaddingLeft: =15
-                Size: =9
+                Size: =10
                 Text: =ThisItem.Role
-                Width: =88
-                X: =308
+                Width: =77
+                X: =319
                 Y: =2
                 ZIndex: =19
 
@@ -346,41 +353,47 @@
                     ZIndex: =18
 
             gal_Edit As label:
+                Align: =Align.Center
                 Height: =45
-                Size: =9
+                Size: =10
                 Text: =If(ThisItem.'Edit Rights'=true,"Yes","No")
                 Width: =73
-                X: =727
+                X: =721
                 Y: =2
                 ZIndex: =20
 
             gal_ManageUserAccess As label:
+                Align: =Align.Center
                 Height: =45
-                Size: =9
+                Size: =10
                 Text: =If(ThisItem.'Manage User Access'= true,"Yes","No")
                 Width: =73
-                X: =801
+                X: =826
                 Y: =2
                 ZIndex: =21
 
     LblManageUserAccess As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
+        Height: =44
         Size: =10
         Text: ="Manage User Access"
-        Width: =112
-        X: =1034
-        Y: =184
+        Width: =131
+        X: =1025
+        Y: =180
         ZIndex: =10
 
     LblRole As label:
         Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =38
         Size: =10
         Text: ="Role"
-        Width: =99
-        X: =521
-        Y: =183
+        Width: =77
+        X: =554
+        Y: =184
         ZIndex: =11
 
     SearchUserAccessScreen As text:
@@ -401,6 +414,7 @@
 
     LblName As label:
         Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =42
         Size: =10
         Text: ="Name"
@@ -411,49 +425,56 @@
 
     LblEmail As label:
         Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =42
         Size: =10
         Text: ="Email"
         Width: =142
-        X: =371
+        X: =386
         Y: =182
         ZIndex: =14
 
     LblUploadExtract As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Size: =10
         Text: ="Upload/Extract Document"
-        Width: =147
+        Width: =132
         X: =629
         Y: =184
         ZIndex: =15
 
     LblReportGenerate As label:
         Color: =RGBA(255, 255, 255, 1)
-        Height: =41
+        FontWeight: =FontWeight.Semibold
+        Height: =39
         Size: =10
         Text: ="Report Generate"
-        Width: =96
-        X: =776
-        Y: =180
+        Width: =124
+        X: =762
+        Y: =185
         ZIndex: =16
 
     LblView As label:
+        Align: =Align.Center
         Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Size: =10
         Text: ="View"
-        Width: =106
+        Width: =89
         X: =878
         Y: =183
         ZIndex: =17
 
     LblAccessLog As label:
         Color: =RGBA(255, 255, 255, 1)
+        FontWeight: =FontWeight.Semibold
         Height: =43
         Size: =10
         Text: ="Access Log"
         Width: =97
-        X: =1146
+        X: =1165
         Y: =181
         ZIndex: =18
 
@@ -589,6 +610,7 @@
 
                     DataCardKey666 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -664,6 +686,7 @@
 
                     DataCardKey1077 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -733,6 +756,7 @@
 
                     DataCardKey1079 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -802,6 +826,7 @@
 
                     DataCardKey1082 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -871,6 +896,7 @@
 
                     DataCardKey1242 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -940,6 +966,7 @@
 
                     DataCardKey1243 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -1009,6 +1036,7 @@
 
                     DataCardKey1244 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -1079,6 +1107,7 @@
 
                     DataCardKey667 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -1150,6 +1179,7 @@
 
                     DataCardKey669 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
@@ -1221,6 +1251,7 @@
 
                     DataCardKey895 As label:
                         AutoHeight: =true
+                        FontWeight: =FontWeight.Semibold
                         Height: =34
                         Text: =Parent.DisplayName
                         Width: =(Parent.Width - 60) * 0.4
