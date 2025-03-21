@@ -1,0 +1,3019 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  User Access:
+    Properties:
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+      OnVisible: =Refresh('User Access Managers')
+    Children:
+      - Reports_Nav:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Align: =Align.Left
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: = RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Generate Report Rights'= true, DisplayMode.Edit,DisplayMode.View)
+            Fill: |-
+              =//RGBA(12, 77, 162, 1)
+              RGBA(0,0,0,0)
+            Font: =Font.'Open Sans'
+            Height: =31
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(Reports,ScreenTransition.Fade)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =
+            PressedFill: =RGBA(0, 18, 107, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: =""
+            Width: =196
+            X: =4
+            Y: =185
+      - Logs_Nav:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Align: =Align.Left
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: = RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage Logs'= true, DisplayMode.Edit,DisplayMode.View)
+            Fill: |-
+              =//RGBA(12, 77, 162, 1)
+              RGBA(0,0,0,0)
+            Font: =Font.'Open Sans'
+            Height: =31
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(Logs,ScreenTransition.Fade)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =
+            PressedFill: =RGBA(0, 18, 107, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: =""
+            Width: =196
+            X: =4
+            Y: =220
+      - btnRemoveComponentLogo_5:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.Transparent
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =60
+            HoverBorderColor: =Color.Transparent
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =Color.Transparent
+            PressedBorderColor: =Color.Transparent
+            PressedColor: =Self.Fill
+            PressedFill: =Color.Transparent
+            Text: =""
+            Width: =170
+            X: =20
+            Y: =10
+      - Logo3:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =70
+            Image: ='MicrosoftTeams-image (1)'
+            Width: =190
+      - HideBTN2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: |-
+              =RGBA(
+                  255,
+                  255,
+                  255,
+                  1
+              )
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =55
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =296
+            X: =952
+            Y: =15
+      - btnHeader_1:
+          Control: Classic/Button@2.2.0
+          Group: GalleryAndHeader
+          Properties:
+            BorderColor: =RGBA(186, 186, 186, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            ContentLanguage: ="List of added user"
+            DisabledBorderColor: =
+            DisabledColor: =
+            Fill: =RGBA(12, 77, 162, 1)
+            Font: =Font.'Open Sans'
+            Height: =44
+            HoverBorderColor: =
+            HoverColor: =
+            HoverFill: =
+            PressedBorderColor: =
+            PressedColor: =
+            PressedFill: =
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            Text: =""
+            Width: =1118
+            X: =234
+            Y: =180
+      - gal_userAccess:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
+          Group: GalleryAndHeader
+          Properties:
+            AccessibleLabel: ="List of users"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            ContentLanguage: ="List of added user"
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =445
+            Items: =Filter('User Access Managers',StartsWith('First Name',SearchUserAccessScreen.Text)||StartsWith(Email,SearchUserAccessScreen.Text)||StartsWith(Role,SearchUserAccessScreen.Text))
+            ShowScrollbar: =false
+            TabIndex: =0
+            TemplateSize: =49
+            Width: =1118
+            X: =234
+            Y: =224
+          Children:
+            - gal_subtitle:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =Self.Size * 1.8
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =12
+                  Text: =ThisItem.ID
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =
+                  X: =
+                  Y: =
+            - gal_Name:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  PaddingLeft: =15
+                  Size: =10
+                  Text: =ThisItem.'First Name' & " " & ThisItem.'Last Name'
+                  Width: =126
+                  Y: =2
+            - gal_Rectangle:
+                Control: Rectangle@2.3.0
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Fill: =RGBA(204, 204, 205, 1)
+                  Height: =1
+                  Width: |-
+                    =//1055
+                    gal_userAccess.Width
+                  Y: =45
+            - gal_Email:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  Size: =10
+                  Text: =ThisItem.Email
+                  Width: =175
+                  X: =144
+                  Y: =2
+            - gal_ReportGenerate:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  Size: =10
+                  Text: =If( ThisItem.'Generate Report Rights' = true, "Yes","No")
+                  Width: =94
+                  X: =532
+                  Y: =2
+            - gal_View:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  Size: =10
+                  Text: =If(ThisItem.'View Rights'= true,"Yes","No")
+                  Width: =73
+                  X: =648
+                  Y: =2
+            - gal_AccessLogs:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  Size: =10
+                  Text: =If(ThisItem.'Manage Logs'=true,"Yes","No")
+                  Width: =81
+                  X: =926
+                  Y: =1
+            - gal_ExtractedDOC:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  Size: =10
+                  Text: =If( ThisItem.'Upload Extract Document Rights' = true,"Yes","No")
+                  Width: =97
+                  X: =413
+                  Y: =2
+            - img_edit:
+                Control: Image@2.2.3
+                Group: grpBtnEditIcon
+                Properties:
+                  AccessibleLabel: ="Edit rights for user"
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Height: =45
+                  Image: ='edit icon'
+                  OnSelect: |-
+                    =Set(VarIDFromUserTable,ThisItem.'User Access Manager');
+                    EditForm(UserAccessEditScreen);
+                    UpdateContext({VarEditDetailsScreen:true});
+                  TabIndex: =0
+                  Tooltip: ="Add rights for user"
+                  Width: =35
+                  X: =1033
+                  Y: =2
+            - EditIcon:
+                Control: Classic/Button@2.2.0
+                Group: grpBtnEditIcon
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =Color.Transparent
+                  OnSelect: |-
+                    =Set(VarIDFromUserTable,ThisItem.'User Access Manager');
+                    EditForm(UserAccessEditScreen);
+                    UpdateContext({VarEditDetailsScreen:true});
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  Text: =""
+                  Tooltip: ="Add rights for user"
+                  Width: =35
+                  X: =1033
+                  Y: =2
+            - Image_User:
+                Control: Image@2.2.3
+                Group: grpBtnDeactivateUserAccess
+                Properties:
+                  AccessibleLabel: ="Add"
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Height: =45
+                  Image: =DeactivateBtn
+                  OnSelect: |-
+                    =//Set(VarID,ThisItem.ID);
+                    UpdateContext({VarDeactivateUserPopup:true})
+                  TabIndex: =0
+                  Width: =19
+                  X: =1092
+                  Y: =2
+            - btnUser:
+                Control: Classic/Button@2.2.0
+                Group: grpBtnDeactivateUserAccess
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  Fill: =RGBA(0, 0, 0, 0)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =Color.Transparent
+                  OnSelect: |-
+                    =//Set(VarID,ThisItem.ID);
+                    UpdateContext({VarDeactivateUserPopup:true})
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  RadiusBottomLeft: =50
+                  RadiusBottomRight: =50
+                  RadiusTopLeft: =50
+                  RadiusTopRight: =50
+                  Text: =""
+                  Width: =32
+                  X: =1086
+                  Y: =2
+            - gal_role:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  PaddingLeft: =15
+                  Size: =10
+                  Text: =ThisItem.Role
+                  Width: =77
+                  X: =319
+                  Y: =2
+            - gal_Edit:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  Size: =10
+                  Text: =If(ThisItem.'Edit Rights'=true,"Yes","No")
+                  Width: =73
+                  X: =721
+                  Y: =2
+            - gal_ManageUserAccess:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =45
+                  Size: =10
+                  Text: =If(ThisItem.'Manage User Access'= true,"Yes","No")
+                  Width: =73
+                  X: =826
+                  Y: =2
+      - LblEdit:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Size: =10
+            Text: ="Edit"
+            Width: =68
+            X: =959
+            Y: =182
+      - LblManageUserAccess:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =44
+            Size: =10
+            Text: ="Manage User Access"
+            Width: =131
+            X: =1025
+            Y: =180
+      - LblRole:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =38
+            Size: =10
+            Text: ="Role"
+            Width: =77
+            X: =554
+            Y: =184
+      - SearchUserAccessScreen:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            AccessibleLabel: ="Search your document"
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Default: =""
+            Font: =Font.'Open Sans'
+            Height: =35
+            HintText: ="Search User"
+            HoverBorderColor: =RGBA(0, 18, 107, 1)
+            HoverFill: =RGBA(186, 202, 226, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =10
+            X: =234
+            Y: =114
+      - LblName:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =10
+            Text: ="Name"
+            Width: =108
+            X: =246
+            Y: =182
+      - LblEmail:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =42
+            Size: =10
+            Text: ="Email"
+            Width: =142
+            X: =386
+            Y: =182
+      - LblUploadExtract:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Size: =10
+            Text: ="Upload/Extract Document"
+            Width: =132
+            X: =629
+            Y: =184
+      - LblReportGenerate:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =39
+            Size: =10
+            Text: ="Report Generate"
+            Width: =124
+            X: =762
+            Y: =185
+      - LblView:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Size: =10
+            Text: ="View"
+            Width: =89
+            X: =878
+            Y: =183
+      - LblAccessLog:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =43
+            Size: =10
+            Text: ="Access Log"
+            Width: =97
+            X: =1165
+            Y: =181
+      - AddUserContainer:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            BorderColor: =RGBA(39, 113, 194, 1)
+            BorderThickness: =1
+            Height: =40
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =155
+            X: =1183
+            Y: =114
+          Children:
+            - Button1:
+                Control: Classic/Button@2.2.0
+                Group: AddUserGrp
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  Color: =RGBA(0, 0, 0, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Font: =Font.'Open Sans'
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: |-
+                    =//ColorFade(Color.Transparent, -100%)
+                    Color.Transparent
+                  OnSelect: |-
+                    =ResetForm(CreateUserAccessForm);
+                    NewForm(CreateUserAccessForm);
+                    UpdateContext({VarAddUSerAccessPopUp: true})
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Color.Transparent
+                  RadiusBottomLeft: =0
+                  RadiusBottomRight: =0
+                  RadiusTopLeft: =0
+                  RadiusTopRight: =0
+                  Text: ="Add User"
+                  Width: =124
+                  X: =32
+            - Icon4:
+                Control: Classic/Icon@2.5.0
+                Group: AddUserGrp
+                Properties:
+                  AccessibleLabel: ="Add user"
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  Fill: =RGBA(0, 18, 107, 1)
+                  Height: =40
+                  Icon: =Icon.Add
+                  OnSelect: |-
+                    =ResetForm(CreateUserAccessForm);
+                    NewForm(CreateUserAccessForm);
+                    UpdateContext({VarAddUSerAccessPopUp: true})
+                  TabIndex: =0
+                  Width: =32
+      - RectangleCreateUser:
+          Control: Rectangle@2.3.0
+          Group: AddUserPopupGrp
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 0.13)
+            Height: =768
+            Visible: =VarAddUSerAccessPopUp
+            Width: =1366
+      - ContainerAddUser:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Group: AddUserPopupGrp
+          Properties:
+            BorderColor: =RGBA(12, 77, 162, 1)
+            Height: =666
+            RadiusBottomLeft: =20
+            RadiusBottomRight: =20
+            RadiusTopLeft: =20
+            RadiusTopRight: =20
+            Visible: =VarAddUSerAccessPopUp
+            Width: =1044
+            X: =139
+            Y: =51
+          Children:
+            - CreateUserBody:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  BorderThickness: =1
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  DisplayMode: =DisplayMode.View
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =666
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  Text: =""
+                  Width: =1044
+            - Label38:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  Fill: =RGBA(12, 77, 162, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =41
+                  Text: ="Create New User"
+                  Width: =1044
+            - CreateUserAccessForm:
+                Control: Form@2.4.2
+                Variant: Classic
+                Layout: Horizontal
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataSource: ='User Access Managers'
+                  Height: =550
+                  OnFailure: =Notify("There has been some error please resubmit",NotificationType.Error)
+                  OnSuccess: |
+                    =UpdateContext({VarAfterSubmissionlandPage:true});
+                    ResetForm(CreateUserAccessForm);
+                    NewForm(CreateUserAccessForm);
+                  Width: =912
+                  X: =66
+                  Y: =50
+                Children:
+                  - Role_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicTextualEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_role"
+                        Default: =ThisItem.Role
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_role)
+                        Height: =62
+                        MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_role)
+                        Required: =true
+                        Update: =Dropdown1.Selected.Value
+                        Width: =912
+                        Y: =3
+                      Children:
+                        - DataCardKey666:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (Container1.Height / 2) - (Self.Height / 2)
+                        - ErrorMessage666:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =Container1.Y + Container1.Height
+                        - StarVisible666:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey666.Height
+                              Text: ="*"
+                              Visible: |-
+                                =//And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                                true
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey666.Y
+                        - Container1:
+                            Control: GroupContainer@1.3.0
+                            Variant: ManualLayout
+                            Properties:
+                              BorderColor: =RGBA(12, 77, 162, 1)
+                              BorderThickness: =1
+                              Height: =DataCardValue665.Height
+                              RadiusBottomLeft: =10
+                              RadiusBottomRight: =10
+                              RadiusTopLeft: =10
+                              RadiusTopRight: =10
+                              Width: =DataCardValue665.Width
+                              X: =DataCardKey667.X + DataCardKey667.Width
+                              Y: =10
+                            Children:
+                              - Dropdown1:
+                                  Control: Classic/DropDown@2.3.1
+                                  Properties:
+                                    AccessibleLabel: ="Select role type"
+                                    AllowEmptySelection: =true
+                                    BorderColor: =RGBA(12, 77, 162, 1)
+                                    BorderThickness: =1
+                                    ChevronBackground: =RGBA(56, 96, 178, 1)
+                                    ChevronFill: =RGBA(255, 255, 255, 1)
+                                    ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                                    ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                                    Font: =Font.'Open Sans'
+                                    HoverFill: =RGBA(186, 202, 226, 1)
+                                    Items: =["Admin","User"]
+                                    PressedColor: =RGBA(255, 255, 255, 1)
+                                    PressedFill: =RGBA(0, 18, 107, 1)
+                                    SelectionColor: =RGBA(255, 255, 255, 1)
+                                    SelectionFill: =RGBA(56, 96, 178, 1)
+                                    Width: =511.2
+                  - Upload Extract Document Rights_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicComboBoxOptionSetSingleEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_uploadextractdocumentrights"
+                        Default: =ThisItem.'Upload Extract Document Rights'
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_uploadextractdocumentrights)
+                        Height: =86
+                        Required: =false
+                        Update: =If(DataCardValue1077.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
+                        Width: =912
+                        Y: =4
+                      Children:
+                        - DataCardKey1077:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue1077.Height / 2) - (Self.Height / 2)
+                        - ErrorMessage1077:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue1077.Y + DataCardValue1077.Height
+                        - StarVisible1077:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey1077.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey1077.Y
+                        - Label3:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =20
+                              Size: =10
+                              Text: ="User can upload document"
+                              Width: =248
+                              X: =40
+                              Y: =60
+                        - DataCardValue1077:
+                            Control: Classic/Toggle@2.1.0
+                            Properties:
+                              AccessibleLabel: ="test"
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Default: =If(ThisItem.'Upload Extract Document Rights' = 'Upload Extract Document Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
+                              Font: =Font.'Open Sans'
+                              Height: =38
+                              TrueFill: =RGBA(56, 96, 178, 1)
+                              Width: =120
+                              X: =370
+                              Y: =10
+                  - View Rights_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicComboBoxOptionSetSingleEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_viewrights"
+                        Default: =ThisItem.'View Rights'
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_viewrights)
+                        Height: =95
+                        Required: =false
+                        Update: =If(DataCardValue1079.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
+                        Width: =912
+                        Y: =5
+                      Children:
+                        - DataCardKey1079:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue1079.Height / 2) - (Self.Height / 2)
+                        - ErrorMessage1079:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue1079.Y + DataCardValue1079.Height
+                        - StarVisible1079:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey1079.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey1079.Y
+                        - Label4:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =20
+                              Size: =10
+                              Text: ="User Can only view document details"
+                              Width: =306
+                              X: =30
+                              Y: =60
+                        - DataCardValue1079:
+                            Control: Classic/Toggle@2.1.0
+                            Properties:
+                              AccessibleLabel: ="test"
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Default: =If(ThisItem.'View Rights' = 'View Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
+                              Font: =Font.'Open Sans'
+                              Height: =38
+                              TrueFill: =RGBA(56, 96, 178, 1)
+                              Width: =120
+                              X: =370
+                              Y: =13
+                  - Edit Rights_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicComboBoxOptionSetSingleEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_editrights"
+                        Default: =ThisItem.'Edit Rights'
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_editrights)
+                        Height: =95
+                        Required: =false
+                        Update: =If(DataCardValue1082.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
+                        Width: =912
+                        Y: =6
+                      Children:
+                        - DataCardKey1082:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue1082.Height / 2) - (Self.Height / 2)
+                        - ErrorMessage1082:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue1082.Y + DataCardValue1082.Height
+                        - StarVisible1082:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey1082.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey1082.Y
+                        - Label5:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =20
+                              Size: =10
+                              Text: ="User can edit document details"
+                              Width: =253
+                              X: =30
+                              Y: =75
+                        - DataCardValue1082:
+                            Control: Classic/Toggle@2.1.0
+                            Properties:
+                              AccessibleLabel: ="test"
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Default: =If(ThisItem.'Edit Rights' = 'Edit Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
+                              Font: =Font.'Open Sans'
+                              Height: =38
+                              TrueFill: =RGBA(56, 96, 178, 1)
+                              Width: =120
+                              X: =370
+                              Y: =12
+                  - Generate Report Rights_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicComboBoxOptionSetSingleEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_generatereportrights"
+                        Default: =ThisItem.'Generate Report Rights'
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_generatereportrights)
+                        Height: =93
+                        Required: =false
+                        Update: =If(DataCardValue1237.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
+                        Width: =912
+                        Y: =7
+                      Children:
+                        - DataCardKey1242:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue1237.Height / 2) - (Self.Height / 2)
+                        - ErrorMessage1242:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue1237.Y + DataCardValue1237.Height
+                        - StarVisible1242:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey1242.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey1242.Y
+                        - Label6:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =21
+                              Size: =10
+                              Text: ="User can generate report"
+                              Width: =231
+                              X: =30
+                              Y: =71
+                        - DataCardValue1237:
+                            Control: Classic/Toggle@2.1.0
+                            Properties:
+                              AccessibleLabel: ="test"
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Default: =If(ThisItem.'Generate Report Rights' = 'Generate Report Rights (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
+                              Font: =Font.'Open Sans'
+                              Height: =38
+                              TrueFill: =RGBA(56, 96, 178, 1)
+                              Width: =120
+                              X: =370
+                              Y: =12
+                  - Manage User Access_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicComboBoxOptionSetSingleEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_manageuseraccess"
+                        Default: =ThisItem.'Manage User Access'
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_manageuseraccess)
+                        Height: =90
+                        Required: =false
+                        Update: =If(DataCardValue1238.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
+                        Width: =912
+                        Y: =8
+                      Children:
+                        - DataCardKey1243:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue1238.Height / 2) - (Self.Height / 2)
+                        - ErrorMessage1243:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue1238.Y + DataCardValue1238.Height
+                        - StarVisible1243:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey1243.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey1243.Y
+                        - Label7:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =30
+                              Size: =10
+                              Text: ="User can manager aceess"
+                              Width: =211
+                              X: =30
+                              Y: =60
+                        - DataCardValue1238:
+                            Control: Classic/Toggle@2.1.0
+                            Properties:
+                              AccessibleLabel: ="test"
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Default: =If(ThisItem.'Manage User Access' = 'Manage User Access (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
+                              Font: =Font.'Open Sans'
+                              Height: =38
+                              TrueFill: =RGBA(56, 96, 178, 1)
+                              Width: =120
+                              X: =370
+                              Y: =12
+                  - Manage Logs_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicComboBoxOptionSetSingleEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_managelogs"
+                        Default: =ThisItem.'Manage Logs'
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_managelogs)
+                        Height: =91
+                        Required: =false
+                        Update: =If(DataCardValue1239.Value,'Upload Extract Document Rights (User Access Managers)'.Yes,'Upload Extract Document Rights (User Access Managers)'.No)
+                        Width: =912
+                        Y: =9
+                      Children:
+                        - DataCardKey1244:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue1239.Height / 2) - (Self.Height / 2)
+                        - ErrorMessage1244:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue1239.Y + DataCardValue1239.Height
+                        - StarVisible1244:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey1244.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey1244.Y
+                        - Label8:
+                            Control: Label@2.5.1
+                            Properties:
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =18
+                              Size: =10
+                              Text: ="User can manage logs"
+                              Width: =231
+                              X: =30
+                              Y: =72
+                        - DataCardValue1239:
+                            Control: Classic/Toggle@2.1.0
+                            Properties:
+                              AccessibleLabel: ="test"
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              Default: =If(ThisItem.'Manage Logs' = 'Manage Logs (User Access Managers)'.Yes || Dropdown1.SelectedText.Value = "Admin",true,false)
+                              Font: =Font.'Open Sans'
+                              Height: =38
+                              TrueFill: =RGBA(56, 96, 178, 1)
+                              Width: =120
+                              X: =370
+                              Y: =12
+                  - FirstName_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicTextualEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_firstname"
+                        Default: =ThisItem.'First Name'
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_firstname)
+                        MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_firstname)
+                        Required: =true
+                        Update: =DataCardValue665.Text
+                        Width: =912
+                        Y: =0
+                      Children:
+                        - DataCardKey667:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue665.Height / 2) - (Self.Height / 2)
+                        - DataCardValue665:
+                            Control: Classic/TextInput@2.3.2
+                            Properties:
+                              AccessibleLabel: ="First name"
+                              BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                              BorderThickness: =1
+                              Default: =Parent.Default
+                              DelayOutput: =true
+                              DisplayMode: =Parent.DisplayMode
+                              Font: =Font.'Open Sans'
+                              HoverBorderColor: =RGBA(0, 18, 107, 1)
+                              HoverFill: =RGBA(186, 202, 226, 1)
+                              MaxLength: =Parent.MaxLength
+                              PaddingLeft: =5
+                              RadiusBottomLeft: =10
+                              RadiusBottomRight: =10
+                              RadiusTopLeft: =10
+                              RadiusTopRight: =10
+                              Tooltip: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.6
+                              X: =DataCardKey667.X + DataCardKey667.Width
+                              Y: =10
+                        - ErrorMessage667:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue665.Y + DataCardValue665.Height
+                        - StarVisible667:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey667.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey667.Y
+                  - LastName_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicTextualEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_lastname"
+                        Default: =ThisItem.'Last Name'
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_lastname)
+                        MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_lastname)
+                        Required: =true
+                        Update: =DataCardValue667.Text
+                        Width: =912
+                        Y: =1
+                      Children:
+                        - DataCardKey669:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue667.Height / 2) - (Self.Height / 2)
+                        - DataCardValue667:
+                            Control: Classic/TextInput@2.3.2
+                            Properties:
+                              AccessibleLabel: ="Last Name"
+                              BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                              BorderThickness: =1
+                              Default: =Parent.Default
+                              DelayOutput: =true
+                              DisplayMode: =Parent.DisplayMode
+                              Font: =Font.'Open Sans'
+                              HoverBorderColor: =RGBA(0, 18, 107, 1)
+                              HoverFill: =RGBA(186, 202, 226, 1)
+                              MaxLength: =Parent.MaxLength
+                              PaddingLeft: =5
+                              RadiusBottomLeft: =10
+                              RadiusBottomRight: =10
+                              RadiusTopLeft: =10
+                              RadiusTopRight: =10
+                              Tooltip: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.6
+                              X: =DataCardKey669.X + DataCardKey669.Width
+                              Y: =10
+                        - ErrorMessage669:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue667.Y + DataCardValue667.Height
+                        - StarVisible669:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey669.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey669.Y
+                  - Email_DataCard1:
+                      Control: TypedDataCard@1.0.6
+                      Variant: ClassicTextualEdit
+                      Properties:
+                        BorderColor: =RGBA(0, 18, 107, 1)
+                        DataField: ="ispl_email"
+                        Default: =ThisItem.Email
+                        DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_email)
+                        MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_email)
+                        Required: =true
+                        Update: =DataCardValue895.Text
+                        Width: =912
+                        Y: =2
+                      Children:
+                        - DataCardKey895:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(0, 18, 107, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =34
+                              Text: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.4
+                              Wrap: =false
+                              X: =30
+                              Y: =10 + (DataCardValue895.Height / 2) - (Self.Height / 2)
+                        - DataCardValue895:
+                            Control: Classic/TextInput@2.3.2
+                            Properties:
+                              AccessibleLabel: ="Email"
+                              BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                              BorderThickness: =1
+                              Default: =Parent.Default
+                              DelayOutput: =true
+                              DisplayMode: =Parent.DisplayMode
+                              Font: =Font.'Open Sans'
+                              HoverBorderColor: =RGBA(0, 18, 107, 1)
+                              HoverFill: =RGBA(186, 202, 226, 1)
+                              MaxLength: =Parent.MaxLength
+                              PaddingLeft: =5
+                              RadiusBottomLeft: =10
+                              RadiusBottomRight: =10
+                              RadiusTopLeft: =10
+                              RadiusTopRight: =10
+                              Tooltip: =Parent.DisplayName
+                              Width: =(Parent.Width - 60) * 0.6
+                              X: =DataCardKey895.X + DataCardKey895.Width
+                              Y: =10
+                        - ErrorMessage895:
+                            Control: Label@2.5.1
+                            Properties:
+                              AutoHeight: =true
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(168, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              FontWeight: =FontWeight.Semibold
+                              Height: =10
+                              Live: =Live.Assertive
+                              PaddingBottom: =0
+                              PaddingLeft: =0
+                              PaddingRight: =0
+                              PaddingTop: =0
+                              Size: =14
+                              Text: =Parent.Error
+                              Visible: =Parent.DisplayMode=DisplayMode.Edit
+                              Width: =Parent.Width - 60
+                              X: =30
+                              Y: =DataCardValue895.Y + DataCardValue895.Height
+                        - StarVisible895:
+                            Control: Label@2.5.1
+                            Properties:
+                              Align: =Align.Center
+                              BorderColor: =RGBA(0, 0, 0, 1)
+                              Color: =RGBA(255, 0, 0, 1)
+                              Font: =Font.'Open Sans'
+                              Height: =DataCardKey895.Height
+                              Text: ="*"
+                              Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                              Width: =30
+                              Wrap: =false
+                              Y: =DataCardKey895.Y
+            - Button18:
+                Control: Classic/Button@2.2.0
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  DisabledColor: =RGBA(255, 255, 255, 1)
+                  DisabledFill: =RGBA(166, 166, 166, 1)
+                  DisplayMode: =If(CreateUserAccessForm.Valid,DisplayMode.Edit,DisplayMode.Disabled)
+                  Fill: |
+                    =RGBA(12, 77, 162, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Normal
+                  Height: =38
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                  OnSelect: |+
+                    =SubmitForm(CreateUserAccessForm);
+
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  Text: ="Create User"
+                  Visible: |
+                    =true
+                  Width: =180
+                  X: =419
+                  Y: =610
+            - Icon5:
+                Control: Classic/Icon@2.5.0
+                Properties:
+                  AccessibleLabel: ="Close the panel"
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  Height: =29
+                  Icon: =Icon.Cancel
+                  OnSelect: =UpdateContext({VarAddUSerAccessPopUp:false})
+                  TabIndex: =
+                  Width: =35
+                  X: =989
+                  Y: =6
+      - LandingpageRectangle:
+          Control: Rectangle@2.3.0
+          Group: AfterSubmissionLandingPageGrp
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 0.2)
+            Height: =768
+            Visible: |
+              =VarAfterSubmissionlandPage
+            Width: =1366
+      - BTN_back:
+          Control: Classic/Button@2.2.0
+          Group: AfterSubmissionLandingPageGrp
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =278
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Visible: |
+              =VarAfterSubmissionlandPage
+            Width: =532
+            X: =435
+            Y: =165
+      - btn_OK:
+          Control: Classic/Button@2.2.0
+          Group: AfterSubmissionLandingPageGrp
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(12, 77, 162, 1)
+            Font: =Font.'Open Sans'
+            Height: =33
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            OnSelect: |-
+              =UpdateContext({VarAfterSubmissionlandPage:false});
+              ResetForm(CreateUserAccessForm);
+              NewForm(CreateUserAccessForm);
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: ="Ok"
+            Visible: |
+              =VarAfterSubmissionlandPage
+            Width: =61
+            X: =670
+            Y: =384
+      - Icon_Check:
+          Control: Classic/Icon@2.5.0
+          Group: AfterSubmissionLandingPageGrp
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(99, 139, 44, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Icon: =Icon.CheckBadge
+            Visible: |
+              =VarAfterSubmissionlandPage
+            X: =669
+            Y: =198
+      - MSG_LBL1:
+          Control: Label@2.5.1
+          Group: AfterSubmissionLandingPageGrp
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =26
+            Size: =15
+            Text: ="Thank You !"
+            Visible: |
+              =VarAfterSubmissionlandPage
+            Width: =207
+            X: =597
+            Y: =287
+      - MSG_LBL:
+          Control: Label@2.5.1
+          Group: AfterSubmissionLandingPageGrp
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =32
+            Size: =11
+            Text: ="Your submission has been saved"
+            Visible: |
+              =VarAfterSubmissionlandPage
+            Width: =300
+            X: =560
+            Y: =313
+      - Rect_BakColor:
+          Control: Rectangle@2.3.0
+          Group: DeactivateUserGrp
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 0.18)
+            Height: =768
+            Visible: |
+              =VarDeactivateUserPopup
+            Width: =1366
+      - BackgroundSupport:
+          Control: Classic/Button@2.2.0
+          Group: DeactivateUserGrp
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =263
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Visible: |
+              =VarDeactivateUserPopup
+            Width: =518
+            X: =461
+            Y: =180
+      - LBL_MSG2:
+          Control: Label@2.5.1
+          Group: DeactivateUserGrp
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Bold
+            Height: =35
+            Size: =18
+            Text: ="Are you sure?"
+            Visible: |
+              =VarDeactivateUserPopup
+            Width: =381
+            X: =519
+            Y: =210
+      - LBL_MSG1:
+          Control: Label@2.5.1
+          Group: DeactivateUserGrp
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(77, 77, 77, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="Do you really want to deactivate User " & gal_userAccess.Selected.'First Name' & " "&gal_userAccess.Selected.'Last Name' & " ."
+            Visible: |
+              =VarDeactivateUserPopup
+            Width: =447
+            X: =496
+            Y: =274
+      - LBL_MSG:
+          Control: Label@2.5.1
+          Group: DeactivateUserGrp
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(77, 77, 77, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =25
+            Size: =11
+            Text: ="You won't be able to revert this."
+            Visible: |
+              =VarDeactivateUserPopup
+            Width: =447
+            X: =496
+            Y: =299
+      - Cancelbtn:
+          Control: Classic/Button@2.2.0
+          Group: DeactivateUserGrp
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(143, 134, 134, 1)
+            Font: =Font.'Open Sans'
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            OnSelect: =UpdateContext({VarDeactivateUserPopup:false})
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Size: =13
+            Text: ="CANCEL"
+            Visible: |
+              =VarDeactivateUserPopup
+            Width: =125
+            X: =572
+            Y: =364
+      - Deactivate:
+          Control: Classic/Button@2.2.0
+          Group: DeactivateUserGrp
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(255, 0, 0, 1)
+            Font: =Font.'Open Sans'
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            OnSelect: |-
+              =Patch(
+                  'Deactivated Users Lists',
+                  Defaults('Deactivated Users Lists'),
+                  {
+                      Name: gal_userAccess.Selected.'First Name'& " " & gal_userAccess.Selected.'Last Name',
+                      'Email Address': gal_userAccess.Selected.Email
+                  }
+              );
+              RemoveIf(
+                  'User Access Managers',
+                  ID = gal_userAccess.Selected.ID
+              );
+              Notify(
+                  "User " & gal_userAccess.Selected.'First Name' & "" & gal_userAccess.Selected.'Last Name' & " Is Successfully deactivated.",
+                  NotificationType.Success
+              );
+              UpdateContext({VarDeactivateUserPopup: false});
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Size: =13
+            Text: ="DEACTIVATE"
+            Visible: |
+              =VarDeactivateUserPopup
+            Width: =128
+            X: =744
+            Y: =364
+      - Rectangle_forBack:
+          Control: Rectangle@2.3.0
+          Group: GrpUserAccessEditScreen
+          Properties:
+            AccessibleLabel: ="test"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 0.24)
+            FocusedBorderThickness: =1
+            Height: =768
+            TabIndex: =0
+            Visible: |-
+              =VarEditDetailsScreen
+              //true
+            Width: =1366
+      - Button_Back:
+          Control: Classic/Button@2.2.0
+          Group: GrpUserAccessEditScreen
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =1
+            Font: =Font.'Open Sans'
+            Height: =768
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Visible: |-
+              =VarEditDetailsScreen
+              //true
+            Width: =605
+            X: =761
+      - UserAccessEditScreen:
+          Control: Form@2.4.2
+          Variant: Classic
+          Layout: Vertical
+          Group: GrpUserAccessEditScreen
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            DataSource: ='User Access Managers'
+            FocusedBorderThickness: =1
+            Height: =717
+            Item: =LookUp('User Access Managers','User Access Manager'=VarIDFromUserTable)
+            Visible: |-
+              =VarEditDetailsScreen
+              //true
+            Width: =578
+            X: =788
+            Y: =51
+          Children:
+            - Role_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="Role"
+                  Default: =ThisItem.Role
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_role)
+                  Height: =95
+                  MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_role)
+                  Required: =false
+                  Update: =DataCardValue1081_2.Selected.Value
+                  Width: =578
+                  Y: =3
+                Children:
+                  - DataCardKey1081:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - ErrorMessage1081_1:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1081_2.Y + DataCardValue1081_2.Height
+                  - StarVisible1081:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1081.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1081.Y
+                  - Container_dropDown:
+                      Control: GroupContainer@1.3.0
+                      Variant: ManualLayout
+                      Properties:
+                        BorderThickness: =1
+                        Height: =40
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey1081.Y + DataCardKey1081.Height + 5
+                      Children:
+                        - DataCardValue1081_2:
+                            Control: Classic/DropDown@2.3.1
+                            Properties:
+                              AccessibleLabel: ="test"
+                              BorderColor: =RGBA(0, 18, 107, 1)
+                              BorderThickness: =1
+                              ChevronBackground: =RGBA(56, 96, 178, 1)
+                              ChevronFill: =RGBA(255, 255, 255, 1)
+                              ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                              ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                              Default: =gal_userAccess.Selected.Role
+                              Font: =Font.'Open Sans'
+                              Height: =39
+                              HoverFill: =RGBA(186, 202, 226, 1)
+                              Items: =["Admin","User"]
+                              PressedColor: =RGBA(255, 255, 255, 1)
+                              PressedFill: =RGBA(0, 18, 107, 1)
+                              SelectionColor: =RGBA(255, 255, 255, 1)
+                              SelectionFill: =RGBA(56, 96, 178, 1)
+                              Width: =515
+                              X: =2
+                              Y: =1
+            - UploadExtractDocumentRights_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicToggleEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="UploadExtractDocumentRights"
+                  Default: =ThisItem.'Upload Extract Document Rights'
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_uploadextractdocumentrights)
+                  Required: =false
+                  Update: =DataCardValue1088.Value
+                  Width: =578
+                  Y: =4
+                Children:
+                  - DataCardKey1093:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: ="Document Upload"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1088:
+                      Control: Classic/Toggle@2.1.0
+                      Properties:
+                        AccessibleLabel: ="Rights to upload document"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =gal_userAccess.Selected.'Upload Extract Document Rights'
+                        DisplayMode: =Parent.DisplayMode
+                        FalseText: ="No"
+                        Font: =Font.'Open Sans'
+                        Tooltip: =Parent.DisplayName
+                        TrueFill: =RGBA(56, 96, 178, 1)
+                        TrueText: ="Yes"
+                        X: =30
+                        Y: =DataCardKey1093.Y + DataCardKey1093.Height + 5
+                  - ErrorMessage1093:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1088.Y + DataCardValue1088.Height
+                  - StarVisible1093:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1093.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1093.Y
+            - View Rights_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicToggleEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="View_x0020_Rights"
+                  Default: =ThisItem.'View Rights'
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_viewrights)
+                  Required: =false
+                  Update: =DataCardValue1089.Value
+                  Width: =578
+                  Y: =5
+                Children:
+                  - DataCardKey1094:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1089:
+                      Control: Classic/Toggle@2.1.0
+                      Properties:
+                        AccessibleLabel: ="Rights to view document"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =gal_userAccess.Selected.'View Rights'
+                        DisplayMode: =Parent.DisplayMode
+                        FalseText: ="No"
+                        Font: =Font.'Open Sans'
+                        Tooltip: =Parent.DisplayName
+                        TrueFill: =RGBA(56, 96, 178, 1)
+                        TrueText: ="Yes"
+                        X: =30
+                        Y: =DataCardKey1094.Y + DataCardKey1094.Height + 5
+                  - ErrorMessage1094:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1089.Y + DataCardValue1089.Height
+                  - StarVisible1094:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1094.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1094.Y
+            - Edit Rights_DataCard3:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicToggleEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="Edit_x0020_Rights"
+                  Default: =ThisItem.'Edit Rights'
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_editrights)
+                  Required: =false
+                  Update: =DataCardValue1090.Value
+                  Width: =578
+                  Y: =6
+                Children:
+                  - DataCardKey1095:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1090:
+                      Control: Classic/Toggle@2.1.0
+                      Properties:
+                        AccessibleLabel: ="Edit rights"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =gal_userAccess.Selected.'Edit Rights'
+                        DisplayMode: =Parent.DisplayMode
+                        FalseText: ="No"
+                        Font: =Font.'Open Sans'
+                        Tooltip: =Parent.DisplayName
+                        TrueFill: =RGBA(56, 96, 178, 1)
+                        TrueText: ="Yes"
+                        X: =30
+                        Y: =DataCardKey1095.Y + DataCardKey1095.Height + 5
+                  - ErrorMessage1095:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1090.Y + DataCardValue1090.Height
+                  - StarVisible1095:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1095.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1095.Y
+            - Generate Report Rights_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicToggleEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="Generate_x0020_Report_x0020_Righ"
+                  Default: =ThisItem.'Generate Report Rights'
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_generatereportrights)
+                  Required: =false
+                  Update: =DataCardValue1091.Value
+                  Width: =578
+                  Y: =7
+                Children:
+                  - DataCardKey1096:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: ="Generate Report"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1091:
+                      Control: Classic/Toggle@2.1.0
+                      Properties:
+                        AccessibleLabel: ="Rights of generating report"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =gal_userAccess.Selected.'Generate Report Rights'
+                        DisplayMode: =Parent.DisplayMode
+                        FalseText: ="No"
+                        Font: =Font.'Open Sans'
+                        Tooltip: =Parent.DisplayName
+                        TrueFill: =RGBA(56, 96, 178, 1)
+                        TrueText: ="Yes"
+                        X: =30
+                        Y: =DataCardKey1096.Y + DataCardKey1096.Height + 5
+                  - ErrorMessage1096:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1091.Y + DataCardValue1091.Height
+                  - StarVisible1096:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1096.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1096.Y
+            - Manage Logs_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicToggleEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="Manage_x0020_Logs"
+                  Default: =ThisItem.'Manage Logs'
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_managelogs)
+                  Required: =false
+                  Update: =DataCardValue1092.Value
+                  Width: =578
+                  Y: =8
+                Children:
+                  - DataCardKey1097:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1092:
+                      Control: Classic/Toggle@2.1.0
+                      Properties:
+                        AccessibleLabel: ="Rights to manage"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =gal_userAccess.Selected.'Manage User Access'
+                        DisplayMode: =Parent.DisplayMode
+                        FalseText: ="No"
+                        Font: =Font.'Open Sans'
+                        Tooltip: =Parent.DisplayName
+                        TrueFill: =RGBA(56, 96, 178, 1)
+                        TrueText: ="Yes"
+                        X: =30
+                        Y: =DataCardKey1097.Y + DataCardKey1097.Height + 5
+                  - ErrorMessage1097:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1092.Y + DataCardValue1092.Height
+                  - StarVisible1097:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1097.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1097.Y
+            - Manage User Access_DataCard3:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicToggleEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="Manage_x0020_User_x0020_Access"
+                  Default: =ThisItem.'Manage User Access'
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_manageuseraccess)
+                  Required: =false
+                  Update: =DataCardValue1093.Value
+                  Width: =578
+                  Y: =9
+                Children:
+                  - DataCardKey1098:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1093:
+                      Control: Classic/Toggle@2.1.0
+                      Properties:
+                        AccessibleLabel: ="Rights to manage other user"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        Default: =gal_userAccess.Selected.'Manage User Access'
+                        DisplayMode: =Parent.DisplayMode
+                        FalseText: ="No"
+                        Font: =Font.'Open Sans'
+                        Tooltip: =Parent.DisplayName
+                        TrueFill: =RGBA(56, 96, 178, 1)
+                        TrueText: ="Yes"
+                        X: =30
+                        Y: =DataCardKey1098.Y + DataCardKey1098.Height + 5
+                  - ErrorMessage1098:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1093.Y + DataCardValue1093.Height
+                  - StarVisible1098:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1098.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1098.Y
+            - FirstName_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="FirstName"
+                  Default: =ThisItem.'First Name'
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_firstname)
+                  MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_firstname)
+                  Required: =false
+                  Update: =DataCardValue1083.Text
+                  Width: =578
+                  Y: =0
+                Children:
+                  - DataCardKey1083:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: ="First Name"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1083:
+                      Control: Classic/TextInput@2.3.2
+                      Properties:
+                        AccessibleLabel: ="First name"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        Default: =gal_userAccess.Selected.'First Name'
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey1083.Y + DataCardKey1083.Height + 5
+                  - ErrorMessage1083:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1083.Y + DataCardValue1083.Height
+                  - StarVisible1083:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1083.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1083.Y
+            - LastName_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="LastName"
+                  Default: =ThisItem.'Last Name'
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_lastname)
+                  MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_lastname)
+                  Required: =false
+                  Update: =DataCardValue1084.Text
+                  Width: =578
+                  Y: =1
+                Children:
+                  - DataCardKey1084:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: ="Last Name"
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1084:
+                      Control: Classic/TextInput@2.3.2
+                      Properties:
+                        AccessibleLabel: ="Last name"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        Default: =gal_userAccess.Selected.'Last Name'
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey1084.Y + DataCardKey1084.Height + 5
+                  - ErrorMessage1084:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1084.Y + DataCardValue1084.Height
+                  - StarVisible1084:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1084.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1084.Y
+            - Email_DataCard2:
+                Control: TypedDataCard@1.0.6
+                Variant: ClassicTextualEdit
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  DataField: ="Email"
+                  Default: =ThisItem.Email
+                  DisplayName: =DataSourceInfo([@'User Access Managers'],DataSourceInfo.DisplayName,ispl_email)
+                  MaxLength: =DataSourceInfo([@'User Access Managers'], DataSourceInfo.MaxLength,ispl_email)
+                  Required: =false
+                  Update: =DataCardValue1085.Text
+                  Width: =578
+                  Y: =2
+                Children:
+                  - DataCardKey1085:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =34
+                        Text: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        Wrap: =false
+                        X: =30
+                        Y: =10
+                  - DataCardValue1085:
+                      Control: Classic/TextInput@2.3.2
+                      Properties:
+                        AccessibleLabel: ="Email"
+                        BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
+                        BorderThickness: =1
+                        Default: =gal_userAccess.Selected.Email
+                        DelayOutput: =true
+                        DisplayMode: =Parent.DisplayMode
+                        Font: =Font.'Open Sans'
+                        HoverBorderColor: =RGBA(0, 18, 107, 1)
+                        HoverFill: =RGBA(186, 202, 226, 1)
+                        MaxLength: =Parent.MaxLength
+                        PaddingLeft: =5
+                        RadiusBottomLeft: =10
+                        RadiusBottomRight: =10
+                        RadiusTopLeft: =10
+                        RadiusTopRight: =10
+                        Tooltip: =Parent.DisplayName
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardKey1085.Y + DataCardKey1085.Height + 5
+                  - ErrorMessage1085:
+                      Control: Label@2.5.1
+                      Properties:
+                        AutoHeight: =true
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(168, 0, 0, 1)
+                        Font: =Font.'Open Sans'
+                        FontWeight: =FontWeight.Semibold
+                        Height: =10
+                        Live: =Live.Assertive
+                        PaddingBottom: =0
+                        PaddingLeft: =0
+                        PaddingRight: =0
+                        PaddingTop: =0
+                        Size: =14
+                        Text: =Parent.Error
+                        Visible: =Parent.DisplayMode=DisplayMode.Edit
+                        Width: =Parent.Width - 60
+                        X: =30
+                        Y: =DataCardValue1085.Y + DataCardValue1085.Height
+                  - StarVisible1085:
+                      Control: Label@2.5.1
+                      Properties:
+                        Align: =Align.Center
+                        BorderColor: =RGBA(0, 0, 0, 1)
+                        Color: =RGBA(0, 18, 107, 1)
+                        Font: =Font.'Open Sans'
+                        Height: =DataCardKey1085.Height
+                        Text: ="*"
+                        Visible: =And(Parent.Required, Parent.DisplayMode=DisplayMode.Edit)
+                        Width: =30
+                        Wrap: =false
+                        Y: =DataCardKey1085.Y
+      - Button_HIde:
+          Control: Classic/Button@2.2.0
+          Group: GrpUserAccessEditScreen
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(56, 96, 178, 1)
+            FocusedBorderThickness: =1
+            Font: =Font.'Open Sans'
+            Height: =38
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Visible: =VarEditDetailsScreen
+            Width: =605
+            X: =761
+      - Icon_Left:
+          Control: Classic/Icon@2.5.0
+          Group: GrpUserAccessEditScreen
+          Properties:
+            AccessibleLabel: ="Go back to your screen"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =1
+            Height: =38
+            Icon: =Icon.ChevronLeft
+            OnSelect: =UpdateContext({VarEditDetailsScreen:false})
+            PaddingBottom: =7
+            PaddingTop: =7
+            TabIndex: =0
+            Visible: |-
+              =VarEditDetailsScreen
+              //true
+            Width: =27
+            X: =766
+            Y: =1
+      - Icon_Save:
+          Control: Classic/Icon@2.5.0
+          Group: GrpUserAccessEditScreen
+          Properties:
+            AccessibleLabel: ="Save your changes"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            FocusedBorderThickness: =1
+            Height: =35
+            Icon: =Icon.Save
+            OnSelect: |-
+              =Patch(
+                  'User Access Managers',
+                  LookUp(
+                      'User Access Managers',
+                      ID = gal_userAccess.Selected.ID
+                  ),
+                  {
+                      'First Name': DataCardValue1083.Text,
+                      'Last Name': DataCardValue1084.Text,
+                      Email: DataCardValue1085.Text,
+                      'Upload Extract Document Rights': DataCardValue1088.Value,
+                      Role:DataCardValue1081_2.Selected.Value,
+                      'Generate Report Rights': DataCardValue1091.Value,
+                      'View Rights': DataCardValue1089.Value,
+                      'Manage Logs': DataCardValue1092.Value,
+                      'Edit Rights': DataCardValue1090.Value,
+                      'Manage User Access': DataCardValue1093.Value
+                  }
+              );
+              Refresh('User Access Managers');
+              UpdateContext({VarEditDetailsScreen: false})
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            TabIndex: =0
+            Visible: =VarEditDetailsScreen
+            Width: =35
+            X: =1321
+            Y: =1
+      - Submenu_extracted_UserScreen:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =Color.Transparent
+            OnSelect: '=UpdateContext({varShowSubmenu:!varShowSubmenu}); '
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Width: =201
+            X: =4
+            Y: =151
+      - Sub_Curve_2:
+          Control: Classic/Button@2.2.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =230
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =154
+      - Rect6_2:
+          Control: Rectangle@2.3.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =224
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =154
+      - Shipping_Bill_BTN_2:
+          Control: Classic/Button@2.2.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  ICEGATESBExtractedData,
+                  ScreenTransition.None
+              );
+              UpdateContext({varShowSubmenu: false})
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =162
+      - Entry_BTN_2:
+          Control: Classic/Button@2.2.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  ICEGATEBOEExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =205
+      - SEZbill_BTN_2:
+          Control: Classic/Button@2.2.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  SEZSBExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =247
+      - SEZEntry_BTN_2:
+          Control: Classic/Button@2.2.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  SEZBOEExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =290
+      - SezExport_BTN_2:
+          Control: Classic/Button@2.2.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  BillOfExportExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Export"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =227
+            Y: =331
+      - Rect5_2:
+          Control: Rectangle@2.3.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =194
+      - Rect4_2:
+          Control: Rectangle@2.3.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =240
+      - Rect3_2:
+          Control: Rectangle@2.3.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =282
+      - Rect2_2:
+          Control: Rectangle@2.3.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =324
+      - Rect1_2:
+          Control: Rectangle@2.3.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =365
+      - Icon_Nav_screen_2:
+          Control: Classic/Icon@2.5.0
+          Group: GroupSubmenu_User
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =28
+            Icon: =Icon.ChevronRight
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =varShowSubmenu
+            Width: =28
+            X: =176
+            Y: =153

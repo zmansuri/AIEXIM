@@ -42,6 +42,7 @@ Navigation_7 As CanvasComponent:
     ZIndex: =2
 
     HtmlText_Galllery_1 As htmlViewer:
+        DisabledBorderColor: =RGBA(56, 56, 56, 1)
         Height: =690
         HtmlText: |-
             ="<div style='margin-left:-10px; width:211px;height:679px;background-color:#;box-shadow:0 2px 7px 3px  #ccc; border-radius:0px'></div>"
@@ -50,6 +51,7 @@ Navigation_7 As CanvasComponent:
         ZIndex: =1
 
     HtmlText_MainHeader_1 As htmlViewer:
+        DisabledBorderColor: =RGBA(56, 56, 56, 1)
         Height: =102
         HtmlText: |-
             ="<div style='margin-left:-10px; width:1366px;height:76px;background-color:#;box-shadow:0 2px 7px 3px  #ccc; border-radius:0px'></div>"

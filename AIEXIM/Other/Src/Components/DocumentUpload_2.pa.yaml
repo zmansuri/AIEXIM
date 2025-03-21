@@ -1,0 +1,144 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+ComponentDefinitions:
+  DocumentUpload_2:
+    DefinitionType: CanvasComponent
+    CustomProperties:
+      InvoiceNumber:
+        PropertyKind: Input
+        DisplayName: Invoice Number
+        Description: A custom property
+        DataType: Text
+        Default: ="12345"
+      MessageBox:
+        PropertyKind: Input
+        DisplayName: MessageBox
+        Description: A custom property
+        DataType: Text
+        Default: ="Message.."
+    Properties:
+      Height: =768
+      Width: =1366
+    Children:
+      - ContainerPopUp_2:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            Fill: =RGBA(0, 0, 00, 70%)
+            Height: =768
+            Width: =1366
+          Children:
+            - Button12_1:
+                Control: Classic/Button@2.2.0
+                Group: Box_1
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  DisplayMode: =DisplayMode.View
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =670
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  Size: =24
+                  Text: =""
+                  Width: =625
+                  X: =370
+                  Y: =58
+            - ShadowMessage_2:
+                Control: HtmlViewer@2.1.0
+                Group: Box_1
+                Properties:
+                  DisabledBorderColor: =RGBA(56, 56, 56, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =39
+                  HtmlText: |-
+                    ="<div style='margin-left:-10px; width:882px;height:0px;background-color:#;box-shadow:0 2px 7px 3px  #ccc; border-radius:0px'></div>"
+                  Width: =628
+                  X: =369
+                  Y: =97
+            - Button11_1:
+                Control: Classic/Button@2.2.0
+                Group: Box_1
+                Properties:
+                  BorderColor: =ColorFade(Self.Fill, -15%)
+                  Color: =RGBA(255, 255, 255, 1)
+                  DisabledBorderColor: =RGBA(166, 166, 166, 1)
+                  DisplayMode: =DisplayMode.View
+                  Fill: =RGBA(56, 96, 178, 1)
+                  Font: =Font.'Open Sans'
+                  Height: =55
+                  HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+                  HoverColor: =RGBA(255, 255, 255, 1)
+                  HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                  PressedBorderColor: =Self.Fill
+                  PressedColor: =Self.Fill
+                  PressedFill: =Self.Color
+                  Size: =24
+                  Text: =""
+                  Width: =627
+                  X: =370
+                  Y: =48
+            - Icon1_5:
+                Control: Classic/Icon@2.5.0
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  FocusedBorderThickness: =0
+                  Height: =49
+                  Icon: =Icon.Cancel
+                  PaddingBottom: =13
+                  PaddingLeft: =13
+                  PaddingRight: =13
+                  PaddingTop: =13
+                  Width: =60
+                  X: =935
+                  Y: =51
+            - Rectangle10_2:
+                Control: Rectangle@2.3.0
+                Group: Box_1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Fill: =RGBA(56, 96, 178, 1)
+                  Height: =12
+                  Width: =627
+                  X: =369
+                  Y: =91
+            - InvoiceNumber_1:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =55
+                  Size: =14
+                  Text: =DocumentUpload_2.InvoiceNumber
+                  Width: =173
+                  X: =692
+                  Y: =48
+            - Label10_1:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =RGBA(255, 255, 255, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =55
+                  Size: =14
+                  Text: ="Invoice No:"
+                  Width: =114
+                  X: =578
+                  Y: =48

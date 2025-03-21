@@ -58,6 +58,7 @@ DocumentUpload As CanvasComponent:
                 ZIndex: =1
 
             ShadowMessage_1 As htmlViewer:
+                DisabledBorderColor: =RGBA(56, 56, 56, 1)
                 Height: =39
                 HtmlText: |-
                     ="<div style='margin-left:-10px; width:882px;height:0px;background-color:#;box-shadow:0 2px 7px 3px  #ccc; border-radius:0px'></div>"

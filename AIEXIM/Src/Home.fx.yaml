@@ -26,7 +26,8 @@ Home As screen:
             )
 
     Navigation_1 As Navigation:
-        ApplicationHeader: ="AI EXIM OCR"
+        ApplicationHeader: ="CAP Carpet - Intech AP Automation"
+        Height: =768
         NavigationItems: |-
             =Table(
                 {
@@ -1258,7 +1259,7 @@ Home As screen:
                     DisplayMode: =Parent.DisplayMode
                     IsSearchable: =false
                     Items: |
-                        =Choices(SourceType)
+                        =Choices('Source Type')
                     PaddingLeft: =If(Self.DisplayMode = DisplayMode.Edit, 5, 0)
                     SearchFields: =["Value"]
                     SearchItems: =[]

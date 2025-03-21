@@ -1,0 +1,796 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Extracted Data:
+    Properties:
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+    Children:
+      - LabelExtractedData:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            Height: =106
+            Size: =21
+            Text: ="Extracted Data Screen."
+            Width: =318
+            X: =588
+            Y: =285
+      - btn_reports:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Align: =Align.Left
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: = RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Generate Report Rights'= true, DisplayMode.Edit,DisplayMode.View)
+            Fill: |-
+              =//RGBA(12, 77, 162, 1)
+              RGBA(0,0,0,0)
+            Font: =Font.'Open Sans'
+            Height: =32
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(Reports,ScreenTransition.Fade)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =
+            PressedFill: =RGBA(0, 18, 107, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: =""
+            Width: =196
+            X: =4
+            Y: =185
+      - btn_logs:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Align: =Align.Left
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: = RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage Logs'= true, DisplayMode.Edit,DisplayMode.View)
+            Fill: |-
+              =//RGBA(12, 77, 162, 1)
+              RGBA(0,0,0,0)
+            Font: =Font.'Open Sans'
+            Height: =31
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(Logs,ScreenTransition.Fade)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =
+            PressedFill: =RGBA(0, 18, 107, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: =""
+            Width: =196
+            X: =4
+            Y: =219
+      - btn_userAccess:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Align: =Align.Left
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: = RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage User Access'= true && First(ColCurrentLoggedInUserDetails).Role="Admin", DisplayMode.Edit,DisplayMode.View)
+            Fill: |-
+              =//RGBA(12, 77, 162, 1)
+              RGBA(0,0,0,0)
+            Font: =Font.'Open Sans'
+            Height: =32
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate('User Access',ScreenTransition.Fade)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =
+            PressedFill: =RGBA(0, 18, 107, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: =""
+            Width: =196
+            X: =4
+            Y: =253
+      - btn_background:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =RGBA(186, 186, 186, 1)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =
+            DisabledColor: =
+            Fill: =RGBA(12, 77, 162, 1)
+            Font: =Font.'Open Sans'
+            Height: =38
+            HoverBorderColor: =
+            HoverColor: =
+            HoverFill: =
+            PressedBorderColor: =
+            PressedColor: =
+            PressedFill: =
+            Text: =""
+            Width: =1056
+            X: =269
+            Y: =174
+      - Label2_66:
+          Control: Label@2.5.1
+          Group: MiniHeader_extractedData
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="File Name"
+            Width: =187
+            X: =391
+            Y: =174
+      - Label2_65:
+          Control: Label@2.5.1
+          Group: MiniHeader_extractedData
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Type"
+            Width: =155
+            X: =593
+            Y: =174
+      - Label2_63:
+          Control: Label@2.5.1
+          Group: MiniHeader_extractedData
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Uploaded On"
+            Width: =116
+            X: =931
+            Y: =174
+      - Label2_62:
+          Control: Label@2.5.1
+          Group: MiniHeader_extractedData
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Uploaded By"
+            Width: =104
+            X: =1071
+            Y: =174
+      - galExtractedData:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_TwoTextOneImageVariant_ver5.0
+          Properties:
+            AccessibleLabel: ="List of extracted data"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =445
+            Items: |-
+              =Filter(
+                  Sort(
+                      'Extracted Document Lists',
+                      'Created On',
+                      SortOrder.Descending
+                  ),
+                  StartsWith(
+                      'Document Name',
+                      txtSearchExtractedData.Text
+                  )
+              )
+            ShowScrollbar: =false
+            TabIndex: =0
+            TemplateSize: =49
+            Width: =1060
+            X: =265
+            Y: =212
+          Children:
+            - id_glry:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =Self.Size * 1.8
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =12
+                  Text: =ThisItem.ID
+                  VerticalAlign: =VerticalAlign.Top
+                  Width: =
+                  X: =
+                  Y: =
+            - rect_glry:
+                Control: Rectangle@2.3.0
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Fill: =RGBA(204, 204, 205, 1)
+                  Height: =1
+                  Width: =1055
+                  Y: =48
+            - UploadedOn_lbl:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =45
+                  PaddingLeft: =15
+                  Size: =10
+                  Text: =ThisItem.'Created On'
+                  Width: =142
+                  X: =666
+                  Y: =2
+            - UploadedBy_lbl:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =45
+                  PaddingLeft: =15
+                  Size: =10
+                  Text: =ThisItem.'Created By'.'Full Name'
+                  Width: =106
+                  X: =808
+                  Y: =2
+            - ImageView_Doc:
+                Control: Image@2.2.3
+                Properties:
+                  AccessibleLabel: ="TEST"
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Height: =45
+                  Image: =view
+                  OnSelect: |-
+                    =If(
+                        ThisItem.'Type Of Document' = DocType.'Bill Of Entry Import',
+                        Navigate(
+                            ICEGATEBOE,
+                            ScreenTransition.Fade
+                        ),
+                        If(
+                            ThisItem.'Type Of Document' = DocType.'Shipping Bill Export',
+                            Navigate(
+                                ICEGATESB,
+                                ScreenTransition.None
+                            ),
+                            If(
+                                ThisItem.'Type Of Document' = DocType.'SEZ Bill of Entry',
+                                Navigate(
+                                    SEZBOE,
+                                    ScreenTransition.Fade
+                                ),
+                                If(
+                                    ThisItem.'Type Of Document' = DocType.'SEZ Shipping Bill',
+                                    Navigate(
+                                        SEZSB,
+                                        ScreenTransition.Fade
+                                    ),
+                                    Navigate(
+                                        SEZBillOfExport,
+                                        ScreenTransition.Fade
+                                    )
+                                )
+                            )
+                        )
+                    );
+                    Set(
+                        varPDFViewerExtractedData,
+                        GetFileContentFormAttachments.Run(ThisItem.ID).result
+                    );
+
+
+                    Set(
+                        varExtractedSEZExportItem,
+                        ThisItem.ID
+                    );
+
+                    Set(
+                        varExtractedBillOfExportItem,
+                        ThisItem.'Extracted Bill of Export ID'
+                    );
+                  PaddingBottom: =10
+                  PaddingLeft: =10
+                  PaddingRight: =10
+                  PaddingTop: =10
+                  TabIndex: =0
+                  Width: =40
+                  X: =1002
+                  Y: =2
+            - Glry_ID:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =45
+                  OnSelect: =Select(Parent)
+                  Size: =10
+                  Text: =ThisItem.Name
+                  Width: =120
+                  Y: =2
+            - Glry_FileName:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =45
+                  OnSelect: =Select(Parent)
+                  Size: =10
+                  Text: =ThisItem.'Document Name'
+                  Width: =180
+                  X: =138
+                  Y: =2
+            - Glry_Type:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =45
+                  OnSelect: =Select(Parent)
+                  Size: =10
+                  Text: =ThisItem.'Type Of Document'
+                  Width: =144
+                  X: =339
+                  Y: =2
+            - Glry_Source:
+                Control: Label@2.5.1
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =45
+                  OnSelect: =Select(Parent)
+                  Size: =10
+                  Text: =ThisItem.SourceDoc
+                  Width: =120
+                  X: =528
+                  Y: =2
+            - Glry_Status:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: |-
+                    =If(
+                        ThisItem.StatusDoc = StatusType.Completed,
+                        RGBA(
+                            14,
+                            132,
+                            65,
+                            255
+                        ),
+                        ThisItem.StatusDoc = StatusType.Pending,
+                        RGBA(
+                            223,
+                            188,
+                            61,
+                            255
+                        ),
+                        RGBA(
+                            30,
+                            90,
+                            169,
+                            255
+                        )
+                    )
+                  Font: =Font.'Open Sans'
+                  FontWeight: =FontWeight.Semibold
+                  Height: =45
+                  OnSelect: =Select(Parent)
+                  Size: =10
+                  Text: =ThisItem.StatusDoc
+                  Width: =120
+                  X: =894
+                  Y: =2
+      - txtSearchExtractedData:
+          Control: Classic/TextInput@2.3.2
+          Properties:
+            AccessibleLabel: ="Search here"
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Default: =""
+            Font: =Font.'Open Sans'
+            Height: =35
+            HintText: ="Search Document"
+            HoverBorderColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =RGBA(186, 202, 226, 1)
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Size: =10
+            Width: =255
+            X: =269
+            Y: =111
+      - ID_LBL:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="ID"
+            Width: =105
+            X: =296
+            Y: =174
+      - Souurce_LBL:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Source"
+            Width: =139
+            X: =782
+            Y: =174
+      - btnRemoveComponentLogo_2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.Transparent
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =60
+            HoverBorderColor: =Color.Transparent
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =Color.Transparent
+            PressedBorderColor: =Color.Transparent
+            PressedColor: =Self.Fill
+            PressedFill: =Color.Transparent
+            Text: =""
+            Width: =170
+            X: =20
+            Y: =10
+      - Image_Logo_Extracted:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =70
+            Image: ='MicrosoftTeams-image (1)'
+            Width: =190
+            Y: =7
+      - Status_Lbl:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =38
+            PaddingLeft: =15
+            Size: =10
+            Text: ="Status"
+            Width: =69
+            X: =1173
+            Y: =174
+      - btnShowSubmenu:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =Color.Transparent
+            OnSelect: =UpdateContext({varShowSubmenu:true})
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Width: =201
+            Y: =156
+      - btnSubmenuCurve_13:
+          Control: Classic/Button@2.2.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =230
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =154
+      - Rect_Submenu:
+          Control: Rectangle@2.3.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =224
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =154
+      - btn_bill:
+          Control: Classic/Button@2.2.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(128, 128, 128, 0.79)
+            OnSelect: |-
+              =Navigate(
+                  ICEGATESBExtractedData,
+                  ScreenTransition.None
+              );
+              UpdateContext({varShowSubmenu: false})
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =12
+            RadiusBottomRight: =12
+            RadiusTopLeft: =12
+            RadiusTopRight: =12
+            Size: =12
+            Text: ="Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =223
+            Y: =162
+      - btn_entry:
+          Control: Classic/Button@2.2.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(128, 128, 128, 0.79)
+            OnSelect: |-
+              =Navigate(
+                  ICEGATEBOEExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =12
+            RadiusBottomRight: =12
+            RadiusTopLeft: =12
+            RadiusTopRight: =12
+            Size: =12
+            Text: ="Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =223
+            Y: =205
+      - btn_SEZbill:
+          Control: Classic/Button@2.2.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(128, 128, 128, 0.79)
+            OnSelect: |-
+              =Navigate(
+                  SEZSBExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =12
+            RadiusBottomRight: =12
+            RadiusTopLeft: =12
+            RadiusTopRight: =12
+            Size: =12
+            Text: ="SEZ Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =223
+            Y: =247
+      - btn_SEZ_entry:
+          Control: Classic/Button@2.2.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(128, 128, 128, 0.79)
+            OnSelect: |-
+              =Navigate(
+                  SEZBOEExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =12
+            RadiusBottomRight: =12
+            RadiusTopLeft: =12
+            RadiusTopRight: =12
+            Size: =12
+            Text: ="SEZ Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =223
+            Y: =290
+      - btn_SEZbillExport:
+          Control: Classic/Button@2.2.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(128, 128, 128, 0.79)
+            OnSelect: |-
+              =Navigate(
+                  BillOfExportExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =12
+            RadiusBottomRight: =12
+            RadiusTopLeft: =12
+            RadiusTopRight: =12
+            Size: =12
+            Text: ="SEZ Bill of Export"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =331
+      - Rect_menu5:
+          Control: Rectangle@2.3.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =194
+      - Rect_menu4:
+          Control: Rectangle@2.3.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =240
+      - Rect_menu3:
+          Control: Rectangle@2.3.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =282
+      - Rect_menu2:
+          Control: Rectangle@2.3.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =324
+      - Rect_menu1:
+          Control: Rectangle@2.3.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =215
+            Y: =365
+      - icon_nav_extracted:
+          Control: Classic/Icon@2.5.0
+          Group: Submenu_Extracted
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =28
+            Icon: =Icon.ChevronRight
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =varShowSubmenu
+            Width: =28
+            X: =176
+            Y: =153

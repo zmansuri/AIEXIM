@@ -1,0 +1,758 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+Screens:
+  Reports:
+    Properties:
+      LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
+      OnVisible: |-
+        =UpdateContext({varShowSubmenu:false});
+        Reset(FromDate);
+        Reset(ToDate)
+    Children:
+      - Logs_BTN2:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Align: =Align.Left
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: = RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage Logs'= true, DisplayMode.Edit,DisplayMode.View)
+            Fill: |-
+              =//RGBA(12, 77, 162, 1)
+              RGBA(0,0,0,0)
+            Font: =Font.'Open Sans'
+            Height: =32
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate(Logs,ScreenTransition.Fade)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =
+            PressedFill: =RGBA(0, 18, 107, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: =""
+            Width: =196
+            X: =7
+            Y: =221
+      - UserAccess_btn:
+          Control: Classic/Button@2.2.0
+          Properties:
+            Align: =Align.Left
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: = RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =If(First(ColCurrentLoggedInUserDetails).'Manage User Access'= true && First(ColCurrentLoggedInUserDetails).Role="Admin", DisplayMode.Edit,DisplayMode.View)
+            Fill: |-
+              =//RGBA(12, 77, 162, 1)
+              RGBA(0,0,0,0)
+            Font: =Font.'Open Sans'
+            Height: =31
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =
+            OnSelect: =Navigate('User Access',ScreenTransition.Fade)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =
+            PressedFill: =RGBA(0, 18, 107, 1)
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: =""
+            Width: =196
+            X: =7
+            Y: =254
+      - btnRemoveComponentLogo_3:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =Color.Transparent
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(0, 0, 0, 0)
+            DisabledColor: =RGBA(255, 255, 255, 1)
+            DisabledFill: =RGBA(0, 0, 0, 0)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =60
+            HoverBorderColor: =Color.Transparent
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =Color.Transparent
+            PressedBorderColor: =Color.Transparent
+            PressedColor: =Self.Fill
+            PressedFill: =Color.Transparent
+            Text: =""
+            Width: =170
+            X: =20
+            Y: =10
+      - intech_logo:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =70
+            Image: ='MicrosoftTeams-image (1)'
+            Width: =190
+      - ShowSubmenu:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(0, 0, 0, 0)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(0, 0, 0, 0)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(0, 0, 0, 0)
+            HoverFill: =Color.Transparent
+            OnSelect: '=UpdateContext({varShowSubmenu:!varShowSubmenu}); '
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Width: =201
+            X: =4
+            Y: =154
+      - hideBTN:
+          Control: Classic/Button@2.2.0
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: |-
+              =RGBA(
+                  255,
+                  255,
+                  255,
+                  1
+              )
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisabledFill: =
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(255, 255, 255, 1)
+            Font: =Font.'Open Sans'
+            Height: =55
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Width: =296
+            X: =952
+            Y: =15
+      - ConDocumentType:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Height: =40
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =250
+            X: =975
+            Y: =193
+          Children:
+            - drpDocumentType:
+                Control: Classic/DropDown@2.3.1
+                Properties:
+                  AccessibleLabel: ="Select doccument "
+                  AllowEmptySelection: =true
+                  BorderColor: =RGBA(12, 77, 162, 1)
+                  BorderThickness: =1
+                  ChevronBackground: =RGBA(56, 96, 178, 1)
+                  ChevronFill: =RGBA(255, 255, 255, 1)
+                  ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                  ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                  Font: =Font.'Open Sans'
+                  HoverFill: =RGBA(186, 202, 226, 1)
+                  Items: =Choices(DocType)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(0, 18, 107, 1)
+                  SelectionColor: =RGBA(255, 255, 255, 1)
+                  SelectionFill: =RGBA(56, 96, 178, 1)
+                  Width: =250
+      - ConUploadedFrom:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Height: =40
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =250
+            X: =446
+            Y: =272
+          Children:
+            - FromDate:
+                Control: Classic/DatePicker@2.6.0
+                Properties:
+                  AccessibleLabel: ="From date"
+                  BorderColor: =RGBA(12, 77, 162, 1)
+                  BorderThickness: =1
+                  Font: =Font.'Open Sans'
+                  Format: |-
+                    =//DateTimeFormat.ShortDate
+                    "dd-mmm-yyyy"
+                  IconBackground: =RGBA(56, 96, 178, 1)
+                  IconFill: =RGBA(255, 255, 255, 1)
+                  OnChange: =If(DateDiff(FromDate.SelectedDate,ToDate.SelectedDate,TimeUnit.Months) > 1,Notify("The selected date range is too large. Please choose a date range of a month.",NotificationType.Error));
+                  Width: =250
+      - ConUploadedTo:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Height: =40
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =250
+            X: =975
+            Y: =272
+          Children:
+            - ToDate:
+                Control: Classic/DatePicker@2.6.0
+                Properties:
+                  AccessibleLabel: ="To date"
+                  BorderColor: =RGBA(12, 77, 162, 1)
+                  Font: =Font.'Open Sans'
+                  Format: |-
+                    =//DateTimeFormat.ShortDate
+                    "dd-mmm-yyyy"
+                  IconBackground: =RGBA(56, 96, 178, 1)
+                  IconFill: =RGBA(255, 255, 255, 1)
+                  OnChange: =If(DateDiff(FromDate.SelectedDate,ToDate.SelectedDate,TimeUnit.Months) > 1,Notify("The selected date range is too large. Please choose a date range of a month.",NotificationType.Error));
+                  Width: =250
+      - ConCompany:
+          Control: GroupContainer@1.3.0
+          Variant: ManualLayout
+          Properties:
+            BorderColor: =RGBA(12, 77, 162, 1)
+            BorderThickness: =1
+            Height: =40
+            RadiusBottomLeft: =10
+            RadiusBottomRight: =10
+            RadiusTopLeft: =10
+            RadiusTopRight: =10
+            Width: =250
+            X: =446
+            Y: =189
+          Children:
+            - drpCompany:
+                Control: Classic/DropDown@2.3.1
+                Properties:
+                  AccessibleLabel: ="Select company from the dropdown"
+                  AllowEmptySelection: =true
+                  BorderColor: =RGBA(12, 77, 162, 1)
+                  BorderThickness: =1
+                  ChevronBackground: =RGBA(56, 96, 178, 1)
+                  ChevronFill: =RGBA(255, 255, 255, 1)
+                  ChevronHoverBackground: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+                  ChevronHoverFill: =RGBA(255, 255, 255, 1)
+                  Font: =Font.'Open Sans'
+                  HoverFill: =RGBA(186, 202, 226, 1)
+                  Items: =Choices(CompanyType)
+                  PressedColor: =RGBA(255, 255, 255, 1)
+                  PressedFill: =RGBA(0, 18, 107, 1)
+                  SelectionColor: =RGBA(255, 255, 255, 1)
+                  SelectionFill: =RGBA(56, 96, 178, 1)
+                  Width: =250
+      - LBL_FromDate:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Text: ="From"
+            Width: =112
+            X: =292
+            Y: =272
+      - LBL_DocType:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Text: ="Document Type"
+            X: =806
+            Y: =189
+      - LBL_ToDate:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Text: ="To"
+            Width: =112
+            X: =806
+            Y: =276
+      - LBL_Company:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =48
+            Text: ="Company"
+            Width: =133
+            X: =313
+            Y: =184
+      - DownloadOld:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            AccessibleLabel: ="Download Report"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =37
+            Icon: =Icon.Download
+            OnSelect: |
+              =Set(
+                  SpinnerVisible,
+                  true
+              );
+              Set(
+                  varFile,
+                  'ManualReportDownload-Dataverse'.Run(
+                      drpDocumentType.Selected.Value,
+                      drpCompany.Selected.Value,
+                      Text(
+                          FromDate.SelectedDate,
+                          "dd-mmm-yyyy"
+                      ),
+                      Text(
+                          ToDate.SelectedDate,
+                          "dd-mmm-yyyy"
+                      )
+                  ).result
+              );
+              Set(
+                  SpinnerVisible,
+                  false
+              );
+              Launch(varFile);
+              Notify(
+                  "Your report is Downloaded",
+                  NotificationType.Success,
+                  5000
+              );
+            TabIndex: =
+            Visible: =false
+            Width: =58
+            X: =1180
+            Y: =107
+      - LabelSendEmail:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =18
+            Size: =10
+            Text: |-
+              ="Send Mail
+              "
+            Width: =83
+            X: =1073
+            Y: =144
+      - LabelDownload:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            DisplayMode: =If(DateDiff(FromDate.SelectedDate,ToDate.SelectedDate,TimeUnit.Months) > 1,DisplayMode.Disabled, DisplayMode.Edit)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =18
+            Size: =10
+            Text: |-
+              ="Download
+              "
+            Width: =83
+            X: =1165
+            Y: =142
+      - Sub_Curve:
+          Control: Classic/Button@2.2.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            Color: =RGBA(255, 255, 255, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            DisplayMode: =DisplayMode.View
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =230
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =ColorFade(RGBA(56, 96, 178, 1), -20%)
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            Text: =""
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =154
+      - Rect6:
+          Control: Rectangle@2.3.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Height: =224
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =154
+      - Shipping_Bill_BTN:
+          Control: Classic/Button@2.2.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  ICEGATESBExtractedData,
+                  ScreenTransition.None
+              );
+              UpdateContext({varShowSubmenu: false})
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =162
+      - Entry_BTN:
+          Control: Classic/Button@2.2.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  ICEGATEBOEExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =205
+      - SEZbill_BTN:
+          Control: Classic/Button@2.2.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  SEZSBExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Shipping Bill"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =247
+      - SEZEntry_BTN:
+          Control: Classic/Button@2.2.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  SEZBOEExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Entry"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =225
+            Y: =290
+      - SezExport_BTN:
+          Control: Classic/Button@2.2.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =ColorFade(Self.Fill, -15%)
+            BorderStyle: =BorderStyle.None
+            Color: =RGBA(0, 0, 0, 1)
+            DisabledBorderColor: =RGBA(166, 166, 166, 1)
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            Height: =29
+            HoverBorderColor: =ColorFade(Self.BorderColor, 20%)
+            HoverColor: =RGBA(255, 255, 255, 1)
+            HoverFill: =RGBA(56, 96, 178, 1)
+            OnSelect: |-
+              =Navigate(
+                  BillOfExportExtractedData,
+                  ScreenTransition.None,
+                  {varShowSubmenu: false}
+              )
+            PressedBorderColor: =Self.Fill
+            PressedColor: =Self.Fill
+            PressedFill: =Self.Color
+            RadiusBottomLeft: =0
+            RadiusBottomRight: =0
+            RadiusTopLeft: =0
+            RadiusTopRight: =0
+            Size: =12
+            Text: ="SEZ Bill of Export"
+            Visible: =varShowSubmenu
+            Width: =236
+            X: =227
+            Y: =331
+      - Rect5:
+          Control: Rectangle@2.3.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =194
+      - Rect4:
+          Control: Rectangle@2.3.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =240
+      - Rect3:
+          Control: Rectangle@2.3.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =282
+      - Rect2:
+          Control: Rectangle@2.3.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =324
+      - Rect1:
+          Control: Rectangle@2.3.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 1)
+            Height: =0.5
+            Visible: =varShowSubmenu
+            Width: =262
+            X: =217
+            Y: =365
+      - SendMailNew:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            AccessibleLabel: ="Get the email"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =45
+            Icon: =Icon.Mail
+            OnSelect: |-
+              =Set(SpinnerVisible,true);
+              'ManualReportEmail-Dataverse'.Run(
+                  drpDocumentType.Selected.Value,
+                  drpCompany.Selected.Value,
+                  Text(
+                      FromDate.SelectedDate,
+                      "dd-mmm-yyyy"
+                  ),
+                  Text(
+                      ToDate.SelectedDate,
+                      "dd-mmm-yyyy"
+                  ),
+                  User().Email,
+                  User().FullName
+              );
+              Set(SpinnerVisible,false);
+              Notify(
+                  "Your report is being generated and will be sent to your email shortly
+              ",
+                  NotificationType.Success,
+                  5000
+              );
+            TabIndex: =0
+            Width: =63
+            X: =1083
+            Y: =99
+      - DownloadNew:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            AccessibleLabel: ="Download report"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            DisplayMode: =If(DateDiff(FromDate.SelectedDate,ToDate.SelectedDate,TimeUnit.Months) > 1,DisplayMode.Disabled, DisplayMode.Edit)
+            Height: =37
+            Icon: =Icon.Download
+            OnSelect: |-
+              =Set(
+                  SpinnerVisible,
+                  true
+              );
+              Set(
+                  varFile,
+                  'ManualReportDownload-Dataverse'.Run(
+                      drpDocumentType.Selected.Value,
+                      drpCompany.Selected.Value,
+                      Text(
+                          FromDate.SelectedDate,
+                          "dd-mmm-yyyy"
+                      ),
+                      Text(
+                          ToDate.SelectedDate,
+                          "dd-mmm-yyyy"
+                      )
+                  ).result
+              );
+              Set(
+                  SpinnerVisible,
+                  false
+              );
+              Launch(varFile);
+              Notify(
+                  "Your report is Downloaded",
+                  NotificationType.Success,
+                  5000
+              );
+            TabIndex: =
+            Width: =58
+            X: =1177
+            Y: =105
+      - Icon_Nav_screen:
+          Control: Classic/Icon@2.5.0
+          Group: grpSubmenuReports
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =28
+            Icon: =Icon.ChevronRight
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Visible: =varShowSubmenu
+            Width: =28
+            X: =176
+            Y: =153
+      - Rectangle_Background:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(0, 0, 0, 60%)
+            Height: =768
+            Visible: =SpinnerVisible
+            Width: =1366
+      - Image_Loading:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Image: ='loading-buffering'
+            Visible: =SpinnerVisible
+            X: =627
+            Y: =315

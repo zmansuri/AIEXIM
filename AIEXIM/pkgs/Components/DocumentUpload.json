@@ -559,13 +559,13 @@
                 "Category": "Design",
                 "InvariantScript": "0",
                 "Property": "BorderThickness",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "System"
               },
               {
                 "Category": "Design",
                 "InvariantScript": "0",
                 "Property": "FocusedBorderThickness",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "System"
               },
               {
                 "Category": "Design",
@@ -862,7 +862,7 @@
                 "Category": "Design",
                 "InvariantScript": "7",
                 "Property": "ZIndex",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "System"
               },
               {
                 "Category": "Design",
@@ -874,13 +874,13 @@
                 "Category": "Design",
                 "InvariantScript": "0",
                 "Property": "BorderThickness",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "System"
               },
               {
                 "Category": "Design",
                 "InvariantScript": "0",
                 "Property": "FocusedBorderThickness",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "System"
               },
               {
                 "Category": "Design",
@@ -1070,13 +1070,13 @@
                 "Category": "Design",
                 "InvariantScript": "0",
                 "Property": "FocusedBorderThickness",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "System"
               },
               {
                 "Category": "Design",
                 "InvariantScript": "0",
                 "Property": "BorderThickness",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "System"
               },
               {
                 "Category": "Design",
@@ -1771,7 +1771,7 @@
                 "Category": "Design",
                 "InvariantScript": "0",
                 "Property": "BorderThickness",
-                "RuleProviderType": "Unknown"
+                "RuleProviderType": "System"
               },
               {
                 "Category": "Design",
@@ -1843,7 +1843,8 @@
                 "InvariantPropertyName": "HtmlText",
                 "IsLockable": false,
                 "NameMapSourceSchema": "?"
-              }
+              },
+              "Size"
             ],
             "ControlUniqueId": "105",
             "HasDynamicProperties": false,
@@ -1956,9 +1957,15 @@
                 "InvariantScript": "Self.BorderColor",
                 "Property": "PressedBorderColor",
                 "RuleProviderType": "Unknown"
+              },
+              {
+                "Category": "Design",
+                "InvariantScript": "13",
+                "Property": "Size",
+                "RuleProviderType": "Unknown"
               }
             ],
-            "StyleName": "",
+            "StyleName": "defaultHtmlViewerStyle",
             "Template": {
               "CustomGroupControlTemplateName": "",
               "FirstParty": true,
@@ -2159,7 +2166,7 @@
             "Category": "Design",
             "InvariantScript": "0",
             "Property": "LayoutGap",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -2195,25 +2202,25 @@
             "Category": "Design",
             "InvariantScript": "768",
             "Property": "Height",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
             "InvariantScript": "1366",
             "Property": "Width",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
             "InvariantScript": "0",
             "Property": "Y",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
             "InvariantScript": "0",
             "Property": "X",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -2289,7 +2296,7 @@
         "NameMapSourceSchema": "?"
       }
     ],
-    "LastModifiedTimestamp": "638569771595484888",
+    "LastModifiedTimestamp": "638781589265048362",
     "Name": "DocumentUpload",
     "Rules": [
       {
@@ -2314,31 +2321,31 @@
         "Category": "Design",
         "InvariantScript": "768",
         "Property": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "1366",
         "Property": "Width",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "0",
         "Property": "X",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "0",
         "Property": "Y",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "7",
         "Property": "ZIndex",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       }
     ]
   },
@@ -2359,7 +2366,7 @@
       "Name": "MessageBox",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.342\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     },
     {
       "Category": 0,
@@ -2368,7 +2375,7 @@
       "Name": "InvoiceNumber",
       "PropertyDataTypeKey": "String",
       "Tooltip": "A custom property",
-      "Type": "{\"Version\":\"1.342\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
+      "Type": "{\"Version\":\"1.345\",\"Type\":{\"Name\":\"Root\",\"Kind\":\"String\",\"EnumString\":\"\",\"Type\":[]}}"
     }
   ],
   "FirstParty": true,
@@ -2379,7 +2386,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638569771595484888",
+  "LastModifiedTimestamp": "638781589265048362",
   "Name": "b894ce02ef104e8e9f17c83698bc49ce",
   "OverridableProperties": {},
   "SourceLibraryId": "f373a164-3ed5-4558-b537-aeca98a6ffa1",

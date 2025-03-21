@@ -6024,6 +6024,156 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Exchange Rate Val Dtls_DataCard1'.DataCardValue148.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Exchange Rate Val Dtls_DataCard1'.DataCardValue148.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'Exchange Rate Val Dtls_DataCard1'.DataCardValue148"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.INVSN_DataCard1.DataCardValue180.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.INVSN_DataCard1.DataCardValue180.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.INVSN_DataCard1.DataCardValue180"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'INV Sr No_DataCard1'.DataCardValue181.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'INV Sr No_DataCard1'.DataCardValue181.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'INV Sr No_DataCard1'.DataCardValue181"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'No of Units_DataCard1'.DataCardValue176.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'No of Units_DataCard1'.DataCardValue176.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'No of Units_DataCard1'.DataCardValue176"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTEP Value_DataCard1'.DataCardValue156.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTEP Value_DataCard1'.DataCardValue156.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "ICEGATESB",
+                "type": "ICEGATESB.frm_SummaryDetails.'RODTEP Value_DataCard1'.DataCardValue156"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'AD Code Confidence Score_DataCard4'.DataCardValue475.AccessibleLabel"
                 }
               ],
@@ -10404,156 +10554,6 @@
             {
               "logicalLocations": [
                 {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Exchange Rate Val Dtls_DataCard1'.DataCardValue148.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'Exchange Rate Val Dtls_DataCard1'.DataCardValue148.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ICEGATESB",
-                "type": "ICEGATESB.frm_SummaryDetails.'Exchange Rate Val Dtls_DataCard1'.DataCardValue148"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.INVSN_DataCard1.DataCardValue180.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.INVSN_DataCard1.DataCardValue180.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ICEGATESB",
-                "type": "ICEGATESB.frm_SummaryDetails.INVSN_DataCard1.DataCardValue180"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'INV Sr No_DataCard1'.DataCardValue181.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'INV Sr No_DataCard1'.DataCardValue181.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ICEGATESB",
-                "type": "ICEGATESB.frm_SummaryDetails.'INV Sr No_DataCard1'.DataCardValue181"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'No of Units_DataCard1'.DataCardValue176.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'No of Units_DataCard1'.DataCardValue176.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ICEGATESB",
-                "type": "ICEGATESB.frm_SummaryDetails.'No of Units_DataCard1'.DataCardValue176"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTEP Value_DataCard1'.DataCardValue156.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "ICEGATESB.frm_SummaryDetails.'RODTEP Value_DataCard1'.DataCardValue156.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "ICEGATESB",
-                "type": "ICEGATESB.frm_SummaryDetails.'RODTEP Value_DataCard1'.DataCardValue156"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
                   "fullyQualifiedName": "ICEGATEBOE.frm_BOESummary.'ACD Amount INR Confidence Score_DataCard1'.DataCardValue289.AccessibleLabel"
                 }
               ],
@@ -14814,6 +14814,66 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "SEZBillOfExportDuplicateTest.Icon8.AccessibleLabel"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SEZBillOfExportDuplicateTest.Icon8.AccessibleLabel",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "AccessibleLabel",
+                "module": "SEZBillOfExportDuplicateTest",
+                "type": "SEZBillOfExportDuplicateTest.Icon8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-AccessibleLabelNeeded",
+          "ruleIndex": 1
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
+                  "fullyQualifiedName": "SEZBillOfExportDuplicateTest.Icon8.TabIndex"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "SEZBillOfExportDuplicateTest.Icon8.TabIndex",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "TabIndex",
+                "module": "SEZBillOfExportDuplicateTest",
+                "type": "SEZBillOfExportDuplicateTest.Icon8"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
+          "ruleIndex": 2
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "SEZBillOfExportDuplicateTest.GalSEZBillofExport.AccessibleLabel"
                 }
               ],
@@ -14917,66 +14977,6 @@
                 "member": "TabIndex",
                 "module": "SEZBillOfExportDuplicateTest",
                 "type": "SEZBillOfExportDuplicateTest.GalSEZBillofExport.Icon7"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-TabIndexShouldBeDefinedForInteractiveControl",
-          "ruleIndex": 2
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SEZBillOfExportDuplicateTest.Icon8.AccessibleLabel"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SEZBillOfExportDuplicateTest.Icon8.AccessibleLabel",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "AccessibleLabel",
-                "module": "SEZBillOfExportDuplicateTest",
-                "type": "SEZBillOfExportDuplicateTest.Icon8"
-              }
-            }
-          ],
-          "message": {
-            "id": "issue"
-          },
-          "properties": {
-            "level": "Medium"
-          },
-          "ruleId": "acc-AccessibleLabelNeeded",
-          "ruleIndex": 1
-        },
-        {
-          "locations": [
-            {
-              "logicalLocations": [
-                {
-                  "fullyQualifiedName": "SEZBillOfExportDuplicateTest.Icon8.TabIndex"
-                }
-              ],
-              "physicalLocation": {
-                "address": {
-                  "fullyQualifiedName": "SEZBillOfExportDuplicateTest.Icon8.TabIndex",
-                  "relativeAddress": 0
-                }
-              },
-              "properties": {
-                "member": "TabIndex",
-                "module": "SEZBillOfExportDuplicateTest",
-                "type": "SEZBillOfExportDuplicateTest.Icon8"
               }
             }
           ],
@@ -15199,6 +15199,36 @@
             {
               "logicalLocations": [
                 {
+                  "fullyQualifiedName": "'User Access'.SearchUserAccessScreen.DelayOutput"
+                }
+              ],
+              "physicalLocation": {
+                "address": {
+                  "fullyQualifiedName": "'User Access'.SearchUserAccessScreen.DelayOutput",
+                  "relativeAddress": 0
+                }
+              },
+              "properties": {
+                "member": "DelayOutput",
+                "module": "User Access",
+                "type": "'User Access'.SearchUserAccessScreen"
+              }
+            }
+          ],
+          "message": {
+            "id": "issue"
+          },
+          "properties": {
+            "level": "Medium"
+          },
+          "ruleId": "app-TextInputIsNotDelayOutput",
+          "ruleIndex": 6
+        },
+        {
+          "locations": [
+            {
+              "logicalLocations": [
+                {
                   "fullyQualifiedName": "SEZSB"
                 }
               ],
@@ -15365,9 +15395,26 @@
                 "primaryCategory": "performance",
                 "whyFix": "Each control consumes resources, and an app may become slow or unresponsive if a screen has too many controls. The estimated complexity of \"ICEGATESB\" is 2689, which exceeds the maximum threshold recommended (300)."
               }
+            },
+            {
+              "id": "app-TextInputIsNotDelayOutput",
+              "messageStrings": {
+                "issue": {
+                  "text": "Inefficient text input"
+                }
+              },
+              "properties": {
+                "componentType": "app",
+                "howToFix": [
+                  "Enable the DelayOutput property of the text input control."
+                ],
+                "level": "Medium",
+                "primaryCategory": "performance",
+                "whyFix": "When a text input control has many controls that depend on its value, typing into that input can slow down the app. Setting DelayOutput to true prevents this problem by only updating dependent controls when typing stops."
+              }
             }
           ],
-          "version": "1.342"
+          "version": "1.345"
         }
       }
     }

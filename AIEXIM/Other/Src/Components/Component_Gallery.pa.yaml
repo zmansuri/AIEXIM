@@ -1,0 +1,112 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+ComponentDefinitions:
+  Component_Gallery:
+    DefinitionType: CanvasComponent
+    CustomProperties:
+      Items:
+        PropertyKind: Input
+        DisplayName: Items
+        Description: A custom property
+        DataType: Table
+        Default: =Table({No:697,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:01,Name:"abc.pdf",PartyName:"Archana and Co.",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:67,Name:"Document.pdf",PartyName:"Shri Hari Label",UploadedOn:"21-09-2023",UploadedBy:"Pawan Jani",Status:"Pending"},{No:15,Name:"Inv120.pdf",PartyName:"Krishna Infotech",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Under Process"},{No:14,Name:"Inv100.pdf",PartyName:"Intech Systems",UploadedOn:"28-09-2023",UploadedBy:"Purva Agarwal",Status:"Processed"},{No:23,Name:"Inv140.pdf",PartyName:"Sai Overseas",UploadedOn:"01-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:78,Name:"Inv145.pdf",PartyName:"Sai Overseas",UploadedOn:"28-09-2023",UploadedBy:"Ujjwal Chandraj",Status:"Under Process"},{No:10,Name:"abc.pdf",PartyName:"Krishna Infotech",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Pending"},{No:24,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"14-09-2023",UploadedBy:"Zishan Mansuri",Status:"Processed"},{No:77,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Under Process"},{No:789,Name:"Inv420.pdf",PartyName:"New India",UploadedOn:"12-09-2023",UploadedBy:"Dishi Shah",Status:"Processed"},{No:74,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"07-09-2023",UploadedBy:"Nishit Patel",Status:"Pending"},{No:36,Name:"111.pdf",PartyName:"Australian Co.",UploadedOn:"28-09-2023",UploadedBy:"Kashyap Trivedi",Status:"Processed"},{No:75,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Under Process"},{No:74,Name:"4854.pdf",PartyName:"Nestle India",UploadedOn:"31-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:63,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"05-09-2023",UploadedBy:"Nishit Patel",Status:"Pending"},{No:77,Name:"xyz.pdf",PartyName:"Sai Overseas",UploadedOn:"09-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:45,Name:"abc.pdf",PartyName:"Zydus Life sciences",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Under Process"},{No:50,Name:"New.pdf",PartyName:"Sai Overseas",UploadedOn:"30-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"})
+      SelectedItem:
+        PropertyKind: Output
+        DisplayName: SelectedItem
+        Description: A custom property
+        DataType: Record
+    Properties:
+      SelectedItem: =Gallery2.Selected
+    Children:
+      - Gallery2:
+          Control: Gallery@2.15.0
+          Variant: BrowseLayout_Vertical_OneTextVariant_ver5.0
+          Properties:
+            AccessibleLabel: ="Gallery"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Items: |
+              =//CustomGallerySample
+              Table({No:697,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:01,Name:"abc.pdf",PartyName:"Archana and Co.",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:67,Name:"Document.pdf",PartyName:"Shri Hari Label",UploadedOn:"21-09-2023",UploadedBy:"Pawan Jani",Status:"Pending"},{No:15,Name:"Inv120.pdf",PartyName:"Krishna Infotech",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Under Process"},{No:14,Name:"Inv100.pdf",PartyName:"Intech Systems",UploadedOn:"28-09-2023",UploadedBy:"Purva Agarwal",Status:"Processed"},{No:23,Name:"Inv140.pdf",PartyName:"Sai Overseas",UploadedOn:"01-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:78,Name:"Inv145.pdf",PartyName:"Sai Overseas",UploadedOn:"28-09-2023",UploadedBy:"Ujjwal Chandraj",Status:"Under Process"},{No:10,Name:"abc.pdf",PartyName:"Krishna Infotech",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Pending"},{No:24,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"14-09-2023",UploadedBy:"Zishan Mansuri",Status:"Processed"},{No:77,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Under Process"},{No:789,Name:"Inv420.pdf",PartyName:"New India",UploadedOn:"12-09-2023",UploadedBy:"Dishi Shah",Status:"Processed"},{No:74,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"07-09-2023",UploadedBy:"Nishit Patel",Status:"Pending"},{No:36,Name:"111.pdf",PartyName:"Australian Co.",UploadedOn:"28-09-2023",UploadedBy:"Kashyap Trivedi",Status:"Processed"},{No:75,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Under Process"},{No:74,Name:"4854.pdf",PartyName:"Nestle India",UploadedOn:"31-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:63,Name:"abc.pdf",PartyName:"Sai Overseas",UploadedOn:"05-09-2023",UploadedBy:"Nishit Patel",Status:"Pending"},{No:77,Name:"xyz.pdf",PartyName:"Sai Overseas",UploadedOn:"09-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"},{No:45,Name:"abc.pdf",PartyName:"Zydus Life sciences",UploadedOn:"28-09-2023",UploadedBy:"Nishit Patel",Status:"Under Process"},{No:50,Name:"New.pdf",PartyName:"Sai Overseas",UploadedOn:"30-09-2023",UploadedBy:"Nishit Patel",Status:"Processed"})
+            TabIndex: =0
+            Y: =36
+          Children:
+            - Title3:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(50, 49, 48, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =50
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =14
+                  Text: =ThisItem.No
+                  Width: =56
+                  X: =19
+                  Y: =15
+            - NextArrow3:
+                Control: Classic/Icon@2.5.0
+                Properties:
+                  AccessibleLabel: =Self.Tooltip
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Color: =RGBA(166, 166, 166, 1)
+                  Height: =50
+                  Icon: =Icon.ChevronRight
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =12
+                  PaddingLeft: =12
+                  PaddingRight: =12
+                  PaddingTop: =12
+                  Tooltip: ="View item details"
+                  Width: =50
+                  X: =Parent.TemplateWidth - Self.Width - 12
+                  Y: =(Parent.TemplateHeight / 2) - (Self.Height / 2)
+            - Separator3:
+                Control: Rectangle@2.3.0
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Fill: =RGBA(255, 255, 255, 1)
+                  Height: =8
+                  OnSelect: =Select(Parent)
+                  Width: =Parent.TemplateWidth
+                  Y: =Parent.TemplateHeight - Self.Height
+            - Rectangle7:
+                Control: Rectangle@2.3.0
+                Properties:
+                  BorderColor: =RGBA(0, 18, 107, 1)
+                  Fill: =RGBA(0, 18, 107, 1)
+                  Height: =Parent.TemplateHeight - Separator3.Height
+                  OnSelect: =Select(Parent)
+                  Visible: =ThisItem.IsSelected
+                  Width: =4
+            - Title3_1:
+                Control: Label@2.5.1
+                Properties:
+                  Align: =Align.Center
+                  BorderColor: =RGBA(0, 0, 0, 1)
+                  Color: =RGBA(50, 49, 48, 1)
+                  Font: =Font.'Open Sans'
+                  FontWeight: =If(ThisItem.IsSelected, FontWeight.Semibold, FontWeight.Normal)
+                  Height: =50
+                  OnSelect: =Select(Parent)
+                  PaddingBottom: =0
+                  PaddingLeft: =0
+                  PaddingRight: =0
+                  PaddingTop: =0
+                  Size: =14
+                  Text: =ThisItem.Name
+                  Width: =154
+                  X: =111
+                  Y: =15

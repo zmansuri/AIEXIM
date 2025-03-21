@@ -30,7 +30,8 @@
             "InvariantPropertyName": "HtmlText",
             "IsLockable": false,
             "NameMapSourceSchema": "?"
-          }
+          },
+          "Size"
         ],
         "ControlUniqueId": "41",
         "HasDynamicProperties": false,
@@ -143,9 +144,15 @@
             "InvariantScript": "1",
             "Property": "ZIndex",
             "RuleProviderType": "Unknown"
+          },
+          {
+            "Category": "Design",
+            "InvariantScript": "13",
+            "Property": "Size",
+            "RuleProviderType": "Unknown"
           }
         ],
-        "StyleName": "",
+        "StyleName": "defaultHtmlViewerStyle",
         "Template": {
           "CustomGroupControlTemplateName": "",
           "FirstParty": true,
@@ -356,7 +363,7 @@
             "Category": "Design",
             "InvariantScript": "0",
             "Property": "TabIndex",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -494,7 +501,7 @@
             "Category": "Design",
             "InvariantScript": "0",
             "Property": "BorderThickness",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -647,7 +654,7 @@
             "Category": "Design",
             "InvariantScript": "0",
             "Property": "TabIndex",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -731,7 +738,7 @@
             "Category": "Design",
             "InvariantScript": "0",
             "Property": "BorderThickness",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -1265,7 +1272,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638569771595472617",
+    "LastModifiedTimestamp": "638781589265041138",
     "Name": "UploadButton",
     "Rules": [
       {
@@ -1278,25 +1285,25 @@
         "Category": "Design",
         "InvariantScript": "0",
         "Property": "Y",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "0",
         "Property": "X",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "250",
         "Property": "Width",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
         "InvariantScript": "150",
         "Property": "Height",
-        "RuleProviderType": "Unknown"
+        "RuleProviderType": "System"
       },
       {
         "Category": "Design",
@@ -1324,7 +1331,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638569771595472617",
+  "LastModifiedTimestamp": "638781589265041138",
   "Name": "905ff9a2d3ac465197c446478e9454cc",
   "OverridableProperties": {},
   "SourceLibraryId": "f373a164-3ed5-4558-b537-aeca98a6ffa1",

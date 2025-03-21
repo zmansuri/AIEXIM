@@ -1,0 +1,226 @@
+# ************************************************************************************************
+# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
+# Content may be incomplete and subject to change.
+# This file is read-only and should only be used to review changes made within Power Apps Studio.
+# This file isn't used when loading the app. External editing, merging and conflict resolution are
+# not supported.
+# 
+# For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
+# ************************************************************************************************
+ComponentDefinitions:
+  Side Bar and Title:
+    DefinitionType: CanvasComponent
+    CustomProperties:
+      Items:
+        PropertyKind: Input
+        DisplayName: Items
+        Description: Menu Items
+        DataType: Table
+        Default: |-
+          =Table({SampleStringField: "SampleText", SampleNumberField: 10, SampleBooleanField: true})
+    Properties:
+      Height: =768
+      Width: =1366
+    Children:
+      - HtmlText1_1:
+          Control: HtmlViewer@2.1.0
+          Properties:
+            DisabledBorderColor: =RGBA(56, 56, 56, 1)
+            Font: =Font.'Open Sans'
+            Height: =690
+            HtmlText: |-
+              ="<div style='margin-left:-10px; width:215px;height:679px;background-color:#;box-shadow:0 2px 7px 3px  #ccc; border-radius:0px'></div>"
+            Width: =232
+            Y: =78
+      - HtmlText1:
+          Control: HtmlViewer@2.1.0
+          Properties:
+            DisabledBorderColor: =RGBA(56, 56, 56, 1)
+            Font: =Font.'Open Sans'
+            Height: =102
+            HtmlText: |-
+              ="<div style='margin-left:-10px; width:1366px;height:76px;background-color:#;box-shadow:0 2px 7px 3px  #ccc; border-radius:0px'></div>"
+            Width: =1366
+      - Rectangle2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(255, 255, 255, 1)
+            Height: =78
+            Width: =1366
+      - Image1:
+          Control: Image@2.2.3
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Height: =79
+            Image: ='MicrosoftTeams-image (1)'
+            Width: =209
+      - Rectangle3:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =55
+            Width: =1
+            X: =209
+            Y: =15
+      - Label1:
+          Control: Label@2.5.1
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =79
+            Size: =16
+            Text: ="Export Import Automation App"
+            Width: ='Side Bar and Title'.Width/2
+            X: =232
+      - ListBox1:
+          Control: ListBox@2.2.0
+          Properties:
+            AccessibleLabel: ="Navigation bar"
+            BorderColor: =RGBA(0, 18, 107, 1)
+            BorderStyle: =BorderStyle.None
+            Default: ="Home"
+            Fill: =RGBA(245, 244, 244, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =684
+            HoverFill: =RGBA(0, 0, 0, 0)
+            ItemPaddingLeft: =18
+            Items: |-
+              =Table(
+                  {MenuItem: "Home"},
+                  {MenuItem: "Documents"},
+                  {MenuItem: "Extracted Data"},
+                  {MenuItem: "Reports"},
+                  {MenuItem: "Logs"},
+                  {MenuItem: "User Access"}
+              )
+            Items.Value: =MenuItem
+            OnSelect: =
+            PressedColor: =RGBA(255, 255, 255, 1)
+            PressedFill: =RGBA(0, 18, 107, 1)
+            SelectMultiple: =false
+            SelectionColor: =RGBA(255, 255, 255, 1)
+            SelectionFill: =RGBA(56, 96, 178, 1)
+            Size: =12
+            Width: =210
+            Y: =84
+      - Rectangle3_1:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =1
+            Width: =211
+            Y: =120
+      - Rectangle3_2:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =1
+            Width: =211
+            Y: =159
+      - Rectangle3_3:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =1
+            Width: =211
+            Y: =198
+      - Rectangle3_4:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =1
+            Width: =211
+            Y: =237
+      - Rectangle3_5:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =1
+            Width: =211
+            Y: =277
+      - Rectangle3_6:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =1
+            Width: =211
+            Y: =316
+      - Rectangle3_7:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =40
+            Width: =1
+            X: =1298
+            Y: =21
+      - Icon1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =30
+            Icon: =Icon.Support
+            PaddingBottom: =2
+            PaddingLeft: =2
+            PaddingRight: =2
+            PaddingTop: =2
+            Width: =30
+            X: =1258
+            Y: =24
+      - Icon1_1:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =30
+            Icon: =Icon.Person
+            Width: =30
+            X: =1309
+            Y: =24
+      - Rectangle3_8:
+          Control: Rectangle@2.3.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Fill: =RGBA(149, 149, 149, 1)
+            Height: =1
+            Width: =211
+            Y: =736
+      - Label1_1:
+          Control: Label@2.5.1
+          Properties:
+            Align: =Align.Center
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Font: =Font.'Open Sans'
+            FontWeight: =FontWeight.Semibold
+            Height: =31
+            Size: =10
+            Text: ="Log Out"
+            Width: =74
+            X: =51
+            Y: =737
+      - Icon1_2:
+          Control: Classic/Icon@2.5.0
+          Properties:
+            BorderColor: =RGBA(0, 18, 107, 1)
+            Color: =RGBA(12, 77, 162, 1)
+            Height: =30
+            Icon: =Icon.Leave
+            PaddingBottom: =5
+            PaddingLeft: =5
+            PaddingRight: =5
+            PaddingTop: =5
+            Width: =30
+            X: =114
+            Y: =738

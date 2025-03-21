@@ -483,11 +483,11 @@
     "Type": "OptionSetInfo"
   },
   {
-    "DisplayName": "SourceType",
+    "DisplayName": "Source Type",
     "Name": "ispl_sourcetype",
     "OptionSetInfoNameMapping": {
-      "170620000": "Mail",
-      "170620001": "Upload"
+      "170620000": "Produce",
+      "170620001": "Procure"
     },
     "OptionSetIsBooleanValued": false,
     "OptionSetIsGlobal": true,
