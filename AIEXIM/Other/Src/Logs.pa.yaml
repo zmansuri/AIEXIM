@@ -1,9 +1,8 @@
 # ************************************************************************************************
-# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
-# Content may be incomplete and subject to change.
-# This file is read-only and should only be used to review changes made within Power Apps Studio.
-# This file isn't used when loading the app. External editing, merging and conflict resolution are
-# not supported.
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
@@ -12,6 +11,43 @@ Screens:
     Properties:
       LoadingSpinnerColor: =RGBA(56, 96, 178, 1)
     Children:
+      - Navigation_5:
+          Control: CanvasComponent
+          ComponentName: Navigation
+          ComponentLibraryUniqueName: mansi_library_fc4be
+          Properties:
+            ApplicationHeader: ="AI EXIM OCR"
+            Height: =768
+            NavigationItems: |-
+              =Table(
+                  {
+                      Title: "Home",
+                      Screen: Home
+                      //Icon: true
+                  },
+                  {
+                      Title: "Documents",
+                      Screen: Documents
+                      //Icon: true
+                  },
+                  {
+                      Title: "Extracted Data",
+                      Screen: 'Extracted Data'
+                  },
+                  {
+                      Title: "Reports",
+                      Screen: Reports
+                  },
+                  {
+                      Title: "Logs",
+                      Screen: Logs
+                  },
+                  {
+                      Title: "User Access",
+                      Screen: 'User Access'
+                  }
+              )
+            Width: =1366
       - Report_btn_Logs:
           Control: Classic/Button@2.2.0
           Properties:

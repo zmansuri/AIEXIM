@@ -1,9 +1,8 @@
 # ************************************************************************************************
-# Warning: YAML source code for Canvas Apps is in preview. The schema is being actively developed.
-# Content may be incomplete and subject to change.
-# This file is read-only and should only be used to review changes made within Power Apps Studio.
-# This file isn't used when loading the app. External editing, merging and conflict resolution are
-# not supported.
+# Warning: YAML source code for Canvas Apps should only be used to review changes made within Power Apps Studio and for minor edits (Preview).
+# Use the maker portal to create and edit your Power Apps.
+# 
+# The schema file for Canvas Apps is available at https://go.microsoft.com/fwlink/?linkid=2304907
 # 
 # For more information, visit https://go.microsoft.com/fwlink/?linkid=2292623
 # ************************************************************************************************
@@ -24,6 +23,42 @@ Screens:
             Width: =318
             X: =568
             Y: =352
+      - Navigation_2:
+          Control: CanvasComponent
+          ComponentName: Navigation
+          ComponentLibraryUniqueName: mansi_library_fc4be
+          Properties:
+            ApplicationHeader: ="AI EXIM OCR"
+            Height: |-
+              =768
+              //Max(App.Height,App.DesignHeight)
+            NavigationItems: |-
+              =Table(
+                  {
+                      Title: "Home",
+                      Screen: Home
+                      //Icon: true
+                  },
+                  {
+                      Title: "Documents",
+                      Screen: Documents
+                      //Icon: true
+                  },
+                  {Title: "Extracted Data"},
+                  {
+                      Title: "Reports",
+                      Screen: Reports
+                  },
+                  {
+                      Title: "Logs",
+                      Screen: Logs
+                  },
+                  {
+                      Title: "User Access",
+                      Screen: 'User Access'
+                  }
+              )
+            Width: =1366
       - ReportBtn_doc:
           Control: Classic/Button@2.2.0
           Properties:
@@ -502,6 +537,16 @@ Screens:
                   Width: =40
                   X: =1041
                   Y: =2
+      - UploadButton_4:
+          Control: CanvasComponent
+          ComponentName: UploadButton
+          ComponentLibraryUniqueName: mansi_library_fc4be
+          Properties:
+            Height: =92
+            Visible: =If(First(ColCurrentLoggedInUserDetails).'Upload Extract Document Rights' = true, true,false)
+            Width: =250
+            X: =1087
+            Y: =70
       - txtSearchDocsDocuments:
           Control: Classic/TextInput@2.3.2
           Properties:
@@ -932,6 +977,16 @@ Screens:
             Width: =95
             X: =1190
             Y: =175
+      - DocumentUploadDocumentScreen:
+          Control: CanvasComponent
+          ComponentName: DocumentUpload
+          ComponentLibraryUniqueName: mansi_library_fc4be
+          Properties:
+            Height: =768
+            InvoiceNumber: ="12345"
+            MessageBox: ="Message.."
+            Visible: =VarDocumentUpload
+            Width: =1366
       - PdfViewer:
           Control: PDFViewer@2.5.0
           Properties:
@@ -1063,7 +1118,7 @@ Screens:
             X: =1071
             Y: =170
       - AttachmentformDS:
-          Control: Form@2.4.2
+          Control: Form@2.4.4
           Variant: Classic
           Layout: Vertical
           Group: FileUploadGrpHome_1
@@ -1071,6 +1126,7 @@ Screens:
             BorderColor: =RGBA(0, 18, 107, 1)
             DataSource: ='Upload Doc Parents'
             Height: =374
+            NumberOfColumns: =1
             OnSuccess: |
               =//Patch('Extracted Document Lists',LookUp('Extracted Document Lists',ID = AttachmentformDS.LastSubmit.ID),{'Document Name':varFileNameDocs});
               Notify(
@@ -1085,7 +1141,7 @@ Screens:
             Y: =212
           Children:
             - Type Of Document_DataCard2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicComboBoxOptionSetSingleEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1095,10 +1151,12 @@ Screens:
                   Required: =true
                   Update: =DataCardValue394.Selected.Value
                   Width: =851
+                  X: =0
                   Y: =0
                 Children:
                   - DataCardKey396:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1112,6 +1170,7 @@ Screens:
                         Y: =10
                   - DataCardValue394:
                       Control: Classic/ComboBox@2.4.0
+                      MetadataKey: FieldValue
                       Properties:
                         AccessibleLabel: ="Type of document"
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -1139,6 +1198,7 @@ Screens:
                         Y: =DataCardKey396.Y + DataCardKey396.Height + 5
                   - ErrorMessage396:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1159,6 +1219,7 @@ Screens:
                         Y: =DataCardValue394.Y + DataCardValue394.Height
                   - StarVisible396:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1171,7 +1232,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey396.Y
             - Company_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicComboBoxOptionSetSingleEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1181,10 +1242,12 @@ Screens:
                   Required: =true
                   Update: =DataCardValue395.Selected.Value
                   Width: =851
+                  X: =0
                   Y: =1
                 Children:
                   - DataCardKey397:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1198,6 +1261,7 @@ Screens:
                         Y: =10
                   - DataCardValue395:
                       Control: Classic/ComboBox@2.4.0
+                      MetadataKey: FieldValue
                       Properties:
                         AccessibleLabel: ="Type of company"
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -1225,6 +1289,7 @@ Screens:
                         Y: =DataCardKey397.Y + DataCardKey397.Height + 5
                   - ErrorMessage397:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1245,6 +1310,7 @@ Screens:
                         Y: =DataCardValue395.Y + DataCardValue395.Height
                   - StarVisible397:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1257,7 +1323,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey397.Y
             - Attachments_DataCard3:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicAttachmentsEdit
                 Properties:
                   BorderColor: =RGBA(0, 18, 107, 1)
@@ -1267,10 +1333,12 @@ Screens:
                   Required: =true
                   Update: =DataCardValue664.Attachments
                   Width: =851
+                  X: =0
                   Y: =2
                 Children:
                   - DataCardKey670:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1284,6 +1352,7 @@ Screens:
                         Y: =10
                   - DataCardValue664:
                       Control: Attachments@2.3.0
+                      MetadataKey: FieldValue
                       Properties:
                         AccessibleLabel: ="Attach your attachment"
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -1307,6 +1376,7 @@ Screens:
                         Y: =DataCardKey670.Y + DataCardKey670.Height + 5
                   - ErrorMessage670:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1327,6 +1397,7 @@ Screens:
                         Y: =DataCardValue664.Y + DataCardValue664.Height
                   - StarVisible670:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1339,7 +1410,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey670.Y
             - Source_DataCard2:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicComboBoxOptionSetSingleEdit
                 IsLocked: true
                 Properties:
@@ -1351,10 +1422,12 @@ Screens:
                   Update: =DataCardValue668.Selected.Value
                   Visible: =false
                   Width: =851
+                  X: =0
                   Y: =3
                 Children:
                   - DataCardKey671:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1368,6 +1441,7 @@ Screens:
                         Y: =10
                   - DataCardValue668:
                       Control: Classic/ComboBox@2.4.0
+                      MetadataKey: FieldValue
                       Properties:
                         AccessibleLabel: ="Source type"
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -1395,6 +1469,7 @@ Screens:
                         Y: =DataCardKey671.Y + DataCardKey671.Height + 5
                   - ErrorMessage671:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1415,6 +1490,7 @@ Screens:
                         Y: =DataCardValue668.Y + DataCardValue668.Height
                   - StarVisible671:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1427,7 +1503,7 @@ Screens:
                         Wrap: =false
                         Y: =DataCardKey671.Y
             - Name_DataCard1:
-                Control: TypedDataCard@1.0.6
+                Control: TypedDataCard@1.0.7
                 Variant: ClassicTextualEdit
                 IsLocked: true
                 Properties:
@@ -1440,10 +1516,12 @@ Screens:
                   Update: =DataCardValue669.Text
                   Visible: =false
                   Width: =851
+                  X: =0
                   Y: =4
                 Children:
                   - DataCardKey672:
                       Control: Label@2.5.1
+                      MetadataKey: FieldName
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1457,6 +1535,7 @@ Screens:
                         Y: =10
                   - DataCardValue669:
                       Control: Classic/TextInput@2.3.2
+                      MetadataKey: FieldValue
                       Properties:
                         AccessibleLabel: ="Your Name"
                         BorderColor: =If(IsBlank(Parent.Error), Parent.BorderColor, Color.Red)
@@ -1478,6 +1557,7 @@ Screens:
                         Y: =DataCardKey672.Y + DataCardKey672.Height + 5
                   - ErrorMessage672:
                       Control: Label@2.5.1
+                      MetadataKey: ErrorMessage
                       Properties:
                         AutoHeight: =true
                         BorderColor: =RGBA(0, 0, 0, 1)
@@ -1498,6 +1578,7 @@ Screens:
                         Y: =DataCardValue669.Y + DataCardValue669.Height
                   - StarVisible672:
                       Control: Label@2.5.1
+                      MetadataKey: FieldRequired
                       Properties:
                         Align: =Align.Center
                         BorderColor: =RGBA(0, 0, 0, 1)

@@ -507,7 +507,7 @@
             "Category": "Design",
             "InvariantScript": "2",
             "Property": "FocusedBorderThickness",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -744,7 +744,7 @@
             "Category": "Design",
             "InvariantScript": "2",
             "Property": "FocusedBorderThickness",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Behavior",
@@ -948,7 +948,7 @@
             "Category": "Design",
             "InvariantScript": "2",
             "Property": "BorderThickness",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -996,7 +996,7 @@
             "Category": "Design",
             "InvariantScript": "2",
             "Property": "ZIndex",
-            "RuleProviderType": "Unknown"
+            "RuleProviderType": "System"
           },
           {
             "Category": "Design",
@@ -1272,7 +1272,7 @@
       "Y",
       "ZIndex"
     ],
-    "LastModifiedTimestamp": "638781589265041138",
+    "LastModifiedTimestamp": "638905787147573461",
     "Name": "UploadButton",
     "Rules": [
       {
@@ -1331,7 +1331,7 @@
   "IsPcfControl": false,
   "IsPremiumPcfControl": false,
   "IsWidgetTemplate": false,
-  "LastModifiedTimestamp": "638781589265041138",
+  "LastModifiedTimestamp": "638905787147573461",
   "Name": "905ff9a2d3ac465197c446478e9454cc",
   "OverridableProperties": {},
   "SourceLibraryId": "f373a164-3ed5-4558-b537-aeca98a6ffa1",
